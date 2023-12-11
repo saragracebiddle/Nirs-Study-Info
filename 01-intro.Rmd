@@ -1,21 +1,14 @@
-# Introduction {#intro}
+# Study Description {#intro}
 
-You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
+## Background
 
-Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
+Cancer patients undergoing chemotherapy can experience short and long term effects such as fatigue and decreased exercise tolerance (\\TODO reference). We theorize that cytotoxic chemotherapy causes long-term damage to mitochondria over the whole body, which results in less efficient and effective oxygen use and therefore fatigue. 
 
-```{r nice-fig, fig.cap='Here is a nice figure!', out.width='80%', fig.asp=.75, fig.align='center'}
-par(mar = c(4, 4, .1, .1))
-plot(pressure, type = 'b', pch = 19)
-```
+Previous attempts to measure muscle mitochondrial function have included muscle biopsies and MRI. Muscle biopsies are invasive procedures that most investigators do not want to put their patients through. For MRI measurements, patients must remain very still. Even for functional MRI, the type of movement is very limited due to the amount of space within the MRI. This constrains the measurements of mitochondrial function to rest or low intensity exercise such as calf raises, that cannot measure the body's response to systemic cardiorespiratory exercise.
 
-Reference a figure by its code chunk label with the `fig:` prefix, e.g., see Figure \@ref(fig:nice-fig). Similarly, you can reference tables generated from `knitr::kable()`, e.g., see Table \@ref(tab:nice-tab).
+With the advancements in Near Infrared Spectroscopy (NIRS) in recent years, the oxygenation of large muscles such as the vastus lasteralis can be measured during exercises like running and cycling.  
 
-```{r nice-tab, tidy=FALSE}
-knitr::kable(
-  head(iris, 20), caption = 'Here is a nice table!',
-  booktabs = TRUE
-)
-```
+## Purpose
 
-You can write citations, too. For example, we are using the **bookdown** package [@R-bookdown] in this sample book, which was built on top of R Markdown and **knitr** [@xie2015].
+This study aims to measure muscle mitchondrial oxidative capacity throughout chemotherapy for patients with primary non-metastatic breast or gynecological cancers. 
+

@@ -1,0 +1,256 @@
+# Instruments {#appendix-instruments}
+
+## PortaMon {#appendix-instruments-portamon}
+
+### Specifications {#appendix-instruments-portamon-specs}
+
+The [PortaMon](https://www.artinis.com/portamon) by Artinis Medical Systems is a spatial-resolved near-infrared resonance spectroscopy device. It uses one receiver with three infrared transmitters. Each transmitter is 5 millimeters further from the receiver. This allows the application of mathematical formulas to calculate an absolute tissue hemoglobin saturation, which Artinis Medical Systems refers to as the Tissue Saturation Index, or TSI. In the literature, this is referred to by various acronyms, such as TOI (Tissue Oxygenation Index). A full examination of the mathematics and physics behind the calculation of TSI was published as part of the SPIE Conference on Optical Tomography and Spectroscopy of Tissue III  in 1999 [@Suzuki1999TissueOM].
+
+### Usage {#appendix-instruments-portamon-usage}
+
+#### Preparation {#instr-portamon-use-prep}
+
+Wrap the PortaMon in clear saran wrap and tape the saran wrap in place. This prevents sweat and other moisture from getting in to the PortaMon. Since the PortaMon has electronic parts, it cannot be sterilized using liquids and the saran wrap means we do not have to sterilize the device itself. The saran wrap is trashed after testing is complete. 
+
+Cut the double-sided taupe tape length-wise into two long strips. Place one strip to the left of the transmitters and receiver and one strip to the right of the transmitters and receiver. Leave the exterior side of the double-sided tape covered for now. 
+
+
+#### Start a Measurement {#instr-portamon-use-start}
+
+  - Turn on the ASUS laptop.  
+  - Ensure the bluetooth dongle and the Rockey dongle are plugged in to the laptop.  
+  - Open Oxysoft.  
+  - Close any open graphs in the main panel.   
+      - Select `Graphs` in the top bar.  
+      - Select `Close all graphs`. There should be no open graphs in the main panel.  
+  - Select `Measurement` in the top bar.
+  - Select `Create Measurement and Start Device (Wizard)...` from drop down.
+  - Name the measurement appropriately. 
+  - Select the `Copy settings from:` drop down. 
+  - Scroll to the top of the drop down and select `no copy`. 
+  - Click `Next`. Pop up will open to add a bluetooth device.
+  - Click `Add`. Pop up will open to select type of device.
+  - Select `OxyMon/PortaMon/PortaLite/OctaMon`, which should be auto filled.
+  - Click `OK`. 
+  - Select correct device number, this should match the number on the top of the Portamon.
+  - Click `Connect`.
+  - Device should pair with the computer. If it does not, try the following steps:
+      - Check the device is on. The green LED light should be on. If not, turn on by holding down the button on the left until the lights come on (about three seconds).
+      - Hold the bluetooth button down for about three seconds while you click `connect` on the computer.
+      - Unpair the device with the computer in the computer's bluetooth settings, then re-pair.
+      - Restart the computer.
+      - Try using the other Portamon.
+  - When successfully connected, a blue LED will turn on on the Portamon and the device type and number will be listen in the `Combined Devices` pop up. 
+  - Click `OK`.
+  - The Optode-template window will now be open. 
+  - Under `Optode-template: (Filtered by PortaMon)` click the drop down.
+  - Select `Portamon TSI Fit Factor`.
+  - Under `k (1/mm)` click the drop down.
+  - Select `1.63 (calf)`.
+  - Under `h (1/mm)` click the drop down.
+  - Select `5.5e-4 (calf)`.
+  - Click `Next`.
+  - The Light Source to Optode Mapping window will now be open. Leave all settings as is and click `Next`.
+  - The Device settings window will now be open. Leave all settings as is and click `Next`.
+  - The Further Options window will now be open. The `Action` drop down should have `Start measurement after finishing wizard` selected.
+  - Click `Finish`.
+  - The Create All Graphs window will pop up. Leave settings as is and click `OK`. 
+  - There will be an Oxysoft pop up. It says 'The program will enable the light sources now. Are you sure you want to start the device(s)?' DO NOT click yes yet. Wait until device has been placed correctly. Follow the steps described in \@ref(instr-portamon-use-place).
+
+
+#### Device Placement {#instr-portamon-use-place}
+
+The PortaMon can measure up to 2 centimeters depth into tissue. Since we are interested in muscle oxygenation, the muscle belly has to be within 2 centimeters from the surface of the skin. Otherwise, the device is not measuring muscle oxygenation but adipose tissue oxygenation. Therefore, we use an ultrasound to measure the subcutaneous adipose tissue thickness. 
+
+Place the device over the location measured by ultrasound.
+
+Connect the NIRS by following the steps under \@ref(instr-portamon-use-start). 
+
+Click 'yes' to enable light sources and begin data collection. Wait approximately 10 seconds. Check the DAQ (Data Acquisition) values to determine whether the NIRS is receiving good data. If one or more of the DAQ values show as red, then make small adjustments to the placement of the device to attempt to get better DAQ values. If the small adjustments add up to a large difference from the original ultrasound measurement location, re-measure adipose tissue thickness using the ultrasound in the new location. 
+
+When all three DAQ values remain white when the subject moves around their leg, then the device is in the best location. If one of the DAQ values turns red during movement, that can be okay but only ONE. If two of the DAQ values are red, then TSI cannot be calculated so we do our best to have at least two good signals, three if at all possible.
+
+Rock the device laterally and remove the tape cover on the exposed side. Rock the device back into place and stick the tape to the subject's skin. Repeat on the other side. Double check that the DAQ values remain consistent.
+
+Take a picture of the placement. Use a measuring tape to show the distance from the top of the kneecap to the bottom of the device and use a perpendicular measuring tape to show the distance from the center of the thigh to the right edge of the device. Print the picture and place in the participant's physical file. Upload a .png of the picture into the RedCap. 
+
+
+#### Data Collection {#instr-portamon-use-collect}
+
+#### Data Export {#instr-portamon-use-export}
+
+Ensure that only one measurement is open in the Oxysoft graph panels. 
+
+If you are not sure or cannot tell, under the 'Graph' drop down of the header bar, select 'Close all graphs'. There should be no visible graphs in the panel. Select the name of the measurement you want to export in the 'Project' panel on the left. Right click on the highlighted name of the measurement and select 'Open all graphs'. There should be four panels open, one titled 'Tx1-Rx1', 'Tx2-Rx1', 'Tx3-Rx1', and one 'TSIFF'. 
+
+If all three transmitters had good DAQ values during data collection and never dropped into red, skip the next steps. If there were issues with only Tx3, follow the next steps.
+
+Right click on the name of the measurement in the 'Project' panel on the left. Select 'Properties...'. This will open up a new panel. Leave the measurement name and data file as is. Click 'Next'. Under 'Optode -template:' select 'PortaMon TSI' instead of 'PortaMon TSI Fit Factor'. 
+
+## ParvoMedics TrueOne 2400 {#app-instr-parvo}
+
+### Specifications {#instr-parvo-specs}
+
+The [TrueOne](http://www.parvo.com/) Metabolic Cart by ParvoMedics measures maximal O2 consumption, indirect calorimetry, and other metabolic conditions. 
+
+### Usage {#instr-parvo-use}
+
+#### Calibration {#instr-parvo-use-cali}
+
+In order to conduct calibration, the cart must have been powered on for *at least 30 minutes*.
+Turn on the cart by flipping the switch on the power strip on the back of the cart.
+
+Log in using the password taped to the cart under the keyboard.
+
+The computer on the cart is not connected to the internet. After logging in, you need to manually set the date and time to today's date and time. If you do not manually set the date and time, the data collection software will use the incorrect date and time and will save the data as such, which will make it difficult to locate later.
+
+Open the ParvoMedics software.
+
+##### Flowmeter Calibration {#instr-parvo-use-cali-flowmeter}
+
+Select 'Flowmeter Calibration' from the software home page.
+
+Enter room temperature (Celcius), barometric pressure (mmHg), and room humidity (%) from the Davis Vantage Vue on Sara Biddle's desk. 
+
+Get a piece of long clear tubing from Parvo equipment cabinet. The calibration syringe and connection piece are located in the third shelf on the Parvo cart. 
+
+Connect one end of the tubing to the clear end of the connection piece. Connect the other end of the tubing into the gas analyzer module. Connect the white end of the connection piece to the mouth of the calibration syringe.
+
+Get Frankie Bennet to help with the actual flowmeter calibration.
+
+##### Gas Calibration {#instr-parvo-use-cali-gas}
+
+Select 'Gas Calibration' from the software home screen.
+
+Enter room temperature (Celcius), barometric pressure (mmHg), and room humidity (%) from the Davis Vantage Vue on Sara Biddle's desk. 
+
+Click 'OK'.
+
+When prompted, find the sample gas (gas container on the bottom left of the cart) and rotate the black handle on top of the gas container counter-clockwise until you cannot turn it anymore. Do not turn the black knob that is taped in place.
+
+Click 'OK' and wait for the next prompt on the screen. 
+
+Rotate the black handle on top of the gas container clockwise as far as you can. 
+
+Click 'OK' to see calibration results.
+
+DO NOT SAVE results if the percentage is greater than 1%. This means that this calibration differs from the last calibration by more than we want. If you save the results, since it is a percentage change from the last calibration, the next calibration will have to decrease by greater than 1%. 
+
+Example: First calibration attempt results in a percentage of 1.5%. In order to be within 1% of the attempt prior to the first attempt, the second calibration attempt will need to result in a percentage of -0.5%. 
+
+To save us from doing this math in between calibration attempts, just do not save attempts greater than 1% difference.
+
+If results are greater than 1%, try the following steps:
+
+- open the lab door
+- turn on the fans to blow air around the room
+- wait at least 10 minutes and attempt calibration again
+
+When the gas calibration results in less than 1% change from the previous calibration, save results and exit to the home screen.
+
+#### Mask Assembly {#instr-parvo-use-mask}
+
+Pink buckets and mask parts are sterile and should NOT be touched without gloves. There are several boxes of latex gloves in different sizes in the lab. Pick whichever size fits you before touching ANY Parvo parts.
+
+- Grab pink bucket and ensure the following components are in the bucket
+    - Clear plastic with two black circles
+    - Clear plastic with triangle
+    - White plastic that narrows
+    - Semi-transparent circle made of hard plastic
+    - Two hard plastic white circles
+    - Two silicone caps
+- Take silicone cap and place on the hard plastic white circle
+- Take clear plastic with two black circles
+    - Look at one of the black circles with hole facing upwards
+        - Look for the arrows on the clear plastic
+        - You want the arrow that’s pointing up to be on the right side
+    - Take silicone cap/hard plastic white circle and fit into the opening that has the arrow pointing up
+        - Ensure that the valve is functioning properly so that air can move through
+        - Take white plastic that narrows and screw on top of silicone cap/hard plastic white circle
+    - Clear plastic with triangle
+        - Take silicone cap/hard plastic complex and put into wider side of clear plastic with triangle
+        - Screw clear plastic with triangle into clear plastic with two black circles
+        - This should screw into the side that has the arrow pointing to the left 
+    - Take semi-transparent circle made of hard plastic and screw into the last remaining hole of clear plastic with two black circles
+        - If this is oriented correctly, the white part should be on the right, clear piece with triangle on left and semitransparent piece on top
+- Take blue mask and orient it as if you were going to wear it on your face
+    - Stretch the circle of the blue mask over the semi-transparent circle
+    - Ensure that the lip on the inside creates a good seal
+
+
+#### Data Collection {#instr-parvo-use-collect}
+
+Select 'Metabolic Testing'.
+
+Enter the following as BOTH the first and last name:
+
+"NIRS_patientidnumber_protocoltypeprotocolnumber_protocoldate"
+
+For example, patient ID 003 participating in the second on/off kinetics on 11/12/2023 would look like:
+"NIRS_003_FP2_11_15_2023"
+
+Enter the participant's height, weight, and age.
+
+Select the testing protocol: NIRS Lactate Theshold or NIRS Full Protocol.
+
+Enter appropriate testing wattage.
+
+Click 'OK' and wait for the software to start the test.
+
+When testing is complete, click 'end test'.
+
+Save results and print a copy of the report.
+
+Check that the report will be printed with 10-second averages. Click 'config' in the bottom left and ensure that the data averaging selected is 10 seconds. Click 'OK' and print. The report will be printed on the printer on the bottom shelf of the cart. 
+
+#### Data Export {#instr-parvo-use-export}
+
+The ParvoMedics software only exports metabolic cart data as Excel files. Select the data collection instance you wish to export and save it as an Excel file on the cart. Use a USB drive to transfer the Excel file from the Parvo cart to another caomputer. Since the Parvo cart is not connected to the internet and never gets Windows or any other software updates, the Excel format is a legacy format. You will have to manually open the Excel file and save it as a modern Excel format. 
+
+
+## Ultrasound {#app-instr-ultrasound}
+
+### Usage {#instr-ultrasound-use}
+
+Turn on the ultrasound by pressing the power button in the top left of the keyboard.
+
+Locate the vastus lateralis.  Find the ASIS (anterior superior iliac spine) by asking the participant to place their hands on their hips and feeling for the bony protrusion at the front of the hip. Measure from the top of the kneecap to the ASIS. Locate the vastus lateralis by moving superior to the kneecap on-third of the distance from the kneecap to the ASIS.
+
+Use the ultrasound gel to cover the wand.
+
+Place the wand over the pre-determined location of the vastus lateralis.
+
+Freeze the screen when you want to measure adipose tissue thickness.
+
+Press the 'caliper' button to use calipers on the frozen screen.
+
+Move one end of the caliper to the top of the screen. Move the other end of the caliper to the area of the screen that looks like the boundary between the muscle belly and the edge of the adipose tissue. This will be a silvery line across the screen.
+
+Record the measurement given by the caliper.
+
+
+## Lactate Meter {#app-instr-lact}
+
+
+### Usage {#instr-lact-use}
+
+#### Quality Control Testing {#instr-lact-use-control}
+
+Before using the lactate meters, you must conduct a quality control test. 
+
+Get out the 'Blood Lactate Meter' binder from Frankie Bennet's desk. Open the binder to the quality control log. 
+
+Turn on the lactate meter by pressing the center triangle-shaped button. Use the button to click through the screens until you reach the control screen. which has a star in the upper left corner and says 'CNTRL'.
+
+Put a lactate strip in the lactate meter.
+
+Use the red control dropper to place a drop on the lactate strip. Wait for the lactate meter to give results (about 15 seconds). Record the results and the informaton from the control dropper in the binder. Discard the used lactate strip in the trash and do another test with the red control with a new lactate strip.
+
+Repeat with the blue control dropper. 
+
+
+#### Data Collection {#instr-lact-use-collect}
+
+Use the center triangle-shaped button to click through the screens and choose any profile that is not a control profile.
+
+Place a lactate strip in the top of the meter. You are ready for data collection.

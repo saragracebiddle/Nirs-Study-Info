@@ -1,0 +1,77 @@
+# Methods {#methods}
+
+## Lactate Threshold Protocol {#methods-LT}
+
+This protocol is the participant's first visit. 
+
+
+### Preparation {#methods-LT-prep}
+
+At least 30 minutes prior to when the participant is scheduled to arrive, turn on the metabolic cart. 
+
+Print out the following instruments:
+
+- MoCA \@ref(instr-moca)
+- MMSE \@ref(instr-mmse)
+- Godin-Leisure Time Exercise Questionnaire \@ref(instr-glteq)
+- Physical Activity History \@ref(instr-pah)
+- BFI \@ref(instr-bfi)
+- PROMIS Global Health \@ref(instr-promis)
+- Lactate Threshold Data Collection Sheet 
+
+Assemble the VO~2~ mask except for the blue rubber part as described in \@ref(instr-parvo-use-mask). 
+
+Prepare the PortaMon as described in \@ref(instr-portamon-use-prep). 
+
+Calibrate the metabolic cart as described in \@ref(instr-parvo-use-cali).
+
+### Data Collection {#methods-LT-collect}
+
+Use the steps described in \@ref(instr-ultrasound-use) to measure the participant's subcutaneous adipose tissue thickness above their vastus lateralis.
+
+After the patient arrives, the participant's subcutaneous adipose tissue thickness is measured using an ultrasound. If ATT is less than 2 centimeters, the participant continues through the next steps.
+
+Place the NIRS device over the area measured using ultrasound following the steps described in  \@ref(instr-portamon-use-place).
+
+Administer the following instruments:
+
+- MoCA \@ref(instr-moca)
+- MMSE \@ref(instr-mmse)
+- Godin-Leisure Time Exercise Questionnaire \@ref(instr-glteq)
+
+The MoCA, MMSE, and GLTEQ are exclusion criteria. If the participant does not pass these items, they cannot proceed with the study, therefore they are administered before other instruments. If the participant passes the exclusion instruments, proceed with the rest of the instruments.
+
+Have the subject complete the following instruments:
+
+- Physical Activity History \@ref(instr-pah)
+- BFI \@ref(instr-bfi)
+- PROMIS Global Health \@ref(instr-promis)
+
+Review the completed Godin-Leisure Time Exercise Questionnaire and Physical Activity History instruments. Use your best judgement in collaboration with the other investigators to determine the wattage jumps. See \@ref(instr-LT-watts) for further information about deciding wattage jumps.
+
+Measure the subject's face to determine mask size. Record mask size. Finish assembling mask.
+
+Have the subject get on the stationary bike and make adjustments to the seat height, seat depth, pedal length, and handlebar placement to the comfort of the participant. 
+
+If the PortaMon has been on for at least 10 minutes, proceed. 
+
+Place the assembled mask on the participant's face and connect clear tubing to the mask.
+
+Conduct Lactate Threshold Exercise Test as described in \@ref(instr-LT). 
+
+
+## On/Off Kinetics Protocol {#methods-onoff}
+
+Use the steps described in \@ref(instr-ultrasound-use) and \@ref(instr-portamon-use-place) along with the reference image of the previous placement to place the device in the same location as the last visit. 
+
+Have the subject complete the following instruments:
+
+- Physical Activity History \@ref(instr-pah)
+- BFI \@ref(instr-bfi)
+- PROMIS Global Health \@ref(instr-promis)
+
+If the PortaMon has been on for at least 10 minutes, proceed.
+
+Place the assembled mask on the participant's face and connect clear tubing to the mask.
+
+Conduct On/Off Kinetics Exercise Test as described in \@ref(instr-onoff).

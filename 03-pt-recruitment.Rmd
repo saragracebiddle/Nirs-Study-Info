@@ -1,0 +1,30 @@
+# Patient Recruitment
+
+Run a report in EPIC with the following parameters:
+
+> Select patients in registries
+>
+> FROM 
+>
+> *Registries:*
+>
+> Registry ID: CANCER POPULATION REGISTRY
+>
+> *Level of detail:*
+>
+> Patients
+> 
+> WHERE
+>
+> DM TREATMENT PLAN PROVIDER CONTAINS ELDER, JEFFERY WAYNE OR EDENFILED, WILLIAM JEFFERY OR JORGENSON, CARLA WALKER OR STEPHENSON JR, JOE JOHN OR PULS, LARRY EDWIN
+>
+> AND 
+> 
+> CHEMOTHERAPY IN LAST YEAR = NO
+>
+> AND DIAGNOSIS IN GROUPER BREAST OR GYNECOLOGICAL CANCER GROUPER
+> 
+> TREATMENT PLAN START DATE GREATER THAN TODAY - 14
+
+
+When a potentially eligble patient is identified, pass on the patient information to Sydney Hackwell and Katie Banenas. They will conduct a full chart screening and contact the patient if they are eligible.
