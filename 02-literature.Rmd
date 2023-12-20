@@ -1,3 +1,23 @@
 # Literature
 
-                                   
+## Near Infrared Spectrosopy
+
+Continuous wave NIRS devices use the modified Beer-Lambert law to calculate the volume of oxygenated and deoxygenated hemoglobin.
+
+Spatially resolved NIRS devices use multiple transmitters at different distances from a reciever to calculate a Tissue Saturation Index, or TSI. 
+
+The NIRS device utilized in this study is the PortaMon by Artinis Medical Systems. The PortaMon could be considered both a continuous wave and spatially resolved device. It uses three continuous-wave transmitters with a single receiver to calculate the TSI. 
+
+Each transmitter emits two wavelengths of infrared light. One wavelength is for oxygenated hemoglobin and one wavelength is for deoxygenated hemoglobin, therefore each transmitter measures both oxygenated and deoxygenated hemoglobin. 
+
+The transmitters emit light into tissue where the light waves bounce off structures in the tissue and return to the receiver. 
+
+The receiver measures the light that returns in Optical Densities. Calculations using several different parameters and assumptions convert OD into usable units.
+
+Subcutaneous adipose tissue has different optical properties than muscle tissue. Most calculations do not account for two separate layers of tissue with different scattering and optical properties. There have been some papers within the last few years  examining multi-layered tissues and the effects on NIRS measurements using computer modeling and phantom tissues. Most papers utilizing NIRS in exercise physiology assume a limited or negligible effect of adipose tissue thickness on measurements and report participants' adipose tissue thickness.
+
+Different areas of the body have different types of tissue structure and this have different optical properties. Previous papers have reported the measurements of optical properties at various locations of the body. Consult with the device manufacturer and reports of these optical properties to determine the best settings for your device.
+
+Most studies assume that the tissue structures have constant optical properties. This may not hold true, especially during activities like exercise where blood flow increases and the contents of blood fluctuate. Accounting for varying optical properties has led to the development of time-domain and other measurement techniques. These devices are more expensive than a continuous wave device. Therefore, most NIRS devices assume constant optical properties of the measured tissues.
+
+The differential pathlength factor (dpf) is the measurement of the path that the light waves take through tissue. DPF values have been well researched and measured for multiple body locations and differing adipose tissue thicknesses. This parameter is used in calculating TSI.

@@ -4,10 +4,42 @@ Be sure you have exported and stored all data appropriately.
 
 ## Lactate Threshold {#analysis-LT}
 
+Take the lactate threshold data collection sheet. 
+
+Average the duplicate lactate measurements.
+
+Make a plot of lactate by power (Watts). Find the power at which lactate would have been 4.00. That is the power at which lactate threshold occurred. 
+
+Multiply this power by 1.1 to calculate the power at which the patient will conduct subsequent on/off kinetics testing.
 
 ## On/Off Kinetics {#analysis-onoff}
 
+Read in the exported PortaMon data. 
 
+The PortaMon does not record in increments of time, it records the sample number. The PortaMon records data at a rate of 10 hz, so it takes 10 samples a second. The time in seconds from the start of the test is the sample number divided by 10. 
+
+The PortaMon was on and collecting data from the time the device was placed until the end of the exercise test. We aren't interested in the data from before the start of the exercise test, so that can be removed.
+
+Next, find the time chunks for each section of the test. An on/off kinetics consists of the following sections, each 2 minutes (120 seconds) in duration: Baseline Rest, Warm Up, Work 1, Rest 1, Work 2, Rest 2, Work 3, and Rest 3. 
+
+Plot the exercise test. On the x axis, use time in seconds. Have dual y axes, one with hemoglobin arbitrary units and one with percentages. Plot all signals (O_2Hb and HHb for all exported transmitters and TSI) over time and check that the transitions between sections line up with the expected times. Adjust slightly as necessary, as the start time recorded for the test may be silghtly off due to human error / time taken for the PARVO to begin the test. 
+
+Use the plot and notes from the test to examine the data for movement artifacts that need to be removed before analysis. Remove as necessary.
+
+Average the O_2Hb and HHb across the transmitters. 
+
+Calculate the steady state at the end of each non-baseline and non-warm up section (6 sections in total- 3 work sections and 3 rest sections) by averaging the last 30 seconds of the section for each signal type (O_2Hb, HHb, and TSI). 
+
+There are 18 steady state values: 3 signal types and 6 sections.
+
+Calculate the delta steady state for each transition.
+Subtract the rest steady state from the corresponding work steady state. I.e. subtract rest 1 steady state from work 1 steady state.
+
+There are 9 delta steady state values: 3 signal types and 3 transitions.
+
+Calculate the coefficients for the monoexponential curve for each transition. There are 9 monoexponential curve equations: 3 signal types and 3 transitions. 
+
+Use the app, shown below, to do all of these steps without having to run any code.
 
 ```{r, eval = F}
 knitr::include_app('https://saragracebiddle.shinyapps.io/DataAnalysis/')
