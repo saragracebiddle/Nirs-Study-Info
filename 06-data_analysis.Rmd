@@ -26,6 +26,8 @@ Plot the exercise test. On the x axis, use time in seconds. Have dual y axes, on
 
 Use the plot and notes from the test to examine the data for movement artifacts that need to be removed before analysis. Remove as necessary.
 
+The oxyhemoglobin and deoxyhemoglobin measurements have arbitrary units- they are change in oxy and deoxyhemoglobin. This means that we cannot use the amounts of oxyhemoglobin and deoxyhemoglobin and compare those over time. For example, the average oxyhemoglobin at rest could be measured as 4 for one test and 6 at the next test. This does not mean that at the second test, the amount of oxyhemoglobin in the blood was actually higher than at the first test. 
+
 Average the O_2Hb and HHb across the transmitters. 
 
 Calculate the steady state at the end of each non-baseline and non-warm up section (6 sections in total- 3 work sections and 3 rest sections) by averaging the last 30 seconds of the section for each signal type (O_2Hb, HHb, and TSI). 
@@ -36,6 +38,13 @@ Calculate the delta steady state for each transition.
 Subtract the rest steady state from the corresponding work steady state. I.e. subtract rest 1 steady state from work 1 steady state.
 
 There are 9 delta steady state values: 3 signal types and 3 transitions.
+
+We use the following equation to describe an asymptotic or monoexponential curve: 
+
+\[y =({Asym}-B_0) - ({Asym}-B_0)*e^{-t/ \tau} \]
+
+Where ${Asym}$ is the asymptote (or Steady State), $B_0$ is the value at time 0, $t$ is the time (in seconds), and $\tau$ is the time constant. 
+
 
 Calculate the coefficients for the monoexponential curve for each transition. There are 9 monoexponential curve equations: 3 signal types and 3 transitions. 
 
