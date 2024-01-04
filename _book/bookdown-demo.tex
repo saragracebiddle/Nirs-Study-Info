@@ -1,0 +1,1055 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{book}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{booktabs}
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[]{natbib}
+\bibliographystyle{apalike}
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={NIRS Study Information},
+  pdfauthor={Sara Biddle},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{NIRS Study Information}
+\author{Sara Biddle}
+\date{2024-01-04}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{intro}{%
+\chapter{Study Description}\label{intro}}
+
+\hypertarget{background}{%
+\section{Background}\label{background}}
+
+Cancer patients undergoing chemotherapy can experience short and long term effects such as fatigue and decreased exercise tolerance (\textbackslash TODO reference). We theorize that cytotoxic chemotherapy causes long-term damage to mitochondria over the whole body, which results in less efficient and effective oxygen use and therefore fatigue.
+
+Previous attempts to measure muscle mitochondrial function have included muscle biopsies and MRI. Muscle biopsies are invasive procedures that most investigators do not want to put their patients through. For MRI measurements, patients must remain very still. Even for functional MRI, the type of movement is very limited due to the amount of space within the MRI. This constrains the measurements of mitochondrial function to rest or low intensity exercise such as calf raises, that cannot measure the body's response to systemic cardiorespiratory exercise.
+
+With the advancements in Near Infrared Spectroscopy (NIRS) in recent years, the oxygenation of large muscles such as the vastus lateralis can be measured during exercises like running and cycling.
+
+NIRS measurements have been extensively written about in correlation with VO\_2 measurements within the last decade.
+
+In this study, we utilize square-wave transition testing to examine the efficiency of oxygen use in the muscle during whole body cardiorespiratory exercise. Square-wave transition exercise tests consist of repeated transitions from lower intensity exercise to higher intensity exercise. These transitions require the body to quickly use and replace oxygen levels. The speed and magnitude of these oxygen changes relate to how well the mitochondria can pull oxygen from the blood and utilize it to create ATP. We expect that people with healthier mitochondria to extract and use more oxygen and with greater speed than people with less healthy mitochondria.
+
+\hypertarget{purpose}{%
+\section{Purpose}\label{purpose}}
+
+This study aims to measure muscle mitochondrial oxidative capacity throughout chemotherapy for patients with primary non-metastatic breast or gynecological cancers.
+
+\hypertarget{Literature}{%
+\chapter{Literature}\label{Literature}}
+
+\hypertarget{Literature-nirs}{%
+\section{Near Infrared Spectrosopy}\label{Literature-nirs}}
+
+Continuous wave NIRS devices use the modified Beer-Lambert law to calculate the volume of oxygenated and deoxygenated hemoglobin.
+
+Spatially resolved NIRS devices use multiple transmitters at different distances from a reciever to calculate a Tissue Saturation Index, or TSI.
+
+The NIRS device utilized in this study is the PortaMon by Artinis Medical Systems. The PortaMon could be considered both a continuous wave and spatially resolved device. It uses three continuous-wave transmitters with a single receiver to calculate the TSI.
+
+Each transmitter emits two wavelengths of infrared light. One wavelength is for oxygenated hemoglobin and one wavelength is for deoxygenated hemoglobin, therefore each transmitter measures both oxygenated and deoxygenated hemoglobin.
+
+The transmitters emit light into tissue where the light waves bounce off structures in the tissue and return to the receiver.
+
+The receiver measures the light that returns in Optical Densities. Calculations using several different parameters and assumptions convert OD into usable units.
+
+Subcutaneous adipose tissue has different optical properties than muscle tissue. Most calculations do not account for two separate layers of tissue with different scattering and optical properties. There have been some papers within the last few years examining multi-layered tissues and the effects on NIRS measurements using computer modeling and phantom tissues. Most papers utilizing NIRS in exercise physiology assume a limited or negligible effect of adipose tissue thickness on measurements and report participants' adipose tissue thickness.
+
+Different areas of the body have different types of tissue structure and this have different optical properties. Previous papers have reported the measurements of optical properties at various locations of the body. Consult with the device manufacturer and reports of these optical properties to determine the best settings for your device.
+
+Most studies assume that the tissue structures have constant optical properties. This may not hold true, especially during activities like exercise where blood flow increases and the contents of blood fluctuate. Accounting for varying optical properties has led to the development of time-domain and other measurement techniques. These devices are more expensive than a continuous wave device. Therefore, most NIRS devices assume constant optical properties of the measured tissues.
+
+The differential pathlength factor (dpf) is the measurement of the path that the light waves take through tissue. DPF values have been well researched and measured for multiple body locations and differing adipose tissue thicknesses. This parameter is used in calculating TSI.
+
+\hypertarget{PatientRecruitment}{%
+\chapter{Patient Recruitment}\label{PatientRecruitment}}
+
+Run a report in EPIC with the following parameters:
+
+\begin{quote}
+Select patients in registries
+
+FROM
+
+\emph{Registries:}
+
+Registry ID: CANCER POPULATION REGISTRY
+
+\emph{Level of detail:}
+
+Patients
+
+WHERE
+
+DM TREATMENT PLAN PROVIDER CONTAINS ELDER, JEFFERY WAYNE OR EDENFILED, WILLIAM JEFFERY OR JORGENSON, CARLA WALKER OR STEPHENSON JR, JOE JOHN OR PULS, LARRY EDWIN
+
+AND
+
+CHEMOTHERAPY IN LAST YEAR = NO
+
+AND DIAGNOSIS IN GROUPER BREAST OR GYNECOLOGICAL CANCER GROUPER
+
+TREATMENT PLAN START DATE GREATER THAN TODAY - 14
+\end{quote}
+
+When a potentially eligble patient is identified, pass on the patient information to Sydney Hackwell and Katie Banenas. They will conduct a full chart screening and contact the patient if they are eligible.
+
+\hypertarget{Methods}{%
+\chapter{Methods}\label{Methods}}
+
+\hypertarget{Methods-LT}{%
+\section{Lactate Threshold Protocol}\label{Methods-LT}}
+
+This protocol is the participant's first visit.
+
+\hypertarget{Methods-LT-prep}{%
+\subsection{Preparation}\label{Methods-LT-prep}}
+
+At least 30 minutes prior to when the participant is scheduled to arrive, turn on the metabolic cart.
+
+Print out the following instruments:
+
+\begin{itemize}
+\tightlist
+\item
+  MoCA \ref{Appendix-Surveys-moca}
+\item
+  MMSE \ref{Appendix-Surveys-mmse}
+\item
+  Godin-Leisure Time Exercise Questionnaire \ref{Appendix-Surveys-glteq}
+\item
+  Physical Activity History \ref{Appendix-Surveys-pah}
+\item
+  BFI \ref{Appendix-Surveys-bfi}
+\item
+  PROMIS Global Health \ref{Appendix-Surveys-promis}
+\item
+  Lactate Threshold Data Collection Sheet
+\end{itemize}
+
+Assemble the VO\textsubscript{2} mask except for the blue rubber part as described in \ref{Appendix-Instruments-Parvo-Usage-MaskAssembly}.
+
+Prepare the PortaMon as described in \ref{Appendix-Instruments-PortaMon-Usage-Preparation}.
+
+Calibrate the metabolic cart as described in \ref{Appendix-Instruments-Parvo-Usage-Calibration}.
+
+\hypertarget{Methods-LT-DataCollection}{%
+\subsection{Data Collection}\label{Methods-LT-DataCollection}}
+
+Use the steps described in \ref{Appendix-Instruments-Ultrasound-Usage} to measure the participant's subcutaneous adipose tissue thickness above their vastus lateralis.
+
+After the patient arrives, the participant's subcutaneous adipose tissue thickness is measured using an ultrasound. If ATT is less than 2 centimeters, the participant continues through the next steps.
+
+Place the NIRS device over the area measured using ultrasound following the steps described in \ref{Appendix-Instruments-PortaMon-Usage-Placement}.
+
+Administer the following instruments:
+
+\begin{itemize}
+\tightlist
+\item
+  MoCA \ref{Appendix-Surveys-moca}
+\item
+  MMSE \ref{Appendix-Surveys-mmse}
+\item
+  Godin-Leisure Time Exercise Questionnaire \ref{Appendix-Surveys-glteq}
+\end{itemize}
+
+The MoCA, MMSE, and GLTEQ are exclusion criteria. If the participant does not pass these items, they cannot proceed with the study, therefore they are administered before other instruments. If the participant passes the exclusion instruments, proceed with the rest of the instruments.
+
+Have the subject complete the following instruments:
+
+\begin{itemize}
+\tightlist
+\item
+  Physical Activity History \ref{Appendix-Surveys-pah}
+\item
+  BFI \ref{Appendix-Surveys-bfi}
+\item
+  PROMIS Global Health \ref{Appendix-Surveys-promis}
+\end{itemize}
+
+Review the completed Godin-Leisure Time Exercise Questionnaire and Physical Activity History instruments. Use your best judgement in collaboration with the other investigators to determine the wattage jumps. See \ref{ExerciseTesting-LT-Watts} for further information about deciding wattage jumps.
+
+Measure the subject's face to determine mask size. Record mask size. Finish assembling mask.
+
+Have the subject get on the stationary bike and make adjustments to the seat height, seat depth, pedal length, and handlebar placement to the comfort of the participant.
+
+If the PortaMon has been on for at least 10 minutes, proceed.
+
+Place the assembled mask on the participant's face and connect clear tubing to the mask.
+
+Conduct Lactate Threshold Exercise Test as described in \ref{ExerciseTesting-LT}.
+
+\hypertarget{Methods-Onoff}{%
+\section{On/Off Kinetics Protocol}\label{Methods-Onoff}}
+
+Use the steps described in \ref{Appendix-Instruments-PortaMon-Usage} and \ref{Appendix-Instruments-PortaMon-Usage-Placement} along with the reference image of the previous placement to place the device in the same location as the last visit.
+
+Have the subject complete the following instruments:
+
+\begin{itemize}
+\tightlist
+\item
+  Physical Activity History \ref{Appendix-Surveys-pah}
+\item
+  BFI \ref{Appendix-Surveys-bfi}
+\item
+  PROMIS Global Health \ref{Appendix-Surveys-promis}
+\end{itemize}
+
+If the PortaMon has been on for at least 10 minutes, proceed.
+
+Place the assembled mask on the participant's face and connect clear tubing to the mask.
+
+Conduct On/Off Kinetics Exercise Test as described in \ref{ExerciseTesting-Onoff}.
+
+\hypertarget{DataStorage}{%
+\chapter{Data Storage}\label{DataStorage}}
+
+Follow all appropriate data export instructions.
+
+All physical copies are stored in a locked filing cabinet in the Human Performance Lab.
+
+The study \href{https://redcap.prismahealth.org}{RedCap} stores all identifying patient information and digital copies of data.
+
+De-identified NIRS and VO\textsubscript{2} data files can be stored on Prisma Health computers.
+
+\hypertarget{DataAnalysis}{%
+\chapter{Data Analysis}\label{DataAnalysis}}
+
+Be sure you have exported and stored all data appropriately.
+
+\hypertarget{DataAnalysis-LT}{%
+\section{Lactate Threshold}\label{DataAnalysis-LT}}
+
+Take the lactate threshold data collection sheet.
+
+Average the duplicate lactate measurements.
+
+Make a plot of lactate by power (Watts). Find the power at which lactate would have been 4.00. That is the power at which lactate threshold occurred.
+
+Multiply this power by 1.1 to calculate the power at which the patient will conduct subsequent on/off kinetics testing.
+
+\hypertarget{DataAnalysis-Onoff}{%
+\section{On/Off Kinetics}\label{DataAnalysis-Onoff}}
+
+Read in the exported PortaMon data.
+
+The PortaMon does not record in increments of time, it records the sample number. The PortaMon records data at a rate of 10 hz, so it takes 10 samples a second. The time in seconds from the start of the test is the sample number divided by 10.
+
+The PortaMon was on and collecting data from the time the device was placed until the end of the exercise test. We aren't interested in the data from before the start of the exercise test, so that can be removed.
+
+Next, find the time chunks for each section of the test. An on/off kinetics consists of the following sections, each 2 minutes (120 seconds) in duration: Baseline Rest, Warm Up, Work 1, Rest 1, Work 2, Rest 2, Work 3, and Rest 3.
+
+Plot the exercise test. On the x axis, use time in seconds. Have dual y axes, one with hemoglobin arbitrary units and one with percentages. Plot all signals (O\_2Hb and HHb for all exported transmitters and TSI) over time and check that the transitions between sections line up with the expected times. Adjust slightly as necessary, as the start time recorded for the test may be silghtly off due to human error / time taken for the PARVO to begin the test.
+
+Use the plot and notes from the test to examine the data for movement artifacts that need to be removed before analysis. Remove as necessary.
+
+The oxyhemoglobin and deoxyhemoglobin measurements have arbitrary units- they are change in oxy and deoxyhemoglobin. This means that we cannot use the amounts of oxyhemoglobin and deoxyhemoglobin and compare those over time. For example, the average oxyhemoglobin at rest could be measured as 4 for one test and 6 at the next test. This does not mean that at the second test, the amount of oxyhemoglobin in the blood was actually higher than at the first test.
+
+Average the O\_2Hb and HHb across the transmitters.
+
+Calculate the steady state at the end of each non-baseline and non-warm up section (6 sections in total- 3 work sections and 3 rest sections) by averaging the last 30 seconds of the section for each signal type (O\_2Hb, HHb, and TSI).
+
+There are 18 steady state values: 3 signal types and 6 sections.
+
+Calculate the delta steady state for each transition.
+Subtract the rest steady state from the corresponding work steady state. I.e. subtract rest 1 steady state from work 1 steady state.
+
+There are 9 delta steady state values: 3 signal types and 3 transitions.
+
+We use the following equation to describe an asymptotic or monoexponential curve:
+
+\[y =({Asym}-B_0) - ({Asym}-B_0)*e^{-t/ \tau} \]
+
+Where \({Asym}\) is the asymptote (or Steady State), \(B_0\) is the value at time 0, \(t\) is the time (in seconds), and \(\tau\) is the time constant.
+
+Calculate the coefficients for the monoexponential curve for each transition. There are 9 monoexponential curve equations: 3 signal types and 3 transitions.
+
+Use the app, shown below, to do all of these steps without having to run any code.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{knitr}\SpecialCharTok{::}\FunctionTok{include\_app}\NormalTok{(}\StringTok{\textquotesingle{}https://saragracebiddle.shinyapps.io/DataAnalysis/\textquotesingle{}}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{ExerciseTesting}{%
+\chapter{Exercise Testing}\label{ExerciseTesting}}
+
+\hypertarget{ExerciseTesting-LT}{%
+\section{Lactate Threshold Exercise Test}\label{ExerciseTesting-LT}}
+
+\hypertarget{ExerciseTesting-LT-Specs}{%
+\subsection{Specifications}\label{ExerciseTesting-LT-Specs}}
+
+The lactate threshold test is completed on a cycle ergometer.
+
+Ventilatory measurements are collected breath by breath via metabolic cart.
+Lactate is measured via finger prick.
+
+Prior to beginning exercise testing, measure resting blood lactate. This should be less than 2.0 mmoL/L in order to begin testing. Normal resting blood lactate lies between 0.8-1.2 mmoL/L, however stress or nervousness prior to an exercise test can increase resting blood lactate levels. If lactate levels are slightly elevated but still lower than 2.0 mmol/L, then lactate may drop back down as the body uses lactate during warm up stages.
+
+The exercise test is conducted as follows:
+
+Begin with a two minute rest. The subject sits on the stationary bike without pedaling for two minutes.
+Each subsequent stage is three minutes in duration. The wattage increases by a consistent amount between each stage. During the last 30 seconds of each stage, blood lactate is measured via finger prick. Each lactate measurement is taken in pairs for duplicability.
+
+Lactate will increase as exercise difficulty increases. When the subject's blood lactate exceeds 4.0 mmol/L, have the subject finish the next stage and then end the test. If the subject feels they cannot complete the next stage, end the test immediately. A blood lactate of 4.0 mmol/L should roughly correspond to a moderately difficult exercise intensity but should not be a maximal effort.
+
+\hypertarget{ExerciseTesting-LT-Watts}{%
+\subsection{Selecting Wattage Jumps}\label{ExerciseTesting-LT-Watts}}
+
+Discuss the subject's physical activity levels. If the subject doesn't participate in much cardiorespiratory fitness activities, then start at a very low wattage (10 Watts) and make modest jumps (15 Watts). If the subject participates in long distance running, cycling, or swimming, then the subject may start at a higher wattage than less fit subjects and/or make larger jumps.
+
+When selecting wattage jumps, remember that lactate should increase exponentially as wattage increases linearly. Also, when conducting testing, there is no second chance to get the testing correct. It is better to use a very low starting wattage with modest increases as the initial settings, because if the subject is fitter than expected and their blood lactate levels remain stagnant, the wattage jumps can be increased during testing. Blood lactate will not go down in the time it takes to conduct the testing, and if the difficulty increases too quickly then the blood lactate levels will increase so quickly that it will be difficult to analyze the lactate curve.
+
+\hypertarget{ExerciseTesting-Onoff}{%
+\section{On/Off Kinetics Exercise Test}\label{ExerciseTesting-Onoff}}
+
+\hypertarget{ExerciseTesting-Onoff-Specs}{%
+\subsection{Specifications}\label{ExerciseTesting-Onoff-Specs}}
+
+The on/off kinetics test is completed on a cycle ergometer.
+
+Ventilatory measurements are collected breath by breath via metabolic cart (ParvoMedics OneTrue 2400, \ref{Appendix-Instruments-Parvo}). Muscle oxygenation measurements are collected via SR-NIRS (Artinis Medical Systems PortaMon, \ref{Appendix-Instruments-PortaMon})
+
+The exercise test consists of three square-wave transitions from exercise at 110\% of wattage measured via lactate threshold testing to rest.
+
+\hypertarget{appendix-appendix}{%
+\appendix}
+
+
+\hypertarget{Appendix-Surveys}{%
+\chapter{Surveys}\label{Appendix-Surveys}}
+
+\hypertarget{Appendix-Surveys-bfi}{%
+\section{Brief Fatigue Inventory}\label{Appendix-Surveys-bfi}}
+
+The Brief Fatigue Inventory (BFI) is a 9 item survey designed to assess fatigue severity in cancer patients \citep{mendoza1999}. Each item is measured on a 0-10 numeric scale. The final score is the mean of the 9 measure items and can range from 0-10. A score can be calculated if at least 5 items out of 9 are answered by taking the mean of the completed items.
+
+\hypertarget{Appendix-Surveys-glteq}{%
+\section{Godin Leisure-Time Exercise Questionnaire}\label{Appendix-Surveys-glteq}}
+
+The Godin Leisure-Time Exercise Questionnaire (GLTEQ) is a two item instrument developed to asses the leisure-time activity levels in order to classify people into `very active' and `sedentary' categories with the aim of using this instrument to measure activity levels before and after implementation of community health and/or fitness programs in relation to psychosocial variables {[}@{]}.
+
+\hypertarget{Appendix-Surveys-mmse}{%
+\section{Mini-Mental State Examination}\label{Appendix-Surveys-mmse}}
+
+\hypertarget{Appendix-Surveys-moca}{%
+\section{Montreal Cognitive Assessment}\label{Appendix-Surveys-moca}}
+
+\hypertarget{Appendix-Surveys-pah}{%
+\section{Physical Activity History}\label{Appendix-Surveys-pah}}
+
+\hypertarget{Appendix-Surveys-promis}{%
+\section{PROMIS Global Health}\label{Appendix-Surveys-promis}}
+
+\hypertarget{Appendix-Instruments}{%
+\chapter{Instruments}\label{Appendix-Instruments}}
+
+\hypertarget{Appendix-Instruments-PortaMon}{%
+\section{PortaMon}\label{Appendix-Instruments-PortaMon}}
+
+\hypertarget{Appendix-Instruments-PortaMon-Specs}{%
+\subsection{Specifications}\label{Appendix-Instruments-PortaMon-Specs}}
+
+The \href{https://www.artinis.com/portamon}{PortaMon} by Artinis Medical Systems is a spatial-resolved near-infrared resonance spectroscopy device. It uses one receiver with three infrared transmitters. Each transmitter is 5 millimeters further from the receiver. This allows the application of mathematical formulas to calculate an absolute tissue hemoglobin saturation, which Artinis Medical Systems refers to as the Tissue Saturation Index, or TSI. In the literature, this is referred to by various acronyms, such as TOI (Tissue Oxygenation Index). A full examination of the mathematics and physics behind the calculation of TSI was published as part of the SPIE Conference on Optical Tomography and Spectroscopy of Tissue III in 1999 \citep{Suzuki1999TissueOM}.
+
+The yellow case is one unit.
+
+\includegraphics[width=1\linewidth]{images/portamoncase}
+
+It contains the following:
+
+\begin{itemize}
+\tightlist
+\item
+  ASUS laptop
+\item
+  laptop charging chord with European to American outlet converter
+\end{itemize}
+
+\includegraphics[width=1\linewidth]{images/asuslaptopandcharger}
+- yellow Artinis USB
+- Bluetooth dongle
+- ROCKEY4ND license key
+
+\includegraphics[width=1\linewidth]{images/laptopplugins}
+- PortaMon device
+
+\includegraphics[width=1\linewidth]{images/portamonopen}
+- two batteries
+- battery charging dock
+- micro-USB chord for battery charging dock
+
+\includegraphics[width=1\linewidth]{images/portamonbatteriesandcharger}
+
+\hypertarget{Appendix-Instruments-PortaMon-Usage}{%
+\subsection{Usage}\label{Appendix-Instruments-PortaMon-Usage}}
+
+\hypertarget{Appendix-Instruments-PortaMon-Usage-ChargeBatteries}{%
+\subsubsection{Charge Batteries}\label{Appendix-Instruments-PortaMon-Usage-ChargeBatteries}}
+
+The PortaMon batteries can hold up to 8 hours of power for the device. Make sure they are fully charged prior to a patient's visit.
+
+Plug the micro-USB into the battery charging dock. Plug this into an outlet. Place the battery into the dock, sticker side down. The three metal connectors on the narrow side of the battery must be touching the three metal connectors on the charging dock. If the battery is correctly placed in the dock, an LED will light up. When the battery is fully charged, the LED will be green.
+
+\includegraphics[width=0.33\linewidth]{images/portamonbatteryandchargerplug}
+\includegraphics[width=0.33\linewidth]{images/portamonbatterychargingport}
+\includegraphics[width=0.33\linewidth]{images/portamonbatteryincharger}
+
+\hypertarget{Appendix-Instruments-PortaMon-Usage-Preparation}{%
+\subsubsection{Preparation}\label{Appendix-Instruments-PortaMon-Usage-Preparation}}
+
+Place a fully charged battery in the PortaMon, with the three connectors on the battery touching the three connectors in the PortaMon. Slide the top of the PortaMon back in until it clicks into place. If the battery is charged and placed correctly, LEDs on the bottom of the PortaMon will light up.
+
+\includegraphics[width=0.5\linewidth]{images/portamonandbattery}
+\includegraphics[width=0.5\linewidth]{images/portamonon}
+
+Wrap the PortaMon in clear saran wrap and tape the saran wrap in place. This prevents sweat and other moisture from getting in to the PortaMon. Since the PortaMon has electronic parts, it cannot be sterilized using liquids and the saran wrap means we do not have to sterilize the device itself. When testing is complete, pull saran wrap and tape off the PortaMon and throw it away.
+
+\includegraphics[width=0.33\linewidth]{images/saranwrapsize}
+\includegraphics[width=0.33\linewidth]{images/saranwraponeside}
+\includegraphics[width=0.33\linewidth]{images/saranwrapbothsides}
+
+\includegraphics[width=0.5\linewidth]{images/saranwrapdonetopview}
+\includegraphics[width=0.5\linewidth]{images/saranwrapdonebottomview}
+
+Cut the double-sided taupe tape length-wise into two long strips. Place one strip to the left of the transmitters and receiver and one strip to the right of the transmitters and receiver. Leave the exterior side of the double-sided tape covered until the placement on the thigh is complete.
+
+\includegraphics[width=0.33\linewidth]{images/scissorsandtaupetape}
+\includegraphics[width=0.33\linewidth]{images/taupetapelongsplit}
+\includegraphics[width=0.33\linewidth]{images/taupetapeonportamon}
+
+\hypertarget{Appendix-Instruments-PortaMon-Usage-StartMeasurement}{%
+\subsubsection{Start a Measurement}\label{Appendix-Instruments-PortaMon-Usage-StartMeasurement}}
+
+\begin{itemize}
+\tightlist
+\item
+  Turn on the ASUS laptop.\\
+\item
+  Ensure the bluetooth dongle and the Rockey dongle are plugged in to the laptop.
+\end{itemize}
+
+\includegraphics[width=1\linewidth]{images/laptopwithplugins}
+- Open Oxysoft.
+
+\includegraphics[width=1\linewidth]{images/startnewmeasurement/01_open_oxysoft}
+- Close any open graphs in the main panel.\\
+- Select \texttt{Graphs} in the top bar.\\
+- Select \texttt{Close\ all\ graphs}. There should be no open graphs in the main panel.
+
+\includegraphics[width=1\linewidth]{images/startnewmeasurement/02_select_close_all_graphs}
+\includegraphics[width=1\linewidth]{images/startnewmeasurement/03_closed_all_graphs}
+- Select \texttt{Measurement} in the top bar.
+- Select \texttt{Create\ Measurement\ and\ Start\ Device\ (Wizard)...} from drop down.
+
+\includegraphics[width=1\linewidth]{images/startnewmeasurement/04_select_start_new}
+- Name the measurement appropriately.
+- Select the \texttt{Copy\ settings\ from:} drop down.
+- Scroll to the top of the drop down and select \texttt{no\ copy}.
+
+\includegraphics[width=1\linewidth]{images/startnewmeasurement/05_copy_no_settings}
+- Click \texttt{Next}. Pop up will open to add a bluetooth device.
+
+\includegraphics[width=1\linewidth]{images/startnewmeasurement/06_add_device}
+- Click \texttt{Add}. Pop up will open to select type of device.
+- Select \texttt{OxyMon/PortaMon/PortaLite/OctaMon}, which should be auto filled.
+
+\includegraphics[width=1\linewidth]{images/startnewmeasurement/07_type_of_device_to_add}
+- Click \texttt{OK}.
+- Select correct device number, this should match the number on the top of the Portamon.
+
+\includegraphics[width=1\linewidth]{images/startnewmeasurement/08_device_number}
+- Click \texttt{Connect}.
+- Device should pair with the computer. If it does not, try the following steps:
+- Check the device is on. The green LED light should be on. If not, turn on by holding down the button on the left until the lights come on (about three seconds).
+- Hold the bluetooth button down for about three seconds while you click \texttt{connect} on the computer.
+- Unpair the device with the computer in the computer's bluetooth settings, then re-pair.
+- Restart the computer.
+- Try using the other Portamon.
+- When successfully connected, a blue LED will turn on on the Portamon and the device type and number will be listen in the \texttt{Combined\ Devices} pop up.
+
+\includegraphics[width=1\linewidth]{images/startnewmeasurement/09_successful_connection}
+- Click \texttt{OK}.
+- The Optode-template window will now be open.
+- Under \texttt{Optode-template:\ (Filtered\ by\ PortaMon)} click the drop down.
+- Select \texttt{Portamon\ TSI\ Fit\ Factor}.
+
+\includegraphics[width=1\linewidth]{images/startnewmeasurement/10_select_tsiff}
+- Under \texttt{k\ (1/mm)} click the drop down.
+- Select \texttt{1.63\ (calf)}.
+
+\includegraphics[width=1\linewidth]{images/startnewmeasurement/11_k_calf}
+- Under \texttt{h\ (1/mm)} click the drop down.
+- Select \texttt{5.5e-4\ (calf)}.
+
+\includegraphics[width=1\linewidth]{images/startnewmeasurement/12_h_calf}
+- Click \texttt{Next}.
+- The Light Source to Optode Mapping window will now be open. Leave all settings as is and click \texttt{Next}.
+
+\includegraphics[width=1\linewidth]{images/startnewmeasurement/13_optodemapping_popup}
+- The Device settings window will now be open. Leave all settings as is and click \texttt{Next}.
+
+\includegraphics[width=1\linewidth]{images/startnewmeasurement/14_device_settings_popup}
+- The Further Options window will now be open. The \texttt{Action} drop down should have \texttt{Start\ measurement\ after\ finishing\ wizard} selected.
+
+\includegraphics[width=1\linewidth]{images/startnewmeasurement/15_furtheroptions_popup}
+- Click \texttt{Finish}.
+- The Create All Graphs window will pop up. Leave settings as is and click \texttt{OK}.
+
+\includegraphics[width=1\linewidth]{images/startnewmeasurement/16_create_all_graphs_popup}
+- There will be an Oxysoft pop up. It says `The program will enable the light sources now. Are you sure you want to start the device(s)?' DO NOT click yes yet. Wait until device has been placed correctly. Follow the steps described in \ref{Appendix-Instruments-PortaMon-Usage-Placement}.
+
+\includegraphics[width=1\linewidth]{images/startnewmeasurement/17_enable_light_sources_popup}
+
+\hypertarget{Appendix-Instruments-PortaMon-Usage-Placement}{%
+\subsubsection{Device Placement}\label{Appendix-Instruments-PortaMon-Usage-Placement}}
+
+The PortaMon can measure up to 2 centimeters depth into tissue. Since we are interested in muscle oxygenation, the muscle belly has to be within 2 centimeters from the surface of the skin. Otherwise, the device is not measuring muscle oxygenation but adipose tissue oxygenation. Therefore, we use an ultrasound to measure the subcutaneous adipose tissue thickness.
+
+Place the device over the location measured by ultrasound.
+
+Connect the NIRS by following the steps under \ref{Appendix-Instruments-PortaMon-Usage-StartMeasurement}.
+
+Click `yes' to enable light sources and begin data collection. Wait approximately 10 seconds. Check the DAQ (Data Acquisition) values to determine whether the NIRS is receiving good data. If one or more of the DAQ values show as red, then make small adjustments to the placement of the device to attempt to get better DAQ values. If the small adjustments add up to a large difference from the original ultrasound measurement location, re-measure adipose tissue thickness using the ultrasound in the new location.
+
+When all three DAQ values remain white when the subject moves around their leg, then the device is in the best location. If one of the DAQ values turns red during movement, that can be okay but only ONE. If two of the DAQ values are red, then TSI cannot be calculated so we do our best to have at least two good signals, three if at all possible.
+
+Rock the device laterally and remove the tape cover on the exposed side. Rock the device back into place and stick the tape to the subject's skin. Repeat on the other side. Double check that the DAQ values remain consistent.
+
+Take a picture of the placement. Use a measuring tape to show the distance from the top of the kneecap to the bottom of the device and use a perpendicular measuring tape to show the distance from the center of the thigh to the right edge of the device. Print the picture and place in the participant's physical file. Upload a .png of the picture into the RedCap.
+
+\hypertarget{Appendix-Instruments-PortaMon-Usage-DataCollection}{%
+\subsubsection{Data Collection}\label{Appendix-Instruments-PortaMon-Usage-DataCollection}}
+
+\begin{itemize}
+\tightlist
+\item
+  When the device is placed correctly, click yes. The new measurement will begin.
+\end{itemize}
+
+\includegraphics[width=1\linewidth]{images/startnewmeasurement/new_measurement_begins}
+- When you are done with the measurement, click the red pill in the top bar to stop the light sources. Oxysoft will stop the rolling every 30 seconds view and you will be able to see the whole measurement in the panes.
+
+\includegraphics[width=1\linewidth]{images/startnewmeasurement/select_end_measurement}
+\includegraphics[width=1\linewidth]{images/startnewmeasurement/view_whole_measurement}
+
+\hypertarget{Appendix-Instruments-PortaMon-Usage-DataExport}{%
+\subsubsection{Data Export}\label{Appendix-Instruments-PortaMon-Usage-DataExport}}
+
+Ensure that only one measurement is open in the Oxysoft graph panels. Do this by closing all graphs, then selecting the name of the measurement you want to open in the file pane on the left.
+
+If you are not sure or cannot tell, under the \texttt{Graph} drop down of the header bar, select \texttt{Close\ all\ graphs}. There should be no visible graphs in the panel.
+
+Select the name of the measurement you want to export in the `Project' panel on the left. Click \texttt{Open\ all\ graphs} under the \texttt{Measurement} drop down while the name of the file is highlighted. There should be four panels open, one titled `Tx1-Rx1', `Tx2-Rx1', `Tx3-Rx1', and one `TSIFF'.
+
+If all three transmitters had good DAQ values during data collection and never dropped into red, skip the next steps. If there were issues with only Tx3, follow the next steps.
+
+Right click on the name of the measurement in the `Project' panel on the left.
+
+Select `Properties\ldots{}'. This will open up a new panel.
+
+Leave the measurement name and data file as is. Click `Next'. Under `Optode -template:' select `PortaMon TSI' instead of `PortaMon TSI Fit Factor'.
+
+Select the measurement you want to export by clicking on its name in the files panel on the left of the screen. Select \texttt{Export\ measurement} under the \texttt{Measurement} dropdown.
+
+\includegraphics[width=1\linewidth]{images/exportmeasurement/1_selectmeasurementtoexport}
+
+A new panel will open. Select the type of file you wish to export as. The automatic selection is text (\texttt{.txt}), which is the preferred type of export.
+
+\includegraphics[width=1\linewidth]{images/exportmeasurement/2_selecttypeofexport}
+
+Click \texttt{Next}.
+
+A new popup will prompt you to choose a location for the exported file.
+
+\includegraphics[width=1\linewidth]{images/exportmeasurement/3_choosefilelocation}
+
+Click \texttt{Browse}.
+
+\includegraphics[width=1\linewidth]{images/exportmeasurement/4_filelocationpopup}
+
+There is a folder on the desktop for all data for the NIRS study. Select that folder as the destination. In the file name bar, type in the name of the measurement. I prefer for the exported file and the name of the measurement in Oxysoft to match for consistency. When you type in the name of the measurement in oxysoft, it will prompt you to select \texttt{nameofthefile.oxy4}. Do not select this. Just type the name of the measurement with no file extension.
+
+\includegraphics[width=1\linewidth]{images/exportmeasurement/5_nameexportfile}
+
+Click \texttt{Save}.
+
+\includegraphics[width=1\linewidth]{images/exportmeasurement/6_chosenfilelocation}
+
+The file path should be to the NIRS data folder and should be named the same as the measurement with a \texttt{.txt} extension.
+
+Click \texttt{Next}.
+
+The \texttt{Export\ Options} popup will have several selections for the type of data to export. Leave the default selection, \texttt{Graph\ data\ of\ open\ graphs}. Click \texttt{Next}.
+
+\includegraphics[width=1\linewidth]{images/exportmeasurement/7_chooseexportopengraphs}
+
+The \texttt{Export\ Time\ Span} pop up will have the option to remove data from the beginning or end of the measurement. Leave the time span as it is and export the full measurement. Click \texttt{Start\ Export}.
+
+\includegraphics[width=1\linewidth]{images/exportmeasurement/8_exportwholemeasurement}
+
+\hypertarget{Appendix-Instruments-Parvo}{%
+\section{ParvoMedics TrueOne 2400}\label{Appendix-Instruments-Parvo}}
+
+\hypertarget{Appendix-Instruments-Parvo-Specs}{%
+\subsection{Specifications}\label{Appendix-Instruments-Parvo-Specs}}
+
+The \href{http://www.parvo.com/}{TrueOne} Metabolic Cart by ParvoMedics measures maximal O2 consumption, indirect calorimetry, and other metabolic conditions.
+
+\hypertarget{Appendix-Instruments-Parvo-Usage}{%
+\subsection{Usage}\label{Appendix-Instruments-Parvo-Usage}}
+
+\hypertarget{Appendix-Instruments-Parvo-Usage-Calibration}{%
+\subsubsection{Calibration}\label{Appendix-Instruments-Parvo-Usage-Calibration}}
+
+In order to conduct calibration, the cart must have been powered on for \emph{at least 30 minutes}.
+Turn on the cart by flipping the switch on the power strip on the back of the cart.
+
+Log in using the password taped to the cart under the keyboard.
+
+The computer on the cart is not connected to the internet. After logging in, you need to manually set the date and time to today's date and time. If you do not manually set the date and time, the data collection software will use the incorrect date and time and will save the data as such, which will make it difficult to locate later.
+
+Open the ParvoMedics software.
+
+\hypertarget{Appendix-Instruments-Parvo-Usage-Calibration-Flowmeter}{%
+\paragraph{Flowmeter Calibration}\label{Appendix-Instruments-Parvo-Usage-Calibration-Flowmeter}}
+
+Select `Flowmeter Calibration' from the software home page.
+
+Enter room temperature (Celcius), barometric pressure (mmHg), and room humidity (\%) from the Davis Vantage Vue on Sara Biddle's desk.
+
+Get a piece of long clear tubing from Parvo equipment cabinet. The calibration syringe and connection piece are located in the third shelf on the Parvo cart.
+
+Connect one end of the tubing to the clear end of the connection piece. Connect the other end of the tubing into the gas analyzer module. Connect the white end of the connection piece to the mouth of the calibration syringe.
+
+Get Frankie Bennet to help with the actual flowmeter calibration.
+
+\hypertarget{Appendix-Instruments-Parvo-Usage-Calibration-Gas}{%
+\paragraph{Gas Calibration}\label{Appendix-Instruments-Parvo-Usage-Calibration-Gas}}
+
+Select `Gas Calibration' from the software home screen.
+
+Enter room temperature (Celcius), barometric pressure (mmHg), and room humidity (\%) from the Davis Vantage Vue on Sara Biddle's desk.
+
+Click `OK'.
+
+When prompted, find the sample gas (gas container on the bottom left of the cart) and rotate the black handle on top of the gas container counter-clockwise until you cannot turn it anymore. Do not turn the black knob that is taped in place.
+
+Click `OK' and wait for the next prompt on the screen.
+
+Rotate the black handle on top of the gas container clockwise as far as you can.
+
+Click `OK' to see calibration results.
+
+DO NOT SAVE results if the percentage is greater than 1\%. This means that this calibration differs from the last calibration by more than we want. If you save the results, since it is a percentage change from the last calibration, the next calibration will have to decrease by greater than 1\%.
+
+Example: First calibration attempt results in a percentage of 1.5\%. In order to be within 1\% of the attempt prior to the first attempt, the second calibration attempt will need to result in a percentage of -0.5\%.
+
+To save us from doing this math in between calibration attempts, just do not save attempts greater than 1\% difference.
+
+If results are greater than 1\%, try the following steps:
+
+\begin{itemize}
+\tightlist
+\item
+  open the lab door
+\item
+  turn on the fans to blow air around the room
+\item
+  wait at least 10 minutes and attempt calibration again
+\end{itemize}
+
+When the gas calibration results in less than 1\% change from the previous calibration, save results and exit to the home screen.
+
+\hypertarget{Appendix-Instruments-Parvo-Usage-MaskAssembly}{%
+\subsubsection{Mask Assembly}\label{Appendix-Instruments-Parvo-Usage-MaskAssembly}}
+
+Pink buckets and mask parts are sterile and should NOT be touched without gloves. There are several boxes of latex gloves in different sizes in the lab. Pick whichever size fits you before touching ANY Parvo parts.
+
+\begin{itemize}
+\tightlist
+\item
+  Grab pink bucket and ensure the following components are in the bucket
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Clear plastic with two black circles
+  \item
+    Clear plastic with triangle
+  \item
+    White plastic that narrows
+  \item
+    Semi-transparent circle made of hard plastic
+  \item
+    Two hard plastic white circles
+  \item
+    Two silicone caps
+  \end{itemize}
+\item
+  Take silicone cap and place on the hard plastic white circle
+\item
+  Take clear plastic with two black circles
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Look at one of the black circles with hole facing upwards
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Look for the arrows on the clear plastic
+    \item
+      You want the arrow that's pointing up to be on the right side
+    \end{itemize}
+  \item
+    Take silicone cap/hard plastic white circle and fit into the opening that has the arrow pointing up
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Ensure that the valve is functioning properly so that air can move through
+    \item
+      Take white plastic that narrows and screw on top of silicone cap/hard plastic white circle
+    \end{itemize}
+  \item
+    Clear plastic with triangle
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Take silicone cap/hard plastic complex and put into wider side of clear plastic with triangle
+    \item
+      Screw clear plastic with triangle into clear plastic with two black circles
+    \item
+      This should screw into the side that has the arrow pointing to the left
+    \end{itemize}
+  \item
+    Take semi-transparent circle made of hard plastic and screw into the last remaining hole of clear plastic with two black circles
+
+    \begin{itemize}
+    \tightlist
+    \item
+      If this is oriented correctly, the white part should be on the right, clear piece with triangle on left and semitransparent piece on top
+    \end{itemize}
+  \end{itemize}
+\item
+  Take blue mask and orient it as if you were going to wear it on your face
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Stretch the circle of the blue mask over the semi-transparent circle
+  \item
+    Ensure that the lip on the inside creates a good seal
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{Appendix-Instruments-Parvo-Usage-DataCollection}{%
+\subsubsection{Data Collection}\label{Appendix-Instruments-Parvo-Usage-DataCollection}}
+
+Select `Metabolic Testing'.
+
+Enter the following as BOTH the first and last name:
+
+``NIRS\_patientidnumber\_protocoltypeprotocolnumber\_protocoldate''
+
+For example, patient ID 003 participating in the second on/off kinetics on 11/12/2023 would look like:
+``NIRS\_003\_FP2\_11\_15\_2023''
+
+Enter the participant's height, weight, and age.
+
+Select the testing protocol: NIRS Lactate Theshold or NIRS Full Protocol.
+
+Enter appropriate testing wattage.
+
+Click `OK' and wait for the software to start the test.
+
+When testing is complete, click `end test'.
+
+Save results and print a copy of the report.
+
+Check that the report will be printed with 10-second averages. Click `config' in the bottom left and ensure that the data averaging selected is 10 seconds. Click `OK' and print. The report will be printed on the printer on the bottom shelf of the cart.
+
+\hypertarget{Appendix-Instruments-Parvo-Usage-DataExport}{%
+\subsubsection{Data Export}\label{Appendix-Instruments-Parvo-Usage-DataExport}}
+
+The ParvoMedics software only exports metabolic cart data as Excel files. Select the data collection instance you wish to export and save it as an Excel file on the cart. Use a USB drive to transfer the Excel file from the Parvo cart to another caomputer. Since the Parvo cart is not connected to the internet and never gets Windows or any other software updates, the Excel format is a legacy format. You will have to manually open the Excel file and save it as a modern Excel format.
+
+\hypertarget{Appendix-Instruments-Ultrasound}{%
+\section{Ultrasound}\label{Appendix-Instruments-Ultrasound}}
+
+\hypertarget{Appendix-Instruments-Ultrasound-Usage}{%
+\subsection{Usage}\label{Appendix-Instruments-Ultrasound-Usage}}
+
+Turn on the ultrasound by pressing the power button in the top left of the keyboard.
+
+Locate the vastus lateralis. Find the ASIS (anterior superior iliac spine) by asking the participant to place their hands on their hips and feeling for the bony protrusion at the front of the hip. Measure from the top of the kneecap to the ASIS. Locate the vastus lateralis by moving superior to the kneecap on-third of the distance from the kneecap to the ASIS.
+
+Use the ultrasound gel to cover the wand.
+
+Place the wand over the pre-determined location of the vastus lateralis.
+
+Freeze the screen when you want to measure adipose tissue thickness.
+
+Press the `caliper' button to use calipers on the frozen screen.
+
+Move one end of the caliper to the top of the screen. Move the other end of the caliper to the area of the screen that looks like the boundary between the muscle belly and the edge of the adipose tissue. This will be a silvery line across the screen.
+
+Record the measurement given by the caliper.
+
+\hypertarget{Appendix-Instruments-LactateMeter}{%
+\section{Lactate Meter}\label{Appendix-Instruments-LactateMeter}}
+
+\hypertarget{Appendix-Instruments-LactateMeter-Usage}{%
+\subsection{Usage}\label{Appendix-Instruments-LactateMeter-Usage}}
+
+\hypertarget{Appendix-Instruments-LactateMeter-Usage-QualityControl}{%
+\subsubsection{Quality Control Testing}\label{Appendix-Instruments-LactateMeter-Usage-QualityControl}}
+
+Before using the lactate meters, you must conduct a quality control test.
+
+Get out the `Blood Lactate Meter' binder from Frankie Bennet's desk. Open the binder to the quality control log.
+
+Turn on the lactate meter by pressing the center triangle-shaped button. Use the button to click through the screens until you reach the control screen. which has a star in the upper left corner and says `CNTRL'.
+
+Put a lactate strip in the lactate meter.
+
+Use the red control dropper to place a drop on the lactate strip. Wait for the lactate meter to give results (about 15 seconds). Record the results and the informaton from the control dropper in the binder. Discard the used lactate strip in the trash and do another test with the red control with a new lactate strip.
+
+Repeat with the blue control dropper.
+
+\hypertarget{Appendix-Instruments-LactateMeter-Usage-DataCollection}{%
+\subsubsection{Data Collection}\label{Appendix-Instruments-LactateMeter-Usage-DataCollection}}
+
+Use the center triangle-shaped button to click through the screens and choose any profile that is not a control profile.
+
+Place a lactate strip in the top of the meter. You are ready for data collection.
+
+\hypertarget{Appendix-IRB}{%
+\chapter{IRB}\label{Appendix-IRB}}
+
+\hypertarget{Appendix-IRB-Protocol}{%
+\section{Protocol}\label{Appendix-IRB-Protocol}}
+
+\hypertarget{Appendix-IRB-Protocol-Participants}{%
+\subsection{Participants}\label{Appendix-IRB-Protocol-Participants}}
+
+Participants recruited for this study will be breast cancer or gynecological cancer patients (N=40) who agree to participate in an exercise study examining the effects of chemotherapy on muscle mitochondrial oxidative capacity, a measure of skeletal muscle health. A written informed consent will be obtained from the participants before data collection. This study has been submitted for review by the Institutional Review Board at the Prisma Office of Research Compliance and Administration (ORCA). We pledge to abide by all applicable institutional and governmental regulations regarding the ethical use of human volunteers for the duration of this research.
+
+This study focuses on breast cancer or gynecological cancer patients who will undergo a standard of care chemotherapy treatment as directed by their oncologist.
+Other eligibility requirements for this study are as follows:
+
+\begin{itemize}
+\tightlist
+\item
+  Patients diagnosed with breast cancer or gynecological cancer without distance metastasis
+\item
+  Ages \textgreater{} 20 years old
+\item
+  Able to perform exercise on a stationary cycle ergometer at moderate intensities for a maximum of 15 minutes
+\item
+  Hemoglobin values greater than 10 at baseline
+\item
+  ALT and AST values less than 2.5X the upper limit of normal by institutional standards
+\item
+  Godin-Shepard Leisuretime Physical Activity Questionnaire (GLTEQ) score of 14 or greater will be included. A score of less than 14 is considered insufficiency active/sedentary.
+\end{itemize}
+
+The exclusion criteria include patients with:
+
+\begin{itemize}
+\tightlist
+\item
+  Clinically advanced cardiovascular disease
+\item
+  Clinically advanced pulmonary disease
+\item
+  Disease requiring continuous oxygen supplementation
+\item
+  Greater than 2 centimeters or more of subcutaneous adipose tissue on the anterior thigh
+\item
+  Inability to walk or stand
+\item
+  Movement disorders
+\item
+  Spinal cord injuries
+\item
+  Autoimmune disorders
+\item
+  Pregnant or breastfeeding
+\item
+  Mini-Mental State Examination (MMSE)
+\end{itemize}
+
+Participants for this study will be recruited through informative pamphlets at the Center for Integrative Oncology Survivorship, Prisma Health System's Cancer Institute at Greenville Memorial Hospital and affiliated physician offices.
+
+\hypertarget{Appendix-IRB-Protocol-ExperimentalDesign}{%
+\subsection{Experimental Design}\label{Appendix-IRB-Protocol-ExperimentalDesign}}
+
+We will use an observational, 2-way, treatment x time, within-subjects research design to compare skeletal muscle oxidative capacity of the vastus lateralis muscle, during stationary cycling, across breast cancer or gynecological cancer patients at baseline and across their chemotherapy regimen. Muscle mitochondrial oxidative capacity of the Vastus Lateralis muscle will be non-invasively evaluated using continuous wave, Near Infrared Resonance Spectroscopy (NIRS, PortaMon by Artinis Medical Systems BV in The Netherlands).
+
+\hypertarget{Appendix-IRB-Protocol-StudyProtocol}{%
+\subsection{Study protocol}\label{Appendix-IRB-Protocol-StudyProtocol}}
+
+The NIRS participant testing will be performed in the University of South Carolina School of Medicine Greenville's Human Performance Laboratory located within Cancer Institute Faris Road facility. Testing will take approximately 30 minutes per session, with a maximum of 180 minutes of participation per patient. The independent variables in this study are drug regimen and number of chemotherapy treatments. The dependent variables in this study will be the change in oxygenation and deoxygenation status of the vastus lateralis as measured by the NIRS device, indicative of mitochondrial oxidative capacity, after a bout of cycling. Patients will be asked to avoid exercise and use of certain substances (tobacco, alcohol, caffeine, and contraindicated medications) 24 hours prior to testing.
+
+The NIRS device consists of three LED transmitters that transmit light waves into muscle tissue and one high sensitivity PIN diode receiver, equipped with ambient light protection, which assesses light received from the transmitters. The three transmitters each emit light at two wavelengths. These wavelengths correspond to the absorption wavelengths of oxyhemoglobin (O2Hb) and deoxyhemoglobin in the skeletal muscle tissue (approximately 760 nm and 850 nm). These wavelengths of light will be received from three separate transmitter distances (30mm, 35mm, and 40mm) at 10 Hz. The ΔO2Hb and Δ tissue saturation index (TSI\%) will be calculated as the change from the last 30-s average of the work interval to the last 30-s average of the recovery interval. Oxygen uptake (VO2) will be obtained by using open-circuit spirometry (Parvo Medics, Inc, Salt Lake City, Utah). Cycling power will be determined via lactate threshold curves generated for each participant.
+Participants will be asked to perform exercise in shorts or equivalent. Participants will first sit at rest in a chair, as the NIRS device is applied to the vastus lateralis. The device will have double sided adhesive tape to lightly secure its position to the skin. The device will be wrapped in a black cloth to fully secure its position, limit device mobility, and block ambient light in the laboratory. Participants will then stand and walk to the cycle with the NIRS secured to the participant's leg. Participants will sit on the bike for a 2-minute rest while wearing a fitted mask that comfortably measures the participant's rate and amount of oxygen uptake (VO2) and other ventilatory measurements at rest and during exercise.
+
+\hypertarget{Appendix-IRB-Protocol-StudyProtocol-Visit1}{%
+\subsubsection{Visit 1}\label{Appendix-IRB-Protocol-StudyProtocol-Visit1}}
+
+Researchers will determine the participant's lactate threshold curve and ventilatory threshold during a graded exercise test (Table 1). The lactate threshold is a measure of the rate at which capillary blood lactate measurements rise as an effect of increased exercise intensity. The blood lactate curve will be used to determine an individualized power wattage for subsequent exercise testing of ``on-off kinetics'' (see below description). Capillary blood lactate levels will be obtained by finger stick for point of care testing. Ventilatory threshold will be measured using indirect calorimetry via a metabolic cart that captures expired gasses (O2 and CO2) through a comfortable silicone mask worn by the participant.
+
+A baseline blood lactate level will be obtained at rest, then the participant will be instructed to cycle for three minutes beginning at 10W. After the 3-minute stage is complete, the power output will increase by 15 watts. The participant will cycle for 3 minutes at each stage until their lactate threshold reaches 4.0 mmol/L. Once the blood lactate reaches 4.0 mmol/L, one final, three-minute stage will be performed. A final lactate reading will be obtained at the completion of this exercise stage. The power output that is equivalent to 1.1x the wattage at which their lactate threshold exceeded 4.0 mmol/L will be used as the exercise intensity (``on-kinetics'') for subsequent visits accompanying chemotherapy treatments.
+
+\hypertarget{Appendix-IRB-Protocol-StudyProtocol-SubsequentVisits}{%
+\subsubsection{Subsequent Visits}\label{Appendix-IRB-Protocol-StudyProtocol-SubsequentVisits}}
+
+Participants will return for each subsequent visit within a week before their next chemotherapy infusion as long as they are able to safely continue the exercise protocol (Table 2). The NIRS device will be secured to the participant's leg similar to the first visit and the participants will put on the mask to measure ventilation. Participants will begin pedaling for a warmup at 0 watts for 2 minutes. After the two-minute warm up period is completed, the power output will increase to the previously calculated wattage of 1.1x LT. The participant will cycle at a self-selected cadence at this power wattage for a duration of 2 minutes (``on-kinetics''). At the end of each on-kinetics stage, participants will be asked to rate their level of effort during exercise, Rate of Perceived Exertion (RPE). The participant will then stop pedaling and will remain in recovery, sitting on the bike for 2 minutes (``off-kinetics'' stage). With 5 seconds remaining in the ``off-kinetics'' stage, the participant will start pedaling at the same self-selected cadence for their next ``on-kinetics'' stage, followed by another 2-min ``off-kinetics'' period. This cycle of exercise followed by rest, known as on-off kinetics, will repeat for a total maximum of 3 times, or until the participant reaches volitional fatigue.
+
+\hypertarget{Appendix-IRB-Protocol-StudyProtocol-Surveys}{%
+\subsubsection{Collection of Surveys and Biometrics at Each Visit}\label{Appendix-IRB-Protocol-StudyProtocol-Surveys}}
+
+We will be administering MoCA, BFI, Physical Activity Intake, PROMIS Global Health, and GLTPAQ surveys prior to participant engagement in cycling exercises. We will also be administering BFI, PROMIS Global Health, and Physical Activity Follow-up surveys after each individual study session to assess changes in cancer related fatigue associated with chemotherapy treatment that may develop throughout the study time period.
+
+Patients will undergo routine, standard of care blood draws for a CBC and metabolic testing per their managing physician with an additional tube, during the same venipuncture, for a study covered aliquot for biomarkers related to mitochondrial health for correlative research.
+
+For biomarker analysis, exosomes from patient serum (approximately 250 uL samples) will be isolated using an ExoQuick ULTRA EV Isolation System (System Biosciences). Exosomes will then be detected with Western blotting with exosome specific antibodies. Exosome samples will be sent for RNASeq analysis of RNA within the isolated exosomes at System Biosciences. Bioinformatics analysis of the RNAs identified from the RNASeq will then be used to determine if there are specific RNAs present in patient blood associated with changes in mitochondrial function. In addition, selected mRNAs associated with mitochondrial function will be assessed (expression levels determined) with RT-qPCR using aliquots of the isolated serum exosomes.
+
+\hypertarget{Appendix-IRB-Protocol-StatisticalAnalyses}{%
+\subsection{Statistical Analyses}\label{Appendix-IRB-Protocol-StatisticalAnalyses}}
+
+ANOVA one way with tukey post-hoc analysis to detect differences between drug regimen groups at each time point (baseline, all subsequent chemotherapy treatments) for time constant response and change in mitochondrial function for mitochondrial oxidative capacity. One-way ANOVAs will be used to additionally detect differences between different timepoints from baseline to final chemotherapy treatment for each individual chemotherapy regimen.
+
+  \bibliography{book.bib,packages.bib}
+
+\end{document}

@@ -1,8 +1,8 @@
-# Data Analysis {#analysis}
+# Data Analysis {#DataAnalysis}
 
 Be sure you have exported and stored all data appropriately. 
 
-## Lactate Threshold {#analysis-LT}
+## Lactate Threshold {#DataAnalysis-LT}
 
 Take the lactate threshold data collection sheet. 
 
@@ -12,7 +12,7 @@ Make a plot of lactate by power (Watts). Find the power at which lactate would h
 
 Multiply this power by 1.1 to calculate the power at which the patient will conduct subsequent on/off kinetics testing.
 
-## On/Off Kinetics {#analysis-onoff}
+## On/Off Kinetics {#DataAnalysis-Onoff}
 
 Read in the exported PortaMon data. 
 

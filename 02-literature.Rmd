@@ -1,6 +1,6 @@
-# Literature
+# Literature {#Literature}
 
-## Near Infrared Spectrosopy
+## Near Infrared Spectrosopy {#Literature-nirs}
 
 Continuous wave NIRS devices use the modified Beer-Lambert law to calculate the volume of oxygenated and deoxygenated hemoglobin.
 

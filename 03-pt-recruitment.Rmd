@@ -1,4 +1,4 @@
-# Patient Recruitment
+# Patient Recruitment {#PatientRecruitment}
 
 Run a report in EPIC with the following parameters:
 
