@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 3 Patient Recruitment | NIRS Study Information</title>
+  <title>B ParvoMedics TrueOne 2400 | NIRS Study Information</title>
   <meta name="description" content="This contains all current information about the NIRS Study." />
   <meta name="generator" content="bookdown 0.37 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 3 Patient Recruitment | NIRS Study Information" />
+  <meta property="og:title" content="B ParvoMedics TrueOne 2400 | NIRS Study Information" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This contains all current information about the NIRS Study." />
   <meta name="github-repo" content="saragracebiddle/Nirs-Study-Info" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 3 Patient Recruitment | NIRS Study Information" />
+  <meta name="twitter:title" content="B ParvoMedics TrueOne 2400 | NIRS Study Information" />
   
   <meta name="twitter:description" content="This contains all current information about the NIRS Study." />
   
@@ -23,15 +23,15 @@
 <meta name="author" content="Sara Biddle" />
 
 
-<meta name="date" content="2024-01-05" />
+<meta name="date" content="2024-01-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="Literature.html"/>
-<link rel="next" href="Methods.html"/>
+<link rel="prev" href="PortaMon.html"/>
+<link rel="next" href="Appendix-Surveys.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -222,35 +222,171 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="PatientRecruitment" class="section level1 hasAnchor" number="3">
-<h1><span class="header-section-number">Chapter 3</span> Patient Recruitment<a href="PatientRecruitment.html#PatientRecruitment" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Run a report in EPIC with the following parameters:</p>
-<blockquote>
-<p>Select patients in registries</p>
-<p>FROM</p>
-<p><em>Registries:</em></p>
-<p>Registry ID: CANCER POPULATION REGISTRY</p>
-<p><em>Level of detail:</em></p>
-<p>Patients</p>
-<p>WHERE</p>
-<p>DM TREATMENT PLAN PROVIDER CONTAINS ELDER, JEFFERY WAYNE OR EDENFILED, WILLIAM JEFFERY OR JORGENSON, CARLA WALKER OR STEPHENSON JR, JOE JOHN OR PULS, LARRY EDWIN</p>
-<p>AND</p>
-<p>CHEMOTHERAPY IN LAST YEAR = NO</p>
-<p>AND DIAGNOSIS IN GROUPER BREAST OR GYNECOLOGICAL CANCER GROUPER</p>
-<p>TREATMENT PLAN START DATE GREATER THAN TODAY - 14</p>
-</blockquote>
-<p>This will return a list of potentially eligible patients who meet the parameters specified in the query above. Take a quick look through the list and eliminate any definitively ineligible patients. Sometimes metastatic disease is listed as a second diagnosis and therefore slips through the exclusion of metastatic disease. Vascular diseases and injuries that would preclude ability to exercise are other common exclusion criteria. Take a quick look through the patient’s problem list. If the patient does not have any immediate exclusionary problems, pass their name and MRN on to the research coordinators, Sydney Hackwell and Katie Banenas. They will conduct a full chart screening and contact the patient if they are eligible.</p>
-<p>After contacting the patient, they will contact you if the patient signs the consent form. After the consent form is signed, we can begin contacting the patient to start scheduling for lab visits.</p>
-<p>If a patient is not wearing shorts for a lab visit, there are disposable shorts in the lab for patient use. They are located in a box under the bed in the back corner.</p>
+<div id="Parvo" class="section level1 hasAnchor" number="9">
+<h1><span class="header-section-number">B</span> ParvoMedics TrueOne 2400<a href="Parvo.html#Parvo" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="Parvo-Specs" class="section level2 hasAnchor" number="9.1">
+<h2><span class="header-section-number">B.1</span> Specifications<a href="Parvo.html#Parvo-Specs" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The <a href="http://www.parvo.com/">TrueOne</a> Metabolic Cart by ParvoMedics measures maximal O2 consumption, indirect calorimetry, and other metabolic conditions.</p>
+<p>The computer that has the ParvoMedics software installed is not connected to the internet in any way. It has Windows 7. <strong>Never connect this computer to the internet or update Windows.</strong> This would require attaining approval to install the ParvoMedics software on PrismaHealth computers, which would take several months. The ParvoMedics software is not frequently updated and Windows updates could break the installation. Everything works as it is, and if it ain’t broke, don’t fix it.</p>
+</div>
+<div id="Parvo-Software" class="section level2 hasAnchor" number="9.2">
+<h2><span class="header-section-number">B.2</span> Software<a href="Parvo.html#Parvo-Software" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="Parvo-BeforeDataCollection" class="section level2 hasAnchor" number="9.3">
+<h2><span class="header-section-number">B.3</span> Before Data Collection<a href="Parvo.html#Parvo-BeforeDataCollection" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="Parvo-Calibration" class="section level3 hasAnchor" number="9.3.1">
+<h3><span class="header-section-number">B.3.1</span> Calibration<a href="Parvo.html#Parvo-Calibration" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>In order to conduct calibration, the cart must have been powered on for <em>at least 30 minutes</em>.
+Turn on the cart by flipping the switch on the power strip on the back of the cart.</p>
+<p>Log in using the password taped to the cart under the keyboard.</p>
+<p>The computer on the cart is not connected to the internet. After logging in, you need to manually set the date and time to today’s date and time. If you do not manually set the date and time, the data collection software will use the incorrect date and time and will save the data as such, which will make it difficult to locate later.</p>
+<p>Open the ParvoMedics software.</p>
+<div id="ParvoCalibration-Flowmeter" class="section level4 hasAnchor" number="9.3.1.1">
+<h4><span class="header-section-number">B.3.1.1</span> Flowmeter Calibration<a href="Parvo.html#ParvoCalibration-Flowmeter" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Select ‘Flowmeter Calibration’ from the software home page.</p>
+<p>Enter room temperature (Celcius), barometric pressure (mmHg), and room humidity (%) from the Davis Vantage Vue on Sara Biddle’s desk.</p>
+<p>Get a piece of long clear tubing from Parvo equipment cabinet. The calibration syringe and connection piece are located in the third shelf on the Parvo cart.</p>
+<p>Connect one end of the tubing to the clear end of the connection piece. Connect the other end of the tubing into the gas analyzer module. Connect the white end of the connection piece to the mouth of the calibration syringe.</p>
+<p>Get Frankie Bennet to help with the actual flowmeter calibration.</p>
+</div>
+<div id="Parvo-Calibration-Gas" class="section level4 hasAnchor" number="9.3.1.2">
+<h4><span class="header-section-number">B.3.1.2</span> Gas Calibration<a href="Parvo.html#Parvo-Calibration-Gas" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Select ‘Gas Calibration’ from the software home screen.</p>
+<p>Enter room temperature (Celcius), barometric pressure (mmHg), and room humidity (%) from the Davis Vantage Vue on Sara Biddle’s desk.</p>
+<p>Click ‘OK’.</p>
+<p>When prompted, find the sample gas (gas container on the bottom left of the cart) and rotate the black handle on top of the gas container counter-clockwise until you cannot turn it anymore. Do not turn the black knob that is taped in place.</p>
+<p>Click ‘OK’ and wait for the next prompt on the screen.</p>
+<p>Rotate the black handle on top of the gas container clockwise as far as you can.</p>
+<p>Click ‘OK’ to see calibration results.</p>
+<p>DO NOT SAVE results if the percentage is greater than 1%. This means that this calibration differs from the last calibration by more than we want. If you save the results, since it is a percentage change from the last calibration, the next calibration will have to decrease by greater than 1%.</p>
+<p>Example: First calibration attempt results in a percentage of 1.5%. In order to be within 1% of the attempt prior to the first attempt, the second calibration attempt will need to result in a percentage of -0.5%.</p>
+<p>To save us from doing this math in between calibration attempts, just do not save attempts greater than 1% difference.</p>
+<p>If results are greater than 1%, try the following steps:</p>
+<ul>
+<li>open the lab door</li>
+<li>turn on the fans to blow air around the room</li>
+<li>wait at least 10 minutes and attempt calibration again</li>
+</ul>
+<p>When the gas calibration results in less than 1% change from the previous calibration, save results and exit to the home screen.</p>
+</div>
+</div>
+<div id="Parvo-MaskSizing" class="section level3 hasAnchor" number="9.3.2">
+<h3><span class="header-section-number">B.3.2</span> Mask Sizing<a href="Parvo.html#Parvo-MaskSizing" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>steps for mask sizing</li>
+</ul>
+</div>
+<div id="Parvo-MaskAssembly" class="section level3 hasAnchor" number="9.3.3">
+<h3><span class="header-section-number">B.3.3</span> Mask Assembly<a href="Parvo.html#Parvo-MaskAssembly" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Pink buckets and mask parts are sterile and should NOT be touched without gloves. There are several boxes of latex gloves in different sizes in the lab. Pick whichever size fits you before touching ANY parts.</p>
+<ul>
+<li>Grab a pink bucket and ensure the following components are in the bucket:
+<ul>
+<li>Clear plastic with two black circles</li>
+<li>Clear plastic with triangle</li>
+<li>White plastic that narrows</li>
+<li>Semi-transparent circle made of hard plastic</li>
+<li>Two hard plastic white circles</li>
+<li>Two silicone caps</li>
+</ul></li>
+</ul>
+<p><img src="images/maskassembly/01_all_mask_parts.jpg" width="50%" /><img src="images/maskassembly/01_all_mask_parts_view2.jpg" width="50%" /></p>
+<ul>
+<li>Take a silicone cap and place on a hard plastic white circle
+<ul>
+<li>The silicone cap and the hard plastic white circle should face the same direction (the outer rims should be on the same side)</li>
+<li>Carefully pull the outer rim of the silicone cap over the lip of the hard white plastic circle. Be careful not to tear the silicone, handle these pieces very gently!</li>
+<li>Rotate the hard white plastic circle to make sure that the outer rim of the silicone cap is pulled over the lip all the way around.</li>
+<li>You should be able to gently push through the middle of the hard white plastic circle and stretch the top of the silicone cap out from the edge of the hard white plastic circle while the outer rim of the silicone cap stays in place over the lip of the hard white plastic circle.</li>
+</ul></li>
+</ul>
+<p><img src="images/maskassembly/02_show_direction.jpg" width="25%" /><img src="images/maskassembly/02_show_pull_over_lip.jpg" width="25%" /><img src="images/maskassembly/02_show_pulled_over_lip.jpg" width="25%" /><img src="images/maskassembly/02_show_air_flow_direction.jpg" width="25%" /></p>
+<ul>
+<li>Repeat with the other silicone cap and hard plastic white circle. There should be two pairs of silicone cap and hard plastic white circle.</li>
+<li>Take one of the pairs of silicone cap and hard plastic white circle and the clear tapered hard plastic piece.</li>
+<li>Place the silicone cap into the larger end of the clear tapered piece. The outer rim of the silicone cap should sit flush with the rim of the clear tapered piece. The silicone should face the inside of the clear tapered piece.</li>
+</ul>
+<p><img src="images/maskassembly/04_show_direction.jpg" width="50%" /><img src="images/maskassembly/04_show_placement.jpg" width="50%" /></p>
+<ul>
+<li>Take the middle piece of the mask (the clear cylindrical piece with three openings and two black cylinders on it) and rotate it around until you can see the arrows etched into it.
+<ul>
+<li>The arrows etched into the piece show the direction of air flow through the pieces. The air comes “in” from one opening, into and out of the mask where someone is breathing in and out of one opening, and “out” of one opening into the tubing and finally into the gas analyzer. The silicone pieces allow air to flow in only one direction so that all air the person breathes out is sent into the gas analyzer.</li>
+</ul></li>
+<li>Find the arrow pointing “out” of the cylinder and rotate it so that the arrow pointing “out” points to your right.</li>
+<li>Take the clear tapered piece with the silicone vent inside it and screw it onto the opening facing the right</li>
+</ul>
+<p><img src="images/maskassembly/05_show_direction.jpg" width="50%" /><img src="images/maskassembly/05_show_together.jpg" width="50%" /></p>
+<ul>
+<li>Take the second silicone vent and place it in the left opening of the middle piece. This opening should be directly opposite the opening facing to the right of the middle piece, that now has the clear tapered piece screwed on.</li>
+<li>The silicone vent should have the outer rim flush with the outer rim of the opening, and the silicone should face into the middle piece.</li>
+</ul>
+<p><img src="images/maskassembly/06_show_direction.jpg" width="50%" /><img src="images/maskassembly/06_show_together.jpg" width="50%" /></p>
+<ul>
+<li>Take the white tapered plastic piece and screw on to the opening over the silicone vent.</li>
+</ul>
+<p><img src="images/maskassembly/07_show_together.jpg" width="100%" /></p>
+<ul>
+<li>Take the semi-transparent hard plastic circle and screw onto the remaining opening of the middle piece.</li>
+</ul>
+<p><img src="images/maskassembly/09_show_direction.jpg" width="33%" /><img src="images/maskassembly/09_show_together.jpg" width="33%" /><img src="images/maskassembly/09_show_together_view_2.jpg" width="33%" /></p>
+<ul>
+<li>Select the blue rubber mask of the appropriate size.
+<ul>
+<li>The size is etched on the “chin” of the mask.</li>
+<li>See <a href="Parvo.html#Parvo-MaskSizing">B.3.2</a> for choosing the correct size.</li>
+</ul></li>
+</ul>
+<p><img src="images/maskassembly/10_show_mask_size.jpg" width="100%" /></p>
+<ul>
+<li>Orient the blue mask as if you were going to wear it on your face. The “nose” should be upward with the “chin” downward and the hard clear plastic pieces should face outward. You should only see blue rubber.</li>
+<li>Orient the assembled pieces so that the air flows in the appropriate direction.
+<ul>
+<li>The “out” arrow direction with the clear tapered end should point towards the station with the gas analyzer, i.e. if the gas analyzer will be on the left then the clear tapered end should point to the left, and if the gas analyzer will be on the right then the clear tapered end should point to the right. In the HPL, the stationary exercise bike will always have the gas analyzer on the left, therefore have the clear tapered end point to the left.</li>
+<li>The third opening with the semi-transparent circular piece should face the “mouth” of the blue rubber mask.</li>
+</ul></li>
+</ul>
+<p><img src="images/maskassembly/11_show_direction.jpg" width="100%" /></p>
+<ul>
+<li>Stretch the opening of the blue rubber mask over the semi-transparent circle opening of the assembled pieces.
+<ul>
+<li>This is difficult and you will have to manhandle the blue rubber mask a bit. It does not stretch super well.</li>
+<li>Look through the mask and make sure that there is a good seal around the opening. If there is not a good seal, the blue rubber will not make a perfect circle around the opening.</li>
+</ul></li>
+</ul>
+<p><img src="images/maskassembly/11_show_bad_seal.jpg" width="50%" /><img src="images/maskassembly/11_show_good_seal.jpg" width="50%" /></p>
+</div>
+</div>
+<div id="Parvo-DataCollection" class="section level2 hasAnchor" number="9.4">
+<h2><span class="header-section-number">B.4</span> Data Collection<a href="Parvo.html#Parvo-DataCollection" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Select ‘Metabolic Testing’.</p>
+<p>Enter the following as BOTH the first and last name:</p>
+<p>“NIRS_patientidnumber_protocoltypeprotocolnumber_protocoldate”</p>
+<p>For example, patient ID 003 participating in the second on/off kinetics on 11/12/2023 would look like:
+“NIRS_003_FP2_11_15_2023”</p>
+<p>Enter the participant’s height, weight, and age.</p>
+<p>Select the testing protocol: NIRS Lactate Theshold or NIRS Full Protocol.</p>
+<p>Enter appropriate testing wattage.</p>
+<p>Click ‘OK’ and wait for the software to start the test.</p>
+<p>When testing is complete, click ‘end test’.</p>
+<p>Save results and print a copy of the report.</p>
+<p>Check that the report will be printed with 10-second averages. Click ‘config’ in the bottom left and ensure that the data averaging selected is 10 seconds. Click ‘OK’ and print. The report will be printed on the printer on the bottom shelf of the cart.</p>
+</div>
+<div id="Parvo-AfterDataCollection" class="section level2 hasAnchor" number="9.5">
+<h2><span class="header-section-number">B.5</span> After Data Collection<a href="Parvo.html#Parvo-AfterDataCollection" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="Parvo-DataExport" class="section level3 hasAnchor" number="9.5.1">
+<h3><span class="header-section-number">B.5.1</span> Data Export<a href="Parvo.html#Parvo-DataExport" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The ParvoMedics software only exports metabolic cart data as Excel files. Select the data collection instance you wish to export and save it as an Excel file on the cart. Use a USB drive to transfer the Excel file from the Parvo cart to another caomputer. Since the Parvo cart is not connected to the internet and never gets Windows or any other software updates, the Excel format is a legacy format. You will have to manually open the Excel file and save it as a modern Excel format.</p>
 
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="Literature.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="Methods.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="PortaMon.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="Appendix-Surveys.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -281,7 +417,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/03-pt-recruitment.Rmd",
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/12-appendix-parvo.Rmd",
 "text": "Edit"
 },
 "history": {
