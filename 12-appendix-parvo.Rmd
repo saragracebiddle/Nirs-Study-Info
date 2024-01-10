@@ -27,11 +27,11 @@ Select 'Flowmeter Calibration' from the software home page.
 
 Enter room temperature (Celcius), barometric pressure (mmHg), and room humidity (%) from the Davis Vantage Vue on Sara Biddle's desk. 
 
-Get a piece of long clear tubing from Parvo equipment cabinet. The calibration syringe and connection piece are located in the third shelf on the Parvo cart. 
+Get a piece of long clear tubing from Parvo equipment cabinet behind the door. The calibration syringe and connection piece are located in the third shelf on the Parvo cart. 
 
 Connect one end of the tubing to the clear end of the connection piece. Connect the other end of the tubing into the gas analyzer module. Connect the white end of the connection piece to the mouth of the calibration syringe.
 
-Get Frankie Bennet to help with the actual flowmeter calibration.
+Get Frankie Benett to help with the actual flowmeter calibration.
 
 #### Gas Calibration {#Parvo-Calibration-Gas}
 
@@ -63,9 +63,13 @@ If results are greater than 1%, try the following steps:
 
 When the gas calibration results in less than 1% change from the previous calibration, save results and exit to the home screen.
 
+If you have tried all of the steps above and the gas calibration still results in greater than 1% change from the previous calibration and you are out of time, save the gas calibration results. After the participant leaves, you can try to redo the gas calibration to get back under the 1% change from the previous calibration. There are several reasons that the calibration will still result in a difference greater than 1%, such as the weather, issues with the air conditioning, and more. The only things we can do to prevent issues with the calibration is limit the number of people in the lab. Have extra people stand out in the hallway or try to schedule fewer people to come in to the lab. 
+
 ### Mask Sizing {#Parvo-MaskSizing}
 
-- steps for mask sizing
+- Find the mask size guide in the caddy that sits on the wheeled cart that sits next to the ultrasound. 
+- Hold the mask size guide up to the face of the patient. Hold the top of the guide at the bridge of the nose.
+- Look at the bottom of the guide and see where the chin sits. Choose the appropriate size. If the chin rests between two sizes, try the smaller size first. 
 
 ### Mask Assembly {#Parvo-MaskAssembly}
 
@@ -192,7 +196,13 @@ knitr::include_graphics(c(
 ))
 ```
     
+### Heart Rate Monitor {#Parvo-HeartRateMonitor}
 
+ All men leave the room (except family the patient may or may not have brought with them to the lab). Spray water on the part of the monitor that will be in contact with the skin. Have the patient hold the center 'button' on the strap to their sternum. Clip the ends of the strap together. Tighten the strap to be snug around the patient's chest. Push the strap up under the patient's bra strap and make sure the monitor is in contact with the skin all the way across the chest. 
+
+Use the watch to check that the monitor is sending a good signal. Press the middle button to the left of the watch face and wait to see the watch display a heart rate. If the heart rate does not display or shows a number that seems off, try to adjust the monitor to get a better connection. Try to push the monitor up higher on the sternum. This can be difficult on some patients depending on breast tissue, so do your best. Check the signal again. 
+
+If the watch is having issues connecting with the heart rate monitor, you can check from the Parvo software. *add steps here*
 
 ## Data Collection {#Parvo-DataCollection}
 

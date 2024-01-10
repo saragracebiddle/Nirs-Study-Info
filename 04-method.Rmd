@@ -17,13 +17,15 @@ Print out the following instruments:
 - Physical Activity History \@ref(Appendix-Surveys-pah)
 - BFI \@ref(Appendix-Surveys-bfi)
 - PROMIS Global Health \@ref(Appendix-Surveys-promis)
-- Lactate Threshold Data Collection Sheet 
+- Lactate Threshold Data Collection Sheet
 
-Assemble the VO~2~ mask except for the blue rubber part as described in \@ref(Appendix-Instruments-Parvo-Usage-MaskAssembly). 
+Write the patient's study ID number, visit ID, and the date in the upper left corner of each in pen. 
 
-Prepare the PortaMon as described in \@ref(Appendix-Instruments-PortaMon-Usage-Preparation). 
+Assemble the VO~2~ mask except for the blue rubber part as described in \@ref(Parvo-MaskAssembly). 
 
-Calibrate the metabolic cart as described in \@ref(Appendix-Instruments-Parvo-Usage-Calibration).
+Prepare the PortaMon as described in \@ref(PortaMon-Preparation). 
+
+Calibrate the metabolic cart as described in \@ref(Parvo-Calibration).
 
 ### Data Collection {#Methods-LT-DataCollection}
 
@@ -31,7 +33,7 @@ Use the steps described in \@ref(Appendix-Instruments-Ultrasound-Usage) to measu
 
 After the patient arrives, the participant's subcutaneous adipose tissue thickness is measured using an ultrasound. If ATT is less than 2 centimeters, the participant continues through the next steps.
 
-Place the NIRS device over the area measured using ultrasound following the steps described in  \@ref(Appendix-Instruments-PortaMon-Usage-Placement).
+Place the NIRS device over the area measured using ultrasound following the steps described in  \@ref(PortaMon-Placement).
 
 Administer the following instruments:
 
@@ -39,7 +41,7 @@ Administer the following instruments:
 - MMSE \@ref(Appendix-Surveys-mmse)
 - Godin-Leisure Time Exercise Questionnaire \@ref(Appendix-Surveys-glteq)
 
-The MoCA, MMSE, and GLTEQ are exclusion criteria. If the participant does not pass these items, they cannot proceed with the study, therefore they are administered before other instruments. If the participant passes the exclusion instruments, proceed with the rest of the instruments.
+The MoCA, MMSE, and GLTEQ are exclusion criteria. If the participant does not pass these items, they cannot proceed with the study, therefore they are administered before other instruments. If the participant passes the exclusion instruments, proceed with the rest of the instruments. These instruments are not filled out by the participant- a study staff member must administer and score these instruments. 
 
 Have the subject complete the following instruments:
 
@@ -47,9 +49,13 @@ Have the subject complete the following instruments:
 - BFI \@ref(Appendix-Surveys-bfi)
 - PROMIS Global Health \@ref(Appendix-Surveys-promis)
 
+These instruments are completed by the participant. 
+
 Review the completed Godin-Leisure Time Exercise Questionnaire and Physical Activity History instruments. Use your best judgement in collaboration with the other investigators to determine the wattage jumps. See \@ref(ExerciseTesting-LT-Watts) for further information about deciding wattage jumps.
 
-Measure the subject's face to determine mask size. Record mask size. Finish assembling mask.
+Measure the subject's face to determine mask size. Record mask size on data collection sheet. Finish assembling mask.
+
+Put the heart rate monitor on the patient.
 
 Have the subject get on the stationary bike and make adjustments to the seat height, seat depth, pedal length, and handlebar placement to the comfort of the participant. 
 

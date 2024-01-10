@@ -32,13 +32,91 @@ Before using the lactate meters, you must conduct a quality control test.
 
 Get out the 'Blood Lactate Meter' binder from Frankie Bennet's desk. Open the binder to the quality control log. 
 
-Turn on the lactate meter by pressing the center triangle-shaped button. Use the button to click through the screens until you reach the control screen. which has a star in the upper left corner and says 'CNTRL'.
+```{r, echo = F, out.width = "50%"}
+knitr::include_graphics(
+  c(
+    "images/lactatequalitycontrol/lactatebinder.jpg",
+    "images/lactatequalitycontrol/lactatebinder_log.jpg"
+  )
+)
+```
 
-Put a lactate strip in the lactate meter.
+Record the date. 
 
-Use the red control dropper to place a drop on the lactate strip. Wait for the lactate meter to give results (about 15 seconds). Record the results and the informaton from the control dropper in the binder. Discard the used lactate strip in the trash and do another test with the red control with a new lactate strip.
+
+
+Look on the bottle of lactate strips and find the lot number. Record the lot number in the appropriate space. 
+
+```{r, echo = F, out.width= "50%"}
+knitr::include_graphics(
+  c(
+    "images/lactatequalitycontrol/lactate_strips_1.jpg",
+    "images/lactatequalitycontrol/lactate_strips_2.jpg"
+  )
+)
+```
+
+
+Look on the low control bottle (blue dropper). Record the expected range for this bottle. Record the lot number and expiration date.
+
+```{r, echo = F, out.width = "50%"}
+knitr::include_graphics(
+  c(
+    "images/lactatequalitycontrol/low_control_1.jpg",
+    "images/lactatequalitycontrol/low_control_2.jpg"
+  )
+)
+```
+
+Look on the high control bottle (red dropper). Record the expected range for this bottle. Record the lot number and expiration date. 
+
+```{r, echo = F, out.width =  "50%"}
+knitr::include_graphics(
+  c(
+    "images/lactatequalitycontrol/high_control_1.jpg",
+    "images/lactatequalitycontrol/high_control_2.jpg"
+  )
+)
+```
+
+Turn on the lactate meter by pressing the center triangle-shaped button. Use the button to click through the screens until you reach the control screen. which has a star in the upper left corner and says 'CRL-1'.
+
+Put a lactate strip in the lactate meter. The white end should stick out from the meter and the metal end should go in the meter. 
+
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(
+  c(
+    "images/lactatequalitycontrol/lactate_meters_ready.jpg"
+  )
+)
+```
+
+
+Use the red control dropper to place a drop on the lactate strip. Wait for the lactate meter to give results (about 15 seconds). Record the results in the binder. Discard the used lactate strip in the trash and do another test with the red control with a new lactate strip.
+
+If you get an error, you probably did not use enough liquid. Make sure the drops are of a size to completely soak the tip of the lactate strip. 
 
 Repeat with the blue control dropper. 
+
+```{r, echo = F, out.width = "33%"}
+knitr::include_graphics(
+  c(
+    "images/lactatequalitycontrol/lactate_meter_do_drop.jpg",
+    "images/lactatequalitycontrol/lactate_meters_high_controls.jpg",
+    "images/lactatequalitycontrol/lactate_meters_low_controls.jpg"
+  )
+)
+```
+
+Make sure results are recorded correctly in the log.
+
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(
+  c(
+    "images/lactatequalitycontrol/log_results.jpg"
+  )
+)
+```
 
 
 #### Data Collection {#Appendix-Instruments-LactateMeter-Usage-DataCollection}
