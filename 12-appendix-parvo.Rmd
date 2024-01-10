@@ -21,6 +21,10 @@ The computer on the cart is not connected to the internet. After logging in, you
 
 Open the ParvoMedics software.
 
+Ensure the filter and other pieces are connected to the gas analyzer as shown below:
+
+*TODO* add picture
+
 #### Flowmeter Calibration {#ParvoCalibration-Flowmeter}
 
 Select 'Flowmeter Calibration' from the software home page.
@@ -29,7 +33,28 @@ Enter room temperature (Celcius), barometric pressure (mmHg), and room humidity 
 
 Get a piece of long clear tubing from Parvo equipment cabinet behind the door. The calibration syringe and connection piece are located in the third shelf on the Parvo cart. 
 
-Connect one end of the tubing to the clear end of the connection piece. Connect the other end of the tubing into the gas analyzer module. Connect the white end of the connection piece to the mouth of the calibration syringe.
+Connect one end of the tubing to the clear end of the connection piece. 
+
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(
+  c(
+    "images/parvocalibration/connector_piece.jpg"
+  )
+)
+```
+
+
+Connect the other end of the tubing into the gas analyzer module. 
+
+Connect the white end of the connection piece to the mouth of the calibration syringe.
+
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(
+  c(
+    "images/parvocalibration/connect_syringe.jpg"
+  )
+)
+```
 
 Get Frankie Benett to help with the actual flowmeter calibration.
 
@@ -43,9 +68,27 @@ Click 'OK'.
 
 When prompted, find the sample gas (gas container on the bottom left of the cart) and rotate the black handle on top of the gas container counter-clockwise until you cannot turn it anymore. Do not turn the black knob that is taped in place.
 
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(
+  c(
+    "images/parvocalibration/gas_on.jpg"
+  )
+)
+```
+
+
 Click 'OK' and wait for the next prompt on the screen. 
 
-Rotate the black handle on top of the gas container clockwise as far as you can. 
+Rotate the black handle on top of the gas container clockwise as far as you can to the "OFF" position. 
+
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(
+  c(
+    "images/parvocalibration/gas_off.jpg"
+  )
+)
+```
+
 
 Click 'OK' to see calibration results.
 

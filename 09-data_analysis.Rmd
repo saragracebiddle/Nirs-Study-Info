@@ -53,3 +53,6 @@ Use the app, shown below, to do all of these steps without having to run any cod
 ```{r, eval = F}
 knitr::include_app('https://saragracebiddle.shinyapps.io/DataAnalysis/')
 ```
+
+
+When you are satisfied with the results obtained from the app, download the report and upload it into the RedCap. 
