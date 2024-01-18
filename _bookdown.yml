@@ -1,5 +1,18 @@
-book_filename: "bookdown-demo"
+book_filename: "nirs-study-info"
 language:
   ui:
     chapter_name: "Chapter "
 delete_merged_file: true
+rmd_files: ["index.Rmd",
+"literature.Rmd",
+"pt-recruitment.Rmd",
+"method.Rmd",
+"exercise_testing.Rmd",
+"datastorage.Rmd",
+"database.Rmd",
+"data_analysis.Rmd",
+"appendix-portamon.Rmd",
+"appendix-parvo.Rmd",
+"appendix-surveys.Rmd",
+"appendix-instruments.Rmd"
+]

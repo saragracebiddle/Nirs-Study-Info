@@ -1,0 +1,42 @@
+# Database
+
+## Description of Needs
+
+Store information about patients, their chemotherapy infusions, their bloodwork, visits to the Human Performance Lab for exercise testing, data from exercise testing, and analyzed data from the testing. 
+
+GUI for future users who may not be familiar with code or able to learn.
+
+Identifying information will be stored in a RedCap that is secured by PrismaHealth. All information in this database will be deidentified. 
+
+Retrieve analyzed testing data for future statistical analysis. 
+
+Export data for statistical analysis.
+
+Count patients with breast or gynecological cancer, create calendar for visits, retrieve labs, infusions, or visits associated with one patient. 
+Count type of chemotherapy regimen.
+
+
+
+
+## Workload Table
+
+|Action|Query Type|Information|Frequency|Priority|
+|------|----------|-----------|---------|--------|
+|Submit a new patient|write|staging activity, cancer type, age, oncologist, other medical problems, chemotherapy regimen type|2 per month|high|
+|Submit a new infusion|write|date, cycle number, day of cycle, medications administered, dosage|4 per month|low|
+|Submit a new lab draw|write|date, type of lab, values|4 per month|low|
+|Submit a new lactate threshold test|write|date, vo2 data collection sheet data, parvo data, nirs data|2 per month|medium|
+|Submit a new on/off kinetics test|write|date, oo data collection sheet data, parvo data, nirs data, associated infusion|4 per month|high|
+|Submit analyzed lactate threshold data|update|power output at lactate threshold|2 per month|medium|
+|Submit analyzed on/off kinetics data|write|analysis parameters, final analyzed data|4 per month|high|
+|Count patients by type of cancer|read|cancer type|1 per month|low|
+|Count patients by type of chemotherapy|read|chemotherapy regimen type|1 per month|low|
+|View blood draw history for one patient|read|date of lab, values, type of lab|2 per month|low|
+|View chemotherapy infusion history|read|date of infusion, cycle number, day of cycle|2 per month|low|
+|View HPL visit history for one patient|read|date of visit, associated cycle number, weight, att, picture of device placement|4 per month|low|
+
+
+
+
+
+

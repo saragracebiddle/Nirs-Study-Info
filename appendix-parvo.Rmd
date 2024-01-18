@@ -1,0 +1,279 @@
+# ParvoMedics TrueOne 2400 {#Parvo}
+
+## Specifications {#Parvo-Specs}
+
+The [TrueOne](http://www.parvo.com/) Metabolic Cart by ParvoMedics measures maximal O2 consumption, indirect calorimetry, and other metabolic conditions. 
+
+The computer that has the ParvoMedics software installed is not connected to the internet in any way. It has Windows 7. **Never connect this computer to the internet or update Windows.** This would require attaining approval to install the ParvoMedics software on PrismaHealth computers, which would take several months. The ParvoMedics software is not frequently updated and Windows updates could break the installation. Everything works as it is, and if it ain't broke, don't fix it.
+
+## Software {#Parvo-Software}
+
+## Before Data Collection {#Parvo-BeforeDataCollection}
+
+### Calibration {#Parvo-Calibration}
+
+In order to conduct calibration, the cart must have been powered on for *at least 30 minutes*.
+Turn on the cart by flipping the switch on the power strip on the back of the cart.
+
+Log in using the password taped to the cart under the keyboard.
+
+The computer on the cart is not connected to the internet. After logging in, you need to manually set the date and time to today's date and time. If you do not manually set the date and time, the data collection software will use the incorrect date and time and will save the data as such, which will make it difficult to locate later.
+
+Open the ParvoMedics software.
+
+Ensure the filter and other pieces are connected to the gas analyzer as shown below:
+
+*TODO* add picture
+
+#### Flowmeter Calibration {#ParvoCalibration-Flowmeter}
+
+Select 'Flowmeter Calibration' from the software home page.
+
+Enter room temperature (Celcius), barometric pressure (mmHg), and room humidity (%) from the Davis Vantage Vue on Sara Biddle's desk. 
+
+Get a piece of long clear tubing from Parvo equipment cabinet behind the door. The calibration syringe and connection piece are located in the third shelf on the Parvo cart. 
+
+Connect one end of the tubing to the clear end of the connection piece. 
+
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(
+  c(
+    "images/parvocalibration/connector_piece.jpg"
+  )
+)
+```
+
+
+Connect the other end of the tubing into the gas analyzer module. 
+
+Connect the white end of the connection piece to the mouth of the calibration syringe.
+
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(
+  c(
+    "images/parvocalibration/connect_syringe.jpg"
+  )
+)
+```
+
+Get Frankie Benett to help with the actual flowmeter calibration.
+
+#### Gas Calibration {#Parvo-Calibration-Gas}
+
+Select 'Gas Calibration' from the software home screen.
+
+Enter room temperature (Celcius), barometric pressure (mmHg), and room humidity (%) from the Davis Vantage Vue on Sara Biddle's desk. 
+
+Click 'OK'.
+
+When prompted, find the sample gas (gas container on the bottom left of the cart) and rotate the black handle on top of the gas container counter-clockwise until you cannot turn it anymore. Do not turn the black knob that is taped in place.
+
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(
+  c(
+    "images/parvocalibration/gas_on.jpg"
+  )
+)
+```
+
+
+Click 'OK' and wait for the next prompt on the screen. 
+
+Rotate the black handle on top of the gas container clockwise as far as you can to the "OFF" position. 
+
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(
+  c(
+    "images/parvocalibration/gas_off.jpg"
+  )
+)
+```
+
+
+Click 'OK' to see calibration results.
+
+DO NOT SAVE results if the percentage is greater than 1%. This means that this calibration differs from the last calibration by more than we want. If you save the results, since it is a percentage change from the last calibration, the next calibration will have to decrease by greater than 1%. 
+
+Example: First calibration attempt results in a percentage of 1.5%. In order to be within 1% of the attempt prior to the first attempt, the second calibration attempt will need to result in a percentage of -0.5%. 
+
+To save us from doing this math in between calibration attempts, just do not save attempts greater than 1% difference.
+
+If results are greater than 1%, try the following steps:
+
+- open the lab door
+- turn on the fans to blow air around the room
+- wait at least 10 minutes and attempt calibration again
+
+When the gas calibration results in less than 1% change from the previous calibration, save results and exit to the home screen.
+
+If you have tried all of the steps above and the gas calibration still results in greater than 1% change from the previous calibration and you are out of time, save the gas calibration results. After the participant leaves, you can try to redo the gas calibration to get back under the 1% change from the previous calibration. There are several reasons that the calibration will still result in a difference greater than 1%, such as the weather, issues with the air conditioning, and more. The only things we can do to prevent issues with the calibration is limit the number of people in the lab. Have extra people stand out in the hallway or try to schedule fewer people to come in to the lab. 
+
+### Mask Sizing {#Parvo-MaskSizing}
+
+- Find the mask size guide in the caddy that sits on the wheeled cart that sits next to the ultrasound. 
+- Hold the mask size guide up to the face of the patient. Hold the top of the guide at the bridge of the nose.
+- Look at the bottom of the guide and see where the chin sits. Choose the appropriate size. If the chin rests between two sizes, try the smaller size first. 
+
+### Mask Assembly {#Parvo-MaskAssembly}
+
+Pink buckets and mask parts are sterile and should NOT be touched without gloves. There are several boxes of latex gloves in different sizes in the lab. Pick whichever size fits you before touching ANY parts.
+
+- Grab a pink bucket and ensure the following components are in the bucket:
+    - Clear plastic with two black circles
+    - Clear plastic with triangle
+    - White plastic that narrows
+    - Semi-transparent circle made of hard plastic
+    - Two hard plastic white circles
+    - Two silicone caps
+    
+```{r, echo = FALSE, out.width = "50%"}
+knitr::include_graphics(
+  c(
+    "images/maskassembly/01_all_mask_parts.jpg",
+    "images/maskassembly/01_all_mask_parts_view2.jpg"
+  )
+)
+```
+
+- Take a silicone cap and place on a hard plastic white circle
+    - The silicone cap and the hard plastic white circle should face the same direction (the outer rims should be on the same side)
+    - Carefully pull the outer rim of the silicone cap over the lip of the hard white plastic circle. Be careful not to tear the silicone, handle these pieces very gently!
+    - Rotate the hard white plastic circle to make sure that the outer rim of the silicone cap is pulled over the lip all the way around. 
+    - You should be able to gently push through the middle of the hard white plastic circle and stretch the top of the silicone cap out from the edge of the hard white plastic circle while the outer rim of the silicone cap stays in place over the lip of the hard white plastic circle.
+
+```{r, echo = F, out.width = "25%"}
+knitr::include_graphics(
+  c(
+    "images/maskassembly/02_show_direction.jpg",
+    "images/maskassembly/02_show_pull_over_lip.jpg",
+    "images/maskassembly/02_show_pulled_over_lip.jpg",
+    "images/maskassembly/02_show_air_flow_direction.jpg"
+  )
+)
+```
+
+- Repeat with the other silicone cap and hard plastic white circle. There should be two pairs of silicone cap and hard plastic white circle. 
+- Take one of the pairs of silicone cap and hard plastic white circle and the clear tapered hard plastic piece. 
+- Place the silicone cap into the larger end of the clear tapered piece. The outer rim of the silicone cap should sit flush with the rim of the clear tapered piece. The silicone should face the inside of the clear tapered piece. 
+
+```{r, echo = F, out.width = "50%"}
+knitr::include_graphics(c(
+  "images/maskassembly/04_show_direction.jpg",
+  "images/maskassembly/04_show_placement.jpg"
+))
+```
+
+- Take the middle piece of the mask (the clear cylindrical piece with three openings and two black cylinders on it) and rotate it around until you can see the arrows etched into it.
+    - The arrows etched into the piece show the direction of air flow through the pieces. The air comes "in" from one opening, into and out of the mask where someone is breathing in and out of one opening, and "out" of one opening into the tubing and finally into the gas analyzer. The silicone pieces allow air to flow in only one direction so that all air the person breathes out is sent into the gas analyzer.
+- Find the arrow pointing "out" of the cylinder and rotate it so that the arrow pointing "out" points to your right.
+- Take the clear tapered piece with the silicone vent inside it and screw it onto the opening facing the right
+
+```{r, echo = F, out.width = "50%"}
+knitr::include_graphics(c(
+  "images/maskassembly/05_show_direction.jpg",
+  "images/maskassembly/05_show_together.jpg"
+))
+```
+
+- Take the second silicone vent and place it in the left opening of the middle piece. This opening should be directly opposite the opening facing to the right of the middle piece, that now has the clear tapered piece screwed on.
+- The silicone vent should have the outer rim flush with the outer rim of the opening, and the silicone should face into the middle piece.
+
+```{r, echo = F, out.width = "50%"}
+knitr::include_graphics(c(
+  "images/maskassembly/06_show_direction.jpg",
+  "images/maskassembly/06_show_together.jpg"
+))
+```
+
+- Take the white tapered plastic piece and screw on to the opening over the silicone vent.
+
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(c(
+  "images/maskassembly/07_show_together.jpg"
+))
+```
+
+- Take the semi-transparent hard plastic circle and screw onto the remaining opening of the middle piece. 
+
+```{r, echo = F, out.width = "33%"}
+knitr::include_graphics(c(
+  "images/maskassembly/09_show_direction.jpg",
+  'images/maskassembly/09_show_together.jpg',
+  'images/maskassembly/09_show_together_view_2.jpg'
+))
+```
+
+- Select the blue rubber mask of the appropriate size.
+    - The size is etched on the "chin" of the mask.
+    - See \@ref(Parvo-MaskSizing) for choosing the correct size.
+
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(c(
+  "images/maskassembly/10_show_mask_size.jpg"
+))
+```
+
+- Orient the blue mask as if you were going to wear it on your face. The "nose" should be upward with the "chin" downward and the hard clear plastic pieces should face outward. You should only see blue rubber.
+- Orient the assembled pieces so that the air flows in the appropriate direction. 
+    - The "out" arrow direction with the clear tapered end should point towards the station with the gas analyzer, i.e. if the gas analyzer will be on the left then the clear tapered end should point to the left, and if the gas analyzer will be on the right then the clear tapered end should point to the right. In the HPL, the stationary exercise bike will always have the gas analyzer on the left, therefore have the clear tapered end point to the left.
+    - The third opening with the semi-transparent circular piece should face the "mouth" of the blue rubber mask. 
+
+```{r, echo = F, out.width= "100%"}
+
+## TODO Retake picture so that clear tapered end
+## is actually facing the left
+
+knitr::include_graphics(c(
+  "images/maskassembly/11_show_direction.jpg"
+))
+```
+
+- Stretch the opening of the blue rubber mask over the semi-transparent circle opening of the assembled pieces. 
+    - This is difficult and you will have to manhandle the blue rubber mask a bit. It does not stretch super well.
+    - Look through the mask and make sure that there is a good seal around the opening. If there is not a good seal, the blue rubber will not make a perfect circle around the opening. 
+    
+```{r, echo = F, out.width = "50%"}
+knitr::include_graphics(c(
+  "images/maskassembly/11_show_bad_seal.jpg",
+  "images/maskassembly/11_show_good_seal.jpg"
+))
+```
+    
+### Heart Rate Monitor {#Parvo-HeartRateMonitor}
+
+ All men leave the room (except family the patient may or may not have brought with them to the lab). Spray water on the part of the monitor that will be in contact with the skin. Have the patient hold the center 'button' on the strap to their sternum. Clip the ends of the strap together. Tighten the strap to be snug around the patient's chest. Push the strap up under the patient's bra strap and make sure the monitor is in contact with the skin all the way across the chest. 
+
+Use the watch to check that the monitor is sending a good signal. Press the middle button to the left of the watch face and wait to see the watch display a heart rate. If the heart rate does not display or shows a number that seems off, try to adjust the monitor to get a better connection. Try to push the monitor up higher on the sternum. This can be difficult on some patients depending on breast tissue, so do your best. Check the signal again. 
+
+If the watch is having issues connecting with the heart rate monitor, you can check from the Parvo software. *add steps here*
+
+## Data Collection {#Parvo-DataCollection}
+
+Select 'Metabolic Testing'.
+
+Enter the following as BOTH the first and last name:
+
+"NIRS_patientidnumber_protocoltypeprotocolnumber_protocoldate"
+
+For example, patient ID 003 participating in the second on/off kinetics on 11/12/2023 would look like:
+"NIRS_003_FP2_11_15_2023"
+
+Enter the participant's height, weight, and age.
+
+Select the testing protocol: NIRS Lactate Theshold or NIRS Full Protocol.
+
+Enter appropriate testing wattage.
+
+Click 'OK' and wait for the software to start the test.
+
+When testing is complete, click 'end test'.
+
+Save results and print a copy of the report.
+
+Check that the report will be printed with 10-second averages. Click 'config' in the bottom left and ensure that the data averaging selected is 10 seconds. Click 'OK' and print. The report will be printed on the printer on the bottom shelf of the cart. 
+
+## After Data Collection {#Parvo-AfterDataCollection}
+
+### Data Export {#Parvo-DataExport}
+
+The ParvoMedics software only exports metabolic cart data as Excel files. Select the data collection instance you wish to export and save it as an Excel file on the cart. Use a USB drive to transfer the Excel file from the Parvo cart to another caomputer. Since the Parvo cart is not connected to the internet and never gets Windows or any other software updates, the Excel format is a legacy format. You will have to manually open the Excel file and save it as a modern Excel format. 
