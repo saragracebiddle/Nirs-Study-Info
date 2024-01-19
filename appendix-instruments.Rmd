@@ -10,13 +10,13 @@ Locate the vastus lateralis.  Find the ASIS (anterior superior iliac spine) by a
 
 Use the ultrasound gel to cover the wand.
 
-Place the wand over the pre-determined location of the vastus lateralis.
+Place the wand over the pre-determined location of the vastus lateralis. Move around the wand until you find the location of the thinnest section of adipose tissue. Ensure that this is still over the vastus lateralis by marking the location with a marker, then removing the wand and asking the patient to extend their leg and flex their quadriceps muscles. If the dot is not on top of the vastus lateralis when the patient extends their leg, try again. If the dot is over the vastus lateralis, place the wand back over the dot. 
 
-Freeze the screen when you want to measure adipose tissue thickness.
+Freeze the screen.
 
 Press the 'caliper' button to use calipers on the frozen screen.
 
-Move one end of the caliper to the top of the screen. Move the other end of the caliper to the area of the screen that looks like the boundary between the muscle belly and the edge of the adipose tissue. This will be a silvery line across the screen.
+Move one end of the caliper to the top of the screen. Move the other end of the caliper to the area of the screen that looks like the boundary between the muscle belly and the edge of the adipose tissue. This will be a silvery line across the screen. Try to make the caliper measurement as vertical as possible, as a diagonal measurement will be larger than a straight one. 
 
 Record the measurement given by the caliper.
 

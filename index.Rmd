@@ -14,7 +14,7 @@ description: "This contains all current information about the NIRS Study being c
 
 # About
 
-This study is being conducted in collaboration with the PrismaHealth Cancer Institute, Furman University Health Science Department, and University of South Carolina School of Medicine Greenville. The principal investigators are Dr. Jennifer Trilk of USC SoMG and Dr. Randolph Hutchison of Furman. 
+This study is being conducted in collaboration with the PrismaHealth Cancer Institute, Furman University Health Science Department, and University of South Carolina School of Medicine Greenville. 
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages
@@ -22,3 +22,58 @@ knitr::write_bib(c(
   .packages(), 'bookdown', 'knitr', 'rmarkdown'
 ), 'packages.bib')
 ```
+
+
+## Contact Information
+
+___
+
+**Dr. Jennifer Trilk**
+
+> Principal Investigator\
+> University of South Carolina School of Medicine- Greenville\
+> <trilk@greenvillemed.sc.edu>
+
+**Dr. Randolph Hutchison**
+
+> Principal Investigator\
+> Furman University Department of Health Science\
+> <randolph.hutchison@furman.edu>
+
+**Dr. Larry Gluck**
+
+> <Larry.Gluck@prismahealth.org>
+
+**Dr. Julie Martin**
+
+> Director of Cancer Research\
+> Prisma Health\
+> <Julie.Martin@prismahealth.org>
+
+**Frankie Bennett**
+
+> Human Performance Lab Coordinator\
+> University of South Carolina School of Medicine- Greenville\
+> <BENNETT24@greenville.sc.edu>
+
+**Sara Biddle**
+
+> Research Coordinator\
+> Prisma Health Cancer Institute\
+> <sara.biddle@prismahealth.org>
+
+**Sydney Hackwell**
+
+> Research Coordinator\
+> Prisma Health Cancer Institute\
+> <sydney.hackwell@prismahealth.org>
+
+**Katie Banenas**
+
+> Research Coordinator\
+> Prisma Health Cancer Institute\
+> <katie.banenas@prismahealth.org>
+
+**Human Performance Lab**
+
+> (864) 455-1410

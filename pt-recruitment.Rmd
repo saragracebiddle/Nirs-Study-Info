@@ -1,38 +1,123 @@
 # Patient Recruitment {#PatientRecruitment}
 
-Run a report in EPIC with the following parameters:
+## Inclusion/Exclusion Criteria
 
-> Select patients in registries
->
-> FROM 
->
-> *Registries:*
->
-> Registry ID: CANCER POPULATION REGISTRY
->
-> *Level of detail:*
->
+To be eligible for the study, patients must:
+
+- have primary breast of gynecological cancer
+- non-metastatic 
+- that is being treated with chemotherapy 
+    - no immunotherapy or radiation at the same time or before chemotherapy
+    - the chemotherapy regimen can be any regimen that is considered *standard of care*
+- cannot have had chemotherapy within the past 5 years for any reason
+- able to participate in moderate exercise on a stationary bike
+
+
+## Screening the Electronic Medical Record
+
+Prisma Health uses EPIC as their electronic medical record service. 
+You can only access EPIC with permission from Prisma Health. The medical students may technically have access to EPIC but they have not had much training on how to use it and actually accessing it can be cumbersome and difficult for them. It is much easier for a Research Coordinator to do any work in EPIC. 
+
+Use the Production Environment of EPIC. In the Production Environment, you can create and run reports that you cannot in the Read Only Environment. 
+
+Log in with your Prisma Health log in information and select the department `CANCER-FARIS ONCOLOGY [100224000]`.
+
+### Using a Report
+
+Go to `My Reports`. 
+
+I have a report named `NIRS Eligibility by Stage` that has the following parameters:
+
+
+> Select Patients in Registries\
+> **From**\
+> *Registries:*\
+> Registry ID: CANCER POPULATION REGISTRY\
+> *Level of detail:*\
 > Patients
 > 
-> WHERE
+> **Where**\
+> *Registry metrics:* (1 OR 2 OR 3 OR 4 OR 5) AND 6\
 >
-> DM TREATMENT PLAN PROVIDER CONTAINS ELDER, JEFFERY WAYNE OR EDENFILED, WILLIAM JEFFERY OR JORGENSON, CARLA WALKER OR STEPHENSON JR, JOE JOHN OR PULS, LARRY EDWIN
+>> 1 Metric Name or ID: DM TREATMENT PLAN PROVIDER and Metric Value: Contains EDENFIELD, WILLIAM JEFFERY\
+>> 2 Metric Name or ID: DM TREATMENT PLAN PROVIDER and Metric Value: Contains ELDER, JEFFERY WAYNE\
+>> 3 Metric Name or ID: DM TREATMENT PLAN PROVIDER and Metric Value: Contains JORGENSEN, CARLA WALKER\
+>> 4 Metric Name or ID: DM TREATMENT PLAN PROVIDER and Metric Value: Contains STEPHENSON JR, JOE JOHN\
+>> 5 Metric Name or ID: DM TREATMENT PLAN PROVIDER and Metric Value: Contains PULS, LARRY EDWIN\
+>> 6 Metric Name or ID: DM MED PATIENT RECIEVED CHEMOTHERAPY IN PAST YEAR and Metric Value: No\
 >
-> AND 
-> 
-> CHEMOTHERAPY IN LAST YEAR = NO
+> AND *Diagnosis in grouper:*\
 >
-> AND DIAGNOSIS IN GROUPER BREAST OR GYNECOLOGICAL CANCER GROUPER
-> 
-> TREATMENT PLAN START DATE GREATER THAN TODAY - 14
+>>    Diagnosis Grouper (VCG): EDG ID CANCER BREAST OR\
+>>    Diagnosis Grouper (VCG): EDG ID CANCER FALLOPIAN TUBE OR\
+>>    Diagnosis Grouper (VCG): EDG ID CANCER OVARY OR\
+>>    Diagnosis Grouper (VCG): EDG ID CANCER CERVIX OR\
+>>    Diagnosis Grouper (VCG): EDG ID CANCER VAGINA OR\
+>>    Diagnosis Grouper (VCG): EDG ID CANCER VULVA\
+>
+> AND *Treatment Plan Start Date:*\
+>
+>> Episode Types: Infusion Treatment and Discontinue Reasons to Exclude: (none) and Plan Number: (none) and Plan Staatuses: Active and Treatment Plan Start Date: Greater than or equal to TODAY - 14  OR\
+>> Episode Types: ONCOLOGY TREATMENT and Discontinue Reasons to Exlude: (none) and Plan Number: (none) and Plan Statuses: Active and Treatment Plan Start Date: Greater than or equal to TODAY - 14 OR\
+>> Episode Types: ONCOLOGY TREATMENT and Discontinue Reasons to Exclude: (none) and Plan Number: (none) and Plan Statuses: Future and Treatment Plan Start Date: Less than or equal to TODAY + 14 OR\
+>> Episode Types: Infusion Treatment and Discontinue Reasons to Exclude: (none) and Plan Number: (none) and Plan Statuses: Future and Treatment Plan Start Date: Less than or equal to TODAY + 14\
+>
+> AND *Cancer Stage Distant Metastasis (M) Value*:\
+>
+>> Stage Classifications: Clinical and Fallback Classifications: (none) and Signed Only?: (none) and SmartData Identifier: EPIC#42385 and Which Stage: Most Recent and Cancer Stage Distant Metastasis (M) Value: cM0 OR\
+>> Stage Classifications: Clinical and Fallback Classifications: (none) and Signed Only?: (none) and SmartData Identifier: EPIC#42385 and Which Stage: Most Recent and Cancer Stage Distant Metastasis (M) Value: cM0(i+) OR\
+>> Stage Classifications: Clinical and Fallback Classifications: (none) and Signed Only?: (none) and SmartData Identifier: EPIC#42385 and Which Stage: Most Recent and Cancer Stage Distant Metastasis (M) Value: M0 OR\
+>> Stage Classifications: Pathologic and Fallback Classifications: (none) and Signed Only?: (none) and SmartData Identifier: EPIC#42385 and Which Stage: Most Recent and Cancer Stage Distant Metastasis (M) Value: cM0 OR\
+>> Stage Classifications: Pathologic and Fallback Classifications: (none) and Signed Only?: (none) and SmartData Identifier: EPIC#42385 and Which Stage: Most Recent and Cancer Stage Distant Metastasis (M) Value: cM0(i+) OR\
+>> Stage Classifications: Pathologic and Fallback Classifications: (none) and Signed Only?: (none) and SmartData Identifier: EPIC#42385 and Which Stage: Most Recent and Cancer Stage Distant Metastasis (M) Value: M0 \
+>
+> AND *Line of Treatment*:\
+>
+>> Episode Types: ONCOLOGY TREATMENT and Discontinue Reasons to Exclude: (none) and Plan Number: (none) and Plan Statuses: (none) and Line of Treatment: Not equal to Third Line OR\
+>> Episode Types: Infusion Treatment and Discontinue Reasons to Exclude: (none) and Plan Number: (none) and Plan Statuses: (none) and Line of Treatment: Not equal to Third Line\
+>> AND *Treatment Plan Goal*:\
+>> Episode Types: Infusion Treatment and Discontinue Reasons to Exclude: (none) and Plan Number: (none) and Plan Statuses: Active and Treatment Plan Goal: Not equal to Palliative OR\
+>> Episode Types: Infusion Treatment and Discontinue Reasons to Exclude: (none) and Plan Number: (none) and Plan Statuses: Future and Treatment Plan Goal: Not equal to Palliative OR\
+>> Episode Types: ONCOLOGY TREATMENT and Discontinue Reasons to Exclude: (none) and Plan Number: (none) and Plan Statuses: Active and Treatment Plan Goal: Not equal to Palliative OR\
+>> Episode Types: IONCOLOGY TREATMENT and Discontinue Reasons to Exclude: (none) and Plan Number: (none) and Plan Statuses: Future and Treatment Plan Goal: Not equal to Palliative
 
 
-This will return a list of potentially eligible patients who meet the parameters specified in the query above. Take a quick look through the list and eliminate any definitively ineligible patients. Sometimes metastatic disease is listed as a second diagnosis and therefore slips through the exclusion of metastatic disease. Vascular diseases and injuries that would preclude ability to exercise are other common exclusion criteria. Male patients with breast cancer are not eligible for this study.  Take a quick look through the patient's problem list. If the patient does not have any immediate exclusionary problems, pass their name and MRN on to the research coordinators, Sydney Hackwell and Katie Banenas. They will conduct a full chart screening and contact the patient if they are eligible.
+This will return a list of potentially eligible patients who meet the parameters specified in the query above. I have the report settings such that the results table shows me their treatment plan start date, next oncology appointment date, name, MRN, clinical stage, diagnosis, and plan provider. When I select a patient from the list, it displays an Oncology Snapshot under the report results table. I take a quick look through the Oncolog Snapshot and if I need to take a closer look at their chart, I can open it up. 
+
+I have not figured out how to share this report or its results with other people. As it is, I look through the patients returned by the report and eliminate any definitively ineligible patients.
+
+Sometimes metastatic disease is listed as a second diagnosis and therefore slips through the exclusion of metastatic disease. Vascular diseases and injuries that would preclude ability to exercise are other common exclusion criteria. Male patients with breast cancer are not eligible for this study.  Take a quick look through the patient's problem list. If the patient does not have any immediate exclusionary problems, pass their name and MRN on to the research coordinators, Sydney Hackwell and Katie Banenas. They will conduct a full chart screening and contact the patient if they are eligible. 
+
+I include all patients returned by the report into the List. This is because, from day to day, the report returns different patients. If a patient is not in the List, I will assume that I have not yet looked at their chart. So, even if I look at a chart and immediately determine that a patient is not eligible, I write their information into the List and mark them ineligible so I don't forget that I already screened their chart. This also helps determine if there are new potentially eligible patients returned by the report. On average, the report will return between 5 and 10 patients. Due to the month long limit on treatment plan start date, the report will return the same patients for many days in a row. If you don't keep track of everyone that the report returned, even the ineligible ones, you may get confused about which patients need to be screened and which ones you have already screened. 
+
+
+### Using the Schedule
+
+Open the `Schedule` tab. 
+
+If there is not a schedule view that you like, you can make your own by clicking the green plus sign above `My Schedule`. 
+
+Give it a name. I called mine `nirs providers`. Under `Selected Columns` you can choose what information you want to display about the appointment. Under `Configuration`, you can add the providers. I added all five oncologists. 
+
+Now when you select that schedule, you will only see the five oncologists that refer to the NIRS study. To take a closer look at an appointment, expand the schedule by clicking the gray triangle next to the name of the schedule. Click on the provider name whose schedule you are interested in. This will expand the schedule of only that provider, where you can see more details about their appointments. Use the calendar in the top left to select different days. 
+
+Click on an appointment you are interested in examining further. This should open up a panel to the right of the schedule. I have this set up to show `Snapshot` as the default view. You can rearrange the panels shown in the snapshot by clicking on the wrench in the top right of the snapshot panel. 
+
+I use the schedule to screen patients coming in to the Multidisciplinary Clinic (MDC). 
+
+Jorgensen has appointments in the MDC every other Monday. Stephenson has appointments in the MDC every other Thursday.  Screen these appointments at least one day before. Many will not have a chemotherapy plan or a cancer staging activity yet. Look for major health problems that would disqualify them from participation. If there are no major problems, pass the appointment information on to Katie and Sydney. If a patient has triple negative or estrogen receptor and progesterone receptor negative breast cancer, they are likely to receive chemotherapy and Katie or Sydney can contact them as soon as the chemotherapy is prescribed. This gives us more time for recruitment into the study, as Katie and Sydney can be at the MDC appointment or at the appointment where they are told about the chemotherapy, which is a lot more time than waiting until the chemo teach appointment to approach a patient.
+
+
+## Potential Patient List
+
+I use a Microsoft List, created in my PrismaHealth OneDrive, to share the patient information with Katie and Syndey rather than sending tons of emails. I update the list when I identify potentially eligible patients. I include the patient's MRN, first and last name, primary diagnosis (breast or gynecological), and which of the referring oncologists is on their treatment team. If they have an upcoming appointment that Katie or Sydney could go to and tell them about the study, I include the appointment information. If their first chemotherapy infusion is scheduled, I include that date so that we know how long we have to recruit and schedule them in the HPL.
+
+Katie and Sydney look through the list and conduct a more in depth chart screening. If they determine that a patient is not eligible, they click the `Ineligible` tag in the List and include reasons that the patient is not eligible. The categories of ineligibility that I included as defaults are: metastatic disease, chemotherapy treatment within the last five years, lab values, treatment plan other than chemotherapy. You can type in any new category you need; you are not limited to just the default ineligibility values. 
+
+If a patient is determined to be eligible, one of the Research Coordinators will contact their oncologist to get permission to approach the patient at their next appointment. If the provider declines the study for them, then the patient is marked as `Declined` in the List. If the provider consents for the patient to be approached about the study, then one of the Research Coordinators will approach the patient at their next appointment. The patient will then either sign a consent or decline the study. If they decline the study, click the `Declined` tag in the List. Include a reason that they declined, such as stress, not enough time, etc. 
 
 After contacting the patient, they will contact you if the patient signs the consent form. After the consent form is signed, we can begin contacting the patient to start scheduling for lab visits. Contact Dr. Julie Martin after obtaining the consent form and she will put all NIRS related blood draws into EPIC. If for some reason we are not able to get the NIRS draws done at the same time as the other pre-chemo blood draws, consult with the patient and schedule this through Dr. Julie Martin. 
 
+
+
 If a patient is not wearing shorts for a lab visit, there are disposable shorts in the lab for patient use. They are located in a box under the bed in the back corner. 
-
-
-
-

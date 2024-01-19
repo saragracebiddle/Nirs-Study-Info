@@ -68,7 +68,7 @@ Conduct Lactate Threshold Exercise Test as described in \@ref(ExerciseTesting-LT
 
 ## On/Off Kinetics Protocol {#Methods-Onoff}
 
-Use the steps described in \@ref(Appendix-Instruments-PortaMon-Usage) and \@ref(Appendix-Instruments-PortaMon-Usage-Placement) along with the reference image of the previous placement to place the device in the same location as the last visit. 
+Use the steps described in \@ref(PortaMon) and \@ref(PortaMon-Placement) along with the reference image of the previous placement to place the device in the same location as the last visit. 
 
 Have the subject complete the following instruments:
 
@@ -81,3 +81,7 @@ If the PortaMon has been on for at least 10 minutes, proceed.
 Place the assembled mask on the participant's face and connect clear tubing to the mask.
 
 Conduct On/Off Kinetics Exercise Test as described in \@ref(ExerciseTesting-Onoff).
+
+Take the mask off the patient's face. Help the patient get off the bike. Remove the NIRS device and the heart rate monitor.
+
+

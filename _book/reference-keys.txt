@@ -46,6 +46,7 @@ Parvo-HeartRateMonitor
 Parvo-DataCollection
 Parvo-AfterDataCollection
 Parvo-DataExport
+Parvo-CleanEquipment
 Appendix-Surveys
 Appendix-Surveys-bfi
 Appendix-Surveys-glteq
@@ -60,3 +61,9 @@ Appendix-Instruments-LactateMeter
 Appendix-Instruments-LactateMeter-Usage
 Appendix-Instruments-LactateMeter-Usage-QualityControl
 Appendix-Instruments-LactateMeter-Usage-DataCollection
+contact-information
+inclusionexclusion-criteria
+screening-the-electronic-medical-record
+using-a-report
+using-the-schedule
+potential-patient-list

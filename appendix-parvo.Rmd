@@ -277,3 +277,17 @@ Check that the report will be printed with 10-second averages. Click 'config' in
 ### Data Export {#Parvo-DataExport}
 
 The ParvoMedics software only exports metabolic cart data as Excel files. Select the data collection instance you wish to export and save it as an Excel file on the cart. Use a USB drive to transfer the Excel file from the Parvo cart to another caomputer. Since the Parvo cart is not connected to the internet and never gets Windows or any other software updates, the Excel format is a legacy format. You will have to manually open the Excel file and save it as a modern Excel format. 
+
+### Cleaning Equipment {#Parvo-CleanEquipment}
+
+Put on a pair of gloves. 
+
+Everything that has touched the patient's skin will need to be cleaned. Place everything that needs to be cleaned into a pink bucket. This includes the mask, the mask straps, the clear tubing, the spit catcher, and the heart rate monitor strap. 
+
+Take apart the mask into its individual pieces. Take the button off the heart rate monitor strap and wipe the button down with an alcohol wipe. 
+
+On the blue cart in the corner behind the door, there is a white bucket with a lid. Take this cart with the pink bucket. When you walk through the hallways of the hospital, you can NOT wear gloves. Take off your gloves and put a clean pair in a pocket to bring with you just in case. Take the cart with the pink bucket of dirty equipment and walk to the service room. In the service room, take the pieces of the mask, disassembled, and the mask strap and the heart rate monitor strap and place them all in the blue liquid in the white bucket. Ensure the blue liquid covers all the pieces. Start a timer for 12 minutes. Leave everything soaking for 12 minutes. Make sure to put the lid on the bucket while it soaks, as the blue liquid is light sensitive. 
+
+While everything is soaking, pump soap and water into the clear tubing. Swish the soapy water around the tubing, making sure to get every part of the tubing. Do this over the sink or you will spill water out of the ends of the tubing. Rinse the tubing out and get out all of the soapy water. Use soap and water to clean out the bottom of the pink bucket. It had dirty equipment in it and it needs to be cleaned before you put clean equipment back in it. 
+
+At the end of the 12 minutes, pull all the parts out of the blue liquid and rinse them off in the sink. Put them in the pink bucket. Close the bucket of blue liquid. Walk the blue cart back to the lab. Take all the equipment and set it out to dry behind the door. 
