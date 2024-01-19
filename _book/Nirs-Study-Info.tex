@@ -249,6 +249,8 @@ The differential pathlength factor (dpf) is the measurement of the path that the
 \hypertarget{PatientRecruitment}{%
 \chapter{Patient Recruitment}\label{PatientRecruitment}}
 
+\includegraphics{nirs-study-info_files/figure-latex/unnamed-chunk-3-1.pdf}
+
 \hypertarget{inclusionexclusion-criteria}{%
 \section{Inclusion/Exclusion Criteria}\label{inclusionexclusion-criteria}}
 
@@ -257,7 +259,7 @@ To be eligible for the study, patients must:
 \begin{itemize}
 \tightlist
 \item
-  have primary breast of gynecological cancer
+  have primary breast or gynecological cancer
 \item
   non-metastatic
 \item
@@ -415,8 +417,6 @@ Print out the following instruments:
 \begin{itemize}
 \tightlist
 \item
-  MoCA \ref{Appendix-Surveys-moca}
-\item
   MMSE \ref{Appendix-Surveys-mmse}
 \item
   Godin-Leisure Time Exercise Questionnaire \ref{Appendix-Surveys-glteq}
@@ -516,6 +516,28 @@ Take the mask off the patient's face. Help the patient get off the bike. Remove 
 
 \hypertarget{ExerciseTesting}{%
 \chapter{Exercise Testing}\label{ExerciseTesting}}
+
+There are two types of exercise tests.
+
+The lactate threshold test is conducted to determine what power output (wattage) is associated with a rise in lactate production. For the general population, lactate threshold is considered to be 4.0 mMoL/L.
+
+The On/Off Kinetics test is conducted to measure the patient's mitochondrial oxidative capacity. The transition from work to rest allows the NIRS device to capture the magnitude and rate of oxygen recovery after exercise. The power output of the exercise is 110\% of the power output at lactate threshold. We use this power output in order to ensure that the exercise is difficult enough to produce a change in oxygen levels during exercise.
+
+We split up the work of administering the exercise test into three jobs: RPE, Parvo, and NIRS.
+
+For lactate threshold testing, the person doing RPE is the person taking the lactate measurements. For On/Off Kinetics testing, the person in charge of RPE tends to be the person who is in contact with the patient the most. With thirty seconds left in every stage of testing (both lactate threshold testing and on/off kinetics testing), they will hold up the clipboard with the RPE scale and say the following: \emph{``What is the first number that comes to mind?''}. \textbf{Say those exact words.} The patient will then say or point to the number that corresponds to how they are feeling. This person is also in charge of watching the patient on the bike and checking in to see how they feel. If the exercise becomes too difficult or the patient does not feel well, they are in charge of communicating with the rest of the team to end the test early and get the patient off the bike.
+
+The person in charge of NIRS watches the NIRS computer as it is collecting data. They take note of any times when the signal from the NIRS is corrupted or when the patient is moving around during a rest. Record the time on the NIRS computer and note what was going on, i.e.~if the DAQ for Tx3 was red or if the patient was moving. During the on/off kinetics test, this person also helps the patient put their foot on the box. The NIRS device is always placed on the right leg, so the left leg of the patient goes on the box. The left leg needs to go on the box during a rest section to help the patient stay perfectly still. If both feet are left in the stirrups of the bike, the patient will tend to rock their feet back and forth to stay balanced on the bike. This causes movement in the NIRS data that we do not want. We choose to put the left leg on the box rather than the right leg because if the right leg is placed on the box like that, then the patient will be tensing their right quadriceps muscles. This would mean that we are not getting a true rest measurement of the vastus lateralis. Therefore, we put the left foot on a box and allow the right leg to dangle at complete rest in the stirrups of the bike. With fifteen seconds left in a work section before a rest, kneel down by the box and get ready. The Parvo person will give you a countdown to the end of the stage and when it hits 0 and the patient stops pedaling, pull their left foot out of the stirrup and place their heel on the box. Remind the patient to stay completely still. During a rest period, they are more likely to want to talk to fill the silence and if you make them laugh too hard, the NIRS data will be effected. Try to keep them still and focused on the resting. This is especially true for the last rest section, as they are done with the exercise which is the ``hard part''.
+
+The person in charge of the Parvo has the most work to do.
+- Check data validity
+Check during the inital rest on the bike that the Parvo is collecting valid data. At rest, VO2 should be between 3-5. If VO2 is lower than 3, check that the mask is forming a good seal around the patient's face. If the seal is good and the VO2 is still below 3, ask the patient to sit up straight and take normal breaths. Some people hunch over on the bike which decreases the volume of air that they breath in and out. Some people hold their breath a little bit when you put the mask on because it can feel a little claustrophobic. Remind them that the mask is not limiting their breathing, it is just measuring what they are breathing. Tell them that the system we use is the same one they use at NASA and the Olympic Training Centers. This tends to help people feel better.
+The Parvo shows the RPM of the bike. If the RPM drops below 60, encourage the patient to get the RPM back up above 60. If the RPM are higher than 110, remind the patient that they do not need to work that hard and try to drop the RPM below 90.
+- Recording data during the test
+For each stage, record the VO\_2\_, Heart Rate (bpm), and RPE. For a lactate threshold test, record the lactate measurements when the person taking the lactates yells them out. The VO2 and Heart Rate will be on the Parvo screen. There is a real time heart rate number and a fifteen second average number. The real time number is smaller and will be blinking in time with the heart rate. The fifteen second average number will be in one of the blue boxes in the top left. The fifteen second average numbers refresh every fifteen seconds. If the stage is three minutes long, you will wait until two minutes and fourty five seconds of the stage have passed and the final refresh has happened for that stage to record the VO2 and heart rate.
+- Communicating timing
+For each stage, they should tell the patient when a stage is starting, when they are halfway done with the stage, when there is 30 seconds left in a stage, and give a countdown to the next stage. This would result in the following statements during one stage: ``The stage has begun. You are halfway done with this stage. Thirty seconds left in this stage. Ten. Nine. Eight. Seven. Six. Five. Four. Three. Two. One.'' If this is a lactate threshold test, you can make a comment about how this next stage should be slightly more difficult or how they should feel a change in the wattage. If this is an on/off kinetics test, they can tell the patient what the next stage will be, i.e.~work or rest. During a work stage, this could sound something like: ``Two minutes of exercise starting now. You're halfway to a rest. Thirty seconds left until rest.'' All of these statements also help the other staff to do their jobs. The thirty second mark tells the RPE person to get an RPE measurement and the countdown allows the NIRS person to get ready to do the box.
+There are two places to look for the time on the Parvo. There is a total elapsed time and there is a time left in this stage. The time left in the stage is the easiest to look at for keeping track of timing.
 
 \hypertarget{ExerciseTesting-LT}{%
 \section{Lactate Threshold Exercise Test}\label{ExerciseTesting-LT}}
@@ -1627,6 +1649,211 @@ Make sure results are recorded correctly in the log.
 Use the center triangle-shaped button to click through the screens and choose any profile that is not a control profile.
 
 Place a lactate strip in the top of the meter. You are ready for data collection.
+
+\hypertarget{IRB}{%
+\chapter{IRB}\label{IRB}}
+
+\hypertarget{IRBNet}{%
+\section{IRBNet}\label{IRBNet}}
+
+Prisma Health uses IRBNet to manage the IRB status of research projects.
+
+Students who wish to participate in this research study must have an IRBNet account. In their IRBNet profile, they must have a certificate of the CITI Training for \textbf{Biomedical/Clinical Course GCP Social and Behavior Research Best Practices for Clinical Research} and an Investigator Assurance Form uploaded.
+
+For new students to be able to interact with patients and administer testing, we have to submit an IRB amendment with their names in it. We cannot submit an IRB amendment until they have an IRBNet account with those files uploaded and submitted. Without the IRB amendment, students can only shadow or observe. An amendment can take a few days to be approved so all of the following steps must be completed as soon as possible.
+
+\hypertarget{CreateIRBNetAccount}{%
+\subsection{Create an IRBNet Account}\label{CreateIRBNetAccount}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Go to \url{https://www.irbnet.org}.
+\item
+  Click \texttt{New\ User\ Registration} in the top right corner under the Log In.
+\item
+  Fill out your first and last name and choose a username and password.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Always use your proper name with standard capitalization.
+  \item
+    Passwords must be at least 8 characters. 4. Accept the terms and conditions.
+  \end{itemize}
+\item
+  Search for your organization.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Medical students search for the University of South Carolina.
+  \item
+    Furman students search for Furman University.
+  \end{itemize}
+\item
+  Select your organization and click \texttt{Continue}.
+\item
+  Input your contact information using the email associated with your organization.
+\item
+  Click \texttt{Register} to continue.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    If you mistyped your email, click the \texttt{edit} button next to the email field
+  \end{itemize}
+\item
+  Click \texttt{Continue}. An activation email will be sent to you.
+\item
+  Open the email from IRBNet and click on the activation link.
+\end{enumerate}
+
+\hypertarget{CITITraining}{%
+\subsubsection{CITI Training}\label{CITITraining}}
+
+Some students may have already completed the necessary CITI training. If that is the case, ensure you have the certificate for the completed courses and skip the next steps.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Log into the CITI website at \url{https://www.citiprogram.org} -- sign in using a USER ID and password (one you already have or if needed -- created one).
+\item
+  Affiliate yourself with your organization -- medical students will choose the University of South Carolina and Furman students will choose Furman University. You will answer a few questions. (Question 1; (A) 2; (Not at this time); 3; (No) 4; (GCP -- Social and Behavioral Research Best Practices for Clinical Research); 5;(Not Require) 6;(Not at this time) 7;(Not at this time) 8; (Select None)
+  After answering these questions, you will arrive at a screen where you will choose which module to take, and you will choose the Biomedical/Clinical Course or GCP Social and Behavior Research Best Practices for Clinical Research. What will happen next is that any courses you previously have taken, through CITI, should populate if they are the same as what we require. Any courses that need to be completed will show up as a live link. You will only need to take those courses and not retake what you have already done.
+\end{enumerate}
+
+\hypertarget{IRBNetCertificates}{%
+\subsubsection{Upload files into IRBNet}\label{IRBNetCertificates}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Log into IRBNet.
+\item
+  Under \texttt{Manage\ your\ User\ Profile}, under \texttt{Training\ \&\ Credentials}, click \texttt{Add\ New\ Record}.
+\item
+  In the \texttt{Document\ Type} field, select \texttt{My\ CITI\ Training}.
+\item
+  Under \texttt{Effective\ Date}, put the date on the certificate.
+\item
+  In the \texttt{File:} field, clicke \texttt{Browse} and select the file for your CITI Training certificate.
+\item
+  Click \texttt{Attach}.
+\item
+  Under \texttt{Manage\ your\ User\ Profile}, under \texttt{Training\ \&\ Credentials}, click \texttt{Add\ New\ Record}.
+\item
+  In the \texttt{Document\ Type} field, select ``.
+\item
+  Under \texttt{Effective\ Date}, put the date you signed the Investigator Assurance Form.
+\item
+  In the \texttt{File} field, click \texttt{Browse} and select the file for your \emph{signed} investigator assueance form.
+\item
+  Click \texttt{Attach}.
+\item
+  Both files should be listed under \texttt{Training\ \&\ Credentials}.
+\item
+  Under \texttt{Training\ \&\ Credentials} click \texttt{submit}.
+\item
+  When it prompts you to select a committee to submit to, select \textbf{Prisma IRB Subcommittee C}.
+\end{enumerate}
+
+\hypertarget{IRB-Protocol}{%
+\section{Protocol}\label{IRB-Protocol}}
+
+\hypertarget{Appendix-IRB-Protocol-Participants}{%
+\subsection{Participants}\label{Appendix-IRB-Protocol-Participants}}
+
+Participants recruited for this study will be breast cancer or gynecological cancer patients (N=40) who agree to participate in an exercise study examining the effects of chemotherapy on muscle mitochondrial oxidative capacity, a measure of skeletal muscle health. A written informed consent will be obtained from the participants before data collection. This study has been submitted for review by the Institutional Review Board at the Prisma Office of Research Compliance and Administration (ORCA). We pledge to abide by all applicable institutional and governmental regulations regarding the ethical use of human volunteers for the duration of this research.
+
+This study focuses on breast cancer or gynecological cancer patients who will undergo a standard of care chemotherapy treatment as directed by their oncologist.
+Other eligibility requirements for this study are as follows:
+
+\begin{itemize}
+\tightlist
+\item
+  Patients diagnosed with breast cancer or gynecological cancer without distance metastasis
+\item
+  Ages \textgreater{} 20 years old
+\item
+  Able to perform exercise on a stationary cycle ergometer at moderate intensities for a maximum of 15 minutes
+\item
+  Hemoglobin values greater than 10 at baseline
+\item
+  ALT and AST values less than 2.5X the upper limit of normal by institutional standards
+\item
+  Godin-Shepard Leisuretime Physical Activity Questionnaire (GLTEQ) score of 14 or greater will be included. A score of less than 14 is considered insufficiency active/sedentary.
+\end{itemize}
+
+The exclusion criteria include patients with:
+
+\begin{itemize}
+\tightlist
+\item
+  Clinically advanced cardiovascular disease
+\item
+  Clinically advanced pulmonary disease
+\item
+  Disease requiring continuous oxygen supplementation
+\item
+  Greater than 2 centimeters or more of subcutaneous adipose tissue on the anterior thigh
+\item
+  Inability to walk or stand
+\item
+  Movement disorders
+\item
+  Spinal cord injuries
+\item
+  Autoimmune disorders
+\item
+  Pregnant or breastfeeding
+\item
+  Mini-Mental State Examination (MMSE)
+\end{itemize}
+
+Participants for this study will be recruited through informative pamphlets at the Center for Integrative Oncology Survivorship, Prisma Health System's Cancer Institute at Greenville Memorial Hospital and affiliated physician offices.
+
+\hypertarget{Appendix-IRB-Protocol-ExperimentalDesign}{%
+\subsection{Experimental Design}\label{Appendix-IRB-Protocol-ExperimentalDesign}}
+
+We will use an observational, 2-way, treatment x time, within-subjects research design to compare skeletal muscle oxidative capacity of the vastus lateralis muscle, during stationary cycling, across breast cancer or gynecological cancer patients at baseline and across their chemotherapy regimen. Muscle mitochondrial oxidative capacity of the Vastus Lateralis muscle will be non-invasively evaluated using continuous wave, Near Infrared Resonance Spectroscopy (NIRS, PortaMon by Artinis Medical Systems BV in The Netherlands).
+
+\hypertarget{Appendix-IRB-Protocol-StudyProtocol}{%
+\subsection{Study protocol}\label{Appendix-IRB-Protocol-StudyProtocol}}
+
+The NIRS participant testing will be performed in the University of South Carolina School of Medicine Greenville's Human Performance Laboratory located within Cancer Institute Faris Road facility. Testing will take approximately 30 minutes per session, with a maximum of 180 minutes of participation per patient. The independent variables in this study are drug regimen and number of chemotherapy treatments. The dependent variables in this study will be the change in oxygenation and deoxygenation status of the vastus lateralis as measured by the NIRS device, indicative of mitochondrial oxidative capacity, after a bout of cycling. Patients will be asked to avoid exercise and use of certain substances (tobacco, alcohol, caffeine, and contraindicated medications) 24 hours prior to testing.
+
+The NIRS device consists of three LED transmitters that transmit light waves into muscle tissue and one high sensitivity PIN diode receiver, equipped with ambient light protection, which assesses light received from the transmitters. The three transmitters each emit light at two wavelengths. These wavelengths correspond to the absorption wavelengths of oxyhemoglobin (O2Hb) and deoxyhemoglobin in the skeletal muscle tissue (approximately 760 nm and 850 nm). These wavelengths of light will be received from three separate transmitter distances (30mm, 35mm, and 40mm) at 10 Hz. The ΔO2Hb and Δ tissue saturation index (TSI\%) will be calculated as the change from the last 30-s average of the work interval to the last 30-s average of the recovery interval. Oxygen uptake (VO2) will be obtained by using open-circuit spirometry (Parvo Medics, Inc, Salt Lake City, Utah). Cycling power will be determined via lactate threshold curves generated for each participant.
+Participants will be asked to perform exercise in shorts or equivalent. Participants will first sit at rest in a chair, as the NIRS device is applied to the vastus lateralis. The device will have double sided adhesive tape to lightly secure its position to the skin. The device will be wrapped in a black cloth to fully secure its position, limit device mobility, and block ambient light in the laboratory. Participants will then stand and walk to the cycle with the NIRS secured to the participant's leg. Participants will sit on the bike for a 2-minute rest while wearing a fitted mask that comfortably measures the participant's rate and amount of oxygen uptake (VO2) and other ventilatory measurements at rest and during exercise.
+
+\hypertarget{Appendix-IRB-Protocol-StudyProtocol-Visit1}{%
+\subsubsection{Visit 1}\label{Appendix-IRB-Protocol-StudyProtocol-Visit1}}
+
+Researchers will determine the participant's lactate threshold curve and ventilatory threshold during a graded exercise test (Table 1). The lactate threshold is a measure of the rate at which capillary blood lactate measurements rise as an effect of increased exercise intensity. The blood lactate curve will be used to determine an individualized power wattage for subsequent exercise testing of ``on-off kinetics'' (see below description). Capillary blood lactate levels will be obtained by finger stick for point of care testing. Ventilatory threshold will be measured using indirect calorimetry via a metabolic cart that captures expired gasses (O2 and CO2) through a comfortable silicone mask worn by the participant.
+
+A baseline blood lactate level will be obtained at rest, then the participant will be instructed to cycle for three minutes beginning at 10W. After the 3-minute stage is complete, the power output will increase by 15 watts. The participant will cycle for 3 minutes at each stage until their lactate threshold reaches 4.0 mmol/L. Once the blood lactate reaches 4.0 mmol/L, one final, three-minute stage will be performed. A final lactate reading will be obtained at the completion of this exercise stage. The power output that is equivalent to 1.1x the wattage at which their lactate threshold exceeded 4.0 mmol/L will be used as the exercise intensity (``on-kinetics'') for subsequent visits accompanying chemotherapy treatments.
+
+\hypertarget{Appendix-IRB-Protocol-StudyProtocol-SubsequentVisits}{%
+\subsubsection{Subsequent Visits}\label{Appendix-IRB-Protocol-StudyProtocol-SubsequentVisits}}
+
+Participants will return for each subsequent visit within a week before their next chemotherapy infusion as long as they are able to safely continue the exercise protocol (Table 2). The NIRS device will be secured to the participant's leg similar to the first visit and the participants will put on the mask to measure ventilation. Participants will begin pedaling for a warmup at 0 watts for 2 minutes. After the two-minute warm up period is completed, the power output will increase to the previously calculated wattage of 1.1x LT. The participant will cycle at a self-selected cadence at this power wattage for a duration of 2 minutes (``on-kinetics''). At the end of each on-kinetics stage, participants will be asked to rate their level of effort during exercise, Rate of Perceived Exertion (RPE). The participant will then stop pedaling and will remain in recovery, sitting on the bike for 2 minutes (``off-kinetics'' stage). With 5 seconds remaining in the ``off-kinetics'' stage, the participant will start pedaling at the same self-selected cadence for their next ``on-kinetics'' stage, followed by another 2-min ``off-kinetics'' period. This cycle of exercise followed by rest, known as on-off kinetics, will repeat for a total maximum of 3 times, or until the participant reaches volitional fatigue.
+
+\hypertarget{Appendix-IRB-Protocol-StudyProtocol-Surveys}{%
+\subsubsection{Collection of Surveys and Biometrics at Each Visit}\label{Appendix-IRB-Protocol-StudyProtocol-Surveys}}
+
+We will be administering MoCA, BFI, Physical Activity Intake, PROMIS Global Health, and GLTPAQ surveys prior to participant engagement in cycling exercises. We will also be administering BFI, PROMIS Global Health, and Physical Activity Follow-up surveys after each individual study session to assess changes in cancer related fatigue associated with chemotherapy treatment that may develop throughout the study time period.
+
+Patients will undergo routine, standard of care blood draws for a CBC and metabolic testing per their managing physician with an additional tube, during the same venipuncture, for a study covered aliquot for biomarkers related to mitochondrial health for correlative research.
+
+For biomarker analysis, exosomes from patient serum (approximately 250 uL samples) will be isolated using an ExoQuick ULTRA EV Isolation System (System Biosciences). Exosomes will then be detected with Western blotting with exosome specific antibodies. Exosome samples will be sent for RNASeq analysis of RNA within the isolated exosomes at System Biosciences. Bioinformatics analysis of the RNAs identified from the RNASeq will then be used to determine if there are specific RNAs present in patient blood associated with changes in mitochondrial function. In addition, selected mRNAs associated with mitochondrial function will be assessed (expression levels determined) with RT-qPCR using aliquots of the isolated serum exosomes.
+
+\hypertarget{Appendix-IRB-Protocol-StatisticalAnalyses}{%
+\subsection{Statistical Analyses}\label{Appendix-IRB-Protocol-StatisticalAnalyses}}
+
+ANOVA one way with tukey post-hoc analysis to detect differences between drug regimen groups at each time point (baseline, all subsequent chemotherapy treatments) for time constant response and change in mitochondrial function for mitochondrial oxidative capacity. One-way ANOVAs will be used to additionally detect differences between different timepoints from baseline to final chemotherapy treatment for each individual chemotherapy regimen.
 
   \bibliography{book.bib,packages.bib}
 

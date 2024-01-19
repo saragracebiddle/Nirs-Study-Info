@@ -11,7 +11,6 @@ At least 30 minutes prior to when the participant is scheduled to arrive, turn o
 
 Print out the following instruments:
 
-- MoCA \@ref(Appendix-Surveys-moca)
 - MMSE \@ref(Appendix-Surveys-mmse)
 - Godin-Leisure Time Exercise Questionnaire \@ref(Appendix-Surveys-glteq)
 - Physical Activity History \@ref(Appendix-Surveys-pah)

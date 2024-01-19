@@ -14,5 +14,6 @@ rmd_files: ["index.Rmd",
 "appendix-portamon.Rmd",
 "appendix-parvo.Rmd",
 "appendix-surveys.Rmd",
-"appendix-instruments.Rmd"
+"appendix-instruments.Rmd",
+"appendix-IRB.Rmd"
 ]

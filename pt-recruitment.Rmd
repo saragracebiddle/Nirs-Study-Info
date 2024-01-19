@@ -1,10 +1,52 @@
 # Patient Recruitment {#PatientRecruitment}
 
+
+```{r, echo = F}
+library(DiagrammeR)
+```
+
+
+```{r, echo = F}
+grViz("
+digraph pt_recruitment {
+
+  graph [overlap = true, fontsize = 10]
+
+  node[shape = ellipse,
+       fontname = Helvetica]
+  a [label = '@@1']
+  b [label = '@@2']
+  c [label = '@@3']
+
+  node [shape = box]
+  d [label = '@@4']
+  e [label = '@@5']
+  f [label = '@@6']
+  g [label = '@@7']
+
+  d -> e
+  e -> {a g}
+  g -> {b f}
+  f -> {b c}
+  
+}
+
+[1]: 'Ineligible'
+[2]: 'Declined'
+[3]: 'Consented'
+[4]: 'Patient Identified'
+[5]: 'Screen Chart'
+[6]: 'Contact Patient'
+[7]: 'Contact Oncologist'
+")
+```
+
+
 ## Inclusion/Exclusion Criteria
 
 To be eligible for the study, patients must:
 
-- have primary breast of gynecological cancer
+- have primary breast or gynecological cancer
 - non-metastatic 
 - that is being treated with chemotherapy 
     - no immunotherapy or radiation at the same time or before chemotherapy
