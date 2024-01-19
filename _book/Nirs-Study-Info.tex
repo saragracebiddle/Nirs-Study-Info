@@ -127,7 +127,7 @@
 
 \title{NIRS Study Information}
 \author{Sara Grace Biddle}
-\date{2024-01-18}
+\date{2024-01-19}
 
 \begin{document}
 \maketitle
@@ -139,7 +139,86 @@
 \hypertarget{about}{%
 \chapter{About}\label{about}}
 
-This study is being conducted in collaboration with the PrismaHealth Cancer Institute, Furman University Health Science Department, and University of South Carolina School of Medicine Greenville. The principal investigators are Dr.~Jennifer Trilk of USC SoMG and Dr.~Randolph Hutchison of Furman.
+This study is being conducted in collaboration with the PrismaHealth Cancer Institute, Furman University Health Science Department, and University of South Carolina School of Medicine Greenville.
+
+\hypertarget{contact-information}{%
+\section{Contact Information}\label{contact-information}}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Dr.~Jennifer Trilk}
+
+\begin{quote}
+Principal Investigator\\
+University of South Carolina School of Medicine- Greenville\\
+\href{mailto:trilk@greenvillemed.sc.edu}{\nolinkurl{trilk@greenvillemed.sc.edu}}
+\end{quote}
+
+\textbf{Dr.~Randolph Hutchison}
+
+\begin{quote}
+Principal Investigator\\
+Furman University Department of Health Science\\
+\href{mailto:randolph.hutchison@furman.edu}{\nolinkurl{randolph.hutchison@furman.edu}}
+\end{quote}
+
+\textbf{Dr.~Larry Gluck}
+
+\begin{quote}
+\href{mailto:Larry.Gluck@prismahealth.org}{\nolinkurl{Larry.Gluck@prismahealth.org}}
+\end{quote}
+
+\textbf{Dr.~Julie Martin}
+
+\begin{quote}
+Director of Cancer Research\\
+Prisma Health\\
+\href{mailto:Julie.Martin@prismahealth.org}{\nolinkurl{Julie.Martin@prismahealth.org}}
+\end{quote}
+
+\textbf{Frankie Bennett}
+
+\begin{quote}
+Human Performance Lab Coordinator\\
+University of South Carolina School of Medicine- Greenville\\
+\href{mailto:BENNETT24@greenville.sc.edu}{\nolinkurl{BENNETT24@greenville.sc.edu}}
+\end{quote}
+
+\textbf{Sara Biddle}
+
+\begin{quote}
+Research Coordinator\\
+Prisma Health Cancer Institute\\
+\href{mailto:sara.biddle@prismahealth.org}{\nolinkurl{sara.biddle@prismahealth.org}}
+\end{quote}
+
+\textbf{Sydney Hackwell}
+
+\begin{quote}
+Research Coordinator\\
+Prisma Health Cancer Institute\\
+\href{mailto:sydney.hackwell@prismahealth.org}{\nolinkurl{sydney.hackwell@prismahealth.org}}
+\end{quote}
+
+\textbf{Katie Banenas}
+
+\begin{quote}
+Research Coordinator\\
+Prisma Health Cancer Institute\\
+\href{mailto:katie.banenas@prismahealth.org}{\nolinkurl{katie.banenas@prismahealth.org}}
+\end{quote}
+
+\textbf{Human Performance Lab}
+
+\begin{quote}
+\begin{enumerate}
+\def\labelenumi{(\arabic{enumi})}
+\setcounter{enumi}{863}
+\tightlist
+\item
+  455-1410
+\end{enumerate}
+\end{quote}
 
 \hypertarget{Literature}{%
 \chapter{Literature}\label{Literature}}
@@ -170,35 +249,149 @@ The differential pathlength factor (dpf) is the measurement of the path that the
 \hypertarget{PatientRecruitment}{%
 \chapter{Patient Recruitment}\label{PatientRecruitment}}
 
-Run a report in EPIC with the following parameters:
+\hypertarget{inclusionexclusion-criteria}{%
+\section{Inclusion/Exclusion Criteria}\label{inclusionexclusion-criteria}}
+
+To be eligible for the study, patients must:
+
+\begin{itemize}
+\tightlist
+\item
+  have primary breast of gynecological cancer
+\item
+  non-metastatic
+\item
+  that is being treated with chemotherapy
+
+  \begin{itemize}
+  \tightlist
+  \item
+    no immunotherapy or radiation at the same time or before chemotherapy
+  \item
+    the chemotherapy regimen can be any regimen that is considered \emph{standard of care}
+  \end{itemize}
+\item
+  cannot have had chemotherapy within the past 5 years for any reason
+\item
+  able to participate in moderate exercise on a stationary bike
+\item
+  female patients only, male breast cancer patients are not eligible at this time
+\end{itemize}
+
+\hypertarget{screening-the-electronic-medical-record}{%
+\section{Screening the Electronic Medical Record}\label{screening-the-electronic-medical-record}}
+
+Prisma Health uses EPIC as their electronic medical record service.
+You can only access EPIC with permission from Prisma Health. The medical students may technically have access to EPIC but they have not had much training on how to use it and actually accessing it can be cumbersome and difficult for them. It is much easier for a Research Coordinator to do any work in EPIC.
+
+Use the Production Environment of EPIC. In the Production Environment, you can create and run reports that you cannot in the Read Only Environment.
+
+Log in with your Prisma Health log in information and select the department \texttt{CANCER-FARIS\ ONCOLOGY\ {[}100224000{]}}.
+
+\hypertarget{using-a-report}{%
+\subsection{Using a Report}\label{using-a-report}}
+
+Go to \texttt{My\ Reports}.
+
+I have a report named \texttt{NIRS\ Eligibility\ by\ Stage} that has the following parameters:
 
 \begin{quote}
-Select patients in registries
-
-FROM
-
-\emph{Registries:}
-
-Registry ID: CANCER POPULATION REGISTRY
-
-\emph{Level of detail:}
-
+Select Patients in Registries\\
+\textbf{From}\\
+\emph{Registries:}\\
+Registry ID: CANCER POPULATION REGISTRY\\
+\emph{Level of detail:}\\
 Patients
 
-WHERE
+\textbf{Where}\\
+\emph{Registry metrics:} (1 OR 2 OR 3 OR 4 OR 5) AND 6\\
 
-DM TREATMENT PLAN PROVIDER CONTAINS ELDER, JEFFERY WAYNE OR EDENFILED, WILLIAM JEFFERY OR JORGENSON, CARLA WALKER OR STEPHENSON JR, JOE JOHN OR PULS, LARRY EDWIN
-
-AND
-
-CHEMOTHERAPY IN LAST YEAR = NO
-
-AND DIAGNOSIS IN GROUPER BREAST OR GYNECOLOGICAL CANCER GROUPER
-
-TREATMENT PLAN START DATE GREATER THAN TODAY - 14
+\begin{quote}
+1 Metric Name or ID: DM TREATMENT PLAN PROVIDER and Metric Value: Contains EDENFIELD, WILLIAM JEFFERY\\
+2 Metric Name or ID: DM TREATMENT PLAN PROVIDER and Metric Value: Contains ELDER, JEFFERY WAYNE\\
+3 Metric Name or ID: DM TREATMENT PLAN PROVIDER and Metric Value: Contains JORGENSEN, CARLA WALKER\\
+4 Metric Name or ID: DM TREATMENT PLAN PROVIDER and Metric Value: Contains STEPHENSON JR, JOE JOHN\\
+5 Metric Name or ID: DM TREATMENT PLAN PROVIDER and Metric Value: Contains PULS, LARRY EDWIN\\
+6 Metric Name or ID: DM MED PATIENT RECIEVED CHEMOTHERAPY IN PAST YEAR and Metric Value: No\\
 \end{quote}
 
-This will return a list of potentially eligible patients who meet the parameters specified in the query above. Take a quick look through the list and eliminate any definitively ineligible patients. Sometimes metastatic disease is listed as a second diagnosis and therefore slips through the exclusion of metastatic disease. Vascular diseases and injuries that would preclude ability to exercise are other common exclusion criteria. Male patients with breast cancer are not eligible for this study. Take a quick look through the patient's problem list. If the patient does not have any immediate exclusionary problems, pass their name and MRN on to the research coordinators, Sydney Hackwell and Katie Banenas. They will conduct a full chart screening and contact the patient if they are eligible.
+AND \emph{Diagnosis in grouper:}\\
+
+\begin{quote}
+Diagnosis Grouper (VCG): EDG ID CANCER BREAST OR\\
+Diagnosis Grouper (VCG): EDG ID CANCER FALLOPIAN TUBE OR\\
+Diagnosis Grouper (VCG): EDG ID CANCER OVARY OR\\
+Diagnosis Grouper (VCG): EDG ID CANCER CERVIX OR\\
+Diagnosis Grouper (VCG): EDG ID CANCER VAGINA OR\\
+Diagnosis Grouper (VCG): EDG ID CANCER VULVA\\
+\end{quote}
+
+AND \emph{Treatment Plan Start Date:}\\
+
+\begin{quote}
+Episode Types: Infusion Treatment and Discontinue Reasons to Exclude: (none) and Plan Number: (none) and Plan Staatuses: Active and Treatment Plan Start Date: Greater than or equal to TODAY - 14 OR\\
+Episode Types: ONCOLOGY TREATMENT and Discontinue Reasons to Exlude: (none) and Plan Number: (none) and Plan Statuses: Active and Treatment Plan Start Date: Greater than or equal to TODAY - 14 OR\\
+Episode Types: ONCOLOGY TREATMENT and Discontinue Reasons to Exclude: (none) and Plan Number: (none) and Plan Statuses: Future and Treatment Plan Start Date: Less than or equal to TODAY + 14 OR\\
+Episode Types: Infusion Treatment and Discontinue Reasons to Exclude: (none) and Plan Number: (none) and Plan Statuses: Future and Treatment Plan Start Date: Less than or equal to TODAY + 14\\
+\end{quote}
+
+AND \emph{Cancer Stage Distant Metastasis (M) Value}:\\
+
+\begin{quote}
+Stage Classifications: Clinical and Fallback Classifications: (none) and Signed Only?: (none) and SmartData Identifier: EPIC\#42385 and Which Stage: Most Recent and Cancer Stage Distant Metastasis (M) Value: cM0 OR\\
+Stage Classifications: Clinical and Fallback Classifications: (none) and Signed Only?: (none) and SmartData Identifier: EPIC\#42385 and Which Stage: Most Recent and Cancer Stage Distant Metastasis (M) Value: cM0(i+) OR\\
+Stage Classifications: Clinical and Fallback Classifications: (none) and Signed Only?: (none) and SmartData Identifier: EPIC\#42385 and Which Stage: Most Recent and Cancer Stage Distant Metastasis (M) Value: M0 OR\\
+Stage Classifications: Pathologic and Fallback Classifications: (none) and Signed Only?: (none) and SmartData Identifier: EPIC\#42385 and Which Stage: Most Recent and Cancer Stage Distant Metastasis (M) Value: cM0 OR\\
+Stage Classifications: Pathologic and Fallback Classifications: (none) and Signed Only?: (none) and SmartData Identifier: EPIC\#42385 and Which Stage: Most Recent and Cancer Stage Distant Metastasis (M) Value: cM0(i+) OR\\
+Stage Classifications: Pathologic and Fallback Classifications: (none) and Signed Only?: (none) and SmartData Identifier: EPIC\#42385 and Which Stage: Most Recent and Cancer Stage Distant Metastasis (M) Value: M0\\
+\end{quote}
+
+AND \emph{Line of Treatment}:\\
+
+\begin{quote}
+Episode Types: ONCOLOGY TREATMENT and Discontinue Reasons to Exclude: (none) and Plan Number: (none) and Plan Statuses: (none) and Line of Treatment: Not equal to Third Line OR\\
+Episode Types: Infusion Treatment and Discontinue Reasons to Exclude: (none) and Plan Number: (none) and Plan Statuses: (none) and Line of Treatment: Not equal to Third Line\\
+AND \emph{Treatment Plan Goal}:\\
+Episode Types: Infusion Treatment and Discontinue Reasons to Exclude: (none) and Plan Number: (none) and Plan Statuses: Active and Treatment Plan Goal: Not equal to Palliative OR\\
+Episode Types: Infusion Treatment and Discontinue Reasons to Exclude: (none) and Plan Number: (none) and Plan Statuses: Future and Treatment Plan Goal: Not equal to Palliative OR\\
+Episode Types: ONCOLOGY TREATMENT and Discontinue Reasons to Exclude: (none) and Plan Number: (none) and Plan Statuses: Active and Treatment Plan Goal: Not equal to Palliative OR\\
+Episode Types: IONCOLOGY TREATMENT and Discontinue Reasons to Exclude: (none) and Plan Number: (none) and Plan Statuses: Future and Treatment Plan Goal: Not equal to Palliative
+\end{quote}
+\end{quote}
+
+This will return a list of potentially eligible patients who meet the parameters specified in the query above. I have the report settings such that the results table shows me their treatment plan start date, next oncology appointment date, name, MRN, clinical stage, diagnosis, and plan provider. When I select a patient from the list, it displays an Oncology Snapshot under the report results table. I take a quick look through the Oncolog Snapshot and if I need to take a closer look at their chart, I can open it up.
+
+I have not figured out how to share this report or its results with other people. As it is, I look through the patients returned by the report and eliminate any definitively ineligible patients.
+
+Sometimes metastatic disease is listed as a second diagnosis and therefore slips through the exclusion of metastatic disease. Vascular diseases and injuries that would preclude ability to exercise are other common exclusion criteria. Male patients with breast cancer are not eligible for this study. Take a quick look through the patient's problem list. If the patient does not have any immediate exclusionary problems, pass their name and MRN on to the research coordinators, Sydney Hackwell and Katie Banenas. They will conduct a full chart screening and contact the patient if they are eligible.
+
+I include all patients returned by the report into the List. This is because, from day to day, the report returns different patients. If a patient is not in the List, I will assume that I have not yet looked at their chart. So, even if I look at a chart and immediately determine that a patient is not eligible, I write their information into the List and mark them ineligible so I don't forget that I already screened their chart. This also helps determine if there are new potentially eligible patients returned by the report. On average, the report will return between 5 and 10 patients. Due to the month long limit on treatment plan start date, the report will return the same patients for many days in a row. If you don't keep track of everyone that the report returned, even the ineligible ones, you may get confused about which patients need to be screened and which ones you have already screened.
+
+\hypertarget{using-the-schedule}{%
+\subsection{Using the Schedule}\label{using-the-schedule}}
+
+Open the \texttt{Schedule} tab.
+
+If there is not a schedule view that you like, you can make your own by clicking the green plus sign above \texttt{My\ Schedule}.
+
+Give it a name. I called mine \texttt{nirs\ providers}. Under \texttt{Selected\ Columns} you can choose what information you want to display about the appointment. Under \texttt{Configuration}, you can add the providers. I added all five oncologists.
+
+Now when you select that schedule, you will only see the five oncologists that refer to the NIRS study. To take a closer look at an appointment, expand the schedule by clicking the gray triangle next to the name of the schedule. Click on the provider name whose schedule you are interested in. This will expand the schedule of only that provider, where you can see more details about their appointments. Use the calendar in the top left to select different days.
+
+Click on an appointment you are interested in examining further. This should open up a panel to the right of the schedule. I have this set up to show \texttt{Snapshot} as the default view. You can rearrange the panels shown in the snapshot by clicking on the wrench in the top right of the snapshot panel.
+
+I use the schedule to screen patients coming in to the Multidisciplinary Clinic (MDC).
+
+Jorgensen has appointments in the MDC every other Monday. Stephenson has appointments in the MDC every other Thursday. Screen these appointments at least one day before. Many will not have a chemotherapy plan or a cancer staging activity yet. Look for major health problems that would disqualify them from participation. If there are no major problems, pass the appointment information on to Katie and Sydney. If a patient has triple negative or estrogen receptor and progesterone receptor negative breast cancer, they are likely to receive chemotherapy and Katie or Sydney can contact them as soon as the chemotherapy is prescribed. This gives us more time for recruitment into the study, as Katie and Sydney can be at the MDC appointment or at the appointment where they are told about the chemotherapy, which is a lot more time than waiting until the chemo teach appointment to approach a patient.
+
+\hypertarget{potential-patient-list}{%
+\section{Potential Patient List}\label{potential-patient-list}}
+
+I use a Microsoft List, created in my PrismaHealth OneDrive, to share the patient information with Katie and Syndey rather than sending tons of emails. I update the list when I identify potentially eligible patients. I include the patient's MRN, first and last name, primary diagnosis (breast or gynecological), and which of the referring oncologists is on their treatment team. If they have an upcoming appointment that Katie or Sydney could go to and tell them about the study, I include the appointment information. If their first chemotherapy infusion is scheduled, I include that date so that we know how long we have to recruit and schedule them in the HPL.
+
+Katie and Sydney look through the list and conduct a more in depth chart screening. If they determine that a patient is not eligible, they click the \texttt{Ineligible} tag in the List and include reasons that the patient is not eligible. The categories of ineligibility that I included as defaults are: metastatic disease, chemotherapy treatment within the last five years, lab values, treatment plan other than chemotherapy. You can type in any new category you need; you are not limited to just the default ineligibility values.
+
+If a patient is determined to be eligible, one of the Research Coordinators will contact their oncologist to get permission to approach the patient at their next appointment. If the provider declines the study for them, then the patient is marked as \texttt{Declined} in the List. If the provider consents for the patient to be approached about the study, then one of the Research Coordinators will approach the patient at their next appointment. The patient will then either sign a consent or decline the study. If they decline the study, click the \texttt{Declined} tag in the List. Include a reason that they declined, such as stress, not enough time, etc.
 
 After contacting the patient, they will contact you if the patient signs the consent form. After the consent form is signed, we can begin contacting the patient to start scheduling for lab visits. Contact Dr.~Julie Martin after obtaining the consent form and she will put all NIRS related blood draws into EPIC. If for some reason we are not able to get the NIRS draws done at the same time as the other pre-chemo blood draws, consult with the patient and schedule this through Dr.~Julie Martin.
 
@@ -299,7 +492,7 @@ Conduct Lactate Threshold Exercise Test as described in \ref{ExerciseTesting-LT}
 \hypertarget{Methods-Onoff}{%
 \section{On/Off Kinetics Protocol}\label{Methods-Onoff}}
 
-Use the steps described in \ref{Appendix-Instruments-PortaMon-Usage} and \ref{Appendix-Instruments-PortaMon-Usage-Placement} along with the reference image of the previous placement to place the device in the same location as the last visit.
+Use the steps described in \ref{PortaMon} and \ref{PortaMon-Placement} along with the reference image of the previous placement to place the device in the same location as the last visit.
 
 Have the subject complete the following instruments:
 
@@ -318,6 +511,8 @@ If the PortaMon has been on for at least 10 minutes, proceed.
 Place the assembled mask on the participant's face and connect clear tubing to the mask.
 
 Conduct On/Off Kinetics Exercise Test as described in \ref{ExerciseTesting-Onoff}.
+
+Take the mask off the patient's face. Help the patient get off the bike. Remove the NIRS device and the heart rate monitor.
 
 \hypertarget{ExerciseTesting}{%
 \chapter{Exercise Testing}\label{ExerciseTesting}}
@@ -357,9 +552,26 @@ When selecting wattage jumps, remember that lactate should increase exponentiall
 
 The on/off kinetics test is completed on a cycle ergometer.
 
-Ventilatory measurements are collected breath by breath via metabolic cart (ParvoMedics OneTrue 2400, \ref{Appendix-Instruments-Parvo}). Muscle oxygenation measurements are collected via SR-NIRS (Artinis Medical Systems PortaMon, \ref{Appendix-Instruments-PortaMon})
+Ventilatory measurements are collected breath by breath via metabolic cart (ParvoMedics OneTrue 2400, \ref{Parvo}). Muscle oxygenation measurements are collected via SR-NIRS (Artinis Medical Systems PortaMon, \ref{PortaMon})
 
-The exercise test consists of three square-wave transitions from exercise at 110\% of wattage measured via lactate threshold testing to rest.
+The exercise test consists of three square-wave transitions from exercise at 110\% of wattage at lactate threshold to rest. Each stage of the test is two minutes long.
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Time & Intensity & \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+0-2 & Baseline Rest & \\
+2-4 & Warm Up (0 Watts) & \\
+4-6 & Exercise & Transition \\
+6-8 & Rest & 1 \\
+8-10 & Exercise & Transition \\
+10-12 & Rest & 2 \\
+12-14 & Exercise & Transition \\
+14-16 & Rest & 3 \\
+\end{longtable}
 
 \hypertarget{DataStorage}{%
 \chapter{Data Storage}\label{DataStorage}}
@@ -440,7 +652,7 @@ Be sure you have exported and stored all data appropriately.
 
 Take the lactate threshold data collection sheet.
 
-Average the duplicate lactate measurements.
+Average the duplicate lactate measurements for each completed stage.
 
 Make a plot of lactate by power (Watts). Find the power at which lactate would have been 4.00. That is the power at which lactate threshold occurred.
 
@@ -448,6 +660,34 @@ Multiply this power by 1.1 to calculate the power at which the patient will cond
 
 \hypertarget{DataAnalysis-Onoff}{%
 \section{On/Off Kinetics}\label{DataAnalysis-Onoff}}
+
+\hypertarget{using-the-app}{%
+\subsection{Using the App}\label{using-the-app}}
+
+Use the exported \texttt{.txt} file. Upload this file into the Shiny app.
+
+Refer to the data collection sheet and find the time on the NIRS that the exercise test started. Input this time.
+
+Look at the graph of the data. Make sure that the transitions are at the appropriate times on the graph. The graph should end on a rest stage. The transitions between stages should occur at the labelled vertical lines on the graph. If the graph seems a little off, you can adjust the start time by a few seconds to align the timing of the transitions as close as possible to the labelled lines on the graph.
+
+Once the graph of the raw data looks correct, look at the plotted regressions. The gray is the raw data and the red is the regression line. The red should follow the gray raw data as closely as possible. If the regression does not seem to follow this at all, you can try adjusting the \texttt{transition\ time} variable. This will remove a few seconds from the beginning and end of the stage, where the patient may have been moving around on the bike or adjusting from the previous stage. Check to make sure that removing the time made a beneficial difference. Sometimes removing the transition time is helpful and sometimes it makes things worse so try several values and check the regression lines each time.
+
+Once you are content with the regressions, check the final table of regression coefficients.
+
+When you are okay with the results obtained from the app, you can download the report as a \texttt{.pdf}. The report shows the parameters used for the analysis, graphs, and results tables from the analysis. Save this \texttt{.pdf} with the raw \texttt{.txt} file and name is appropriately.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{knitr}\SpecialCharTok{::}\FunctionTok{include\_app}\NormalTok{(}\StringTok{\textquotesingle{}https://saragracebiddle.shinyapps.io/DataAnalysis/\textquotesingle{}}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+Upload the report into RedCap.
+
+\hypertarget{by-hand}{%
+\subsection{By Hand}\label{by-hand}}
+
+Use the exported \texttt{.txt} file.
 
 Read in the exported PortaMon data.
 
@@ -481,14 +721,6 @@ We use the following equation to describe an asymptotic or monoexponential curve
 Where \({Asym}\) is the asymptote (or Steady State), \(B_0\) is the value at time 0, \(t\) is the time (in seconds), and \(\tau\) is the time constant.
 
 Calculate the coefficients for the monoexponential curve for each transition. There are 9 monoexponential curve equations: 3 signal types and 3 transitions.
-
-Use the app, shown below, to do all of these steps without having to run any code.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr}\SpecialCharTok{::}\FunctionTok{include\_app}\NormalTok{(}\StringTok{\textquotesingle{}https://saragracebiddle.shinyapps.io/DataAnalysis/\textquotesingle{}}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
 
 When you are satisfied with the results obtained from the app, download the report and upload it into the RedCap.
 
@@ -1271,6 +1503,21 @@ Check that the report will be printed with 10-second averages. Click `config' in
 
 The ParvoMedics software only exports metabolic cart data as Excel files. Select the data collection instance you wish to export and save it as an Excel file on the cart. Use a USB drive to transfer the Excel file from the Parvo cart to another caomputer. Since the Parvo cart is not connected to the internet and never gets Windows or any other software updates, the Excel format is a legacy format. You will have to manually open the Excel file and save it as a modern Excel format.
 
+\hypertarget{Parvo-CleanEquipment}{%
+\subsection{Cleaning Equipment}\label{Parvo-CleanEquipment}}
+
+Put on a pair of gloves.
+
+Everything that has touched the patient's skin will need to be cleaned. Place everything that needs to be cleaned into a pink bucket. This includes the mask, the mask straps, the clear tubing, the spit catcher, and the heart rate monitor strap.
+
+Take apart the mask into its individual pieces. Take the button off the heart rate monitor strap and wipe the button down with an alcohol wipe.
+
+On the blue cart in the corner behind the door, there is a white bucket with a lid. Take this cart with the pink bucket. When you walk through the hallways of the hospital, you can NOT wear gloves. Take off your gloves and put a clean pair in a pocket to bring with you just in case. Take the cart with the pink bucket of dirty equipment and walk to the service room. In the service room, take the pieces of the mask, disassembled, and the mask strap and the heart rate monitor strap and place them all in the blue liquid in the white bucket. Ensure the blue liquid covers all the pieces. Start a timer for 12 minutes. Leave everything soaking for 12 minutes. Make sure to put the lid on the bucket while it soaks, as the blue liquid is light sensitive.
+
+While everything is soaking, pump soap and water into the clear tubing. Swish the soapy water around the tubing, making sure to get every part of the tubing. Do this over the sink or you will spill water out of the ends of the tubing. Rinse the tubing out and get out all of the soapy water. Use soap and water to clean out the bottom of the pink bucket. It had dirty equipment in it and it needs to be cleaned before you put clean equipment back in it.
+
+At the end of the 12 minutes, pull all the parts out of the blue liquid and rinse them off in the sink. Put them in the pink bucket. Close the bucket of blue liquid. Walk the blue cart back to the lab. Take all the equipment and set it out to dry behind the door.
+
 \hypertarget{Appendix-Surveys}{%
 \chapter{Surveys}\label{Appendix-Surveys}}
 
@@ -1311,13 +1558,13 @@ Locate the vastus lateralis. Find the ASIS (anterior superior iliac spine) by as
 
 Use the ultrasound gel to cover the wand.
 
-Place the wand over the pre-determined location of the vastus lateralis.
+Place the wand over the pre-determined location of the vastus lateralis. Move around the wand until you find the location of the thinnest section of adipose tissue. Ensure that this is still over the vastus lateralis by marking the location with a marker, then removing the wand and asking the patient to extend their leg and flex their quadriceps muscles. If the dot is not on top of the vastus lateralis when the patient extends their leg, try again. If the dot is over the vastus lateralis, place the wand back over the dot.
 
-Freeze the screen when you want to measure adipose tissue thickness.
+Freeze the screen.
 
 Press the `caliper' button to use calipers on the frozen screen.
 
-Move one end of the caliper to the top of the screen. Move the other end of the caliper to the area of the screen that looks like the boundary between the muscle belly and the edge of the adipose tissue. This will be a silvery line across the screen.
+Move one end of the caliper to the top of the screen. Move the other end of the caliper to the area of the screen that looks like the boundary between the muscle belly and the edge of the adipose tissue. This will be a silvery line across the screen. Try to make the caliper measurement as vertical as possible, as a diagonal measurement will be larger than a straight one.
 
 Record the measurement given by the caliper.
 

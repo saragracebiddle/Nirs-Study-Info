@@ -6,13 +6,38 @@ Be sure you have exported and stored all data appropriately.
 
 Take the lactate threshold data collection sheet. 
 
-Average the duplicate lactate measurements.
+Average the duplicate lactate measurements for each completed stage.
 
 Make a plot of lactate by power (Watts). Find the power at which lactate would have been 4.00. That is the power at which lactate threshold occurred. 
 
 Multiply this power by 1.1 to calculate the power at which the patient will conduct subsequent on/off kinetics testing.
 
 ## On/Off Kinetics {#DataAnalysis-Onoff}
+
+### Using the App
+
+Use the exported `.txt` file. Upload this file into the Shiny app. 
+
+Refer to the data collection sheet and find the time on the NIRS that the exercise test started. Input this time. 
+
+Look at the graph of the data. Make sure that the transitions are at the appropriate times on the graph. The graph should end on a rest stage. The transitions between stages should occur at the labelled vertical lines on the graph. If the graph seems a little off, you can adjust the start time by a few seconds to align the timing of the transitions as close as possible to the labelled lines on the graph. 
+
+Once the graph of the raw data looks correct, look at the plotted regressions. The gray is the raw data and the red is the regression line. The red should follow the gray raw data as closely as possible. If the regression does not seem to follow this at all, you can try adjusting the `transition time` variable. This will remove a few seconds from the beginning and end of the stage, where the patient may have been moving around on the bike or adjusting from the previous stage. Check to make sure that removing the time made a beneficial difference. Sometimes removing the transition time is helpful and sometimes it makes things worse so try several values and check the regression lines each time. 
+
+Once you are content with the regressions, check the final table of regression coefficients. 
+
+When you are okay with the results obtained from the app, you can download the report as a `.pdf`. The report shows the parameters used for the analysis, graphs, and results tables from the analysis. Save this `.pdf` with the raw `.txt` file and name is appropriately. 
+
+```{r, eval = F}
+knitr::include_app('https://saragracebiddle.shinyapps.io/DataAnalysis/')
+```
+
+
+Upload the report into RedCap. 
+
+### By Hand
+
+Use the exported `.txt` file.
 
 Read in the exported PortaMon data. 
 
@@ -47,12 +72,6 @@ Where ${Asym}$ is the asymptote (or Steady State), $B_0$ is the value at time 0,
 
 
 Calculate the coefficients for the monoexponential curve for each transition. There are 9 monoexponential curve equations: 3 signal types and 3 transitions. 
-
-Use the app, shown below, to do all of these steps without having to run any code.
-
-```{r, eval = F}
-knitr::include_app('https://saragracebiddle.shinyapps.io/DataAnalysis/')
-```
 
 
 When you are satisfied with the results obtained from the app, download the report and upload it into the RedCap. 

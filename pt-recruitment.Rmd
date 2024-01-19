@@ -11,6 +11,7 @@ To be eligible for the study, patients must:
     - the chemotherapy regimen can be any regimen that is considered *standard of care*
 - cannot have had chemotherapy within the past 5 years for any reason
 - able to participate in moderate exercise on a stationary bike
+- female patients only, male breast cancer patients are not eligible at this time
 
 
 ## Screening the Electronic Medical Record
