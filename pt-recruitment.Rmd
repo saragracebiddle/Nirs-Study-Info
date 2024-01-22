@@ -1,11 +1,5 @@
 # Patient Recruitment {#PatientRecruitment}
 
-
-```{r, echo = F}
-library(DiagrammeR)
-```
-
-
 ```{r, echo = F}
 grViz("
 digraph pt_recruitment {
@@ -164,3 +158,15 @@ After contacting the patient, they will contact you if the patient signs the con
 
 
 If a patient is not wearing shorts for a lab visit, there are disposable shorts in the lab for patient use. They are located in a box under the bed in the back corner. 
+
+## Travel Expenses
+
+If a patient lives more than 50 miles from the Cancer Institute, they are eligible for travel expenses to be reimbursed. Use a map service, such as Google Maps, to map the driving distance between their address and the Cancer Institute. 
+
+The Greenphire [ClinCard] is a re-loadable debit card that we use for reimbursement purposes. Have the patient fill out a W-9 if they qualify for the ClinCard. 
+
+Sara Biddle has access to the ClinCard Admin Portal. If you need to get access to the ClinCard Admin Portal, contact Jan Keuber at the Clinical Research Management Office for help. 
+
+The ClinCard for the NIRS study is currently programmed for up to 10 visits to the lab. Each visit can reimburse up to $125 for any travel or hotel expenses. 
+
+[ClinCard]: https://www.clincard.com
