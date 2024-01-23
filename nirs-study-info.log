@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.10.12) (preloaded format=xelatex 2023.12.11)  19 JAN 2024 17:36
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.10.12) (preloaded format=xelatex 2023.12.11)  23 JAN 2024 10:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -908,9 +908,9 @@ ated
 
 ] [8]
 Chapter 3.
-File: nirs-study-info_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (ty
+File: nirs-study-info_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (ty
 pe pdf)
-<use nirs-study-info_files/figure-latex/unnamed-chunk-3-1.pdf>
+<use nirs-study-info_files/figure-latex/unnamed-chunk-2-1.pdf>
 [9
 
 ]
@@ -1000,77 +1000,84 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 Chapter 4.
+File: images/visit_timeline.png Graphic file (type bmp)
+<images/visit_timeline.png>
 
-LaTeX Warning: Reference `PortaMon-Preparation' on page 17 undefined on input l
-ine 437.
+Overfull \hbox (632.84059pt too wide) in paragraph at lines 416--417
+[] 
+ []
 
-[17] [18] [19] [20
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[17]
+Overfull \vbox (194.1846pt too high) has occurred while \output is active []
+
+[18]
+
+LaTeX Warning: Reference `PortaMon-Preparation' on page 19 undefined on input l
+ine 450.
+
+[19] [20]
+Chapter 5.
+[21
+
+] [22
 
 ]
-Chapter 5.
-[21]
-Underfull \vbox (badness 2698) has occurred while \output is active []
-
-[22] [23] [24]
 Chapter 6.
-[25
 
-] [26
+Overfull \hbox (6.4497pt too wide) in paragraph at lines 593--593
+\TU/lmr/m/n/10 chemother- 
+ []
+
+
+Overfull \hbox (6.4497pt too wide) in paragraph at lines 595--595
+\TU/lmr/m/n/10 chemother- 
+ []
+
+[23] [24] [25] [26
 
 ]
 Chapter 7.
-
-Overfull \hbox (6.4497pt too wide) in paragraph at lines 661--661
-\TU/lmr/m/n/10 chemother- 
- []
-
-
-Overfull \hbox (6.4497pt too wide) in paragraph at lines 663--663
-\TU/lmr/m/n/10 chemother- 
- []
-
-[27] [28] [29] [30
-
-]
-Chapter 8.
-[31]
+[27]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 703.
-[32] [33] [34
-
-]
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 635.
+[28] [29] [30]
 Appendix A.
 File: images/portamon/portamoncase.jpg Graphic file (type bmp)
 <images/portamon/portamoncase.jpg>
-[35]
+[31
+
+]
 File: images/portamon/asuslaptopandcharger.jpg Graphic file (type bmp)
 <images/portamon/asuslaptopandcharger.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 775--779
+Underfull \hbox (badness 10000) in paragraph at lines 713--717
 [][]
  []
 
 File: images/portamon/laptopplugins.jpg Graphic file (type bmp)
 <images/portamon/laptopplugins.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 780--782
+Underfull \hbox (badness 10000) in paragraph at lines 718--720
 [][]
  []
 
 File: images/portamon/portamonopen.jpg Graphic file (type bmp)
 <images/portamon/portamonopen.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 783--787
+Underfull \hbox (badness 10000) in paragraph at lines 721--725
 [][]
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[36]
+[32]
 File: images/portamon/portamonbatteriesandcharger.jpg Graphic file (type bmp)
 <images/portamon/portamonbatteriesandcharger.jpg>
-[37]
+[33]
 File: images/portamon/portamonbatteryandchargerplug.jpg Graphic file (type bmp)
 
 <images/portamon/portamonbatteryandchargerplug.jpg>
@@ -1079,20 +1086,20 @@ File: images/portamon/portamonbatterychargingport.jpg Graphic file (type bmp)
 File: images/portamon/portamonbatteryincharger.jpg Graphic file (type bmp)
 <images/portamon/portamonbatteryincharger.jpg>
 
-Overfull \hbox (0.94016pt too wide) in paragraph at lines 815--818
+Overfull \hbox (0.94016pt too wide) in paragraph at lines 753--756
 [][] [] [] 
  []
 
 
 Underfull \vbox (badness 2698) has occurred while \output is active []
 
-[38]
+[34]
 File: images/portamon/portamonandbattery.jpg Graphic file (type bmp)
 <images/portamon/portamonandbattery.jpg>
 File: images/portamon/portamonon.jpg Graphic file (type bmp)
 <images/portamon/portamonon.jpg>
 
-Overfull \hbox (2.19969pt too wide) in paragraph at lines 833--835
+Overfull \hbox (2.19969pt too wide) in paragraph at lines 771--773
 [][] [] 
  []
 
@@ -1103,20 +1110,20 @@ File: images/portamon/saranwraponeside.jpg Graphic file (type bmp)
 File: images/portamon/saranwrapbothsides.jpg Graphic file (type bmp)
 <images/portamon/saranwrapbothsides.jpg>
 
-Overfull \hbox (0.9249pt too wide) in paragraph at lines 842--845
+Overfull \hbox (0.9249pt too wide) in paragraph at lines 780--783
 [][] [] [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[39]
+[35]
 File: images/portamon/saranwrapdonetopview.jpg Graphic file (type bmp)
 <images/portamon/saranwrapdonetopview.jpg>
 File: images/portamon/saranwrapdonebottomview.jpg Graphic file (type bmp)
 <images/portamon/saranwrapdonebottomview.jpg>
 
-Overfull \hbox (2.19249pt too wide) in paragraph at lines 846--848
+Overfull \hbox (2.19249pt too wide) in paragraph at lines 784--786
 [][] [] 
  []
 
@@ -1127,27 +1134,27 @@ File: images/portamon/taupetapelongsplit.jpg Graphic file (type bmp)
 File: images/portamon/taupetapeonportamon.jpg Graphic file (type bmp)
 <images/portamon/taupetapeonportamon.jpg>
 
-Overfull \hbox (0.93483pt too wide) in paragraph at lines 857--860
+Overfull \hbox (0.93483pt too wide) in paragraph at lines 795--798
 [][] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 870--872
+Underfull \hbox (badness 10000) in paragraph at lines 808--810
 
  []
 
 
-Underfull \hbox (badness 2035) in paragraph at lines 877--878
+Underfull \hbox (badness 2035) in paragraph at lines 815--816
 []\TU/lmr/m/n/10 The Rockey license key must say ‘ROCKEY4ND’ and NOT
  []
 
-[40]
+[36]
 File: images/portamon/laptopwithplugins.jpg Graphic file (type bmp)
 <images/portamon/laptopwithplugins.jpg>
 File: images/startnewmeasurement/01_open_oxysoft.png Graphic file (type bmp)
 <images/startnewmeasurement/01_open_oxysoft.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 899--901
+Underfull \hbox (badness 10000) in paragraph at lines 837--839
 
  []
 
@@ -1158,12 +1165,12 @@ File: images/startnewmeasurement/03_closed_all_graphs.png Graphic file (type bm
 p)
 <images/startnewmeasurement/03_closed_all_graphs.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 905--907
+Underfull \hbox (badness 10000) in paragraph at lines 843--845
 [][]
  []
 
-[41]
-Underfull \hbox (badness 2547) in paragraph at lines 913--914
+[37]
+Underfull \hbox (badness 2547) in paragraph at lines 851--852
 []\TU/lmr/m/n/10 Select \TU/lmtt/m/n/10 Create Measurement and Start Device (Wi
 zard)... \TU/lmr/m/n/10 from
  []
@@ -1174,7 +1181,7 @@ File: images/startnewmeasurement/04_select_start_new.png Graphic file (type bmp
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[42]
+[38]
 File: images/startnewmeasurement/05_copy_no_settings.png Graphic file (type bmp
 )
 <images/startnewmeasurement/05_copy_no_settings.png>
@@ -1183,7 +1190,7 @@ File: images/startnewmeasurement/06_add_device.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[43]
+[39]
 File: images/startnewmeasurement/07_type_of_device_to_add.png Graphic file (typ
 e bmp)
 <images/startnewmeasurement/07_type_of_device_to_add.png>
@@ -1192,15 +1199,15 @@ File: images/startnewmeasurement/08_device_number.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[44]
+[40]
 File: images/startnewmeasurement/09_successful_connection.png Graphic file (typ
 e bmp)
 <images/startnewmeasurement/09_successful_connection.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[45]
-Underfull \hbox (badness 3396) in paragraph at lines 991--993
+[41]
+Underfull \hbox (badness 3396) in paragraph at lines 929--931
 []\TU/lmr/m/n/10 Under \TU/lmtt/m/n/10 Optode-template: (Filtered by PortaMon) 
 \TU/lmr/m/n/10 click the drop
  []
@@ -1212,7 +1219,7 @@ File: images/startnewmeasurement/11_k_calf.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[46]
+[42]
 File: images/startnewmeasurement/12_h_calf.png Graphic file (type bmp)
 <images/startnewmeasurement/12_h_calf.png>
 File: images/startnewmeasurement/13_optodemapping_popup.png Graphic file (type 
@@ -1221,7 +1228,7 @@ bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[47]
+[43]
 File: images/startnewmeasurement/14_device_settings_popup.png Graphic file (typ
 e bmp)
 <images/startnewmeasurement/14_device_settings_popup.png>
@@ -1231,7 +1238,7 @@ File: images/startnewmeasurement/15_furtheroptions_popup.png Graphic file (type
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[48]
+[44]
 File: images/startnewmeasurement/16_create_all_graphs_popup.png Graphic file (t
 ype bmp)
 <images/startnewmeasurement/16_create_all_graphs_popup.png>
@@ -1241,7 +1248,7 @@ File: images/startnewmeasurement/17_enable_light_sources_popup.png Graphic file
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[49] [50]
+[45] [46]
 File: images/startnewmeasurement/new_measurement_begins.png Graphic file (type 
 bmp)
 <images/startnewmeasurement/new_measurement_begins.png>
@@ -1252,14 +1259,14 @@ File: images/startnewmeasurement/view_whole_measurement.png Graphic file (type
 bmp)
 <images/startnewmeasurement/view_whole_measurement.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 1096--1098
+Underfull \hbox (badness 10000) in paragraph at lines 1034--1036
 [][]
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[51]
+[47]
 File: images/changemeasurementproperties/select_measurement_properties.png Grap
 hic file (type bmp)
 <images/changemeasurementproperties/select_measurement_properties.png>
@@ -1267,21 +1274,21 @@ File: images/changemeasurementproperties/opened_measurement_properties.png Grap
 hic file (type bmp)
 <images/changemeasurementproperties/opened_measurement_properties.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 1113--1115
+Underfull \hbox (badness 10000) in paragraph at lines 1051--1053
 [][]
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[52]
+[48]
 File: images/changemeasurementproperties/select_tsi.png Graphic file (type bmp)
 
 <images/changemeasurementproperties/select_tsi.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[53]
+[49]
 File: images/changemeasurementproperties/tsi_template_settings.png Graphic file
  (type bmp)
 <images/changemeasurementproperties/tsi_template_settings.png>
@@ -1291,10 +1298,10 @@ File: images/changemeasurementproperties/view_tsi_graphs.png Graphic file (type
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[54]
+[50]
 
 LaTeX Warning: Reference `Appendix-Instruments-PortaMon-Usage-ChangeProperties'
- on page 55 undefined on input line 1171.
+ on page 51 undefined on input line 1109.
 
 File: images/exportmeasurement/1_selectmeasurementtoexport.png Graphic file (ty
 pe bmp)
@@ -1302,7 +1309,7 @@ pe bmp)
 
 Underfull \vbox (badness 1939) has occurred while \output is active []
 
-[55]
+[51]
 File: images/exportmeasurement/2_selecttypeofexport.png Graphic file (type bmp)
 
 <images/exportmeasurement/2_selecttypeofexport.png>
@@ -1312,7 +1319,7 @@ File: images/exportmeasurement/3_choosefilelocation.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[56]
+[52]
 File: images/exportmeasurement/4_filelocationpopup.png Graphic file (type bmp)
 <images/exportmeasurement/4_filelocationpopup.png>
 File: images/exportmeasurement/5_nameexportfile.png Graphic file (type bmp)
@@ -1320,7 +1327,7 @@ File: images/exportmeasurement/5_nameexportfile.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[57]
+[53]
 File: images/exportmeasurement/6_chosenfilelocation.png Graphic file (type bmp)
 
 <images/exportmeasurement/6_chosenfilelocation.png>
@@ -1330,39 +1337,39 @@ bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[58]
+[54]
 File: images/exportmeasurement/8_exportwholemeasurement.png Graphic file (type 
 bmp)
 <images/exportmeasurement/8_exportwholemeasurement.png>
-[59] [60
+[55] [56
 
 ]
 Appendix B.
-[61]
+[57]
 File: images/parvocalibration/connector_piece.jpg Graphic file (type bmp)
 <images/parvocalibration/connector_piece.jpg>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[62]
+[58]
 File: images/parvocalibration/connect_syringe.jpg Graphic file (type bmp)
 <images/parvocalibration/connect_syringe.jpg>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[63] [64]
+[59] [60]
 File: images/parvocalibration/gas_on.jpg Graphic file (type bmp)
 <images/parvocalibration/gas_on.jpg>
-[65]
+[61]
 File: images/parvocalibration/gas_off.jpg Graphic file (type bmp)
 <images/parvocalibration/gas_off.jpg>
-[66] [67]
+[62] [63]
 File: images/maskassembly/01_all_mask_parts.jpg Graphic file (type bmp)
 <images/maskassembly/01_all_mask_parts.jpg>
 File: images/maskassembly/01_all_mask_parts_view2.jpg Graphic file (type bmp)
 <images/maskassembly/01_all_mask_parts_view2.jpg>
 
-Overfull \hbox (2.18039pt too wide) in paragraph at lines 1347--1349
+Overfull \hbox (2.18039pt too wide) in paragraph at lines 1285--1287
 [][] [] 
  []
 
@@ -1376,7 +1383,7 @@ File: images/maskassembly/02_show_air_flow_direction.jpg Graphic file (type bmp
 )
 <images/maskassembly/02_show_air_flow_direction.jpg>
 
-Overfull \hbox (6.59703pt too wide) in paragraph at lines 1368--1372
+Overfull \hbox (6.59703pt too wide) in paragraph at lines 1306--1310
 [][] [] [] [] 
  []
 
@@ -1385,17 +1392,17 @@ File: images/maskassembly/04_show_direction.jpg Graphic file (type bmp)
 File: images/maskassembly/04_show_placement.jpg Graphic file (type bmp)
 <images/maskassembly/04_show_placement.jpg>
 
-Overfull \hbox (2.1858pt too wide) in paragraph at lines 1383--1385
+Overfull \hbox (2.1858pt too wide) in paragraph at lines 1321--1323
 [][] [] 
  []
 
-[68]
+[64]
 File: images/maskassembly/05_show_direction.jpg Graphic file (type bmp)
 <images/maskassembly/05_show_direction.jpg>
 File: images/maskassembly/05_show_together.jpg Graphic file (type bmp)
 <images/maskassembly/05_show_together.jpg>
 
-Overfull \hbox (2.19165pt too wide) in paragraph at lines 1402--1404
+Overfull \hbox (2.19165pt too wide) in paragraph at lines 1340--1342
 [][] [] 
  []
 
@@ -1404,14 +1411,14 @@ File: images/maskassembly/06_show_direction.jpg Graphic file (type bmp)
 File: images/maskassembly/06_show_together.jpg Graphic file (type bmp)
 <images/maskassembly/06_show_together.jpg>
 
-Overfull \hbox (2.19878pt too wide) in paragraph at lines 1413--1415
+Overfull \hbox (2.19878pt too wide) in paragraph at lines 1351--1353
 [][] [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[69]
+[65]
 File: images/maskassembly/07_show_together.jpg Graphic file (type bmp)
 <images/maskassembly/07_show_together.jpg>
 File: images/maskassembly/09_show_direction.jpg Graphic file (type bmp)
@@ -1421,17 +1428,17 @@ File: images/maskassembly/09_show_together.jpg Graphic file (type bmp)
 File: images/maskassembly/09_show_together_view_2.jpg Graphic file (type bmp)
 <images/maskassembly/09_show_together_view_2.jpg>
 
-Overfull \hbox (0.87064pt too wide) in paragraph at lines 1430--1433
+Overfull \hbox (0.87064pt too wide) in paragraph at lines 1368--1371
 [][] [] [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[70]
+[66]
 File: images/maskassembly/10_show_mask_size.jpg Graphic file (type bmp)
 <images/maskassembly/10_show_mask_size.jpg>
-[71]
+[67]
 File: images/maskassembly/11_show_direction.jpg Graphic file (type bmp)
 <images/maskassembly/11_show_direction.jpg>
 File: images/maskassembly/11_show_bad_seal.jpg Graphic file (type bmp)
@@ -1439,32 +1446,32 @@ File: images/maskassembly/11_show_bad_seal.jpg Graphic file (type bmp)
 File: images/maskassembly/11_show_good_seal.jpg Graphic file (type bmp)
 <images/maskassembly/11_show_good_seal.jpg>
 
-Overfull \hbox (2.18224pt too wide) in paragraph at lines 1482--1484
+Overfull \hbox (2.18224pt too wide) in paragraph at lines 1420--1422
 [][] [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[72]
+[68]
 Underfull \vbox (badness 1292) has occurred while \output is active []
 
-[73] [74]
+[69] [70]
 Appendix C.
-[75
+[71
 
-] [76
+] [72
 
 ]
 Appendix D.
-[77]
+[73]
 File: images/lactatequalitycontrol/lactatebinder.jpg Graphic file (type bmp)
 <images/lactatequalitycontrol/lactatebinder.jpg>
 File: images/lactatequalitycontrol/lactatebinder_log.jpg Graphic file (type bmp
 )
 <images/lactatequalitycontrol/lactatebinder_log.jpg>
 
-Overfull \hbox (2.14943pt too wide) in paragraph at lines 1606--1608
+Overfull \hbox (2.14943pt too wide) in paragraph at lines 1544--1546
 [][] [] 
  []
 
@@ -1475,20 +1482,20 @@ File: images/lactatequalitycontrol/lactate_strips_2.jpg Graphic file (type bmp)
 
 <images/lactatequalitycontrol/lactate_strips_2.jpg>
 
-Overfull \hbox (2.19547pt too wide) in paragraph at lines 1613--1615
+Overfull \hbox (2.19547pt too wide) in paragraph at lines 1551--1553
 [][] [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[78]
+[74]
 File: images/lactatequalitycontrol/low_control_1.jpg Graphic file (type bmp)
 <images/lactatequalitycontrol/low_control_1.jpg>
 File: images/lactatequalitycontrol/low_control_2.jpg Graphic file (type bmp)
 <images/lactatequalitycontrol/low_control_2.jpg>
 
-Overfull \hbox (2.19547pt too wide) in paragraph at lines 1618--1620
+Overfull \hbox (2.19547pt too wide) in paragraph at lines 1556--1558
 [][] [] 
  []
 
@@ -1497,21 +1504,21 @@ File: images/lactatequalitycontrol/high_control_1.jpg Graphic file (type bmp)
 File: images/lactatequalitycontrol/high_control_2.jpg Graphic file (type bmp)
 <images/lactatequalitycontrol/high_control_2.jpg>
 
-Overfull \hbox (2.19547pt too wide) in paragraph at lines 1623--1625
+Overfull \hbox (2.19547pt too wide) in paragraph at lines 1561--1563
 [][] [] 
  []
 
 
 Underfull \vbox (badness 5548) has occurred while \output is active []
 
-[79]
+[75]
 File: images/lactatequalitycontrol/lactate_meters_ready.jpg Graphic file (type 
 bmp)
 <images/lactatequalitycontrol/lactate_meters_ready.jpg>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[80]
+[76]
 File: images/lactatequalitycontrol/lactate_meter_do_drop.jpg Graphic file (type
  bmp)
 <images/lactatequalitycontrol/lactate_meter_do_drop.jpg>
@@ -1522,7 +1529,7 @@ File: images/lactatequalitycontrol/lactate_meters_low_controls.jpg Graphic file
  (type bmp)
 <images/lactatequalitycontrol/lactate_meters_low_controls.jpg>
 
-Overfull \hbox (0.92899pt too wide) in paragraph at lines 1638--1641
+Overfull \hbox (0.92899pt too wide) in paragraph at lines 1576--1579
 [][] [] [] 
  []
 
@@ -1531,23 +1538,27 @@ File: images/lactatequalitycontrol/log_results.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[81] [82]
+[77] [78]
 Appendix E.
-[83
+[79
+
+] [80] [81] [82] [83] [84
 
 ]
-Underfull \hbox (badness 1178) in paragraph at lines 1737--1739
+Appendix F.
+[85]
+Underfull \hbox (badness 1178) in paragraph at lines 1786--1788
 []\TU/lmr/m/n/10 Under \TU/lmtt/m/n/10 Manage your User Profile\TU/lmr/m/n/10 ,
  under \TU/lmtt/m/n/10 Training & Credentials\TU/lmr/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 1178) in paragraph at lines 1747--1749
+Underfull \hbox (badness 1178) in paragraph at lines 1796--1798
 []\TU/lmr/m/n/10 Under \TU/lmtt/m/n/10 Manage your User Profile\TU/lmr/m/n/10 ,
  under \TU/lmtt/m/n/10 Training & Credentials\TU/lmr/m/n/10 ,
  []
 
-[84] [85] [86] [87] (nirs-study-info.bbl [88]) [89
+[86] [87] [88] [89] (nirs-study-info.bbl [90]) [91
 
 ] (nirs-study-info.aux)
  ***********
@@ -1559,12 +1570,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 21399 strings out of 409717
- 445739 string characters out of 5775735
+ 21421 strings out of 409717
+ 446333 string characters out of 5775735
  1936189 words of memory out of 5000000
- 43043 multiletter control sequences out of 15000+600000
+ 43063 multiletter control sequences out of 15000+600000
  564544 words of font info for 92 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 90i,7n,120p,1907b,482s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,7n,120p,1589b,490s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on nirs-study-info.pdf (89 pages).
+Output written on nirs-study-info.pdf (91 pages).

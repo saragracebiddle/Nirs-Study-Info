@@ -1,5 +1,13 @@
 # Methods {#Methods}
 
+```{r, echo = F}
+knitr::include_graphics(
+  c(
+    "images/visit_timeline.png"
+  )
+)
+```
+
 ## Lactate Threshold Protocol {#Methods-LT}
 
 This protocol is the participant's first visit. 

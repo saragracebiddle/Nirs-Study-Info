@@ -21,6 +21,8 @@ This study is being conducted in collaboration with the PrismaHealth Cancer Inst
 knitr::write_bib(c(
   .packages(), 'bookdown', 'knitr', 'rmarkdown'
 ), 'packages.bib')
+
+library(DiagrammeR)
 ```
 
 

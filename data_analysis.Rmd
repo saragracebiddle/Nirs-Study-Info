@@ -39,23 +39,29 @@ Upload the report into RedCap.
 
 Use the exported `.txt` file.
 
-Read in the exported PortaMon data. 
+Read in the exported PortaMon data.
+
+I have written a custom file reader for exported PortaMon files. Oxysoft allows you to add in 'Events' to the measurements, kind of like time markers. However, when you export the measurements after adding an 'Event', Oxysoft adds an extra column that is mostly empty except for where the 'Event' was added in. Most read functions do not like this and will throw an error when you try to read in the data. The function I wrote will take the file and throw out the extra 'Event' column. Oxysoft also adds metadata to the header of the file. Most read in functions do not like this either, as they will look to the top of the file to figure out what the rest of the file looks like. `read_nirs` will parse the metadata for the information we would like to keep. Then it reads the actual data as a data frame. The useful metadata pieces are passed on to the user as attributes of the raw data frame.   
 
 The PortaMon does not record in increments of time, it records the sample number. The PortaMon records data at a rate of 10 hz, so it takes 10 samples a second. The time in seconds from the start of the test is the sample number divided by 10. 
 
-The PortaMon was on and collecting data from the time the device was placed until the end of the exercise test. We aren't interested in the data from before the start of the exercise test, so that can be removed.
+The PortaMon was on and collecting data from the time the device was placed until the end of the exercise test. We aren't interested in the data from before the start of the exercise test, so that can be removed. The best way to do this is to create a new column, named something like `zeroed_time` or `time_aligned`, and calculate it such that time = 0 in the `zeroed_time` column is the start time of the test. Everything before that is a negative time and everything after is positive. Then you can filter on `zeroed_time > 0 `. Why not just filter on `time > start_time`? If the start time written on the data collection sheet was off by a few seconds (which it often is), you cannot go back and readjust it, especially not if the time needs to be adjusted backwards. You can easily re-calculate the `zeroed_time` column based on the original time column, using the same data frame. 
+
+And you don't have to remember the start times of every data frame. If every data frame has been read in and time adjusted, then every data frame just needs to be filtered on `zeroed_time > 0`. 
+
+Plot the raw data to be sure that you removed all extraneous data from the beginning of the data frame. Make adjustments to the start time as needed. 
 
 Next, find the time chunks for each section of the test. An on/off kinetics consists of the following sections, each 2 minutes (120 seconds) in duration: Baseline Rest, Warm Up, Work 1, Rest 1, Work 2, Rest 2, Work 3, and Rest 3. 
 
-Plot the exercise test. On the x axis, use time in seconds. Have dual y axes, one with hemoglobin arbitrary units and one with percentages. Plot all signals (O_2Hb and HHb for all exported transmitters and TSI) over time and check that the transitions between sections line up with the expected times. Adjust slightly as necessary, as the start time recorded for the test may be silghtly off due to human error / time taken for the PARVO to begin the test. 
+Plot the exercise test. On the x axis, use time in seconds. Have dual y axes, one with hemoglobin arbitrary units and one with percentages. Plot all signals (O~2~Hb and HHb for all exported transmitters and TSI) over time and check that the transitions between sections line up with the expected times. Adjust slightly as necessary, as the start time recorded for the test may be silghtly off due to human error / time taken for the PARVO to begin the test. 
 
 Use the plot and notes from the test to examine the data for movement artifacts that need to be removed before analysis. Remove as necessary.
 
 The oxyhemoglobin and deoxyhemoglobin measurements have arbitrary units- they are change in oxy and deoxyhemoglobin. This means that we cannot use the amounts of oxyhemoglobin and deoxyhemoglobin and compare those over time. For example, the average oxyhemoglobin at rest could be measured as 4 for one test and 6 at the next test. This does not mean that at the second test, the amount of oxyhemoglobin in the blood was actually higher than at the first test. 
 
-Average the O_2Hb and HHb across the transmitters. 
+Average the O~2~Hb and HHb across the transmitters. 
 
-Calculate the steady state at the end of each non-baseline and non-warm up section (6 sections in total- 3 work sections and 3 rest sections) by averaging the last 30 seconds of the section for each signal type (O_2Hb, HHb, and TSI). 
+Calculate the steady state at the end of each non-baseline and non-warm up section (6 sections in total- 3 work sections and 3 rest sections) by averaging the last 30 seconds of the section for each signal type (O~2~Hb, HHb, and TSI). 
 
 There are 18 steady state values: 3 signal types and 6 sections.
 
