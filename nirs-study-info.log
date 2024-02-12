@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.10.12) (preloaded format=xelatex 2023.12.11)  23 JAN 2024 10:48
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.10.12) (preloaded format=xelatex 2023.12.11)  12 FEB 2024 10:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -385,8 +385,9 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibsep=\skip67
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count305
-) (C:\Users\sgb21f\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.st
-y
+)
+\citation{*}
+(C:\Users\sgb21f\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 (C:\Users\sgb21f\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2023-11-26 v7.01g Hypertext links for LaTeX
@@ -525,40 +526,40 @@ Package: xurl 2022/01/09 v 0.10 modify URL breaks
 ) (nirs-study-info.aux)
 \openout1 = `nirs-study-info.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/lmr/m/n on input line 132.
+(Font)                  OT1/lmr/m/n --> TU/lmr/m/n on input line 133.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 132.
+(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 133.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 132.
+(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 133.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 132.
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 133.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 132.
+(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 133.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 132.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 133.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/bx/n on input line 132.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/bx/n on input line 133.
 
 Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
 
@@ -587,7 +588,7 @@ pt=math;language=dflt;"
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 132.
+(Font)              scaled to size 10.0pt on input line 133.
 
 Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
 
@@ -626,18 +627,18 @@ pt=math;language=dflt;"
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 132.
+(Font)              scaled to size 10.0pt on input line 133.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 132.
+(Font)              `operators' in the math version `normal' on input line 133.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input
- line 132.
+ line 133.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 132.
+(Font)              `operators' in the math version `bold' on input line 133.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on inpu
-t line 132.
+t line 133.
 
 Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
 
@@ -724,15 +725,15 @@ t=math;language=dflt;"
 (fontspec)             \fontdimen 21\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 132.
+(Font)              `symbols' in the math version `normal' on input line 133.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
 (Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on inpu
-t line 132.
+t line 133.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 132.
+(Font)              `symbols' in the math version `bold' on input line 133.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on inpu
-t line 132.
+t line 133.
 
 Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
 
@@ -802,22 +803,22 @@ pt=math;language=dflt;"
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
 (Font)              `largesymbols' in the math version `normal' on input line 1
-32.
+33.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 (Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on inpu
-t line 132.
+t line 133.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 132
+(Font)              `largesymbols' in the math version `bold' on input line 133
 .
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on inpu
-t line 132.
-LaTeX Info: Redefining \microtypecontext on input line 132.
-Package microtype Info: Applying patch `item' on input line 132.
-Package microtype Info: Applying patch `toc' on input line 132.
-Package microtype Info: Applying patch `eqnum' on input line 132.
-Package microtype Info: Applying patch `footnote' on input line 132.
-Package microtype Info: Applying patch `verbatim' on input line 132.
+t line 133.
+LaTeX Info: Redefining \microtypecontext on input line 133.
+Package microtype Info: Applying patch `item' on input line 133.
+Package microtype Info: Applying patch `toc' on input line 133.
+Package microtype Info: Applying patch `eqnum' on input line 133.
+Package microtype Info: Applying patch `footnote' on input line 133.
+Package microtype Info: Applying patch `verbatim' on input line 133.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
 Package microtype Info: No adjustment of tracking.
@@ -829,38 +830,38 @@ rnRoman.cfg
 File: mt-LatinModernRoman.cfg 2021/02/21 v1.1 microtype config. file: Latin Mod
 ern Roman (RS)
 )
-Package hyperref Info: Link coloring OFF on input line 132.
+Package hyperref Info: Link coloring OFF on input line 133.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 134.
+(Font)              scaled to size 12.0pt on input line 135.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 134.
+(Font)              scaled to size 8.0pt on input line 135.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 134.
+(Font)              scaled to size 6.0pt on input line 135.
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-34.
+35.
 (C:\Users\sgb21f\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 12.0011pt on input line 134.
+(Font)              scaled to size 12.0011pt on input line 135.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 8.00073pt on input line 134.
+(Font)              scaled to size 8.00073pt on input line 135.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.00055pt on input line 134.
+(Font)              scaled to size 6.00055pt on input line 135.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 11.99872pt on input line 134.
+(Font)              scaled to size 11.99872pt on input line 135.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.99915pt on input line 134.
+(Font)              scaled to size 7.99915pt on input line 135.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 134.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 134
+(Font)              scaled to size 5.99936pt on input line 135.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 135
 .
 (C:\Users\sgb21f\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (C:\Users\sgb21f\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 134
+LaTeX Font Info:    Trying to load font information for U+msb on input line 135
 .
 (C:\Users\sgb21f\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -899,7 +900,7 @@ Chapter 1.
 ] [6]
 Chapter 2.
 
-Underfull \hbox (badness 1694) in paragraph at lines 235--236
+Underfull \hbox (badness 1694) in paragraph at lines 236--237
 \TU/lmr/m/n/10 therefore each transmitter measures both oxygenated and deoxygen
 ated
  []
@@ -914,82 +915,82 @@ pe pdf)
 [9
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 308--310
+Underfull \hbox (badness 10000) in paragraph at lines 309--311
 
  []
 
 
-Underfull \hbox (badness 2818) in paragraph at lines 312--318
+Underfull \hbox (badness 2818) in paragraph at lines 313--319
 []\TU/lmr/m/n/10 1 Metric Name or ID: DM TREATMENT PLAN
  []
 
 
-Underfull \hbox (badness 2762) in paragraph at lines 312--318
+Underfull \hbox (badness 2762) in paragraph at lines 313--319
 \TU/lmr/m/n/10 2 Metric Name or ID: DM TREATMENT PLAN
  []
 
 
-Underfull \hbox (badness 2762) in paragraph at lines 312--318
+Underfull \hbox (badness 2762) in paragraph at lines 313--319
 \TU/lmr/m/n/10 3 Metric Name or ID: DM TREATMENT PLAN
  []
 
 
-Underfull \hbox (badness 2781) in paragraph at lines 312--318
+Underfull \hbox (badness 2781) in paragraph at lines 313--319
 \TU/lmr/m/n/10 4 Metric Name or ID: DM TREATMENT PLAN
  []
 
 
-Underfull \hbox (badness 2698) in paragraph at lines 312--318
+Underfull \hbox (badness 2698) in paragraph at lines 313--319
 \TU/lmr/m/n/10 5 Metric Name or ID: DM TREATMENT PLAN
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--318
+Underfull \hbox (badness 10000) in paragraph at lines 313--319
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 320--321
+Underfull \hbox (badness 10000) in paragraph at lines 321--322
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 323--329
+Underfull \hbox (badness 10000) in paragraph at lines 324--330
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--332
+Underfull \hbox (badness 10000) in paragraph at lines 332--333
 
  []
 
 
-Underfull \hbox (badness 1043) in paragraph at lines 334--338
+Underfull \hbox (badness 1043) in paragraph at lines 335--339
 []\TU/lmr/m/n/10 Episode Types: Infusion Treatment and Discontinue
  []
 
 
-Underfull \hbox (badness 1043) in paragraph at lines 334--338
+Underfull \hbox (badness 1043) in paragraph at lines 335--339
 \TU/lmr/m/n/10 Episode Types: Infusion Treatment and Discontinue
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 334--338
+Underfull \hbox (badness 10000) in paragraph at lines 335--339
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 340--341
+Underfull \hbox (badness 10000) in paragraph at lines 341--342
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 343--349
+Underfull \hbox (badness 10000) in paragraph at lines 344--350
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 351--352
+Underfull \hbox (badness 10000) in paragraph at lines 352--353
 
  []
 
@@ -1003,7 +1004,7 @@ Chapter 4.
 File: images/visit_timeline.png Graphic file (type bmp)
 <images/visit_timeline.png>
 
-Overfull \hbox (632.84059pt too wide) in paragraph at lines 416--417
+Overfull \hbox (632.84059pt too wide) in paragraph at lines 417--418
 [] 
  []
 
@@ -1016,7 +1017,7 @@ Overfull \vbox (194.1846pt too high) has occurred while \output is active []
 [18]
 
 LaTeX Warning: Reference `PortaMon-Preparation' on page 19 undefined on input l
-ine 450.
+ine 451.
 
 [19] [20]
 Chapter 5.
@@ -1027,12 +1028,12 @@ Chapter 5.
 ]
 Chapter 6.
 
-Overfull \hbox (6.4497pt too wide) in paragraph at lines 593--593
+Overfull \hbox (6.4497pt too wide) in paragraph at lines 594--594
 \TU/lmr/m/n/10 chemother- 
  []
 
 
-Overfull \hbox (6.4497pt too wide) in paragraph at lines 595--595
+Overfull \hbox (6.4497pt too wide) in paragraph at lines 596--596
 \TU/lmr/m/n/10 chemother- 
  []
 
@@ -1042,9 +1043,13 @@ Overfull \hbox (6.4497pt too wide) in paragraph at lines 595--595
 Chapter 7.
 [27]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 635.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 636.
 [28] [29] [30]
 Appendix A.
+
+Package natbib Warning: Citation `Suzuki1999TissueOM' on page 31 undefined on i
+nput line 698.
+
 File: images/portamon/portamoncase.jpg Graphic file (type bmp)
 <images/portamon/portamoncase.jpg>
 [31
@@ -1053,21 +1058,21 @@ File: images/portamon/portamoncase.jpg Graphic file (type bmp)
 File: images/portamon/asuslaptopandcharger.jpg Graphic file (type bmp)
 <images/portamon/asuslaptopandcharger.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 713--717
+Underfull \hbox (badness 10000) in paragraph at lines 714--718
 [][]
  []
 
 File: images/portamon/laptopplugins.jpg Graphic file (type bmp)
 <images/portamon/laptopplugins.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 718--720
+Underfull \hbox (badness 10000) in paragraph at lines 719--721
 [][]
  []
 
 File: images/portamon/portamonopen.jpg Graphic file (type bmp)
 <images/portamon/portamonopen.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 721--725
+Underfull \hbox (badness 10000) in paragraph at lines 722--726
 [][]
  []
 
@@ -1086,7 +1091,7 @@ File: images/portamon/portamonbatterychargingport.jpg Graphic file (type bmp)
 File: images/portamon/portamonbatteryincharger.jpg Graphic file (type bmp)
 <images/portamon/portamonbatteryincharger.jpg>
 
-Overfull \hbox (0.94016pt too wide) in paragraph at lines 753--756
+Overfull \hbox (0.94016pt too wide) in paragraph at lines 754--757
 [][] [] [] 
  []
 
@@ -1099,7 +1104,7 @@ File: images/portamon/portamonandbattery.jpg Graphic file (type bmp)
 File: images/portamon/portamonon.jpg Graphic file (type bmp)
 <images/portamon/portamonon.jpg>
 
-Overfull \hbox (2.19969pt too wide) in paragraph at lines 771--773
+Overfull \hbox (2.19969pt too wide) in paragraph at lines 772--774
 [][] [] 
  []
 
@@ -1110,7 +1115,7 @@ File: images/portamon/saranwraponeside.jpg Graphic file (type bmp)
 File: images/portamon/saranwrapbothsides.jpg Graphic file (type bmp)
 <images/portamon/saranwrapbothsides.jpg>
 
-Overfull \hbox (0.9249pt too wide) in paragraph at lines 780--783
+Overfull \hbox (0.9249pt too wide) in paragraph at lines 781--784
 [][] [] [] 
  []
 
@@ -1123,7 +1128,7 @@ File: images/portamon/saranwrapdonetopview.jpg Graphic file (type bmp)
 File: images/portamon/saranwrapdonebottomview.jpg Graphic file (type bmp)
 <images/portamon/saranwrapdonebottomview.jpg>
 
-Overfull \hbox (2.19249pt too wide) in paragraph at lines 784--786
+Overfull \hbox (2.19249pt too wide) in paragraph at lines 785--787
 [][] [] 
  []
 
@@ -1134,17 +1139,17 @@ File: images/portamon/taupetapelongsplit.jpg Graphic file (type bmp)
 File: images/portamon/taupetapeonportamon.jpg Graphic file (type bmp)
 <images/portamon/taupetapeonportamon.jpg>
 
-Overfull \hbox (0.93483pt too wide) in paragraph at lines 795--798
+Overfull \hbox (0.93483pt too wide) in paragraph at lines 796--799
 [][] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 808--810
+Underfull \hbox (badness 10000) in paragraph at lines 809--811
 
  []
 
 
-Underfull \hbox (badness 2035) in paragraph at lines 815--816
+Underfull \hbox (badness 2035) in paragraph at lines 816--817
 []\TU/lmr/m/n/10 The Rockey license key must say ‘ROCKEY4ND’ and NOT
  []
 
@@ -1154,7 +1159,7 @@ File: images/portamon/laptopwithplugins.jpg Graphic file (type bmp)
 File: images/startnewmeasurement/01_open_oxysoft.png Graphic file (type bmp)
 <images/startnewmeasurement/01_open_oxysoft.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 837--839
+Underfull \hbox (badness 10000) in paragraph at lines 838--840
 
  []
 
@@ -1165,12 +1170,12 @@ File: images/startnewmeasurement/03_closed_all_graphs.png Graphic file (type bm
 p)
 <images/startnewmeasurement/03_closed_all_graphs.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 843--845
+Underfull \hbox (badness 10000) in paragraph at lines 844--846
 [][]
  []
 
 [37]
-Underfull \hbox (badness 2547) in paragraph at lines 851--852
+Underfull \hbox (badness 2547) in paragraph at lines 852--853
 []\TU/lmr/m/n/10 Select \TU/lmtt/m/n/10 Create Measurement and Start Device (Wi
 zard)... \TU/lmr/m/n/10 from
  []
@@ -1207,7 +1212,7 @@ e bmp)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [41]
-Underfull \hbox (badness 3396) in paragraph at lines 929--931
+Underfull \hbox (badness 3396) in paragraph at lines 930--932
 []\TU/lmr/m/n/10 Under \TU/lmtt/m/n/10 Optode-template: (Filtered by PortaMon) 
 \TU/lmr/m/n/10 click the drop
  []
@@ -1259,7 +1264,7 @@ File: images/startnewmeasurement/view_whole_measurement.png Graphic file (type
 bmp)
 <images/startnewmeasurement/view_whole_measurement.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 1034--1036
+Underfull \hbox (badness 10000) in paragraph at lines 1035--1037
 [][]
  []
 
@@ -1274,7 +1279,7 @@ File: images/changemeasurementproperties/opened_measurement_properties.png Grap
 hic file (type bmp)
 <images/changemeasurementproperties/opened_measurement_properties.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 1051--1053
+Underfull \hbox (badness 10000) in paragraph at lines 1052--1054
 [][]
  []
 
@@ -1301,7 +1306,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [50]
 
 LaTeX Warning: Reference `Appendix-Instruments-PortaMon-Usage-ChangeProperties'
- on page 51 undefined on input line 1109.
+ on page 51 undefined on input line 1110.
 
 File: images/exportmeasurement/1_selectmeasurementtoexport.png Graphic file (ty
 pe bmp)
@@ -1369,7 +1374,7 @@ File: images/maskassembly/01_all_mask_parts.jpg Graphic file (type bmp)
 File: images/maskassembly/01_all_mask_parts_view2.jpg Graphic file (type bmp)
 <images/maskassembly/01_all_mask_parts_view2.jpg>
 
-Overfull \hbox (2.18039pt too wide) in paragraph at lines 1285--1287
+Overfull \hbox (2.18039pt too wide) in paragraph at lines 1286--1288
 [][] [] 
  []
 
@@ -1383,7 +1388,7 @@ File: images/maskassembly/02_show_air_flow_direction.jpg Graphic file (type bmp
 )
 <images/maskassembly/02_show_air_flow_direction.jpg>
 
-Overfull \hbox (6.59703pt too wide) in paragraph at lines 1306--1310
+Overfull \hbox (6.59703pt too wide) in paragraph at lines 1307--1311
 [][] [] [] [] 
  []
 
@@ -1392,7 +1397,7 @@ File: images/maskassembly/04_show_direction.jpg Graphic file (type bmp)
 File: images/maskassembly/04_show_placement.jpg Graphic file (type bmp)
 <images/maskassembly/04_show_placement.jpg>
 
-Overfull \hbox (2.1858pt too wide) in paragraph at lines 1321--1323
+Overfull \hbox (2.1858pt too wide) in paragraph at lines 1322--1324
 [][] [] 
  []
 
@@ -1402,7 +1407,7 @@ File: images/maskassembly/05_show_direction.jpg Graphic file (type bmp)
 File: images/maskassembly/05_show_together.jpg Graphic file (type bmp)
 <images/maskassembly/05_show_together.jpg>
 
-Overfull \hbox (2.19165pt too wide) in paragraph at lines 1340--1342
+Overfull \hbox (2.19165pt too wide) in paragraph at lines 1341--1343
 [][] [] 
  []
 
@@ -1411,7 +1416,7 @@ File: images/maskassembly/06_show_direction.jpg Graphic file (type bmp)
 File: images/maskassembly/06_show_together.jpg Graphic file (type bmp)
 <images/maskassembly/06_show_together.jpg>
 
-Overfull \hbox (2.19878pt too wide) in paragraph at lines 1351--1353
+Overfull \hbox (2.19878pt too wide) in paragraph at lines 1352--1354
 [][] [] 
  []
 
@@ -1428,7 +1433,7 @@ File: images/maskassembly/09_show_together.jpg Graphic file (type bmp)
 File: images/maskassembly/09_show_together_view_2.jpg Graphic file (type bmp)
 <images/maskassembly/09_show_together_view_2.jpg>
 
-Overfull \hbox (0.87064pt too wide) in paragraph at lines 1368--1371
+Overfull \hbox (0.87064pt too wide) in paragraph at lines 1369--1372
 [][] [] [] 
  []
 
@@ -1446,7 +1451,7 @@ File: images/maskassembly/11_show_bad_seal.jpg Graphic file (type bmp)
 File: images/maskassembly/11_show_good_seal.jpg Graphic file (type bmp)
 <images/maskassembly/11_show_good_seal.jpg>
 
-Overfull \hbox (2.18224pt too wide) in paragraph at lines 1420--1422
+Overfull \hbox (2.18224pt too wide) in paragraph at lines 1421--1423
 [][] [] 
  []
 
@@ -1458,6 +1463,10 @@ Underfull \vbox (badness 1292) has occurred while \output is active []
 
 [69] [70]
 Appendix C.
+
+Package natbib Warning: Citation `mendoza1999' on page 71 undefined on input li
+ne 1488.
+
 [71
 
 ] [72
@@ -1471,7 +1480,7 @@ File: images/lactatequalitycontrol/lactatebinder_log.jpg Graphic file (type bmp
 )
 <images/lactatequalitycontrol/lactatebinder_log.jpg>
 
-Overfull \hbox (2.14943pt too wide) in paragraph at lines 1544--1546
+Overfull \hbox (2.14943pt too wide) in paragraph at lines 1545--1547
 [][] [] 
  []
 
@@ -1482,7 +1491,7 @@ File: images/lactatequalitycontrol/lactate_strips_2.jpg Graphic file (type bmp)
 
 <images/lactatequalitycontrol/lactate_strips_2.jpg>
 
-Overfull \hbox (2.19547pt too wide) in paragraph at lines 1551--1553
+Overfull \hbox (2.19547pt too wide) in paragraph at lines 1552--1554
 [][] [] 
  []
 
@@ -1495,7 +1504,7 @@ File: images/lactatequalitycontrol/low_control_1.jpg Graphic file (type bmp)
 File: images/lactatequalitycontrol/low_control_2.jpg Graphic file (type bmp)
 <images/lactatequalitycontrol/low_control_2.jpg>
 
-Overfull \hbox (2.19547pt too wide) in paragraph at lines 1556--1558
+Overfull \hbox (2.19547pt too wide) in paragraph at lines 1557--1559
 [][] [] 
  []
 
@@ -1504,7 +1513,7 @@ File: images/lactatequalitycontrol/high_control_1.jpg Graphic file (type bmp)
 File: images/lactatequalitycontrol/high_control_2.jpg Graphic file (type bmp)
 <images/lactatequalitycontrol/high_control_2.jpg>
 
-Overfull \hbox (2.19547pt too wide) in paragraph at lines 1561--1563
+Overfull \hbox (2.19547pt too wide) in paragraph at lines 1562--1564
 [][] [] 
  []
 
@@ -1529,7 +1538,7 @@ File: images/lactatequalitycontrol/lactate_meters_low_controls.jpg Graphic file
  (type bmp)
 <images/lactatequalitycontrol/lactate_meters_low_controls.jpg>
 
-Overfull \hbox (0.92899pt too wide) in paragraph at lines 1576--1579
+Overfull \hbox (0.92899pt too wide) in paragraph at lines 1577--1580
 [][] [] [] 
  []
 
@@ -1547,18 +1556,26 @@ Appendix E.
 ]
 Appendix F.
 [85]
-Underfull \hbox (badness 1178) in paragraph at lines 1786--1788
+Underfull \hbox (badness 1178) in paragraph at lines 1787--1789
 []\TU/lmr/m/n/10 Under \TU/lmtt/m/n/10 Manage your User Profile\TU/lmr/m/n/10 ,
  under \TU/lmtt/m/n/10 Training & Credentials\TU/lmr/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 1178) in paragraph at lines 1796--1798
+Underfull \hbox (badness 1178) in paragraph at lines 1797--1799
 []\TU/lmr/m/n/10 Under \TU/lmtt/m/n/10 Manage your User Profile\TU/lmr/m/n/10 ,
  under \TU/lmtt/m/n/10 Training & Credentials\TU/lmr/m/n/10 ,
  []
 
-[86] [87] [88] [89] (nirs-study-info.bbl [90]) [91
+[86] [87] [88] [89] (nirs-study-info.bbl [90]
+
+Package natbib Warning: Empty `thebibliography' environment on input line 8.
+
+)
+
+Package natbib Warning: There were undefined citations.
+
+[91
 
 ] (nirs-study-info.aux)
  ***********
@@ -1570,10 +1587,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 21421 strings out of 409717
- 446333 string characters out of 5775735
+ 21415 strings out of 409717
+ 446185 string characters out of 5775735
  1936189 words of memory out of 5000000
- 43063 multiletter control sequences out of 15000+600000
+ 43057 multiletter control sequences out of 15000+600000
  564544 words of font info for 92 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  90i,7n,120p,1589b,490s stack positions out of 10000i,1000n,20000p,200000b,200000s

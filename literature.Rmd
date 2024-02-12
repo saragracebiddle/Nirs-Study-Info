@@ -21,3 +21,4 @@ Different areas of the body have different types of tissue structure and this ha
 Most studies assume that the tissue structures have constant optical properties. This may not hold true, especially during activities like exercise where blood flow increases and the contents of blood fluctuate. Accounting for varying optical properties has led to the development of time-domain and other measurement techniques. These devices are more expensive than a continuous wave device. Therefore, most NIRS devices assume constant optical properties of the measured tissues.
 
 The differential pathlength factor (dpf) is the measurement of the path that the light waves take through tissue. DPF values have been well researched and measured for multiple body locations and differing adipose tissue thicknesses. This parameter is used in calculating TSI.
+

@@ -15,5 +15,6 @@ rmd_files: ["index.Rmd",
 "appendix-surveys.Rmd",
 "appendix-instruments.Rmd",
 "appendix-exercise_testing.Rmd",
-"appendix-IRB.Rmd"
+"appendix-IRB.Rmd",
+"annotated-bib.Rmd"
 ]

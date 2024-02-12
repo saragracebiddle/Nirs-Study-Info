@@ -5,8 +5,10 @@ date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
-bibliography: [book.bib, packages.bib]
-biblio-style: apalike
+bibliography: [nirs.bib]
+nocite:
+  -'@*'
+csl: chicago-annotated-bibliography.csl
 link-citations: yes
 github-repo: rstudio/bookdown-demo
 description: "This contains all current information about the NIRS Study being conducted at the PrismaHealth Cancer Institute in collaboration with Furman University and University of South Carolina School of Medicine Greenville."
