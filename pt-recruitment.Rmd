@@ -170,3 +170,9 @@ Sara Biddle has access to the ClinCard Admin Portal. If you need to get access t
 The ClinCard for the NIRS study is currently programmed for up to 10 visits to the lab. Each visit can reimburse up to $125 for any travel or hotel expenses. 
 
 [ClinCard]: https://www.clincard.com
+
+## After a Consent
+
+After a patient has signed the informed consent, the research coordinator will use the RedCap survey to fill out the basic information about a patient and assign the patient a study ID number. 
+
+

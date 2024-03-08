@@ -4,7 +4,11 @@ Follow all appropriate data export instructions for PARVO and NIRS data.
 
 All physical copies are stored in a locked filing cabinet in the Human Performance Lab.
 
-The study [RedCap][RedCapURL] stores all identifying patient information and digital copies of data. 
+The study [RedCap][RedCapURL] stores all identifying patient information and digital copies of data.
+
+After a patient is identified and signs a consent form for the study, the research coordinator will fill out the `New Patient` survey in RedCap. When this survey is completed, it automatically assigns a study ID number to the patient and sends an email to Frankie Bennett and Sara Biddle about the newly consented participant. 
+
+Use the information from the `New Patient` survey to pull up the patient's chart in EPIC. 
 
 De-identified NIRS and VO~2~ data files can be stored on Prisma Health computers. 
 
