@@ -8,7 +8,15 @@ The study [RedCap][RedCapURL] stores all identifying patient information and dig
 
 After a patient is identified and signs a consent form for the study, the research coordinator will fill out the `New Patient` survey in RedCap. When this survey is completed, it automatically assigns a study ID number to the patient and sends an email to Frankie Bennett and Sara Biddle about the newly consented participant. 
 
-Use the information from the `New Patient` survey to pull up the patient's chart in EPIC. 
+When a patient completes an HPL visit, go to the patient's record in RedCap.
+
+### Lactate Threshold Visit
+
+Under the `Lactate Threshold` event in the appropriate patient record in RedCap, start filling out the data collection instruments for the event. 
+
+Fill out the following data collection instruments: `HPL Visit`, `One-Time Measurements`, `Lactate Parvo`, `Godin Leisuretime Exercise Questionnaire`, `Mini-Mental State Examination`, `Brief Fatigue Inventory`, `PROMIS SF v1.1-Global Health`, `Physical Activity`, and `Data Files`. 
+
+The information to fill out `HPL Visit`, `One-Time Measurements`, and `Lactate Parvo` will be found on the `Lactate Threshold Data Collection Sheet` that was filled out during the patient visit. 
 
 De-identified NIRS and VO~2~ data files can be stored on Prisma Health computers. 
 

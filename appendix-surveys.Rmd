@@ -6,7 +6,12 @@ The Brief Fatigue Inventory (BFI) is a 9 item survey designed to assess fatigue 
 
 ## Godin Leisure-Time Exercise Questionnaire {#Appendix-Surveys-glteq}
 
-The Godin Leisure-Time Exercise Questionnaire (GLTEQ) is a two item instrument developed to asses the leisure-time activity levels in order to classify people into 'very active' and 'sedentary' categories with the aim of using this instrument to measure activity levels before and after implementation of community health and/or fitness programs in relation to psychosocial variables [@]. 
+Godin and Shephard made the `Leisure Time Exercise Questionnaire` (LTEQ) in 1985 [@godinshepherd85]. The LTEQ was originally a two item survey: “Item 1 consists of 3 parts, in which participants note how often per week they do strenuous, moderate, and mild exercise. Item 2 asks participants to note how often they engage in an activity long enough to work up a sweat.“  This was used to group people into several different categories of activity levels. 
+ 
+In 2011, Godin published the `Godin-Shephard Leisure Time Physical Activity Questionnaire` (GLTPAQ) [@godinshepherd11]. This removed the second item and was used to group respondents into 2 categories, “insufficiently active” and “active” based on the ACSM guidelines for weekly moderate and strenuous physical activity levels. 
+ 
+The form that we use says `Godin-Leisure Time Exercise Questionnaire` across the top of the form, by the Oncology Nursing Society. At the bottom left, it says ‘adapted from: Godin, G. (2011). The Godin-Shephard leisure-time physical activity questionnaire. Health & Fitness Journal of Canada, 4(1), 18-22.’  I don’t know why that’s the title they chose to put on the top of the form, it’s made things more confusing than it needs to be. I have so far been unable to find the original paper that uses this form. 
+
 
 ## Mini-Mental State Examination {#Appendix-Surveys-mmse}
 

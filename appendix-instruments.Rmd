@@ -20,7 +20,6 @@ Move one end of the caliper to the top of the screen. Move the other end of the 
 
 Record the measurement given by the caliper.
 
-
 ## Lactate Meter {#Appendix-Instruments-LactateMeter}
 
 
@@ -42,8 +41,6 @@ knitr::include_graphics(
 ```
 
 Record the date. 
-
-
 
 Look on the bottle of lactate strips and find the lot number. Record the lot number in the appropriate space. 
 

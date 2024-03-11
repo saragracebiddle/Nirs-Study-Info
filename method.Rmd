@@ -8,47 +8,65 @@ knitr::include_graphics(
 )
 ```
 
-## Lactate Threshold Protocol {#Methods-LT}
+## Lactate Threshold Visit (First Visit) {#Methods-LT}
 
-This protocol is the participant's first visit. 
-
+This protocol is the participant's first visit to the lab. Have any medical students helping out with testing arrive to the lab at least 30 minutes prior to the participant. 
 
 ### Preparation {#Methods-LT-prep}
 
-At least 30 minutes prior to when the participant is scheduled to arrive, turn on the metabolic cart. 
+At least an hour prior to the time the participant is scheduled to artrive, turn on the metabolic cart by flipping the power switch on the extension cord. 
 
-Print out the following instruments:
+Print out the following forms:
 
 - MMSE \@ref(Appendix-Surveys-mmse)
 - Godin-Leisure Time Exercise Questionnaire \@ref(Appendix-Surveys-glteq)
 - Physical Activity History \@ref(Appendix-Surveys-pah)
 - BFI \@ref(Appendix-Surveys-bfi)
 - PROMIS Global Health \@ref(Appendix-Surveys-promis)
-- Lactate Threshold Data Collection Sheet
+- Lactate Threshold Data Collection Sheet 
+- Contact Information Form
 
-Write the patient's study ID number, visit ID, and the date in the upper left corner of each in pen. 
+Frankie keeps some forms already printed out in the file cabinet by his desk. If you cannot find them or need to print more, you can download the forms you need from the file repository in [RedCap][RedCapURL]. 
+
+Write the patient's study ID number, visit ID, and the date in the upper left corner of each sheet in pen. 
+
+Place the MMSE, GLTEQ, and Lactate Threshold Data Collection Sheet on one clipboard. These will be filled out by laboratory staff.
+
+Place the BFI, PROMIS Global Health, Contact Information Form, and Physical Activity History (Intake) forms on one clipboard. These will be filled out by the participant. 
 
 Assemble the VO~2~ mask except for the blue rubber part as described in \@ref(Parvo-MaskAssembly). 
 
-Prepare the PortaMon as described in \@ref(PortaMon-Preparation). 
+Prepare the PortaMon as described in \@ref(PortaMon-BeforeDataCollection) by putting in a charged battery, wrapping the PortaMon in plastic saran wrap, and placing the double sided taupe tape. 
 
-Calibrate the metabolic cart as described in \@ref(Parvo-Calibration).
+Calibrate the metabolic cart as described in \@ref(Parvo-Calibration). Do both the Flowmeter Calibration and Gas Calibration. Remember, percent change must be less than 1% to save the calibration results. If you cannot get the percent change that low and don't have any more time, save the result and tell Frankie about it so he can fix it later. 
 
-### Data Collection {#Methods-LT-DataCollection}
+Run lactate meter controls as described in \@ref(Appendix-Instruments-LactateMeter-Usage-QualityControl).
 
-Use the steps described in \@ref(Appendix-Instruments-Ultrasound-Usage) to measure the participant's subcutaneous adipose tissue thickness above their vastus lateralis.
+Everyone is required to wear a mask while the patient is in the lab. Prisma Health keeps a supply of masks in the hallway that connects to the parking garage. We wear masks since our patients are receiveing chemotherapy and their immune systems will not be functioning well during the treatment. Patients and any people they bring with them are not required to wear masks. If they wish to, you can direct them to the supply of masks in the hallway. 
 
-After the patient arrives, the participant's subcutaneous adipose tissue thickness is measured using an ultrasound. If ATT is less than 2 centimeters, the participant continues through the next steps.
+Approximately 10-15 minutes before the patient is supposed to arrive, send someone to the Cancer Institute lobby to meet them. They will walk the patient up to the Human Performance Lab. 
+
+### Exclusion Criteria {#Methods-LT-ExclusionCriteria}
+
+There are three exclusion criteria that we must test before continuing with any data collection. 
+
+1. Adipose Tissue Thickness
+
+In order for the PortaMon to collect useful data, the subcutaneous adipose tissue thickness above the vastus lateralis and directly under the device must be less than 2 centimeters. 
+
+Use the steps described in \@ref(Appendix-Instruments-Ultrasound-Usage) to measure the participant's subcutaneous adipose tissue thickness above their vastus lateralis.  If ATT is less than 2 centimeters, the participant continues through the next steps.
 
 Place the NIRS device over the area measured using ultrasound following the steps described in  \@ref(PortaMon-Placement).
 
-Administer the following instruments:
+2. Sufficient Physical Activity
 
-- MoCA \@ref(Appendix-Surveys-moca)
-- MMSE \@ref(Appendix-Surveys-mmse)
-- Godin-Leisure Time Exercise Questionnaire \@ref(Appendix-Surveys-glteq)
+Sedentary patients will be unable to complete the testing protocol and thus will be excluded from participation. To determine physical activity levels, administer the Godin-Leisure Time Exercise Questionnaire \@ref(Appendix-Surveys-glteq). If the score is less than 14, the patient would be sedentary and will not be eligible to participate. Administer the GLTEQ to the patient and score it immediately. 
 
-The MoCA, MMSE, and GLTEQ are exclusion criteria. If the participant does not pass these items, they cannot proceed with the study, therefore they are administered before other instruments. If the participant passes the exclusion instruments, proceed with the rest of the instruments. These instruments are not filled out by the participant- a study staff member must administer and score these instruments. 
+3. Mental State
+
+Patients must be aware of their situation and fully able to consent to participation. The Mini-Mental State Examination \@ref(Appendix-Surveys-mmse) helps detect any underlying issues with memory that would render a patient unable to participate. If the patient scores less than ___, the patient will not be eligible to participate due to mental conditions. Administer the MMSE to the patient and score it immediately. 
+
+### Data Collection {#Methods-LT-DataCollection}
 
 Have the subject complete the following instruments:
 
@@ -56,7 +74,6 @@ Have the subject complete the following instruments:
 - BFI \@ref(Appendix-Surveys-bfi)
 - PROMIS Global Health \@ref(Appendix-Surveys-promis)
 
-These instruments are completed by the participant. 
 
 Review the completed Godin-Leisure Time Exercise Questionnaire and Physical Activity History instruments. Use your best judgement in collaboration with the other investigators to determine the wattage jumps. See \@ref(ExerciseTesting-LT-Watts) for further information about deciding wattage jumps.
 
