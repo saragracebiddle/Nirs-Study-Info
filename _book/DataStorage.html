@@ -70,8 +70,7 @@
 <li><a class="" href="PatientRecruitment.html"><span class="header-section-number">3</span> Patient Recruitment</a></li>
 <li><a class="" href="Methods.html"><span class="header-section-number">4</span> Methods</a></li>
 <li><a class="active" href="DataStorage.html"><span class="header-section-number">5</span> Data Storage</a></li>
-<li><a class="" href="database.html"><span class="header-section-number">6</span> Database</a></li>
-<li><a class="" href="DataAnalysis.html"><span class="header-section-number">7</span> Data Analysis</a></li>
+<li><a class="" href="DataAnalysis.html"><span class="header-section-number">6</span> Data Analysis</a></li>
 <li class="book-part">Appendix</li>
 <li><a class="" href="PortaMon.html"><span class="header-section-number">A</span> PortaMon</a></li>
 <li><a class="" href="Parvo.html"><span class="header-section-number">B</span> ParvoMedics TrueOne 2400</a></li>
@@ -94,15 +93,43 @@
 <p>Follow all appropriate data export instructions for PARVO and NIRS data.</p>
 <p>All physical copies are stored in a locked filing cabinet in the Human Performance Lab.</p>
 <p>The study <a href="https://redcap.prismahealth.org">RedCap</a> stores all identifying patient information and digital copies of data.</p>
-<p>De-identified NIRS and VO<sub>2</sub> data files can be stored on Prisma Health computers.</p>
+<p>After a patient is identified and signs a consent form for the study, the research coordinator will fill out the <code>New Patient</code> survey in RedCap. When this survey is completed, it automatically assigns a study ID number to the patient and sends an email to Frankie Bennett and Sara Biddle about the newly consented participant.</p>
+<p>When a patient completes an HPL visit, go to the patient’s record in RedCap.</p>
+<div id="DataStorage-MissingData" class="section level2" number="5.1">
+<h2>
+<span class="header-section-number">5.1</span> Missing Data Codes<a class="anchor" aria-label="anchor" href="#DataStorage-MissingData"><i class="fas fa-link"></i></a>
+</h2>
+<p>The following missing data codes are enabled in RedCap:</p>
+<ul>
+<li>INV, Invalid</li>
+<li>NA, Not Applicable</li>
+<li>OTH, Other</li>
+<li>NI, No Information</li>
+</ul>
+<p>When inputting data into RedCap, use the following guidelines to determine which missing data code to use. You can input a missing data code by selecting the <code>M</code> next to the input field.</p>
+<p>If the item is blank, as in not answered or no one wrote it down on the data collection sheet, use <code>NI, No Information</code>. If the item had an error during data collection, for example if the lactate meter shows <code>ERR</code>, use <code>INV, Invalid</code>. If the item was not used during data collection, use <code>NA, Not Applicable</code>. If the reason does not fit into any of the above categories, use <code>OTH, Other</code> and record a comment by clicking on the text bubble icon and typing into the notes field.</p>
+<div id="lactate-threshold-visit" class="section level3" number="5.1.1">
+<h3>
+<span class="header-section-number">5.1.1</span> Lactate Threshold Visit<a class="anchor" aria-label="anchor" href="#lactate-threshold-visit"><i class="fas fa-link"></i></a>
+</h3>
+<p>Under the <code>Lactate Threshold</code> event in the appropriate patient record in RedCap, start filling out the data collection instruments for the event.</p>
+<p>Fill out the following data collection instruments: <code>HPL Visit</code>, <code>One-Time Measurements</code>, <code>Lactate Parvo</code>, <code>Godin Leisuretime Exercise Questionnaire</code>, <code>Mini-Mental State Examination</code>, <code>Brief Fatigue Inventory</code>, <code>PROMIS SF v1.1-Global Health</code>, <code>Physical Activity</code>, and <code>Data Files</code>.</p>
+<p>The information to fill out <code>HPL Visit</code>, <code>One-Time Measurements</code>, and <code>Lactate Parvo</code> will be found on the <code>Lactate Threshold Data Collection Sheet</code> that was filled out during the patient visit.</p>
 
+</div>
+</div>
 </div>
   <div class="chapter-nav">
 <div class="prev"><a href="Methods.html"><span class="header-section-number">4</span> Methods</a></div>
-<div class="next"><a href="database.html"><span class="header-section-number">6</span> Database</a></div>
+<div class="next"><a href="DataAnalysis.html"><span class="header-section-number">6</span> Data Analysis</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li><a class="nav-link" href="#DataStorage"><span class="header-section-number">5</span> Data Storage</a></li></ul>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#DataStorage"><span class="header-section-number">5</span> Data Storage</a></li>
+<li>
+<a class="nav-link" href="#DataStorage-MissingData"><span class="header-section-number">5.1</span> Missing Data Codes</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#lactate-threshold-visit"><span class="header-section-number">5.1.1</span> Lactate Threshold Visit</a></li></ul>
+</li>
+</ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">
@@ -118,7 +145,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>NIRS Study Information</strong>" was written by Sara Grace Biddle. It was last built on 2024-02-12.</p>
+    <p>"<strong>NIRS Study Information</strong>" was written by Sara Grace Biddle. It was last built on 2024-03-12.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

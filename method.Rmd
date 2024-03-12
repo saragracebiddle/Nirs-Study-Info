@@ -14,7 +14,7 @@ This protocol is the participant's first visit to the lab. Have any medical stud
 
 ### Preparation {#Methods-LT-prep}
 
-At least an hour prior to the time the participant is scheduled to artrive, turn on the metabolic cart by flipping the power switch on the extension cord. 
+At least an hour prior to the time the participant is scheduled to arrive, turn on the metabolic cart by flipping the power switch on the extension cord. 
 
 Print out the following forms:
 
@@ -28,21 +28,21 @@ Print out the following forms:
 
 Frankie keeps some forms already printed out in the file cabinet by his desk. If you cannot find them or need to print more, you can download the forms you need from the file repository in [RedCap][RedCapURL]. 
 
-Write the patient's study ID number, visit ID, and the date in the upper left corner of each sheet in pen. 
+Write the patient's study ID number, visit ID, and the date in the upper left corner of each sheet in pen. For Lactate Threshold Visits, the visit ID is `LT`. 
 
 Place the MMSE, GLTEQ, and Lactate Threshold Data Collection Sheet on one clipboard. These will be filled out by laboratory staff.
 
 Place the BFI, PROMIS Global Health, Contact Information Form, and Physical Activity History (Intake) forms on one clipboard. These will be filled out by the participant. 
 
-Assemble the VO~2~ mask except for the blue rubber part as described in \@ref(Parvo-MaskAssembly). 
+Assemble the VO~2~ mask except for the blue rubber part as described in \@ref(Parvo-MaskAssembly). Place the assembled pieces in a sterile pink bucket. 
 
 Prepare the PortaMon as described in \@ref(PortaMon-BeforeDataCollection) by putting in a charged battery, wrapping the PortaMon in plastic saran wrap, and placing the double sided taupe tape. 
 
-Calibrate the metabolic cart as described in \@ref(Parvo-Calibration). Do both the Flowmeter Calibration and Gas Calibration. Remember, percent change must be less than 1% to save the calibration results. If you cannot get the percent change that low and don't have any more time, save the result and tell Frankie about it so he can fix it later. 
+Calibrate the metabolic cart as described in \@ref(Parvo-Calibration) if the metabolic cart has been on for at least 30 minutes. Before doing calibrations, remember to change the date and time on the computer to match the actual date and time, as the PARVO cart is not connected to the internet. Do both the Flowmeter Calibration and Gas Calibration. Remember, percent change must be less than 1% to save the calibration results. If you cannot get the percent change that low and don't have any more time, save the result and tell Frankie about it so he can fix it later. 
 
 Run lactate meter controls as described in \@ref(Appendix-Instruments-LactateMeter-Usage-QualityControl).
 
-Everyone is required to wear a mask while the patient is in the lab. Prisma Health keeps a supply of masks in the hallway that connects to the parking garage. We wear masks since our patients are receiveing chemotherapy and their immune systems will not be functioning well during the treatment. Patients and any people they bring with them are not required to wear masks. If they wish to, you can direct them to the supply of masks in the hallway. 
+Everyone is required to wear a mask while the patient is in the lab. Prisma Health keeps a supply of masks in the hallway that connects to the parking garage. We wear masks since our patients are receiveing chemotherapy and their immune systems will not be functioning well during chemotherapy treatment. Patients and any people they bring with them are not required to wear masks. If they wish to, you can direct them to the supply of masks in the hallway. 
 
 Approximately 10-15 minutes before the patient is supposed to arrive, send someone to the Cancer Institute lobby to meet them. They will walk the patient up to the Human Performance Lab. 
 
@@ -74,12 +74,11 @@ Have the subject complete the following instruments:
 - BFI \@ref(Appendix-Surveys-bfi)
 - PROMIS Global Health \@ref(Appendix-Surveys-promis)
 
-
 Review the completed Godin-Leisure Time Exercise Questionnaire and Physical Activity History instruments. Use your best judgement in collaboration with the other investigators to determine the wattage jumps. See \@ref(ExerciseTesting-LT-Watts) for further information about deciding wattage jumps.
 
-Measure the subject's face to determine mask size. Record mask size on data collection sheet. Finish assembling mask.
+Measure the subject's face to determine mask size. Record mask size on data collection sheet. Finish assembling mask by attaching the blue rubber mask of the appropriate size to the assembled pieces. 
 
-Put the heart rate monitor on the patient.
+Put the heart rate monitor on the patient. 
 
 Have the subject get on the stationary bike and make adjustments to the seat height, seat depth, pedal length, and handlebar placement to the comfort of the participant. 
 
@@ -89,10 +88,52 @@ Place the assembled mask on the participant's face and connect clear tubing to t
 
 Conduct Lactate Threshold Exercise Test as described in \@ref(ExerciseTesting-LT). 
 
+### After Data Collection {#Methods-LT-after}
 
-## On/Off Kinetics Protocol {#Methods-Onoff}
+As soon as you click `End Test` on the PARVO and the software stops collecting data, take the VO~2~ mask off the participant. The masks are very uncomfortable and we want them to have to wear it for as little time as possible. 
 
-Use the steps described in \@ref(PortaMon) and \@ref(PortaMon-Placement) along with the reference image of the previous placement to place the device in the same location as the last visit. 
+Help the patient off the stationary bike. Offer them a chair and a towel. Remove the PortaMon from their leg and pull off all the tape. Take the heart rate monitor off of them. 
+
+Escort the patient to their next destination, which will normally be back down to the Cancer Institute lobby. 
+
+Pull the saran wrap and tape off of the PortaMon and throw it away. Remove the PortaMon battery and charge it. Wipe down the outside of the PortaMon case with antibacterial wipes. 
+
+Print out the 10-second report of the data collected by the PARVO and place with the other data collection sheets. 
+
+Measure the seat height, seat depth, and pedal length of the stationary bike and record on the data collection sheet. 
+
+Remove the button from the heart rate monitor. Wipe the button down with antibacterial wipes and put the heart rate monitor strap in the pink bucket to be cleaned with the PARVO mask parts. 
+
+Remove all dirty PARVO parts and place in pink bucket. 
+
+Take the pink bucket and put it on the blue cart. Follow the steps described in \@ref() to clean and sanitize the pieces. 
+
+## On/Off Kinetics Visit {#Methods-Onoff}
+
+### Preparation {#Methods-Onoff-Preparation}
+
+At least an hour prior to the time the participant is scheduled to arrive, turn on the metabolic cart by flipping the power switch on the extension cord. 
+
+Print out the following forms:
+- Physical Activity History (Follow Up)
+- BFI 
+- PROMIS Global Health
+- On/Off Kinetics Data Collection Sheet
+
+Write the patient's study ID number, visit ID, and the date in the upper left corner of each sheet in pen. The visit ID for an On/Off kinetics is the number corresponding to the cycle of treatment and "CYCLE".
+For the first On/Off Kinetics, which occurs prior to beginning chemotherapy treatment, the visit ID is `0CYCLE`. For the next On/Off Kinetics, which occurs after the first cycle of chemotherapy and prior to beginning the second cycle of chemotherapy, the visit ID would be `1CYCLE`.
+
+Place the BFI, PROMIS Global Health, and Physical Activity History (Follow Up) forms on one clipboard. Place the On/Off Kinetics Data Collection Sheet on a different clipboard. 
+
+Assemble the VO~2~ mask as described in \@ref(Parvo-MaskAssembly). Use the mask size recorded from the Lactate Threshold Visit to fully assemble the mask and place in a sterile pink bucket. 
+
+Prepare the PortaMon as described in \@ref(PortaMon-BeforeDataCollection) by putting in a charged battery, wrapping the PortaMon in plastic saran wrap, and placing the double sided taupe tape. 
+
+Calibrate the metabolic cart as described in \@ref(Parvo-Calibration) if the metabolic cart has been on for at least 30 minutes. Before doing calibrations, remember to change the date and time on the computer to match the actual date and time, as the PARVO cart is not connected to the internet. Do both the Flowmeter Calibration and Gas Calibration. Remember, percent change must be less than 1% to save the calibration results. If you cannot get the percent change that low and don't have any more time, save the result and tell Frankie about it so he can fix it later. 
+
+Refer to the stationary bike measurements recorded from the Lactate Threshold Visit. Set the bike seat and pedals to match those measurements. 
+
+### Data Collection {#Methods-OnOff-DataCollection}
 
 Have the subject complete the following instruments:
 

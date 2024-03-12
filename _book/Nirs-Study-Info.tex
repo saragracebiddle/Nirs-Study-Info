@@ -128,7 +128,7 @@
 
 \title{NIRS Study Information}
 \author{Sara Grace Biddle}
-\date{2024-02-12}
+\date{2024-03-12}
 
 \begin{document}
 \maketitle
@@ -411,22 +411,27 @@ Sara Biddle has access to the ClinCard Admin Portal. If you need to get access t
 
 The ClinCard for the NIRS study is currently programmed for up to 10 visits to the lab. Each visit can reimburse up to \$125 for any travel or hotel expenses.
 
+\hypertarget{after-a-consent}{%
+\section{After a Consent}\label{after-a-consent}}
+
+After a patient has signed the informed consent, the research coordinator will use the RedCap survey to fill out the basic information about a patient and assign the patient a study ID number.
+
 \hypertarget{Methods}{%
 \chapter{Methods}\label{Methods}}
 
 \includegraphics[width=26.67in]{images/visit_timeline}
 
 \hypertarget{Methods-LT}{%
-\section{Lactate Threshold Protocol}\label{Methods-LT}}
+\section{Lactate Threshold Visit (First Visit)}\label{Methods-LT}}
 
-This protocol is the participant's first visit.
+This protocol is the participant's first visit to the lab. Have any medical students helping out with testing arrive to the lab at least 30 minutes prior to the participant.
 
 \hypertarget{Methods-LT-prep}{%
 \subsection{Preparation}\label{Methods-LT-prep}}
 
-At least 30 minutes prior to when the participant is scheduled to arrive, turn on the metabolic cart.
+At least an hour prior to the time the participant is scheduled to arrive, turn on the metabolic cart by flipping the power switch on the extension cord.
 
-Print out the following instruments:
+Print out the following forms:
 
 \begin{itemize}
 \tightlist
@@ -442,38 +447,70 @@ Print out the following instruments:
   PROMIS Global Health \ref{Appendix-Surveys-promis}
 \item
   Lactate Threshold Data Collection Sheet
+\item
+  Contact Information Form
 \end{itemize}
 
-Write the patient's study ID number, visit ID, and the date in the upper left corner of each in pen.
+Frankie keeps some forms already printed out in the file cabinet by his desk. If you cannot find them or need to print more, you can download the forms you need from the file repository in \href{https://redcap.prismahealth.org}{RedCap}.
 
-Assemble the VO\textsubscript{2} mask except for the blue rubber part as described in \ref{Parvo-MaskAssembly}.
+Write the patient's study ID number, visit ID, and the date in the upper left corner of each sheet in pen. For Lactate Threshold Visits, the visit ID is \texttt{LT}.
 
-Prepare the PortaMon as described in \ref{PortaMon-Preparation}.
+Place the MMSE, GLTEQ, and Lactate Threshold Data Collection Sheet on one clipboard. These will be filled out by laboratory staff.
 
-Calibrate the metabolic cart as described in \ref{Parvo-Calibration}.
+Place the BFI, PROMIS Global Health, Contact Information Form, and Physical Activity History (Intake) forms on one clipboard. These will be filled out by the participant.
 
-\hypertarget{Methods-LT-DataCollection}{%
-\subsection{Data Collection}\label{Methods-LT-DataCollection}}
+Assemble the VO\textsubscript{2} mask except for the blue rubber part as described in \ref{Parvo-MaskAssembly}. Place the assembled pieces in a sterile pink bucket.
 
-Use the steps described in \ref{Appendix-Instruments-Ultrasound-Usage} to measure the participant's subcutaneous adipose tissue thickness above their vastus lateralis.
+Prepare the PortaMon as described in \ref{PortaMon-BeforeDataCollection} by putting in a charged battery, wrapping the PortaMon in plastic saran wrap, and placing the double sided taupe tape.
 
-After the patient arrives, the participant's subcutaneous adipose tissue thickness is measured using an ultrasound. If ATT is less than 2 centimeters, the participant continues through the next steps.
+Calibrate the metabolic cart as described in \ref{Parvo-Calibration} if the metabolic cart has been on for at least 30 minutes. Before doing calibrations, remember to change the date and time on the computer to match the actual date and time, as the PARVO cart is not connected to the internet. Do both the Flowmeter Calibration and Gas Calibration. Remember, percent change must be less than 1\% to save the calibration results. If you cannot get the percent change that low and don't have any more time, save the result and tell Frankie about it so he can fix it later.
+
+Run lactate meter controls as described in \ref{Appendix-Instruments-LactateMeter-Usage-QualityControl}.
+
+Everyone is required to wear a mask while the patient is in the lab. Prisma Health keeps a supply of masks in the hallway that connects to the parking garage. We wear masks since our patients are receiveing chemotherapy and their immune systems will not be functioning well during chemotherapy treatment. Patients and any people they bring with them are not required to wear masks. If they wish to, you can direct them to the supply of masks in the hallway.
+
+Approximately 10-15 minutes before the patient is supposed to arrive, send someone to the Cancer Institute lobby to meet them. They will walk the patient up to the Human Performance Lab.
+
+\hypertarget{Methods-LT-ExclusionCriteria}{%
+\subsection{Exclusion Criteria}\label{Methods-LT-ExclusionCriteria}}
+
+There are three exclusion criteria that we must test before continuing with any data collection.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Adipose Tissue Thickness
+\end{enumerate}
+
+In order for the PortaMon to collect useful data, the subcutaneous adipose tissue thickness above the vastus lateralis and directly under the device must be less than 2 centimeters.
+
+Use the steps described in \ref{Appendix-Instruments-Ultrasound-Usage} to measure the participant's subcutaneous adipose tissue thickness above their vastus lateralis. If ATT is less than 2 centimeters, the participant continues through the next steps.
 
 Place the NIRS device over the area measured using ultrasound following the steps described in \ref{PortaMon-Placement}.
 
-Administer the following instruments:
-
-\begin{itemize}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
 \tightlist
 \item
-  MoCA \ref{Appendix-Surveys-moca}
-\item
-  MMSE \ref{Appendix-Surveys-mmse}
-\item
-  Godin-Leisure Time Exercise Questionnaire \ref{Appendix-Surveys-glteq}
-\end{itemize}
+  Sufficient Physical Activity
+\end{enumerate}
 
-The MoCA, MMSE, and GLTEQ are exclusion criteria. If the participant does not pass these items, they cannot proceed with the study, therefore they are administered before other instruments. If the participant passes the exclusion instruments, proceed with the rest of the instruments. These instruments are not filled out by the participant- a study staff member must administer and score these instruments.
+Sedentary patients will be unable to complete the testing protocol and thus will be excluded from participation. To determine physical activity levels, administer the Godin-Leisure Time Exercise Questionnaire \ref{Appendix-Surveys-glteq}. If the score is less than 14, the patient would be sedentary and will not be eligible to participate. Administer the GLTEQ to the patient and score it immediately.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Mental State
+\end{enumerate}
+
+Patients must be aware of their situation and fully able to consent to participation. The Mini-Mental State Examination \ref{Appendix-Surveys-mmse} helps detect any underlying issues with memory that would render a patient unable to participate. If the patient scores less than \_\_\_, the patient will not be eligible to participate due to mental conditions. Administer the MMSE to the patient and score it immediately.
+
+\hypertarget{Methods-LT-DataCollection}{%
+\subsection{Data Collection}\label{Methods-LT-DataCollection}}
 
 Have the subject complete the following instruments:
 
@@ -487,11 +524,9 @@ Have the subject complete the following instruments:
   PROMIS Global Health \ref{Appendix-Surveys-promis}
 \end{itemize}
 
-These instruments are completed by the participant.
-
 Review the completed Godin-Leisure Time Exercise Questionnaire and Physical Activity History instruments. Use your best judgement in collaboration with the other investigators to determine the wattage jumps. See \ref{ExerciseTesting-LT-Watts} for further information about deciding wattage jumps.
 
-Measure the subject's face to determine mask size. Record mask size on data collection sheet. Finish assembling mask.
+Measure the subject's face to determine mask size. Record mask size on data collection sheet. Finish assembling mask by attaching the blue rubber mask of the appropriate size to the assembled pieces.
 
 Put the heart rate monitor on the patient.
 
@@ -503,10 +538,56 @@ Place the assembled mask on the participant's face and connect clear tubing to t
 
 Conduct Lactate Threshold Exercise Test as described in \ref{ExerciseTesting-LT}.
 
-\hypertarget{Methods-Onoff}{%
-\section{On/Off Kinetics Protocol}\label{Methods-Onoff}}
+\hypertarget{Methods-LT-after}{%
+\subsection{After Data Collection}\label{Methods-LT-after}}
 
-Use the steps described in \ref{PortaMon} and \ref{PortaMon-Placement} along with the reference image of the previous placement to place the device in the same location as the last visit.
+As soon as you click \texttt{End\ Test} on the PARVO and the software stops collecting data, take the VO\textsubscript{2} mask off the participant. The masks are very uncomfortable and we want them to have to wear it for as little time as possible.
+
+Help the patient off the stationary bike. Offer them a chair and a towel. Remove the PortaMon from their leg and pull off all the tape. Take the heart rate monitor off of them.
+
+Escort the patient to their next destination, which will normally be back down to the Cancer Institute lobby.
+
+Pull the saran wrap and tape off of the PortaMon and throw it away. Remove the PortaMon battery and charge it. Wipe down the outside of the PortaMon case with antibacterial wipes.
+
+Print out the 10-second report of the data collected by the PARVO and place with the other data collection sheets.
+
+Measure the seat height, seat depth, and pedal length of the stationary bike and record on the data collection sheet.
+
+Remove the button from the heart rate monitor. Wipe the button down with antibacterial wipes and put the heart rate monitor strap in the pink bucket to be cleaned with the PARVO mask parts.
+
+Remove all dirty PARVO parts and place in pink bucket.
+
+Take the pink bucket and put it on the blue cart. Follow the steps described in @ref() to clean and sanitize the pieces.
+
+\hypertarget{Methods-Onoff}{%
+\section{On/Off Kinetics Visit}\label{Methods-Onoff}}
+
+\hypertarget{Methods-Onoff-Preparation}{%
+\subsection{Preparation}\label{Methods-Onoff-Preparation}}
+
+At least an hour prior to the time the participant is scheduled to arrive, turn on the metabolic cart by flipping the power switch on the extension cord.
+
+Print out the following forms:
+- Physical Activity History (Follow Up)
+- BFI
+- PROMIS Global Health
+- On/Off Kinetics Data Collection Sheet
+
+Write the patient's study ID number, visit ID, and the date in the upper left corner of each sheet in pen. The visit ID for an On/Off kinetics is the number corresponding to the cycle of treatment and ``CYCLE''.
+For the first On/Off Kinetics, which occurs prior to beginning chemotherapy treatment, the visit ID is \texttt{0CYCLE}. For the next On/Off Kinetics, which occurs after the first cycle of chemotherapy and prior to beginning the second cycle of chemotherapy, the visit ID would be \texttt{1CYCLE}.
+
+Place the BFI, PROMIS Global Health, and Physical Activity History (Follow Up) forms on one clipboard. Place the On/Off Kinetics Data Collection Sheet on a different clipboard.
+
+Assemble the VO\textsubscript{2} mask as described in \ref{Parvo-MaskAssembly}. Use the mask size recorded from the Lactate Threshold Visit to fully assemble the mask and place in a sterile pink bucket.
+
+Prepare the PortaMon as described in \ref{PortaMon-BeforeDataCollection} by putting in a charged battery, wrapping the PortaMon in plastic saran wrap, and placing the double sided taupe tape.
+
+Calibrate the metabolic cart as described in \ref{Parvo-Calibration} if the metabolic cart has been on for at least 30 minutes. Before doing calibrations, remember to change the date and time on the computer to match the actual date and time, as the PARVO cart is not connected to the internet. Do both the Flowmeter Calibration and Gas Calibration. Remember, percent change must be less than 1\% to save the calibration results. If you cannot get the percent change that low and don't have any more time, save the result and tell Frankie about it so he can fix it later.
+
+Refer to the stationary bike measurements recorded from the Lactate Threshold Visit. Set the bike seat and pedals to match those measurements.
+
+\hypertarget{Methods-OnOff-DataCollection}{%
+\subsection{Data Collection}\label{Methods-OnOff-DataCollection}}
 
 Have the subject complete the following instruments:
 
@@ -537,65 +618,39 @@ All physical copies are stored in a locked filing cabinet in the Human Performan
 
 The study \href{https://redcap.prismahealth.org}{RedCap} stores all identifying patient information and digital copies of data.
 
-De-identified NIRS and VO\textsubscript{2} data files can be stored on Prisma Health computers.
+After a patient is identified and signs a consent form for the study, the research coordinator will fill out the \texttt{New\ Patient} survey in RedCap. When this survey is completed, it automatically assigns a study ID number to the patient and sends an email to Frankie Bennett and Sara Biddle about the newly consented participant.
 
-\hypertarget{database}{%
-\chapter{Database}\label{database}}
+When a patient completes an HPL visit, go to the patient's record in RedCap.
 
-\hypertarget{description-of-needs}{%
-\section{Description of Needs}\label{description-of-needs}}
+\hypertarget{DataStorage-MissingData}{%
+\section{Missing Data Codes}\label{DataStorage-MissingData}}
 
-Store information about patients, their chemotherapy infusions, their bloodwork, visits to the Human Performance Lab for exercise testing, data from exercise testing, and analyzed data from the testing.
+The following missing data codes are enabled in RedCap:
 
-GUI for future users who may not be familiar with code or able to learn.
+\begin{itemize}
+\tightlist
+\item
+  INV, Invalid
+\item
+  NA, Not Applicable
+\item
+  OTH, Other
+\item
+  NI, No Information
+\end{itemize}
 
-Identifying information will be stored in a RedCap that is secured by PrismaHealth. All information in this database will be deidentified.
+When inputting data into RedCap, use the following guidelines to determine which missing data code to use. You can input a missing data code by selecting the \texttt{M} next to the input field.
 
-Retrieve analyzed testing data for future statistical analysis.
+If the item is blank, as in not answered or no one wrote it down on the data collection sheet, use \texttt{NI,\ No\ Information}. If the item had an error during data collection, for example if the lactate meter shows \texttt{ERR}, use \texttt{INV,\ Invalid}. If the item was not used during data collection, use \texttt{NA,\ Not\ Applicable}. If the reason does not fit into any of the above categories, use \texttt{OTH,\ Other} and record a comment by clicking on the text bubble icon and typing into the notes field.
 
-Export data for statistical analysis.
+\hypertarget{lactate-threshold-visit}{%
+\subsection{Lactate Threshold Visit}\label{lactate-threshold-visit}}
 
-Count patients with breast or gynecological cancer, create calendar for visits, retrieve labs, infusions, or visits associated with one patient.
-Count type of chemotherapy regimen.
+Under the \texttt{Lactate\ Threshold} event in the appropriate patient record in RedCap, start filling out the data collection instruments for the event.
 
-\hypertarget{workload-table}{%
-\section{Workload Table}\label{workload-table}}
+Fill out the following data collection instruments: \texttt{HPL\ Visit}, \texttt{One-Time\ Measurements}, \texttt{Lactate\ Parvo}, \texttt{Godin\ Leisuretime\ Exercise\ Questionnaire}, \texttt{Mini-Mental\ State\ Examination}, \texttt{Brief\ Fatigue\ Inventory}, \texttt{PROMIS\ SF\ v1.1-Global\ Health}, \texttt{Physical\ Activity}, and \texttt{Data\ Files}.
 
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1364}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2273}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2500}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2045}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1818}}@{}}
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Action
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Query Type
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Information
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Frequency
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Priority
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-Submit a new patient & write & staging activity, cancer type, age, oncologist, other medical problems, chemotherapy regimen type & 2 per month & high \\
-Submit a new infusion & write & date, cycle number, day of cycle, medications administered, dosage & 4 per month & low \\
-Submit a new lab draw & write & date, type of lab, values & 4 per month & low \\
-Submit a new lactate threshold test & write & date, vo2 data collection sheet data, parvo data, nirs data & 2 per month & medium \\
-Submit a new on/off kinetics test & write & date, oo data collection sheet data, parvo data, nirs data, associated infusion & 4 per month & high \\
-Submit analyzed lactate threshold data & update & power output at lactate threshold & 2 per month & medium \\
-Submit analyzed on/off kinetics data & write & analysis parameters, final analyzed data & 4 per month & high \\
-Count patients by type of cancer & read & cancer type & 1 per month & low \\
-Count patients by type of chemotherapy & read & chemotherapy regimen type & 1 per month & low \\
-View blood draw history for one patient & read & date of lab, values, type of lab & 2 per month & low \\
-View chemotherapy infusion history & read & date of infusion, cycle number, day of cycle & 2 per month & low \\
-View HPL visit history for one patient & read & date of visit, associated cycle number, weight, att, picture of device placement & 4 per month & low \\
-\end{longtable}
+The information to fill out \texttt{HPL\ Visit}, \texttt{One-Time\ Measurements}, and \texttt{Lactate\ Parvo} will be found on the \texttt{Lactate\ Threshold\ Data\ Collection\ Sheet} that was filled out during the patient visit.
 
 \hypertarget{DataAnalysis}{%
 \chapter{Data Analysis}\label{DataAnalysis}}
@@ -1490,7 +1545,11 @@ The Brief Fatigue Inventory (BFI) is a 9 item survey designed to assess fatigue 
 \hypertarget{Appendix-Surveys-glteq}{%
 \section{Godin Leisure-Time Exercise Questionnaire}\label{Appendix-Surveys-glteq}}
 
-The Godin Leisure-Time Exercise Questionnaire (GLTEQ) is a two item instrument developed to asses the leisure-time activity levels in order to classify people into `very active' and `sedentary' categories with the aim of using this instrument to measure activity levels before and after implementation of community health and/or fitness programs in relation to psychosocial variables {[}@{]}.
+Godin and Shephard made the \texttt{Leisure\ Time\ Exercise\ Questionnaire} (LTEQ) in 1985 \citep{godinshepherd85}. The LTEQ was originally a two item survey: ``Item 1 consists of 3 parts, in which participants note how often per week they do strenuous, moderate, and mild exercise. Item 2 asks participants to note how often they engage in an activity long enough to work up a sweat.`` This was used to group people into several different categories of activity levels.
+
+In 2011, Godin published the \texttt{Godin-Shephard\ Leisure\ Time\ Physical\ Activity\ Questionnaire} (GLTPAQ) \citep{godinshepherd11}. This removed the second item and was used to group respondents into 2 categories, ``insufficiently active'' and ``active'' based on the ACSM guidelines for weekly moderate and strenuous physical activity levels.
+
+The form that we use says \texttt{Godin-Leisure\ Time\ Exercise\ Questionnaire} across the top of the form, by the Oncology Nursing Society. At the bottom left, it says `adapted from: Godin, G. (2011). The Godin-Shephard leisure-time physical activity questionnaire. Health \& Fitness Journal of Canada, 4(1), 18-22.' I don't know why that's the title they chose to put on the top of the form, it's made things more confusing than it needs to be. I have so far been unable to find the original paper that uses this form.
 
 \hypertarget{Appendix-Surveys-mmse}{%
 \section{Mini-Mental State Examination}\label{Appendix-Surveys-mmse}}

@@ -10,6 +10,19 @@ After a patient is identified and signs a consent form for the study, the resear
 
 When a patient completes an HPL visit, go to the patient's record in RedCap.
 
+## Missing Data Codes {#DataStorage-MissingData}
+
+The following missing data codes are enabled in RedCap:
+
+- INV, Invalid
+- NA, Not Applicable
+- OTH, Other
+- NI, No Information
+
+When inputting data into RedCap, use the following guidelines to determine which missing data code to use. You can input a missing data code by selecting the `M` next to the input field. 
+
+If the item is blank, as in not answered or no one wrote it down on the data collection sheet, use `NI, No Information`. If the item had an error during data collection, for example if the lactate meter shows `ERR`, use `INV, Invalid`. If the item was not used during data collection, use `NA, Not Applicable`. If the reason does not fit into any of the above categories, use `OTH, Other` and record a comment by clicking on the text bubble icon and typing into the notes field. 
+
 ### Lactate Threshold Visit
 
 Under the `Lactate Threshold` event in the appropriate patient record in RedCap, start filling out the data collection instruments for the event. 
@@ -18,7 +31,7 @@ Fill out the following data collection instruments: `HPL Visit`, `One-Time Measu
 
 The information to fill out `HPL Visit`, `One-Time Measurements`, and `Lactate Parvo` will be found on the `Lactate Threshold Data Collection Sheet` that was filled out during the patient visit. 
 
-De-identified NIRS and VO~2~ data files can be stored on Prisma Health computers. 
+ 
 
 
 
