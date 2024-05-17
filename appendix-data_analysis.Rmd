@@ -1,0 +1,16 @@
+# Data Analysis
+
+## Software
+
+Download and follow installation instructions for the following software:
+
+- [Git]
+- [R]
+- [RStudio]
+- Python
+- Miniconda
+- VSCode
+
+[Git]: https://git-scm.com/downloads
+[R]: https://posit.co/download/rstudio-desktop/
+[RStudio]: https://posit.co/download/rstudio-desktop/

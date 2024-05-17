@@ -1,0 +1,92 @@
+# RedCap {#RedCap}
+
+## Access {#RedCap-Access}
+
+Frankie Bennett, Sara Biddle, Jennifer Trilk and Randolph Hutchison have full access to the RedCap. They can edit the RedCap structure, view and download data with identifying information, access and edit the calendar, etc. 
+
+
+Medical students and Furman students have limited access to the RedCap. They can enter data using instruments but cannot use the data import tool. They can view and download de-identified data sets. They can access and edit the calendar. 
+
+Frankie Bennett or Sara Biddle must give RedCap access to new users. Students should be given access using their Prisma Health username, which is generally their initials, the last 2 digits of the year they got the credentials, and a letter. For example, Sara Biddle's is `sgb21f`. 
+
+## Structure {#RedCap-Structure}
+
+### Surveys {#RedCap-Surveys} 
+
+One instrument is enabled as a survey: `New Patient`. The research coordinators Katie Banenas and Sydney Hackwell, along with the Research Nurse Navigators have the link to this survey. When they consent a patient, they can fill out the survey with the required information. After they have saved the survey or submitted it, Frankie Bennett and Sara Biddle will automatically receive an email that the survey has been filled out. Whoever filled out the survey will see an exit page that says "Thank you for your response. This patient is ID#NNN" with the record ID assigned to this patient in RedCap. 
+
+The survey has links to the recruitment videos, a downloadable PDF of the pamphlet, and downloadable PDFs of the English and Spanish consent forms. 
+
+The research coordinators can upload scans of signed consents and medical clearance notes. Mostly they choose to bring the signed consent to the HPL in person. 
+
+### Project Bookmarks {#RedCap-Bookmarks}
+
+In the left panel under the header Project Bookmarks, there are links to several web pages. 
+
+`On-Off Kinetics Analysis App` takes you to the Shiny application to conduct monoexponential regression of On/Off kinetics NIRS datasets. 
+
+`Recruitment Video` takes you to the recruitment video. 
+
+`Study Informaion` takes you here, to this web page. 
+
+### Record Status Dashboard {#RedCap-Record-Status-Dashboard}
+
+The Record Status Dashboard is the widest view of current data collection on the study. 
+
+The `Default` view shows all patients who have signed a consent form for the study. 
+
+The `Enrolled Patients` view shows all patients who participated in at least one On/Off Kinetics visit. 
+
+### Calendar {#RedCap-Calendar}
+
+We use the RedCap calendar to track upcoming patient appointments. 
+
+Appointment information must be manually taken from EPIC and put in the calendar. 
+The RedCap calendar can only take a date and start time. It cannot create a block of time, for example an hour long appointment. Any duration information must be put in the event notes. 
+
+Medical students have access to the calendar to schedule appointments for the patients they are in contact with. When they have scheduled the appointment after communicating with the patient regarding time and date preferences, they can add new events to the calendar. 
+
+#### New Calendar Events {#RedCap-NewCalendarEvent}
+
+At the top of the square for the correct date, click the `+New` button. This will open a new window, with the header `Add New Calendar Event`. 
+
+In the `Time` input, select the time. Use 24 hour format or the sliders that pop up when you click into the input box.  If you are unsure of a time or the event is an all day event, do not put a time. If the date is scheduled but a time is not yet scheduled, type 'Time TBD' in the notes. This helps with remembering which events are yet to be completely scheduled.  
+
+In the notes box, give the event a name. The first word or two will be visible on a Month view of the calendar. If the event is specific to a participant, do not put the participant ID number in the notes. Use the drop down below to associate the event with a Record ID. 
+
+If this event is specific to a participant, use the drop down by `Record ID` to select the appropriate record ID for the participant. If not, do not select a record ID. 
+
+When event information is completely filled in, click `Add Event to Calendar` at the bottom of the window. 
+
+Check that the event is in the calendar with the correct date, time, and ID number. 
+
+#### Infusions {#RedCap-Calendar-Infusions}
+
+When a patient begins their treatment, put all tentative Day 1 of cycle dates into the calendar. Events can be deleted later if they are rescheduled. You do not need to put events in the calendar for other days of the cycle, since that would load the calendar with events that are not necessary for our scheduling purposes. 
+
+Label the event as follows: `Infusion Cycle N Day 1`. 
+
+Depending on the cycle length (two weeks, three weeks, one month), put one final event in the calendar that is the appropriate length after Day 1 of the final cycle. In the notes for this event, type something like "Post Final Cycle. Schedule last on/off kinetics around this date." This will help us remember to schedule the final visits for patients. 
+
+### File Repository {#RedCap-FileRepository}
+
+The RedCap File Respository can be found in the left panel in the `Applications` section. 
+
+RedCap has no size limit on the amount of data that can be stored in the File Repository, unlike Google or Miscrosoft. 
+
+Updated survey and data collection sheets are in the folder `Surveys and Data Collection Sheets`. 
+
+In the `Onboarding` folder, there are copies of forms that new medical and undergraduate students must fill out to get IRB approval. 
+
+In the `IRB` folder, there are copies of all forms that must be approved through IRB. This includes the consent form (English and Spanish versions), IRB protocol, and brochure. 
+
+The `OXYSOFT` folder contains all NIRS data files. The folder has two subdirectories. 
+In the `Oxy4 Files` subdirectory, all raw `.oxy4` files are uploaded. In the `Exported Text Files` subdirectory are all files exported from Oxysoft. 
+The files are named according to the following conventions:
+For Lactate Threshold tests, `NIRS_idnumber_LT_MM_DD_YYYY`, with idnumber being a 3 digit number corresponding to the Record ID in RedCap with leading zeroes to fill extra digit space, "LT" for Lactate Threshold, and the date in "MM_DD_YYYY" format. 
+
+For On/Off Kinetics tests, `NIRS_idnumber_FP_MM_DD_YYYY_CYCLEN`, with idnumber being a 3 digit number corresponding to the Record ID in RedCap with leading zeroes to fill extra digit space, "FP" for On/Off Kinetics (which were originally called Full Protocol tests), the date in "MM_DD_YYYY" format, and "N" being the current infusion cycle. The On/Off Kinetics test that takes place before the first infusion is named "CYCLE0", the On/Off Kinetics test that takes place before the second infusion and after the first infusion is named "CYCLE1", and so on. 
+
+The `PARVO` folder contains all VO2 data files. 
+
+

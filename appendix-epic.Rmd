@@ -1,0 +1,170 @@
+# Electronic Medical Record {#EPIC}
+
+## Access {#EPIC-Access}
+
+Prisma Health uses EPIC as their electronic medical record service. 
+You can only access EPIC with permission from Prisma Health. The medical students may technically have access to EPIC but they have not had much training on how to use it and actually accessing it can be cumbersome and difficult. It is much easier for a Research Coordinator to do any work in EPIC. 
+
+Use the Production Environment of EPIC, if possible. In the Production Environment, you can create and run reports that you cannot in the Read Only Environment. 
+
+Log in with your Prisma Health log in information and select the department `CANCER-FARIS ONCOLOGY [100224000]`.
+
+## Research Study {#EPIC-ResearchStudy}
+
+Email Jan Keuber to give someone access to the Research Study Build. Send her their Prisma Health username, full name, and reason you want to give them access. 
+
+The research study build allows you to associate patients with the research study with different statuses. 
+
+
+### Study Details {#EPIC-StudyDetails}
+
+The study code is 1853511 and the ID is `PHU ITOR: NIRS`. Dr. Larry Gluck is the principal investigator. Sara Biddle, Katie Banenas, Sydney Hackwell, Frankie Bennet, and Jim Rosenmeyer have research coordinator access to the study information. 
+
+There are several components of the `Participant Details` section of a study record.
+
+Status
+: See \@ref(EPIC-StudyStatuses) for information about choosing an appropriate status. 
+
+Status Effective Date
+: When this status was applied. This will automatically choose today's date. Change as necessary for retroactive status changes. 
+
+Active Start Date
+: Necessary for patients who are *Active* or *Completed*. This is the date they signed the consent form or the date of their first visit to the HPL.
+
+Active End Date
+: Necessary for patients who are *Completed". This is the date of their final visit to the HPL. 
+
+Participant ID
+:  Necessary for any patient assigned an ID number. The auto-generated ID number assigned to the patient by RedCap. Must be filled in as soon as possible for the Biorepository to appropriately label blood draws. 
+
+Patient Specific Coordinators
+: Do not use. 
+
+Comments
+: Any information that other research coordinators should know. Used most frequently for *Identified* patients to note upcoming appointments and information about the treatment planning process, such as if the oncologists are waiting on any scans or lab results before completing the treatment plan.
+
+
+### Study Statuses {#EPIC-StudyStatuses}
+
+Dr. Martin has indicated that study statuses will be changing in the future to streamline the number of possible statuses. There are more statuses in Epic than will be discussed below, as not all statuses are applicable to this study. Follow up with Dr. Martin as needed about future changes to study statuses. 
+
+There are three groups of study statuses.
+
+1. Pre-Consent
+: *Identified, Interested, Waiting for Consent*
+2. Active
+: *Consented- In Screening, Active, Follow Up*
+3. Inactive
+: *Ineligible, Declined, Completed, Disqualified, Withdrawn*
+
+When the association is one of the *Active* statuses, a yellow `Research Participant` tag is displayed with the patient's information. This lets other physicians see that the patient is participating in a research study. 
+
+Use the study statuses as follows:
+
+Ineligible
+: Patient with breast or primary gynecological cancer who does not meet one or more of the eligibility criteria based on a chart screen. Do not use this status for all patients who are not ineligible, such as a patient with lung cancer, as that would create unnecessary associations that will slow down any reporting. Use when patient will likely have more appointments in the department to prevent double screening in the future. 
+
+Identified
+: Patient may be eligible and will need to be followed up with. Use the comments section to make notes about when to follow up, such as upcoming appointments. Patients who have not been assigned a treatment plan are frequently assigned this status to monitor their chart for further appointments and treatment planning. 
+
+Interested
+: Patient was approached about the study and has not given a definitive answer about participation, neither to decline or sign a consent form. 
+
+Declined
+: Patient was approached about the study and declined to sign a consent form. 
+
+Withdrawn
+: Patient signed a consent form and subsequently decided to stop participation in the study. 
+
+Active
+: Patient is receiving active treatment and will be coming in to the HPL for visits. 
+
+Completed
+: Patient has completed the last of their visits to the HPL and has completed their final cycle of chemotherapy treatment. 
+
+For further information about Research Studies in Epic, log in to the Epic UserWeb and go to the Training Home. Look for the 2023 training companion to `RSH100 Research Fundamentals`. 
+
+
+
+### Creating a New Association {#EPIC-NewStudyAssociation}
+
+1. Open the patients's chart in a chart review. 
+2. Open the `Research Studies` tab in the top. 
+3. Click into the **Add study** box or on the plus sign in the top left. 
+4. Research studies you have access to will pop up. Click the appropriate study row. 
+5. Status is required to save the association. Choose the appropriate status as defined in \@ref(EPIC-StudyStatuses).
+6. The **Status Effective Date** will automatically fill in today's date. Change it by clicking into the box and selecting the date. 
+7. Change other details as needed.
+9. Click **Accept** to save. 
+
+### Edit an Exisiting Association {#EPIC-EditStudyAssociation}
+
+1. Open the patient's chart in a chart review.
+2. Open the `Research Studies` tab in the top row. 
+3. The patient's study association should be displayed here. 
+4. Click on the arrow by the name of the study. This opens up the study details.
+5. Click on the pencil icon by `Participant Details` to open up an editable view of the patient's study details. 
+5. Change any necessary details. 
+6. Click **Accept** to save. 
+
+## Oncology Schedule {#EPIC-OncologySchedule}
+
+In the top left of the screen, there is a tab for the schedule. The icon is a calendar. 
+
+Open the schedule. 
+
+Under `My Schedule`, you can create schedules that are applicable to you. Depending on what department you are logged in under, you will see the schedule for that department in a tab below the `My Schedule` tab. 
+
+
+## Reading Physician Notes
+
+adjuvant
+:  therapy that is given in addition to the primary or initial therapy to maximize its effectiveness. Often refers to radiation or chemotherapy after a sugery to remove cancerous tissue. 
+
+neoadjuvant
+: therapy that is given prior to the primary or inital therapy to maximize its effectiveness. 
+
+### Acronyms and Abbreviations
+
+BSO
+: Bilateral Salpingo-Oophorectomy. Surgical procedure to remove fallopian tubes and ovaries. 
+
+MD
+: metastatic disease
+
+RT
+: radiation treatment/therapy
+
+### Chemotherapy Information
+
+#### Drugs
+
+Anthracyclines
+: Includes doxorubicin (Adriamycin), liposomal doxorubicin (Doxil) epirubicin (Ellence)
+
+Carboplatin (Paraplatin)
+: chemotherapy drug. 
+
+Cyclophosphamide (Cytoxan)
+: Anthracycline chemotherapy drug. 
+
+Docetaxel (Taxotere)
+: Taxane chemotherapy drug. 
+
+Doxorubicin (Adriamycin)
+: Anthracycline chemotherapy drug. 
+
+Epirubicin (Ellence)
+: Anthracycline chemotherapy drug. 
+
+Lenvima
+: Works by cutting off the communication from the body that allows it to provide the cancer cells with blood therefore the cell will starve and die through apoptosis.
+
+Paclitaxel (Taxol)
+: Taxane chemotherapy drug.
+
+Pembrolizumab (Keytruda)
+: Works by "uncloaking" the cancer cell and allows the immune system to identify it and kill it. This drug can cause thyroid issues, skin rashes and colitis. 
+
+Taxanes
+: Includes paclitaxel (Taxol), docetaxel (Taxotere)

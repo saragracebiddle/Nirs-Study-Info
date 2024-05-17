@@ -1,4 +1,4 @@
-# Methods {#Methods}
+# Data Collection {#DataCollection}
 
 ```{r, echo = F}
 knitr::include_graphics(
@@ -14,9 +14,11 @@ This protocol is the participant's first visit to the lab. Have any medical stud
 
 ### Preparation {#Methods-LT-prep}
 
-At least an hour prior to the time the participant is scheduled to arrive, turn on the metabolic cart by flipping the power switch on the extension cord. 
+At least an hour prior to the time the participant is scheduled to arrive, turn on the metabolic cart by flipping the power switch on the extension cord at the back of the cart. Turn on the computer monitor and wait for the screen to load. Press `F1`. Enter the password to log in. 
 
-Print out the following forms:
+The PARVOMedics software will open automatically. In the bottom right, click on the date and open the date and time settings. Change the date and time to match today's date and time.
+
+Ensure the following forms are printed out:
 
 - MMSE \@ref(Appendix-Surveys-mmse)
 - Godin-Leisure Time Exercise Questionnaire \@ref(Appendix-Surveys-glteq)
@@ -38,7 +40,9 @@ Assemble the VO~2~ mask except for the blue rubber part as described in \@ref(Pa
 
 Prepare the PortaMon as described in \@ref(PortaMon-BeforeDataCollection) by putting in a charged battery, wrapping the PortaMon in plastic saran wrap, and placing the double sided taupe tape. 
 
-Calibrate the metabolic cart as described in \@ref(Parvo-Calibration) if the metabolic cart has been on for at least 30 minutes. Before doing calibrations, remember to change the date and time on the computer to match the actual date and time, as the PARVO cart is not connected to the internet. Do both the Flowmeter Calibration and Gas Calibration. Remember, percent change must be less than 1% to save the calibration results. If you cannot get the percent change that low and don't have any more time, save the result and tell Frankie about it so he can fix it later. 
+Calibrate the metabolic cart as described in \@ref(Parvo-Calibration) if the metabolic cart has been on for at least 30 minutes. Before doing calibrations, check that the date and time are correct. Do both the Flowmeter Calibration and Gas Calibration. Remember, percent change must be less than 1% to save the calibration results. If you cannot get the percent change that low and don't have any more time, save the result and tell Frankie about it so he can fix it later. 
+
+Open the exercise test in the PARVOMedics software. In the first and last name inputs, type in the NIRS ID number and visit ID (`NIRS_ID#_LT`). The first and last name inputs will match. Input the patient's age in the appropriate input section. You will get the patient's height and weight after they arrive.
 
 Run lactate meter controls as described in \@ref(Appendix-Instruments-LactateMeter-Usage-QualityControl).
 
@@ -148,5 +152,6 @@ Place the assembled mask on the participant's face and connect clear tubing to t
 Conduct On/Off Kinetics Exercise Test as described in \@ref(ExerciseTesting-Onoff).
 
 Take the mask off the patient's face. Help the patient get off the bike. Remove the NIRS device and the heart rate monitor.
+
 
 

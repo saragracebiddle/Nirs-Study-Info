@@ -275,3 +275,39 @@
     }
 }
 
+@article{sappia2020,
+  author = {Sofia Sappia and Naser Hakimi and Willy N. J M. Colier and Jorn M. Horschig},
+  title = {Signal quality index: an algorithm for quantitative assessment of near infrared spectroscopy signal quality},
+  year = {2020},
+  journal = {Biomedical Optics Express},
+  volume = {11},
+  number = {11},
+  pages = {6732--6754},
+  doi = {10.1364/BOE.409317},
+  annote = {
+  Defined the SQI as a numeric scale from 1 (very low quality) to 5 ( very high qulity) to quantitatively assess fNIRS signal quality. The SQI uses the optical densitites (OD) and hemoglobin measurements (O2Hb and HHb). Data must be preprocessed by first detrending the the signal segments by subtracting the least squares fit of a straight line to the data. Then, the signals were band-pass filtered using a zero-phase forward Hamming-windowed sinc FIR fitler of order 208 with cutoff frequencies (-6dB) of 0.4 Hz and 3Hz.
+
+Stage 1 of rating involved identifying very low quality signals. First, OD should fall within the range of 0.04 OD and 2.5 OD to be considered good quality. If the signal segment exceeds those thresholds, it is not considered a good quality signal. Second, the standard devation of the ODs per wavelength should be greater than 0. If the standard deviation of the ODs per wavelength is 0, then there was probably poor scalp coupling and can be labelled a very low quality signal. Third, the sum of the absolute values of the O2Hb signals should be greater than the sum of the absolute values of the HHb signals. The threshold of the ratio of sum O2Hb to sum HHb was derived from the training data set and set to be 1.95.
+
+Stage 2 of rating involved identifying very high quality signals. Very high quality signals have a similar amplitude and shape of the autocorrelation for the two optical densities of a signal segment, therefore the standard devation between them should be low. A threshold for the standard deviation of the difference between optical density signals autocorrelation was set to 0.025. If the value falls below 0.025 for the signal segment, that signal segment is considered a very high quality signal.
+
+Stage 3 of rating involved assigning a numerical value, 1-5, for the quality of the signal segment. The output of the logarithm of the ratio between the standard deviation of O2Hb and HHb was used to quantitatively rate the signal quality. High quality fNIRS signals show a strong heartbeat in O2Hb data and less strong of a heartbeat in HHb data, therefore the standard deviation of O2Hb should be greater than the standard deviation of HHb.
+
+
+  }
+
+}
+
+@article{orihuelaespina2010,
+  author = {Orihuela-Espina, F and Leff, D R and Darzi, A W and Yang, G Z},
+  title = {Quality control and assurance in functional near infrared spectroscopy (fNIRS) experimentation},
+  year = {2010},
+  journal = {Physics in Medicine & Biology},
+  volume = {55},
+  number= {13},
+  doi = {10.1088/0031-9155/55/13/009},
+  annote = {
+  Extremely useful for finding sources on factors influencing fNIRS experimentation and solutions. This article breaks down factors into several categories : Environmental, Instrumentation, Mechanical, Population, Physiological, and Study Design/Data Analysis. Environmental factors include ambient light. Solutions include covering the optodes with something opaque. Optode calibration, an Instrumentation factor, can be conducted using algorithms, or for coninuous-wave systems, a simple normalization. This article recommends turning the LEDs on at least 30 minutes prior to data aquisition to allow for appropriate heating. Saturation effects and strategies to detect and remove them are discussed in section 4.4 on page 5. It is recommended to remove instrumental noise before using the Modified-Beer Lambert Law to convert optical densities into haemodynamic data. Abrupt movement may disturb optode-skin coupling which is shown in data as a large sudden change in chromophore concentration. These changes are not due to changes in hemoglobin concentration and will be more irregular than system noise. Section 5.3.2 discusses several algorithms for identifying and removing data contaminated by optode movement or loss of good optode-skin coupling.
+  }
+}
+

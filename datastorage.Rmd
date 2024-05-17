@@ -23,9 +23,18 @@ When inputting data into RedCap, use the following guidelines to determine which
 
 If the item is blank, as in not answered or no one wrote it down on the data collection sheet, use `NI, No Information`. If the item had an error during data collection, for example if the lactate meter shows `ERR`, use `INV, Invalid`. If the item was not used during data collection, use `NA, Not Applicable`. If the reason does not fit into any of the above categories, use `OTH, Other` and record a comment by clicking on the text bubble icon and typing into the notes field. 
 
+### Patient Information
+
+After consenting the new patient, open up the patient's chart in Epic and fill out the forms under `Patient Information`. 
+
+
+
 ### Lactate Threshold Visit
 
 Under the `Lactate Threshold` event in the appropriate patient record in RedCap, start filling out the data collection instruments for the event. 
+
+
+
 
 Fill out the following data collection instruments: `HPL Visit`, `One-Time Measurements`, `Lactate Parvo`, `Godin Leisuretime Exercise Questionnaire`, `Mini-Mental State Examination`, `Brief Fatigue Inventory`, `PROMIS SF v1.1-Global Health`, `Physical Activity`, and `Data Files`. 
 

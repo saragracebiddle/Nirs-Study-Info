@@ -31,7 +31,7 @@ digraph pt_recruitment {
 [4]: 'Patient Identified'
 [5]: 'Screen Chart'
 [6]: 'Contact Patient'
-[7]: 'Contact Oncologist'
+[7]: 'Contact Physician'
 ")
 ```
 
@@ -49,7 +49,6 @@ To be eligible for the study, patients must:
 - able to participate in moderate exercise on a stationary bike
 - female patients only, male breast cancer patients are not eligible at this time
 
-
 ## Screening the Electronic Medical Record
 
 Prisma Health uses EPIC as their electronic medical record service. 
@@ -60,6 +59,16 @@ Use the Production Environment of EPIC. In the Production Environment, you can c
 Log in with your Prisma Health log in information and select the department `CANCER-FARIS ONCOLOGY [100224000]`.
 
 ### Using a Report
+
+Reports are very useful for gathering information about potential patients. I have created several reports with various uses. 
+
+#### `Find Patients Eligible for NIRS by Treatment Plan`
+
+
+#### `Find Upcoming New Consult Appointments with NIRS Providers`
+
+
+#### `
 
 Go to `My Reports`. 
 

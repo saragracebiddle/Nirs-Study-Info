@@ -128,7 +128,7 @@
 
 \title{NIRS Study Information}
 \author{Sara Grace Biddle}
-\date{2024-03-12}
+\date{2024-04-08}
 
 \begin{document}
 \maketitle
@@ -294,6 +294,17 @@ Log in with your Prisma Health log in information and select the department \tex
 \hypertarget{using-a-report}{%
 \subsection{Using a Report}\label{using-a-report}}
 
+Reports are very useful for gathering information about potential patients. I have created several reports with various uses.
+
+\hypertarget{find-patients-eligible-for-nirs-by-treatment-plan}{%
+\subsubsection{\texorpdfstring{\texttt{Find\ Patients\ Eligible\ for\ NIRS\ by\ Treatment\ Plan}}{Find Patients Eligible for NIRS by Treatment Plan}}\label{find-patients-eligible-for-nirs-by-treatment-plan}}
+
+\hypertarget{find-upcoming-new-consult-appointments-with-nirs-providers}{%
+\subsubsection{\texorpdfstring{\texttt{Find\ Upcoming\ New\ Consult\ Appointments\ with\ NIRS\ Providers}}{Find Upcoming New Consult Appointments with NIRS Providers}}\label{find-upcoming-new-consult-appointments-with-nirs-providers}}
+
+\hypertarget{section}{%
+\subsubsection{`}\label{section}}
+
 Go to \texttt{My\ Reports}.
 
 I have a report named \texttt{NIRS\ Eligibility\ by\ Stage} that has the following parameters:
@@ -416,8 +427,8 @@ The ClinCard for the NIRS study is currently programmed for up to 10 visits to t
 
 After a patient has signed the informed consent, the research coordinator will use the RedCap survey to fill out the basic information about a patient and assign the patient a study ID number.
 
-\hypertarget{Methods}{%
-\chapter{Methods}\label{Methods}}
+\hypertarget{DataCollection}{%
+\chapter{Data Collection}\label{DataCollection}}
 
 \includegraphics[width=26.67in]{images/visit_timeline}
 
@@ -642,6 +653,11 @@ The following missing data codes are enabled in RedCap:
 When inputting data into RedCap, use the following guidelines to determine which missing data code to use. You can input a missing data code by selecting the \texttt{M} next to the input field.
 
 If the item is blank, as in not answered or no one wrote it down on the data collection sheet, use \texttt{NI,\ No\ Information}. If the item had an error during data collection, for example if the lactate meter shows \texttt{ERR}, use \texttt{INV,\ Invalid}. If the item was not used during data collection, use \texttt{NA,\ Not\ Applicable}. If the reason does not fit into any of the above categories, use \texttt{OTH,\ Other} and record a comment by clicking on the text bubble icon and typing into the notes field.
+
+\hypertarget{patient-information}{%
+\subsection{Patient Information}\label{patient-information}}
+
+After consenting the new patient, open up the patient's chart in Epic and fill out the forms under \texttt{Patient\ Information}.
 
 \hypertarget{lactate-threshold-visit}{%
 \subsection{Lactate Threshold Visit}\label{lactate-threshold-visit}}
@@ -1554,14 +1570,23 @@ The form that we use says \texttt{Godin-Leisure\ Time\ Exercise\ Questionnaire} 
 \hypertarget{Appendix-Surveys-mmse}{%
 \section{Mini-Mental State Examination}\label{Appendix-Surveys-mmse}}
 
-\hypertarget{Appendix-Surveys-moca}{%
-\section{Montreal Cognitive Assessment}\label{Appendix-Surveys-moca}}
+The Mini-Mental State Examination is a cognitive screening tool. We use it to screen for cognitive impairment before patients can participate in this study. Patients must score greater than 27 to continue with the study.
 
 \hypertarget{Appendix-Surveys-pah}{%
 \section{Physical Activity History}\label{Appendix-Surveys-pah}}
 
+The Physical Activity History is intended to capture the physical activity history of the respondent using the FITVVP principles.
+
+There are two physical activity history forms: Intake and Follow Up.
+
+The Physical Activity History: Intake form asks the patient to describe their normal physical activities. It consists of 5 items. Item 1 asks if the respondent participates in moderate to vigorous physical activity. If the respondent answers yes, there are spaces to describe the physical activity below. Item 2 asks the respondent if this describes their physical activity from the past 5 years. If not, the respondent can describe how their physical activity habits have changed over the past 5 years. Item 3 asks if the respondent participates in interval training. If the respondent answers yes, there are spaces to describe the training. Items 4 and 5 ask about participation in recreational sports and whether the respondent has had any injuries that would contradict participation in exercise.
+
+The Physical Activity History: FollowUp asks the respondent to describe their physical activities since the last time they answered the Physical Activity History survey. This form does not ask about physical history prior to the most recent visit visit.
+
 \hypertarget{Appendix-Surveys-promis}{%
-\section{PROMIS Global Health}\label{Appendix-Surveys-promis}}
+\section{PROMIS Global Health v1.1}\label{Appendix-Surveys-promis}}
+
+We use the PROMIS Global Health v1.1 form. This is a discontinued PROMIS measure. Follow the scoring guidelines to convert the v1.1 questions and answers into v1.2. The scoring guidelines have been uploaded into the RedCap file repository and the RedCap instrument follows those guidelines.
 
 \hypertarget{Instruments}{%
 \chapter{Instruments}\label{Instruments}}
@@ -1758,6 +1783,198 @@ Time & Intensity & \\
 12-14 & Exercise & Transition \\
 14-16 & Rest & 3 \\
 \end{longtable}
+
+\hypertarget{RedCap}{%
+\chapter{RedCap}\label{RedCap}}
+
+\hypertarget{RedCap-Access}{%
+\section{Access}\label{RedCap-Access}}
+
+Frankie Bennett, Sara Biddle, Jennifer Trilk and Randolph Hutchison have full access to the RedCap. They can edit the RedCap structure, view and download data with identifying information, access and edit the calendar, etc.
+
+Medical students and Furman students have limited access to the RedCap. They can enter data using instruments but cannot use the data import tool. They can view and download de-identified data sets. They can access and edit the calendar.
+
+Frankie Bennett or Sara Biddle must give RedCap access to new users. Students should be given access using their Prisma Health username, which is generally their initials, the last 2 digits of the year they got the credentials, and a letter. For example, Sara Biddle's is \texttt{sgb21f}.
+
+\hypertarget{RedCap-Structure}{%
+\section{Structure}\label{RedCap-Structure}}
+
+\hypertarget{RedCap-Surveys}{%
+\subsection{Surveys}\label{RedCap-Surveys}}
+
+One instrument is enabled as a survey: \texttt{New\ Patient}. The research coordinators Katie Banenas and Sydney Hackwell, along with the Research Nurse Navigators have the link to this survey. When they consent a patient, they can fill out the survey with the required information. After they have saved the survey or submitted it, Frankie Bennett and Sara Biddle will automatically receive an email that the survey has been filled out. Whoever filled out the survey will see an exit page that says ``Thank you for your response. This patient is ID\#NNN'' with the record ID assigned to this patient in RedCap.
+
+The survey has links to the recruitment videos, a downloadable PDF of the pamphlet, and downloadable PDFs of the English and Spanish consent forms.
+
+The research coordinators can upload scans of signed consents and medical clearance notes. Mostly they choose to bring the signed consent to the HPL in person.
+
+\hypertarget{RedCap-Bookmarks}{%
+\subsection{Project Bookmarks}\label{RedCap-Bookmarks}}
+
+In the left panel under the header Project Bookmarks, there are links to several web pages.
+
+\texttt{On-Off\ Kinetics\ Analysis\ App} takes you to the Shiny application to conduct monoexponential regression of On/Off kinetics NIRS datasets.
+
+\texttt{Recruitment\ Video} takes you to the recruitment video.
+
+\texttt{Study\ Informaion} takes you here, to this web page.
+
+\hypertarget{RedCap-Record-Status-Dashboard}{%
+\subsection{Record Status Dashboard}\label{RedCap-Record-Status-Dashboard}}
+
+The Record Status Dashboard is the widest view of current data collection on the study.
+
+The \texttt{Default} view shows all patients who have signed a consent form for the study.
+
+The \texttt{Enrolled\ Patients} view shows all patients who participated in at least one On/Off Kinetics visit.
+
+\hypertarget{RedCap-Calendar}{%
+\subsection{Calendar}\label{RedCap-Calendar}}
+
+We use the RedCap calendar to track upcoming patient appointments.
+
+Appointment information must be manually taken from EPIC and put in the calendar.
+The RedCap calendar can only take a date and start time. It cannot create a block of time, for example an hour long appointment. Any duration information must be put in the event notes.
+
+Medical students have access to the calendar to schedule appointments for the patients they are in contact with. When they have scheduled the appointment after communicating with the patient regarding time and date preferences, they can add new events to the calendar.
+
+\hypertarget{RedCap-NewCalendarEvent}{%
+\subsubsection{New Calendar Events}\label{RedCap-NewCalendarEvent}}
+
+At the top of the square for the correct date, click the \texttt{+New} button. This will open a new window, with the header \texttt{Add\ New\ Calendar\ Event}.
+
+In the \texttt{Time} input, select the time. Use 24 hour format or the sliders that pop up when you click into the input box. If you are unsure of a time or the event is an all day event, do not put a time. If the date is scheduled but a time is not yet scheduled, type `Time TBD' in the notes. This helps with remembering which events are yet to be completely scheduled.
+
+In the notes box, give the event a name. The first word or two will be visible on a Month view of the calendar. If the event is specific to a participant, do not put the participant ID number in the notes. Use the drop down below to associate the event with a Record ID.
+
+If this event is specific to a participant, use the drop down by \texttt{Record\ ID} to select the appropriate record ID for the participant. If not, do not select a record ID.
+
+When event information is completely filled in, click \texttt{Add\ Event\ to\ Calendar} at the bottom of the window.
+
+Check that the event is in the calendar with the correct date, time, and ID number.
+
+\hypertarget{RedCap-Calendar-Infusions}{%
+\subsubsection{Infusions}\label{RedCap-Calendar-Infusions}}
+
+When a patient begins their treatment, put all tentative Day 1 of cycle dates into the calendar. Events can be deleted later if they are rescheduled. You do not need to put events in the calendar for other days of the cycle, since that would load the calendar with events that are not necessary for our scheduling purposes.
+
+Label the event as follows: \texttt{Infusion\ Cycle\ N\ Day\ 1}.
+
+Depending on the cycle length (two weeks, three weeks, one month), put one final event in the calendar that is the appropriate length after Day 1 of the final cycle. In the notes for this event, type something like ``Post Final Cycle. Schedule last on/off kinetics around this date.'' This will help us remember to schedule the final visits for patients.
+
+\hypertarget{RedCap-FileRepository}{%
+\subsection{File Repository}\label{RedCap-FileRepository}}
+
+The RedCap File Respository can be found in the left panel in the \texttt{Applications} section.
+
+RedCap has no size limit on the amount of data that can be stored in the File Repository, unlike Google or Miscrosoft.
+
+Updated survey and data collection sheets are in the folder \texttt{Surveys\ and\ Data\ Collection\ Sheets}.
+
+In the \texttt{Onboarding} folder, there are copies of forms that new medical and undergraduate students must fill out to get IRB approval.
+
+In the \texttt{IRB} folder, there are copies of all forms that must be approved through IRB. This includes the consent form (English and Spanish versions), IRB protocol, and brochure.
+
+The \texttt{OXYSOFT} folder contains all NIRS data files. The folder has two subdirectories.
+In the \texttt{Oxy4\ Files} subdirectory, all raw \texttt{.oxy4} files are uploaded. In the \texttt{Exported\ Text\ Files} subdirectory are all files exported from Oxysoft.
+The files are named according to the following conventions:
+For Lactate Threshold tests, \texttt{NIRS\_idnumber\_LT\_MM\_DD\_YYYY}, with idnumber being a 3 digit number corresponding to the Record ID in RedCap with leading zeroes to fill extra digit space, ``LT'' for Lactate Threshold, and the date in ``MM\_DD\_YYYY'' format.
+
+For On/Off Kinetics tests, \texttt{NIRS\_idnumber\_FP\_MM\_DD\_YYYY\_CYCLEN}, with idnumber being a 3 digit number corresponding to the Record ID in RedCap with leading zeroes to fill extra digit space, ``FP'' for On/Off Kinetics (which were originally called Full Protocol tests), the date in ``MM\_DD\_YYYY'' format, and ``N'' being the current infusion cycle. The On/Off Kinetics test that takes place before the first infusion is named ``CYCLE0'', the On/Off Kinetics test that takes place before the second infusion and after the first infusion is named ``CYCLE1'', and so on.
+
+The \texttt{PARVO} folder contains all VO2 data files.
+
+\hypertarget{EPIC}{%
+\chapter{Electronic Medical Record}\label{EPIC}}
+
+\hypertarget{EPIC-Access}{%
+\section{Access}\label{EPIC-Access}}
+
+Prisma Health uses EPIC as their electronic medical record service.
+You can only access EPIC with permission from Prisma Health. The medical students may technically have access to EPIC but they have not had much training on how to use it and actually accessing it can be cumbersome and difficult for them. It is much easier for a Research Coordinator to do any work in EPIC.
+
+Use the Production Environment of EPIC, if possible. In the Production Environment, you can create and run reports that you cannot in the Read Only Environment.
+
+Log in with your Prisma Health log in information and select the department \texttt{CANCER-FARIS\ ONCOLOGY\ {[}100224000{]}}.
+
+\hypertarget{EPIC-customization}{%
+\section{Views and Customization}\label{EPIC-customization}}
+
+\hypertarget{EPIC-ResearchStudy}{%
+\section{Research Study}\label{EPIC-ResearchStudy}}
+
+The study code is 1853511 and the ID is \texttt{PHU\ ITOR:\ NIRS}. Dr.~Larry Gluck is the principal investigator. Sara Biddle, Katie Banenas, Sydney Hackwell, Frankie Bennet, and Jim Rosenmeyer have research coordinator access to the study information.
+
+Email Jan Keuber to give someone access to the Research Study Build. Send her their Prisma Health username, full name, and reason you want to give them access.
+
+The research study build allows you to associate patients with the research study with different statuses.
+
+\hypertarget{EPIC-StudyStatuses}{%
+\subsection{Study Statuses}\label{EPIC-StudyStatuses}}
+
+Dr.~Martin has indicated that study statuses will be changing in the future to streamline the number of possible statuses. There are more possible statuses in Epic than will be discussed below, as not all statuses are applicable to this study. Follow up with Dr.~Martin as needed about future changes to available study statuses.
+
+There are three groups of study statuses.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Pre-Consent:
+  \emph{Identified, Interested, Waiting for Consent}
+\item
+  Active:
+  \emph{Consented- In Screening, Active, Follow Up}
+\item
+  Inactive:
+  \emph{Ineligible, Declined, Completed, Disqualified, Withdrawn}
+\end{enumerate}
+
+When the association is one of the \emph{Active} statuses, a yellow \texttt{Research\ Participant} tag is displayed with the patient's information. This lets other physicians see tha the patient is participating in a research study.
+
+Use the study statuses as follows:
+
+Ineligible:
+Patient with breast or primary gynecological cancer who does not meet one or more of the eligibility criteria based on a chart screen. Do not use this status for all patients who are not ineligible, such as a patient with lung cancer, as that would create unnecessary associations that will slow down any reporting. Use when patient will likely have more appointments in the department to prevent double screening in the future.
+Identified:
+Patient may be eligible and will need to be followed up with. Use the comments section to make notes about when to follow up, such as upcoming appointments. Patients who have not been assigned a treatment plan are frequently assigned this status to monitor their chart for further appointments and treatment planning.
+Interested:
+Patient was approached about the study and has not given a definitive answer about participation, neither to decline or sign a consent form.
+Declined:
+Patient was approached about the study and declined to sign a consent form.
+Withdrawn:
+Patient signed a consent form and subsequently decided to stop participation in the study.
+Active:
+Patient is receiving active treatment and will be coming in to the HPL for visits.
+
+For further information about Research Studies in Epic, log in to the Epic UserWeb go to the Training Home. Look for the 2023 training companion to \texttt{RSH100\ Research\ Fundamentals}.
+
+\hypertarget{EPIC-NewStudyAssociation}{%
+\subsection{Creating a New Association}\label{EPIC-NewStudyAssociation}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Open the patients's chart in a chart review.
+\item
+  Open the \texttt{Research\ Studies} tab in the top.
+\item
+  There should be a box with \texttt{Add\ study} and a plus sign in the top left. Click into it or on the plus sign.
+\item
+  Research studies you have access to will pop up. Click the appropriate study row.
+\item
+  Status is required to save the association. Choose the appropriate status as defined in \ref{EPIC-StudyStatuses}.
+\end{enumerate}
+
+\hypertarget{oncology-schedule-epic-oncology-schedule}{%
+\section{Oncology Schedule \{\#EPIC-Oncology Schedule\}}\label{oncology-schedule-epic-oncology-schedule}}
+
+In the top left of the screen, there is a tab for the schedule. The icon is a calendar.
+
+Open the schedule.
+
+Under \texttt{My\ Schedule}, you can create schedules that are applicable to you. Depending on what department you are logged in under, you will see the schedule for that department underneath the \texttt{My\ Schedule} tab.
 
 \hypertarget{IRB}{%
 \chapter{IRB}\label{IRB}}

@@ -12,12 +12,22 @@ In 2011, Godin published the `Godin-Shephard Leisure Time Physical Activity Ques
  
 The form that we use says `Godin-Leisure Time Exercise Questionnaire` across the top of the form, by the Oncology Nursing Society. At the bottom left, it says ‘adapted from: Godin, G. (2011). The Godin-Shephard leisure-time physical activity questionnaire. Health & Fitness Journal of Canada, 4(1), 18-22.’  I don’t know why that’s the title they chose to put on the top of the form, it’s made things more confusing than it needs to be. I have so far been unable to find the original paper that uses this form. 
 
-
 ## Mini-Mental State Examination {#Appendix-Surveys-mmse}
 
-## Montreal Cognitive Assessment {#Appendix-Surveys-moca}
+The Mini-Mental State Examination is a cognitive screening tool. We use it to screen for cognitive impairment before patients can participate in this study. Patients must score greater than 27 to continue with the study. 
 
 ## Physical Activity History {#Appendix-Surveys-pah}
 
-## PROMIS Global Health  {#Appendix-Surveys-promis}
+The Physical Activity History is intended to capture the physical activity history of the respondent using the FITVVP principles. 
+
+There are two physical activity history forms: Intake and Follow Up. 
+
+The Physical Activity History: Intake form asks the patient to describe their normal physical activities. It consists of 5 items. Item 1 asks if the respondent participates in moderate to vigorous physical activity. If the respondent answers yes, there are spaces to describe the physical activity below. Item 2 asks the respondent if this describes their physical activity from the past 5 years. If not, the respondent can describe how their physical activity habits have changed over the past 5 years. Item 3 asks if the respondent participates in interval training. If the respondent answers yes, there are spaces to describe the training. Items 4 and 5 ask about participation in recreational sports and whether the respondent has had any injuries that would contradict participation in exercise. 
+
+The Physical Activity History: FollowUp asks the respondent to describe their physical activities since the last time they answered the Physical Activity History survey. This form does not ask about physical history prior to the most recent visit visit. 
+
+## PROMIS Global Health v1.1  {#Appendix-Surveys-promis}
+
+We use the PROMIS Global Health v1.1 form. This is a discontinued PROMIS measure. Follow the scoring guidelines to convert the v1.1 questions and answers into v1.2. The scoring guidelines have been uploaded into the RedCap file repository and the RedCap instrument follows those guidelines. 
+
 
