@@ -5,7 +5,30 @@ date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
-bibliography: [nirs.bib]
+bibliography: [
+nirs.bib,
+nirs_b.bib,
+nirs_c.bib,
+nirs_d.bib,
+nirs_e.bib,
+nirs_f.bib,
+nirs_g.bib,
+nirs_h.bib,
+nirs_i.bib,
+nirs_j.bib,
+nirs_k.bib,
+nirs_l.bib,
+nirs_m.bib,
+nirs_n.bib,
+nirs_o.bib,
+nirs_p.bib,
+nirs_r.bib,
+nirs_s.bib,
+nirs_t.bib,
+nirs_w.bib,
+nirs_v.bib,
+nirs_yz.bib
+]
 nocite:
   -'@*'
 csl: chicago-annotated-bibliography.csl

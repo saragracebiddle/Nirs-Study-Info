@@ -80,8 +80,8 @@ In the `Onboarding` folder, there are copies of forms that new medical and under
 
 In the `IRB` folder, there are copies of all forms that must be approved through IRB. This includes the consent form (English and Spanish versions), IRB protocol, and brochure. 
 
-The `OXYSOFT` folder contains all NIRS data files. The folder has two subdirectories. 
-In the `Oxy4 Files` subdirectory, all raw `.oxy4` files are uploaded. In the `Exported Text Files` subdirectory are all files exported from Oxysoft. 
+The `OXYSOFT` folder contains all NIRS data files. 
+In the `Oxy4 Files` subdirectory, there is a subdirectory for each patient that we have gathered NIRS data for. Each patient's individual `.oxy4` files are in their respective folder. In the `Exported Text Files` subdirectory are all files exported from Oxysoft. 
 The files are named according to the following conventions:
 For Lactate Threshold tests, `NIRS_idnumber_LT_MM_DD_YYYY`, with idnumber being a 3 digit number corresponding to the Record ID in RedCap with leading zeroes to fill extra digit space, "LT" for Lactate Threshold, and the date in "MM_DD_YYYY" format. 
 

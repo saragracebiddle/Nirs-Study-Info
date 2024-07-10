@@ -1,0 +1,9 @@
+# Website
+
+This web page is created using the R package [bookdown]. This package breaks a website down into several components and knits them together before displaying a whole page. The components are R Markdown documents, which allows for embedding R code into the document before displaying the contents using HTML. 
+
+Each chapter of the page is a separate R Markdown document. 
+
+[bookdown]: bookdown.org
+
+[bookdown how to][https://bookdown.org/yihui/bookdown/]

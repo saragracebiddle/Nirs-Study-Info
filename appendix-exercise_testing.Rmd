@@ -5,6 +5,7 @@ There are two types of exercise tests.
 The lactate threshold test is conducted to determine what power output (wattage) is associated with a rise in lactate production. For the general population, lactate threshold is considered to be 4.0 mMoL/L. 
 
 The On/Off Kinetics test is conducted to measure the patient's mitochondrial oxidative capacity. The transition from work to rest allows the NIRS device to capture the magnitude and rate of oxygen recovery after exercise. The power output of the exercise is 110% of the power output at lactate threshold. We use this power output in order to ensure that the exercise is difficult enough to produce a change in oxygen levels during exercise. 
+
 ## Administering Exercise Testing {#AdministerExerciseTest}
 
 We split up the work of administering the exercise test into three jobs:

@@ -8,7 +8,8 @@ screening-the-electronic-medical-record
 using-a-report
 find-patients-eligible-for-nirs-by-treatment-plan
 find-upcoming-new-consult-appointments-with-nirs-providers
-section
+ph-find-patients-identified-for-nirs-study
+ph-find-patients-associated-with-nirs-study
 using-the-schedule
 potential-patient-list
 travel-expenses
@@ -72,6 +73,7 @@ Appendix-Instruments-LactateMeter-Usage
 Appendix-Instruments-LactateMeter-Usage-QualityControl
 Appendix-Instruments-LactateMeter-Usage-DataCollection
 ExerciseTesting
+AdministerExerciseTest
 ExerciseTesting-LT
 ExerciseTesting-LT-Specs
 ExerciseTesting-LT-Watts
@@ -94,6 +96,9 @@ EPIC-StudyDetails
 EPIC-StudyStatuses
 EPIC-NewStudyAssociation
 EPIC-EditStudyAssociation
+EPIC-PatientChart
+EPIC-MyStickyNotes
+treatment-plans
 EPIC-OncologySchedule
 reading-physician-notes
 acronyms-and-abbreviations
@@ -112,4 +117,3 @@ Appendix-IRB-Protocol-StudyProtocol-Visit1
 Appendix-IRB-Protocol-StudyProtocol-SubsequentVisits
 Appendix-IRB-Protocol-StudyProtocol-Surveys
 Appendix-IRB-Protocol-StatisticalAnalyses
-AdministerExerciseTest

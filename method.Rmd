@@ -1,5 +1,8 @@
 # Data Collection {#DataCollection}
 
+Everyone is required to wear a mask while the patient is in the lab. Prisma Health keeps a supply of masks in the hallway that connects to the parking garage. Since our patients are receiving chemotherapy and their immune systems will not be functioning well during chemotherapy treatment, the principal investigators decided masking is required. Patients and any people they bring with them are not required to wear masks. If they wish to, direct them to the supply of masks in the hallway. 
+
+
 ```{r, echo = F}
 knitr::include_graphics(
   c(
@@ -14,41 +17,49 @@ This protocol is the participant's first visit to the lab. Have any medical stud
 
 ### Preparation {#Methods-LT-prep}
 
-At least an hour prior to the time the participant is scheduled to arrive, turn on the metabolic cart by flipping the power switch on the extension cord at the back of the cart. Turn on the computer monitor and wait for the screen to load. Press `F1`. Enter the password to log in. 
-
-The PARVOMedics software will open automatically. In the bottom right, click on the date and open the date and time settings. Change the date and time to match today's date and time.
-
-Ensure the following forms are printed out:
-
-- MMSE \@ref(Appendix-Surveys-mmse)
-- Godin-Leisure Time Exercise Questionnaire \@ref(Appendix-Surveys-glteq)
-- Physical Activity History \@ref(Appendix-Surveys-pah)
-- BFI \@ref(Appendix-Surveys-bfi)
-- PROMIS Global Health \@ref(Appendix-Surveys-promis)
-- Lactate Threshold Data Collection Sheet 
-- Contact Information Form
-
-Frankie keeps some forms already printed out in the file cabinet by his desk. If you cannot find them or need to print more, you can download the forms you need from the file repository in [RedCap][RedCapURL]. 
-
-Write the patient's study ID number, visit ID, and the date in the upper left corner of each sheet in pen. For Lactate Threshold Visits, the visit ID is `LT`. 
-
-Place the MMSE, GLTEQ, and Lactate Threshold Data Collection Sheet on one clipboard. These will be filled out by laboratory staff.
-
-Place the BFI, PROMIS Global Health, Contact Information Form, and Physical Activity History (Intake) forms on one clipboard. These will be filled out by the participant. 
-
-Assemble the VO~2~ mask except for the blue rubber part as described in \@ref(Parvo-MaskAssembly). Place the assembled pieces in a sterile pink bucket. 
-
-Prepare the PortaMon as described in \@ref(PortaMon-BeforeDataCollection) by putting in a charged battery, wrapping the PortaMon in plastic saran wrap, and placing the double sided taupe tape. 
-
-Calibrate the metabolic cart as described in \@ref(Parvo-Calibration) if the metabolic cart has been on for at least 30 minutes. Before doing calibrations, check that the date and time are correct. Do both the Flowmeter Calibration and Gas Calibration. Remember, percent change must be less than 1% to save the calibration results. If you cannot get the percent change that low and don't have any more time, save the result and tell Frankie about it so he can fix it later. 
-
-Open the exercise test in the PARVOMedics software. In the first and last name inputs, type in the NIRS ID number and visit ID (`NIRS_ID#_LT`). The first and last name inputs will match. Input the patient's age in the appropriate input section. You will get the patient's height and weight after they arrive.
-
-Run lactate meter controls as described in \@ref(Appendix-Instruments-LactateMeter-Usage-QualityControl).
-
-Everyone is required to wear a mask while the patient is in the lab. Prisma Health keeps a supply of masks in the hallway that connects to the parking garage. We wear masks since our patients are receiveing chemotherapy and their immune systems will not be functioning well during chemotherapy treatment. Patients and any people they bring with them are not required to wear masks. If they wish to, you can direct them to the supply of masks in the hallway. 
-
-Approximately 10-15 minutes before the patient is supposed to arrive, send someone to the Cancer Institute lobby to meet them. They will walk the patient up to the Human Performance Lab. 
+1. Turn on the PARVO.
+    - At least an hour prior to the time the participant is scheduled to arrive, turn on the metabolic cart by flipping the power switch on the extension cord at the back of the cart. 
+    - Turn on the computer monitor and wait for the screen to load.
+    - Press `F1`.
+    - Enter the password to log in. 
+    - The PARVOMedics software will open automatically.
+2. Set the date and time on the PARVO computer. 
+    -  In the bottom right, click on the date and open the date and time settings. Change the date and time to today's date and time.
+3. Get the patient's folder out of the locked filing cabinet. 
+    - If the patient doesn't have a folder yet, look in the very back of the top drawer of the cabinet. Frankie keeps some folders in the back that will have all the forms needed for a lactate threshold test. Write the patient's ID number on the folder tab. 
+4. Ensure the following forms are printed out:
+    - MMSE \@ref(Appendix-Surveys-mmse)
+    - Godin-Leisure Time Exercise Questionnaire \@ref(Appendix-Surveys-glteq)
+    - Physical Activity Intake \@ref(Appendix-Surveys-pah)
+    - BFI \@ref(Appendix-Surveys-bfi)
+    - PROMIS Global Health \@ref(Appendix-Surveys-promis)
+    - Lactate Threshold Data Collection Sheet 
+    - Contact Information Form
+    -  If you cannot find them or need to print more, you can download the forms you need from the file repository in [RedCap][RedCapURL]. Log in to Frankie or Sara's desktop computer in order to print to the HPL printer. The HPL printer is VV82. 
+5. Label the forms.
+    - Write the patient's study ID number, visit ID, and the date in the upper left corner of each sheet in pen. For Lactate Threshold Visits, the visit ID is `LT`. 
+6. Place the MMSE, GLTEQ, and Lactate Threshold Data Collection Sheet on one clipboard. These will be filled out by laboratory staff. 
+7. Place the BFI, PROMIS Global Health, Contact Information Form, and Physical Activity History (Intake) forms on a different clipboard. These will be filled out by the participant. Put a pen with the clipboard for the patient to use when filling out the forms.
+8. Assemble the VO~2~ mask except for the blue rubber part as described in \@ref(Parvo-MaskAssembly). Place the assembled pieces in a sterile pink bucket. 
+9. Prepare the PortaMon as described in \@ref(PortaMon-BeforeDataCollection) by putting in a charged battery, wrapping the PortaMon in plastic saran wrap, and placing the double sided taupe tape. 
+10. If the PARVO has been on for more than 30 minutes, do the gas calibration as described in \@ref(Parvo-Calibration).
+    - Make sure the date and time have been changed before doing the calibration. 
+    - Only save the calibration results if the percent change in CO2 is less than 1%. If the percent change is greater than 1% (either positive or negative change), open the door, turn on the fan, wait ten minutes and try again. If the percent change is greater than 1% and there is no more time, save the most recent gas calibration and make sure to tell Frankie Bennet about it. 
+    - Write down the humidity, room temperature, and barometric pressure from the gas calibration on the data collection sheet. 
+11. Do the flowmeter calibration as described in \@ref(Parvo-Calibration).
+    _ If you do the gas calibration prior to doing the flowmeter calibration, the PARVO software will automatically fill in the humidity, room temperature, and barometric pressure as saved from the gas calibration. 
+    - The percent change should be less than 1%. If it is greater than 1%, do not save and try again in 10 minutes. 
+11. Open the exercise test in the PARVOMedics software. 
+    - In the first and last name inputs, type in the NIRS ID number and visit ID (`NIRS_ID#_LT_MM_DD_YYYY`). The first and last name inputs will match. 
+    - Input the patient's age in the appropriate input section. 
+    - You will get the patient's height and weight after they arrive. 
+    - Click `Save` in the upper right corner. 
+12. Run lactate meter controls as described in \@ref(Appendix-Instruments-LactateMeter-Usage-QualityControl).
+13. Connect the PortaMon to the Oxysoft software as described in \@ref(PortaMon-StartMeasurement) but do not begin data collection. Leave the screen on the pop up where you would click `Finish`.
+14. Get a washcloth out of the cabinet behind the door and put it by the ultrasound to wipe off ultrasound gel during device placement.
+15. On the stationary bike setting screen, it will display `TODO`. Press the circular button. It should now display `TODO`. Press the circular button again. 
+The screen should display `TODO`.
+16. Approximately 10-15 minutes before the patient is supposed to arrive, send someone to the Cancer Institute lobby to meet them. They will walk the patient up to the Human Performance Lab. 
 
 ### Exclusion Criteria {#Methods-LT-ExclusionCriteria}
 
@@ -62,96 +73,127 @@ Use the steps described in \@ref(Appendix-Instruments-Ultrasound-Usage) to measu
 
 Place the NIRS device over the area measured using ultrasound following the steps described in  \@ref(PortaMon-Placement).
 
+Be sure to take a picture of the device placement on the vastus lateralis. Place the tape measure so that 0 is on the top of the patient's patella and lay the tape measure to the side of the PortaMon. 
+
 2. Sufficient Physical Activity
 
 Sedentary patients will be unable to complete the testing protocol and thus will be excluded from participation. To determine physical activity levels, administer the Godin-Leisure Time Exercise Questionnaire \@ref(Appendix-Surveys-glteq). If the score is less than 14, the patient would be sedentary and will not be eligible to participate. Administer the GLTEQ to the patient and score it immediately. 
 
 3. Mental State
 
-Patients must be aware of their situation and fully able to consent to participation. The Mini-Mental State Examination \@ref(Appendix-Surveys-mmse) helps detect any underlying issues with memory that would render a patient unable to participate. If the patient scores less than ___, the patient will not be eligible to participate due to mental conditions. Administer the MMSE to the patient and score it immediately. 
+Patients must be aware of their situation and fully able to consent to participation. The Mini-Mental State Examination \@ref(Appendix-Surveys-mmse) helps detect any underlying issues with memory that would render a patient unable to participate. If the patient scores less than TODO, the patient will not be eligible to participate due to mental conditions. Administer the MMSE to the patient and score it immediately. 
 
 ### Data Collection {#Methods-LT-DataCollection}
 
-Have the subject complete the following instruments:
-
-- Physical Activity History \@ref(Appendix-Surveys-pah)
-- BFI \@ref(Appendix-Surveys-bfi)
-- PROMIS Global Health \@ref(Appendix-Surveys-promis)
-
-Review the completed Godin-Leisure Time Exercise Questionnaire and Physical Activity History instruments. Use your best judgement in collaboration with the other investigators to determine the wattage jumps. See \@ref(ExerciseTesting-LT-Watts) for further information about deciding wattage jumps.
-
-Measure the subject's face to determine mask size. Record mask size on data collection sheet. Finish assembling mask by attaching the blue rubber mask of the appropriate size to the assembled pieces. 
-
-Put the heart rate monitor on the patient. 
-
-Have the subject get on the stationary bike and make adjustments to the seat height, seat depth, pedal length, and handlebar placement to the comfort of the participant. 
-
-If the PortaMon has been on for at least 10 minutes, proceed. 
-
-Place the assembled mask on the participant's face and connect clear tubing to the mask.
-
-Conduct Lactate Threshold Exercise Test as described in \@ref(ExerciseTesting-LT). 
+1.  Have the subject complete the following instruments:
+    - Physical Activity History \@ref(Appendix-Surveys-pah)
+    - BFI \@ref(Appendix-Surveys-bfi)
+    - PROMIS Global Health \@ref(Appendix-Surveys-promis)
+2. Review the completed Godin-Leisure Time Exercise Questionnaire and Physical Activity History instruments. Use your best judgement in collaboration with the other investigators to determine the wattage jumps. See \@ref(ExerciseTesting-LT-Watts) for further information about deciding wattage jumps.
+5. Take the patient's blood pressure. Write down the blood pressure on the data collection sheet. 
+6. Take the patient's oral temperature. Write down the oral temperature on the data collection sheet. 
+7. Take the patient's blood pressure a second time. Write down the blood pressure on the data collection sheet. 
+8. Size the participant for the VO~2~ mask by holding the sizing chart up to their face. Select the appropriate VO~2~ mask and attach it to the assembled parts of the mask. Record the measured mask size on the data collection sheet. 
+8. Have the patient take off their shoes and take their weight, twice. Write down both weights on the data collection sheet. Do not say the weight out loud, just have the person writing down the weight stand beside the scale and write it down. 
+9. Have the patient stand on the scale and get their height. Have them step off the scale and step back on to get their height a second time. Write down both height measurements on the data collection sheet. 
+9. Have any men leave the room. Spray the HR monitor sensor with water from the spray bottle. Place the heart rate monitor under the patient's bra strap over their sternum. Check that the HR monitor is getting a good signal by turning on the watch. If the HR monitor is not getting a good signal, make sure the whole sensor on the inside of the strap is touching skin and not over the bra. Try to move the sensor higher on the chest. Put more water in between the sensor and the skin. 
+10. Before having the patient get on the stationary bike, explain the testing protocol to the patient. Make sure they understand that there will be finger pricks, stationary biking up to 20 minutes (but hopefully less if we estimated correctly), and no rest time during this test. Explain the RPE scale and how it will be used during testing. 
+10. Have the patient get on the stationary bike. Adjust the seat height and handlebars as needed. 
+11. If the PortaMon has been on for at least 10 minutes, proceed. 
+12. Place the assembled mask on the participant's face. 
+    - Check that the mask is properly fitted and forms an airtight seal.
+13. Connect the clear tubing to the clear end of the mask. 
+14. Make sure the patient's weight was input in the exercise testing input on the PARVO computer. 
+15. Start the test on the PARVO. Write down the time on the NIRS computer that the PARVO test was initiated. 
+16. Conduct Lactate Threshold Exercise Test as described in \@ref(ExerciseTesting-LT).
+17. Take the mask off the patient's face. Help the patient get off the bike. Remove the NIRS device and the heart rate monitor.
+18. Walk the patient back down to the lobby. Thank them for their time and participation. 
 
 ### After Data Collection {#Methods-LT-after}
 
-As soon as you click `End Test` on the PARVO and the software stops collecting data, take the VO~2~ mask off the participant. The masks are very uncomfortable and we want them to have to wear it for as little time as possible. 
-
-Help the patient off the stationary bike. Offer them a chair and a towel. Remove the PortaMon from their leg and pull off all the tape. Take the heart rate monitor off of them. 
-
-Escort the patient to their next destination, which will normally be back down to the Cancer Institute lobby. 
-
-Pull the saran wrap and tape off of the PortaMon and throw it away. Remove the PortaMon battery and charge it. Wipe down the outside of the PortaMon case with antibacterial wipes. 
-
-Print out the 10-second report of the data collected by the PARVO and place with the other data collection sheets. 
-
-Measure the seat height, seat depth, and pedal length of the stationary bike and record on the data collection sheet. 
-
-Remove the button from the heart rate monitor. Wipe the button down with antibacterial wipes and put the heart rate monitor strap in the pink bucket to be cleaned with the PARVO mask parts. 
-
-Remove all dirty PARVO parts and place in pink bucket. 
-
-Take the pink bucket and put it on the blue cart. Follow the steps described in \@ref() to clean and sanitize the pieces. 
+1. Pull the saran wrap and tape off of the PortaMon and throw it away.
+2. Remove the PortaMon battery and charge it. 
+3. Wipe down the outside of the PortaMon case with antibacterial wipes. 
+4. Print out the 10-second report of the data collected by the PARVO and place with the other data collection sheets. 
+5. Measure the seat height, seat depth, and pedal length of the stationary bike and record on the data collection sheet. 
+6. Remove the button from the heart rate monitor. Wipe the button down with antibacterial wipes and put the heart rate monitor strap in the pink bucket to be cleaned with the PARVO mask parts. 
+7. Remove all dirty PARVO parts and place in pink bucket. 
+8. Take the pink bucket and put it on the blue cart. Follow the steps described in \@ref() to clean and sanitize the pieces. 
 
 ## On/Off Kinetics Visit {#Methods-Onoff}
 
 ### Preparation {#Methods-Onoff-Preparation}
 
-At least an hour prior to the time the participant is scheduled to arrive, turn on the metabolic cart by flipping the power switch on the extension cord. 
-
-Print out the following forms:
-- Physical Activity History (Follow Up)
-- BFI 
-- PROMIS Global Health
-- On/Off Kinetics Data Collection Sheet
-
-Write the patient's study ID number, visit ID, and the date in the upper left corner of each sheet in pen. The visit ID for an On/Off kinetics is the number corresponding to the cycle of treatment and "CYCLE".
-For the first On/Off Kinetics, which occurs prior to beginning chemotherapy treatment, the visit ID is `0CYCLE`. For the next On/Off Kinetics, which occurs after the first cycle of chemotherapy and prior to beginning the second cycle of chemotherapy, the visit ID would be `1CYCLE`.
-
-Place the BFI, PROMIS Global Health, and Physical Activity History (Follow Up) forms on one clipboard. Place the On/Off Kinetics Data Collection Sheet on a different clipboard. 
-
-Assemble the VO~2~ mask as described in \@ref(Parvo-MaskAssembly). Use the mask size recorded from the Lactate Threshold Visit to fully assemble the mask and place in a sterile pink bucket. 
-
-Prepare the PortaMon as described in \@ref(PortaMon-BeforeDataCollection) by putting in a charged battery, wrapping the PortaMon in plastic saran wrap, and placing the double sided taupe tape. 
-
-Calibrate the metabolic cart as described in \@ref(Parvo-Calibration) if the metabolic cart has been on for at least 30 minutes. Before doing calibrations, remember to change the date and time on the computer to match the actual date and time, as the PARVO cart is not connected to the internet. Do both the Flowmeter Calibration and Gas Calibration. Remember, percent change must be less than 1% to save the calibration results. If you cannot get the percent change that low and don't have any more time, save the result and tell Frankie about it so he can fix it later. 
-
-Refer to the stationary bike measurements recorded from the Lactate Threshold Visit. Set the bike seat and pedals to match those measurements. 
+1. Turn on the PARVO.
+    - At least an hour prior to the time the participant is scheduled to arrive, turn on the metabolic cart by flipping the power switch on the extension cord at the back of the cart. 
+    - Turn on the computer monitor and wait for the screen to load.
+    - Press `F1`.
+    - Enter the password to log in. 
+    - The PARVOMedics software will open automatically.
+2. Set the date and time on the PARVO computer. 
+    -  In the bottom right, click on the date and open the date and time settings. Change the date and time to today's date and time.
+3. Get the patient's folder out of the locked filing cabinet. 
+4. Ensure the following forms are printed out:
+    - Physical Activity History (Follow Up)
+    - BFI 
+    - PROMIS Global Health
+    - On/Off Kinetics Data Collection Sheet
+5. Label the forms.
+    - Write the patient's study ID number, visit ID, and the date in the upper left corner of each sheet in pen. For On/Off Kinetics Visits, the visit ID is `FP`. 
+6. Place the Full Protocol Data Collection Sheet on one clipboard. This will be filled out by laboratory staff. 
+7. Place the BFI, PROMIS Global Health, and Physical Activity History (Follow Up) forms on a different clipboard. These will be filled out by the participant. Put a pen with the clipboard for the patient to use when filling out the forms.
+8. Assemble the VO~2~ mask. Place the assembled pieces in a sterile pink bucket.
+9. Prepare the PortaMon as described in \@ref(PortaMon-BeforeDataCollection) by putting in a charged battery, wrapping the PortaMon in plastic saran wrap, and placing the double sided taupe tape. 
+10. If the PARVO has been on for more than 30 minutes, do the gas calibration as described in \@ref(Parvo-Calibration).
+    - Make sure the date and time have been changed before doing the calibration. 
+    - Only save the calibration results if the percent change in CO2 is less than 1%. If the percent change is greater than 1% (either positive or negative change), open the door, turn on the fan, wait ten minutes and try again. If the percent change is greater than 1% and there is no more time, save the most recent gas calibration and make sure to tell Frankie Bennet about it. 
+    - Write down the humidity, room temperature, and barometric pressure from the gas calibration on the data collection sheet. 
+11. Do the flowmeter calibration as described in \@ref(Parvo-Calibration).
+    _ If you do the gas calibration prior to doing the flowmeter calibration, the PARVO software will automatically fill in the humidity, room temperature, and barometric pressure as saved from the gas calibration. 
+    - The percent change should be less than 1%. If it is greater than 1%, do not save and try again in 10 minutes. 
+11. Open the exercise test in the PARVOMedics software. 
+    - In the first and last name inputs, type in the NIRS ID number and visit ID (`NIRS_ID#_FP_CYCLE#`). The first and last name inputs will match. 
+    - Input the patient's age in the appropriate input section. 
+    - Input the patient's height in the appropriate input section.
+    - You will get the patient's weight after they arrive. 
+    - Click `Save` in the upper right corner. 
+    - Click `OK` to go to the next screen. 
+    - Change the power wattage to the appropriate power wattage for the patient.     - Click `Save`. 
+    - Exit the exercise test settings.
+    - Re-open the exercise test to the pop up with the weight input. 
+13. Connect the PortaMon to the Oxysoft software as described in \@ref(PortaMon-StartMeasurement) but do not begin data collection. Leave the screen on the pop up where you would click `Finish`.
+14. Get a washcloth out of the cabinet behind the door and put it by the ultrasound to wipe off ultrasound gel during device placement.
+15. On the stationary bike setting screen, it will display `TODO`. Press the circular button. It should now display `TODO`. Press the circular button again. 
+The screen should display `TODO`.
+16. Change the bike seat settings to match the settings recorded from the lactate threshold visit. 
+17. Place the picture of the NIRS device placement from lactate threshold testing by the ultrasound. 
+16. Approximately 10-15 minutes before the patient is supposed to arrive, send someone to the Cancer Institute lobby to meet them. They will walk the patient up to the Human Performance Lab. 
 
 ### Data Collection {#Methods-OnOff-DataCollection}
 
-Have the subject complete the following instruments:
-
-- Physical Activity History \@ref(Appendix-Surveys-pah)
-- BFI \@ref(Appendix-Surveys-bfi)
-- PROMIS Global Health \@ref(Appendix-Surveys-promis)
-
-If the PortaMon has been on for at least 10 minutes, proceed.
-
-Place the assembled mask on the participant's face and connect clear tubing to the mask.
-
-Conduct On/Off Kinetics Exercise Test as described in \@ref(ExerciseTesting-Onoff).
-
-Take the mask off the patient's face. Help the patient get off the bike. Remove the NIRS device and the heart rate monitor.
-
-
-
+1. If the patient is not wearing shorts or equivalent, offer them the paper shorts stored under the bed in the back corner of the lab. 
+2. Using the reference photograph of the NIRS placement taken at lactate threshold testing, mark the device location on the patient's vastus lateralis with a marker. 
+3. Use the ultrasound to measure the ATT at the marker.
+    - Compare the measured ATT with the ATT measured at lactate threshold. 
+    - If the measurements are within 0.25 cm of each other, proceed with device placement. 
+    - If the measurements are greater than 0.25 cm of each other, check the reference photograph and measurement of the location and try to ultrasound again. 
+    - Write down the ATT measurement on the data collection sheet. 
+4.  Have the subject complete the following instruments:
+    - Physical Activity History \@ref(Appendix-Surveys-pah)
+    - BFI \@ref(Appendix-Surveys-bfi)
+    - PROMIS Global Health \@ref(Appendix-Surveys-promis)
+5. Take the patient's blood pressure. Write down the blood pressure on the data collection sheet. 
+6. Take the patient's oral temperature. Write down the oral temperature on the data collection sheet. 
+7. Take the patient's blood pressure a second time. Write down the blood pressure on the data collection sheet. 
+8. Have the patient take off their shoes and take their weight, twice. Write down both weights on the data collection sheet. Do not say the weight out loud, just have the person writing down the weight stand beside the scale and write it down. 
+9. Have any men leave the room. Spray the HR monitor sensor with water from the spray bottle. Place the heart rate monitor under the patient's bra strap over their sternum. Check that the HR monitor is getting a good signal by turning on the watch. If the HR monitor is not getting a good signal, make sure the whole sensor on the inside of the strap is touching skin and not over the bra. Try to move the sensor higher on the chest. Put more water in between the sensor and the skin. 
+10. Have the patient get on the stationary bike. Adjust the seat height and handlebars as needed. 
+11. If the PortaMon has been on for at least 10 minutes, proceed. 
+12. Place the assembled mask on the participant's face. 
+    - Check that the mask is properly fitted and forms an airtight seal.
+13. Connect the clear tubing to the clear end of the mask. 
+14. Make sure the patient's weight was input in the exercise testing input on the PARVO computer. 
+15. Start the test on the PARVO. Write down the time on the NIRS computer that the PARVO test was initiated. 
+16. Conduct On/Off Kinetics Exercise Test as described in \@ref(ExerciseTesting-Onoff).
+17. Take the mask off the patient's face. Help the patient get off the bike. Remove the NIRS device and the heart rate monitor.
+18. Walk the patient back down to the lobby. Thank them for their time and participation. 

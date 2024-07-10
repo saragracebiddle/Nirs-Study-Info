@@ -14,3 +14,14 @@ Download and follow installation instructions for the following software:
 [Git]: https://git-scm.com/downloads
 [R]: https://posit.co/download/rstudio-desktop/
 [RStudio]: https://posit.co/download/rstudio-desktop/
+
+
+I have found the following resources helpful. 
+
+- [Advanced R][https://adv-r.hadley.nz/index.html]
+This book is helpful for all things R. I have found chapter 7: Environments, chapter 9: Functionals, and chapter 12: S3 to be extremely useful as I build the `nirsex` package. 
+- [R Packages][https://r-pkgs.org/]
+This book helps you set up and work with developing packages in R. I have taken this framework and begun using a package development style even with data analysis projects due to its documentation and testing features. 
+- [Happy Git and GitHub for the useR][https://happygitwithr.com/]
+This book is helpful for setting up R and Git to work together. If you have never worked with Git, it provides a lot of help through basic set up and basic Git commands that you would be interested in. 
+

@@ -2,8 +2,9 @@
 
 ## Access {#EPIC-Access}
 
-Prisma Health uses EPIC as their electronic medical record service. 
-You can only access EPIC with permission from Prisma Health. The medical students may technically have access to EPIC but they have not had much training on how to use it and actually accessing it can be cumbersome and difficult. It is much easier for a Research Coordinator to do any work in EPIC. 
+Prisma Health uses EPIC as their electronic medical record service. EPIC can only be accessed with permission from Prisma Health. The medical students may technically have access to EPIC but they have not had much training on how to use it and actually accessing it can be cumbersome and difficult. It is much easier for a Research Coordinator to do any work in EPIC. 
+
+To access EPIC, log onto the Prisma Health Wifi network `PH
 
 Use the Production Environment of EPIC, if possible. In the Production Environment, you can create and run reports that you cannot in the Read Only Environment. 
 
@@ -18,7 +19,9 @@ The research study build allows you to associate patients with the research stud
 
 ### Study Details {#EPIC-StudyDetails}
 
-The study code is 1853511 and the ID is `PHU ITOR: NIRS`. Dr. Larry Gluck is the principal investigator. Sara Biddle, Katie Banenas, Sydney Hackwell, Frankie Bennet, and Jim Rosenmeyer have research coordinator access to the study information. 
+The study code is 1853511 and the ID is `PHU ITOR: NIRS`. Dr. Larry Gluck is the principal investigator. Sara Biddle, Sydney Hackwell, Frankie Bennet, and Jim Rosenmeyer have research coordinator access to the study information. 
+
+Click on the `Research Studies` tab of a patient's chart to see all research study associations for the patient. 
 
 There are several components of the `Participant Details` section of a study record.
 
@@ -106,6 +109,77 @@ For further information about Research Studies in Epic, log in to the Epic UserW
 5. Click on the pencil icon by `Participant Details` to open up an editable view of the patient's study details. 
 5. Change any necessary details. 
 6. Click **Accept** to save. 
+
+## Patient Charts {#EPIC-PatientChart}
+
+After a patient consents, they will need to have two visits to the HPL before their first chemotherapy infusion. 
+
+Under `Chart Review`, make sure that `Hide upcoming/future` is not checked. Look for an appointment with type `Infusion`. Click on the row to open the appointment information. Check the date, time, and location of the appointment in the panel that opens up on the right of the screen. 
+
+Infusion appointments are not limited to chemotherapy. For example, if a patient gets a saline infusion for hydration, that will also show up as an Infusion. Cross reference Infusion appointments with the Treatment Plan dates to ensure that you are looking at a chemotherapy infusion. Chemotherapy infusions tend to be preceeded by a Lab appointment and Office Visit with a Nurse Practitioner or their Oncologist, although this is not always required. 
+
+## My Sticky Notes {#EPIC-MyStickyNotes}
+
+My Sticky Notes can be extremely useful. 
+
+The sticky note will only be viewable by yourself, and will not display to anyone else who views the patient's chart. 
+
+When a patient's chart is opened, look in the top left by the patient's picture. If the yellow box that looks like a sticky note has nothing in it, you have not created a sticky note for that patient. If the sticky note has lines in it, then you have created a sticky note for that patient before.
+
+I have EPIC set to automatically open the sticky note whenever I open a patient's chart that already has a sticky note.
+
+I like to use sticky notes to keep track of which patients I have already chart screened. In the schedule, I have EPIC set to display sticky notes in a column. If the sticky note has the lines in it, I know I have already looked at this patient's chart and can open the sticky note to see what I have noted about the patient. 
+
+I put the patient's status as the first line of the note: Identified, Ineligible, Declined, etc. 
+
+For Ineligible patients, I then put the reason the patient is not eligible. Generally, this is the treatment plan or an disqualifying medical condition. For treatment plans, I like to include the date the treatment plan started. 
+
+For example, a patient is not eligible because they are actively receiving chemotherapy would have a note with the following content: 
+
+```
+Ineligible. started chemotherapy MM/DD/YYYY.
+```
+
+I like to use sticky notes rather than the study association for these patients to keep reports from becoming cumbersome as the number of ineligible patients increases. 
+
+For Identified patients, the content can vary depending on a variety of factors. I will put Identified on any patient that could possibly get chemotherapy, even if it is not likely, so that we continue to track the patient as their treatment is finalized.
+
+I like to include the diagnosis (breast or gyn cancer or mass) and any useful information for tracking the patient. 
+
+If the patient is waiting on pathology results before the oncologist finalizes treatment plans, I like to include the date of the next appointment where the pathology will be reviewed. 
+
+
+
+
+### Treatment Plans
+
+To see the patient's treatment plan, click on the name of their treatment plan in the right panel under `ACTIVE TREATMENTS`. This will open up the full Treatment Plan to the right. 
+
+Treatment plans tend to be named with the following rules:
+
+`DRUG QNW X M CYCLES` 
+
+Where `N` is the number of weeks each cycle lasts (i.e. 2, 3, or 4) and `M` is the number of cycles that the drug will be administered. 
+
+If more than one drug is being adminstered at a time (which is very common), then the drugs that are administered together will appear in the name as follows:
+
+`DRUG1 + DRUG2 QNW X M CYCLES`
+
+If the treatment plan consists of two parts where some drugs are administered during the first part then different drugs are administered during the second part (i.e. switching from platinums to taxanes), then the treatment plan will be named like 
+
+`DRUG1 QLW X M CYCLES THEN DRUG2 QNW X P CYCLES`
+
+where `L` is the number of weeks the cycle for the first drug lasts, `M` is the number of cycles that the first drug will be administered, `N` is the number of weeks the cycle for the second drug lasts, and `P` is the number of cycles the second drug will be administered. If the second drug does not have `P CYCLES`, then there will only be one cycle and the drug will be administered weekly for `N` weeks. 
+
+Under the treatment plan, there is a drop down for each cycle. There will be further drop downs for each applicable day of the cycle. 
+
+A basic treatment plan where the patient receives infusions every three weeks will only have `Day 1` drop downs under each cycle. 
+
+Other treatment plans may consist of multiple days. To see what is encompassed in the plan for each day, open up the drop down. If there is not a `Chemotherapy` tab under the Day, then the patient is not receiving any chemotherapy drugs that day. This may be the case if the patient gets labs before the come in for infusions or if they receive other types of infusions the day before a chemotherapy infusion, such as saline or steroids. 
+
+
+
+
 
 ## Oncology Schedule {#EPIC-OncologySchedule}
 

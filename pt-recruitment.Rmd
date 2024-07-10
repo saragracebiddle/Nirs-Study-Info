@@ -52,87 +52,45 @@ To be eligible for the study, patients must:
 ## Screening the Electronic Medical Record
 
 Prisma Health uses EPIC as their electronic medical record service. 
-You can only access EPIC with permission from Prisma Health. The medical students may technically have access to EPIC but they have not had much training on how to use it and actually accessing it can be cumbersome and difficult for them. It is much easier for a Research Coordinator to do any work in EPIC. 
+EPIC access must be granted by Prisma Health.
 
-Use the Production Environment of EPIC. In the Production Environment, you can create and run reports that you cannot in the Read Only Environment. 
+Use the Production Environment of EPIC. In the Production Environment, you can create and run reports that you cannot in the Read Only Environment. However, take care in the Production Environment not to accidentally edit any patient charts. 
 
 Log in with your Prisma Health log in information and select the department `CANCER-FARIS ONCOLOGY [100224000]`.
 
+When a patient is identified as potentially eligible, create a research study association \ref() in their chart of type `Identified`. I also like to use the `My Sticky Note`.
+
 ### Using a Report
 
-Reports are very useful for gathering information about potential patients. I have created several reports with various uses. 
+Reports can be useful for identifying patients that match certain parameters. However, reports rely entirely on the criteria in the report. For example, when using a report to identify patients with a treatment plan that includes chemotherapy, the treatment plan has to have been put in EPIC for the report to see it. If the notes say that the patient will have a certain treatment plan but the plan is not put in EPIC yet, then the report will not include that patient. This creates some difficulties when using reports, but they can be a good starting point. 
+
+Go to `My Reports`.
 
 #### `Find Patients Eligible for NIRS by Treatment Plan`
 
+This report returns a list of patients with a diagnosis of breast or primary gynecological cancer patients that have an active chemotherapy treatment plan with one of the doctors that refers to the NIRS study. 
+
+Due to the long list of criteria, this report can take a few minutes to run.
+
+The results list displays the following information:
+treatment plan start date, next oncology appointment date, name, MRN, clinical stage, diagnosis, and plan provider. 
+
+The Oncology Snapshot is displayed under the report results when a row is selected. 
 
 #### `Find Upcoming New Consult Appointments with NIRS Providers`
 
+This report returns a list of upcoming appointments with one of the doctors that refer to the NIRS study that are type 'New Consult' or 'MDC'. Appointments of this type are generally new diagnoses that do not yet have a treatment plan. If the patient meets all criteria except for the treatment plan, you can send the patient's information to the research coordinators and they can watch the patient for further treatment planning. 
 
-#### `
+#### `PH Find Patients Identified for NIRS Study`
 
-Go to `My Reports`. 
+This report returns a list of patients with a study association to the NIRS study of type `Identified`. 
 
-I have a report named `NIRS Eligibility by Stage` that has the following parameters:
+#### `PH Find Patients Associated with NIRS Study`
 
-
-> Select Patients in Registries\
-> **From**\
-> *Registries:*\
-> Registry ID: CANCER POPULATION REGISTRY\
-> *Level of detail:*\
-> Patients
-> 
-> **Where**\
-> *Registry metrics:* (1 OR 2 OR 3 OR 4 OR 5) AND 6\
->
->> 1 Metric Name or ID: DM TREATMENT PLAN PROVIDER and Metric Value: Contains EDENFIELD, WILLIAM JEFFERY\
->> 2 Metric Name or ID: DM TREATMENT PLAN PROVIDER and Metric Value: Contains ELDER, JEFFERY WAYNE\
->> 3 Metric Name or ID: DM TREATMENT PLAN PROVIDER and Metric Value: Contains JORGENSEN, CARLA WALKER\
->> 4 Metric Name or ID: DM TREATMENT PLAN PROVIDER and Metric Value: Contains STEPHENSON JR, JOE JOHN\
->> 5 Metric Name or ID: DM TREATMENT PLAN PROVIDER and Metric Value: Contains PULS, LARRY EDWIN\
->> 6 Metric Name or ID: DM MED PATIENT RECIEVED CHEMOTHERAPY IN PAST YEAR and Metric Value: No\
->
-> AND *Diagnosis in grouper:*\
->
->>    Diagnosis Grouper (VCG): EDG ID CANCER BREAST OR\
->>    Diagnosis Grouper (VCG): EDG ID CANCER FALLOPIAN TUBE OR\
->>    Diagnosis Grouper (VCG): EDG ID CANCER OVARY OR\
->>    Diagnosis Grouper (VCG): EDG ID CANCER CERVIX OR\
->>    Diagnosis Grouper (VCG): EDG ID CANCER VAGINA OR\
->>    Diagnosis Grouper (VCG): EDG ID CANCER VULVA\
->
-> AND *Treatment Plan Start Date:*\
->
->> Episode Types: Infusion Treatment and Discontinue Reasons to Exclude: (none) and Plan Number: (none) and Plan Staatuses: Active and Treatment Plan Start Date: Greater than or equal to TODAY - 14  OR\
->> Episode Types: ONCOLOGY TREATMENT and Discontinue Reasons to Exlude: (none) and Plan Number: (none) and Plan Statuses: Active and Treatment Plan Start Date: Greater than or equal to TODAY - 14 OR\
->> Episode Types: ONCOLOGY TREATMENT and Discontinue Reasons to Exclude: (none) and Plan Number: (none) and Plan Statuses: Future and Treatment Plan Start Date: Less than or equal to TODAY + 14 OR\
->> Episode Types: Infusion Treatment and Discontinue Reasons to Exclude: (none) and Plan Number: (none) and Plan Statuses: Future and Treatment Plan Start Date: Less than or equal to TODAY + 14\
->
-> AND *Cancer Stage Distant Metastasis (M) Value*:\
->
->> Stage Classifications: Clinical and Fallback Classifications: (none) and Signed Only?: (none) and SmartData Identifier: EPIC#42385 and Which Stage: Most Recent and Cancer Stage Distant Metastasis (M) Value: cM0 OR\
->> Stage Classifications: Clinical and Fallback Classifications: (none) and Signed Only?: (none) and SmartData Identifier: EPIC#42385 and Which Stage: Most Recent and Cancer Stage Distant Metastasis (M) Value: cM0(i+) OR\
->> Stage Classifications: Clinical and Fallback Classifications: (none) and Signed Only?: (none) and SmartData Identifier: EPIC#42385 and Which Stage: Most Recent and Cancer Stage Distant Metastasis (M) Value: M0 OR\
->> Stage Classifications: Pathologic and Fallback Classifications: (none) and Signed Only?: (none) and SmartData Identifier: EPIC#42385 and Which Stage: Most Recent and Cancer Stage Distant Metastasis (M) Value: cM0 OR\
->> Stage Classifications: Pathologic and Fallback Classifications: (none) and Signed Only?: (none) and SmartData Identifier: EPIC#42385 and Which Stage: Most Recent and Cancer Stage Distant Metastasis (M) Value: cM0(i+) OR\
->> Stage Classifications: Pathologic and Fallback Classifications: (none) and Signed Only?: (none) and SmartData Identifier: EPIC#42385 and Which Stage: Most Recent and Cancer Stage Distant Metastasis (M) Value: M0 \
->
-> AND *Line of Treatment*:\
->
->> Episode Types: ONCOLOGY TREATMENT and Discontinue Reasons to Exclude: (none) and Plan Number: (none) and Plan Statuses: (none) and Line of Treatment: Not equal to Third Line OR\
->> Episode Types: Infusion Treatment and Discontinue Reasons to Exclude: (none) and Plan Number: (none) and Plan Statuses: (none) and Line of Treatment: Not equal to Third Line\
->> AND *Treatment Plan Goal*:\
->> Episode Types: Infusion Treatment and Discontinue Reasons to Exclude: (none) and Plan Number: (none) and Plan Statuses: Active and Treatment Plan Goal: Not equal to Palliative OR\
->> Episode Types: Infusion Treatment and Discontinue Reasons to Exclude: (none) and Plan Number: (none) and Plan Statuses: Future and Treatment Plan Goal: Not equal to Palliative OR\
->> Episode Types: ONCOLOGY TREATMENT and Discontinue Reasons to Exclude: (none) and Plan Number: (none) and Plan Statuses: Active and Treatment Plan Goal: Not equal to Palliative OR\
->> Episode Types: IONCOLOGY TREATMENT and Discontinue Reasons to Exclude: (none) and Plan Number: (none) and Plan Statuses: Future and Treatment Plan Goal: Not equal to Palliative
+This report returns a list of patients with any study association to the NRIS study. 
 
 
-This will return a list of potentially eligible patients who meet the parameters specified in the query above. I have the report settings such that the results table shows me their treatment plan start date, next oncology appointment date, name, MRN, clinical stage, diagnosis, and plan provider. When I select a patient from the list, it displays an Oncology Snapshot under the report results table. I take a quick look through the Oncolog Snapshot and if I need to take a closer look at their chart, I can open it up. 
-
-I have not figured out how to share this report or its results with other people. As it is, I look through the patients returned by the report and eliminate any definitively ineligible patients.
-
-Sometimes metastatic disease is listed as a second diagnosis and therefore slips through the exclusion of metastatic disease. Vascular diseases and injuries that would preclude ability to exercise are other common exclusion criteria. Male patients with breast cancer are not eligible for this study.  Take a quick look through the patient's problem list. If the patient does not have any immediate exclusionary problems, pass their name and MRN on to the research coordinators, Sydney Hackwell and Katie Banenas. They will conduct a full chart screening and contact the patient if they are eligible. 
+Sometimes metastatic disease is listed as a second diagnosis and therefore slips through the exclusion of metastatic disease. Vascular diseases and injuries that would preclude ability to exercise are other common exclusion criteria. Male patients with breast cancer are not eligible for this study.  Take a quick look through the patient's problem list. If the patient does not have any immediate exclusionary problems, pass their name and MRN on to  research coordinator Sydney Hackwell. She will conduct a full chart screening and contact the patient if they are eligible. 
 
 I include all patients returned by the report into the List. This is because, from day to day, the report returns different patients. If a patient is not in the List, I will assume that I have not yet looked at their chart. So, even if I look at a chart and immediately determine that a patient is not eligible, I write their information into the List and mark them ineligible so I don't forget that I already screened their chart. This also helps determine if there are new potentially eligible patients returned by the report. On average, the report will return between 5 and 10 patients. Due to the month long limit on treatment plan start date, the report will return the same patients for many days in a row. If you don't keep track of everyone that the report returned, even the ineligible ones, you may get confused about which patients need to be screened and which ones you have already screened. 
 
