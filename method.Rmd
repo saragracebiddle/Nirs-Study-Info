@@ -17,46 +17,50 @@ This protocol is the participant's first visit to the lab. Have any medical stud
 
 ### Preparation {#Methods-LT-prep}
 
-1. Turn on the PARVO.
+1. Turn on the PARVO computer.
     - At least an hour prior to the time the participant is scheduled to arrive, turn on the metabolic cart by flipping the power switch on the extension cord at the back of the cart. 
     - Turn on the computer monitor and wait for the screen to load.
     - Press `F1`.
     - Enter the password to log in. 
     - The PARVOMedics software will open automatically.
-2. Set the date and time on the PARVO computer. 
-    -  In the bottom right, click on the date and open the date and time settings. Change the date and time to today's date and time.
-3. Get the patient's folder out of the locked filing cabinet. 
+    - Set the date and time on the PARVO computer. 
+        - In the bottom right, click on the date and open the date and time settings. Change the date and time to today's date and time.
+3. Prepare the patient's folder. 
+    - Look in the filing cabinet for the folder labelled with the patient's study ID. Get it out. 
     - If the patient doesn't have a folder yet, look in the very back of the top drawer of the cabinet. Frankie keeps some folders in the back that will have all the forms needed for a lactate threshold test. Write the patient's ID number on the folder tab. 
-4. Ensure the following forms are printed out:
-    - MMSE \@ref(Appendix-Surveys-mmse)
-    - Godin-Leisure Time Exercise Questionnaire \@ref(Appendix-Surveys-glteq)
-    - Physical Activity Intake \@ref(Appendix-Surveys-pah)
-    - BFI \@ref(Appendix-Surveys-bfi)
-    - PROMIS Global Health \@ref(Appendix-Surveys-promis)
-    - Lactate Threshold Data Collection Sheet 
-    - Contact Information Form
-    -  If you cannot find them or need to print more, you can download the forms you need from the file repository in [RedCap][RedCapURL]. Log in to Frankie or Sara's desktop computer in order to print to the HPL printer. The HPL printer is VV82. 
-5. Label the forms.
-    - Write the patient's study ID number, visit ID, and the date in the upper left corner of each sheet in pen. For Lactate Threshold Visits, the visit ID is `LT`. 
-6. Place the MMSE, GLTEQ, and Lactate Threshold Data Collection Sheet on one clipboard. These will be filled out by laboratory staff. 
-7. Place the BFI, PROMIS Global Health, Contact Information Form, and Physical Activity History (Intake) forms on a different clipboard. These will be filled out by the participant. Put a pen with the clipboard for the patient to use when filling out the forms.
+    - Check in the folder for the following forms:
+        - MMSE \@ref(Appendix-Surveys-mmse)
+        - Godin-Leisure Time Exercise Questionnaire \@ref(Appendix-Surveys-glteq)
+        - Physical Activity Intake \@ref(Appendix-Surveys-pah)
+        - BFI \@ref(Appendix-Surveys-bfi)
+        - PROMIS Global Health \@ref(Appendix-Surveys-promis)
+        - Lactate Threshold Data Collection Sheet 
+        - Contact Information Form
+        - If you cannot find them or need to print more, you can download the forms you need from the file repository in [RedCap][RedCapURL]. Log in to Frankie or Sara's desktop computer in order to print to the HPL printer. The HPL printer is VV82. 
+    - Label the forms.
+        - Write the patient's study ID number, visit ID, and the date in the upper left corner of each sheet in pen. For Lactate Threshold Visits, the visit ID is `LT`. 
+    - Place the MMSE, GLTEQ, Lactate Threshold Data Collection Sheet, and an extra sheet of blank printer paper on one clipboard. These will be filled out by laboratory staff. 
+    - Place the BFI, PROMIS Global Health, Contact Information Form, and Physical Activity History (Intake) forms on a different clipboard. These will be filled out by the participant. Put a pen with the clipboard for the patient to use when filling out the forms.
 8. Assemble the VO~2~ mask except for the blue rubber part as described in \@ref(Parvo-MaskAssembly). Place the assembled pieces in a sterile pink bucket. 
-9. Prepare the PortaMon as described in \@ref(PortaMon-BeforeDataCollection) by putting in a charged battery, wrapping the PortaMon in plastic saran wrap, and placing the double sided taupe tape. 
-10. If the PARVO has been on for more than 30 minutes, do the gas calibration as described in \@ref(Parvo-Calibration).
-    - Make sure the date and time have been changed before doing the calibration. 
-    - Only save the calibration results if the percent change in CO2 is less than 1%. If the percent change is greater than 1% (either positive or negative change), open the door, turn on the fan, wait ten minutes and try again. If the percent change is greater than 1% and there is no more time, save the most recent gas calibration and make sure to tell Frankie Bennet about it. 
-    - Write down the humidity, room temperature, and barometric pressure from the gas calibration on the data collection sheet. 
-11. Do the flowmeter calibration as described in \@ref(Parvo-Calibration).
-    _ If you do the gas calibration prior to doing the flowmeter calibration, the PARVO software will automatically fill in the humidity, room temperature, and barometric pressure as saved from the gas calibration. 
+9. Prepare the PortaMon. 
+    -  Prepare the device by putting in a charged battery, wrapping the PortaMon in plastic saran wrap, and placing the double sided taupe tape. For more details, see \@ref(PortaMon-BeforeDataCollection). 
+    - Connect the PortaMon to the Oxysoft software as described in \@ref(PortaMon-StartMeasurement) but do not begin data collection. Leave the screen on the pop up where you would click `Finish`.
+12. Run lactate meter controls as described in \@ref(Appendix-Instruments-LactateMeter-Usage-QualityControl).
+14. Get a washcloth out of the cabinet behind the door and put it by the ultrasound to wipe off ultrasound gel during device placement.
+10. Calibrate the PARVO. 
+    - **CHECK THE TIME. THE PARVO COMPUTER MUST HAVE BEEN ON FOR MORE THAN 30 MINUTES TO PROCEED WITH CALIBRATION.**    
+    - **DOUBLE CHECK THAT THE DATE AND TIME ON THE PARVO HAVE BEEN RE-SET BEFORE DOING THE CALIBRATION.**
+    - Do the gas calibration as described in \@ref(Parvo-Calibration).
+    - Only save the calibration results if the percent change in CO~2~ is less than 1%. If the percent change is greater than 1% (either positive or negative change), open the door, turn on the fan, wait ten minutes and try again. If the percent change is greater than 1% and there is no more time, save the most recent gas calibration and make sure to tell Frankie Bennet about it. 
+    - Write down the humidity, room temperature, barometric pressure, and percent change in CO~2~ from the gas calibration on the data collection sheet. 
+    - Do the flowmeter calibration as described in \@ref(Parvo-Calibration).
+    - If you do the gas calibration prior to doing the flowmeter calibration, the PARVO software will automatically fill in the humidity, room temperature, and barometric pressure as saved from the gas calibration.
     - The percent change should be less than 1%. If it is greater than 1%, do not save and try again in 10 minutes. 
 11. Open the exercise test in the PARVOMedics software. 
     - In the first and last name inputs, type in the NIRS ID number and visit ID (`NIRS_ID#_LT_MM_DD_YYYY`). The first and last name inputs will match. 
     - Input the patient's age in the appropriate input section. 
     - You will get the patient's height and weight after they arrive. 
     - Click `Save` in the upper right corner. 
-12. Run lactate meter controls as described in \@ref(Appendix-Instruments-LactateMeter-Usage-QualityControl).
-13. Connect the PortaMon to the Oxysoft software as described in \@ref(PortaMon-StartMeasurement) but do not begin data collection. Leave the screen on the pop up where you would click `Finish`.
-14. Get a washcloth out of the cabinet behind the door and put it by the ultrasound to wipe off ultrasound gel during device placement.
 15. On the stationary bike setting screen, it will display `TODO`. Press the circular button. It should now display `TODO`. Press the circular button again. 
 The screen should display `TODO`.
 16. Approximately 10-15 minutes before the patient is supposed to arrive, send someone to the Cancer Institute lobby to meet them. They will walk the patient up to the Human Performance Lab. 
@@ -111,14 +115,47 @@ Patients must be aware of their situation and fully able to consent to participa
 
 ### After Data Collection {#Methods-LT-after}
 
-1. Pull the saran wrap and tape off of the PortaMon and throw it away.
-2. Remove the PortaMon battery and charge it. 
-3. Wipe down the outside of the PortaMon case with antibacterial wipes. 
-4. Print out the 10-second report of the data collected by the PARVO and place with the other data collection sheets. 
-5. Measure the seat height, seat depth, and pedal length of the stationary bike and record on the data collection sheet. 
-6. Remove the button from the heart rate monitor. Wipe the button down with antibacterial wipes and put the heart rate monitor strap in the pink bucket to be cleaned with the PARVO mask parts. 
-7. Remove all dirty PARVO parts and place in pink bucket. 
-8. Take the pink bucket and put it on the blue cart. Follow the steps described in \@ref() to clean and sanitize the pieces. 
+1. Clean and put away equipment. 
+    - Pull the saran wrap and tape off of the PortaMon and throw it away.
+    - Remove the PortaMon battery and charge it. 
+    - Remove all dirty PARVO parts and place in pink bucket. 
+    - Wipe down the outside of the PortaMon case with antibacterial wipes. 
+    - Remove the button from the heart rate monitor. Wipe the button down with antibacterial wipes and put the heart rate monitor strap in the pink bucket to be cleaned with the PARVO mask parts. 
+    - Take the pink bucket and put it on the blue cart. Follow the steps described in \@ref() to clean and sanitize the pieces. 
+    - Make sure all needles from finger pricks are disposed of in the sharps container. 
+    - Throw away all used gauze and antibacterial wipes.
+2. Save PortaMon data. 
+    - Click `File` in the upper left.
+    - Click `Save project file`. 
+    - Open the Windows File Explorer.
+    - If `NIRS Data` is not under `Quick Access` in the top left, use the following file path to get to the appropriate folder: 
+    `This PC/OS (C:)/Artinis NIRS/NIRS Data`
+    - Find the file just created. Its name will match what was typed in when the measurement was created. It will have the extension `.oxy4`. 
+    - Make a copy of that file. DO NOT delete the file from this location. 
+    - Go to the desktop.
+    - Open the folder `NIRS FILES`.
+    - Open the appropriate patient's folder. 
+    - Save the copy of the measurement in this folder. 
+    - Rename the measurement as needed to match the naming convention within the folder. 
+    - Open RedCap.
+    - Go to the File Repository. 
+    - Open the folder `OXYSOFT`.
+    - Open the folder `Oxy4 Files`.
+    - Open the appropriate patient's folder. 
+    - Upload the `.oxy4` file. 
+3. Save PARVO data. 
+    - Print out the 10-second report of the data collected by the PARVO and place with the other data collection sheets. 
+    - Export the PARVO data as an `.XML` file as "breath by breath".
+    - Since the PARVO computer is not connected to the internet, you must use a USB drive to transfer the files off of the PARVO computer. Make a copy of the exported file and save it on the USB drive.
+    - Safely eject the USB drive from the PARVO computer. 
+    - Use a different computer with internet access to upload the copy of the PARVO file into the RedCap File Repository. 
+    - In the File Repository, open the  `PARVO` folder. 
+    - Open the `Breath by Breath` folder. 
+    - Open the appropriate patient's folder. 
+    - Upload the `.XML` file. 
+4. Save Other data. 
+    - Measure the seat height, seat depth, and pedal length of the stationary bike and record on the data collection sheet. 
+
 
 ## On/Off Kinetics Visit {#Methods-Onoff}
 
@@ -197,3 +234,6 @@ The screen should display `TODO`.
 16. Conduct On/Off Kinetics Exercise Test as described in \@ref(ExerciseTesting-Onoff).
 17. Take the mask off the patient's face. Help the patient get off the bike. Remove the NIRS device and the heart rate monitor.
 18. Walk the patient back down to the lobby. Thank them for their time and participation. 
+
+
+[RedCapURL]:https://redcap.prismahealth.org

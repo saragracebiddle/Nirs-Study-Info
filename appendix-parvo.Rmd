@@ -6,91 +6,181 @@ The [TrueOne](http://www.parvo.com/) Metabolic Cart by ParvoMedics measures maxi
 
 The computer that has the ParvoMedics software installed is not connected to the internet in any way. It has Windows 7. **Never connect this computer to the internet or update Windows.** This would require attaining approval to install the ParvoMedics software on PrismaHealth computers, which would take several months. The ParvoMedics software is not frequently updated and Windows updates could break the installation. Everything works as it is, and if it ain't broke, don't fix it.
 
-## Software {#Parvo-Software}
+After logging in, you need to manually set the date and time to today's date and time. If you do not manually set the date and time, the data collection software will use the incorrect date and time and will save the data as such, which will make it difficult to locate later.
 
 ## Before Data Collection {#Parvo-BeforeDataCollection}
 
+1. At least an hour prior to the time the participant is scheduled to arrive, turn on the metabolic cart by flipping the power switch on the extension cord at the back of the cart. 
+2. Turn on the computer monitor and wait for the screen to load.
+3. Press `F1`.
+4. Enter the password to log in. 
+5. The PARVOMedics software will open automatically.
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(
+  c(
+    "images/PARVO_home_screen.png"
+  )
+)
+```
+6. Set the date and time on the PARVO computer. 
+    - In the bottom right, click on the date and open the date and time settings.
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(
+  c(
+    "images/parvoDateAndTime/open_date_and_time_settings.png"
+    
+    
+  )
+)
+```
+    - Click `Change date and time...`
+    - Change the date and time to the current day and time. 
+```{r, echo = F, out.width = "50%"}
+knitr::include_graphics(
+  c(
+    "images/parvoDateAndTime/change_date_and_time.png",
+    "images/parvoDateAndTime/changed_date_and_time.png"
+  )
+)
+```
+    - Click `OK` to save and close the panel. 
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(
+  c(
+    "images/parvoDateAndTime/changed_date_and_time_2.png"
+  )
+)
+```
+    - Check that the date and time are correct. 
+    - Click `OK` to save and close the panel.
+7. Set up the filter and tubing to connect to the gas chamber. 
+    - Get a new purple filter from the box of filters by the window to the right of the TV.
+        - Pull the filter out of the packaging and throw away the plastic bag and extra gray tube in the package. 
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(
+  c(
+    "images/parvoCalibration/A1_filter_package.jpg"
+  )
+)
+```
+    - Get the following pieces from the baskets on the top of the black cabinet behind the lab door:
+        - Spit tube
+        - White connector piece for the spit tube
+        - Gray rubber adapter
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(
+  c(
+    "images/parvoCalibration/A2_adapter_pieces.jpg"
+  )
+)
+```
+    - Screw the spit tube into the white connector piece. If the spit tube refuses to screw in, try the other spit tube. One of them has damaged screw threads and will be difficult. 
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(
+  c(
+    "images/parvoCalibration/A2_adapter_pieces_2.jpg"
+  )
+)
+```
+    - Put the short end of the filter into the pneumotach side of the mixing chamber on the second shelf of the PARVO computer cart.   
+```{r, echo = F, out.width = "33%"}
+knitr::include_graphics(
+  c(
+    "images/parvoCalibration/A3_mixing_chamber.jpg",
+    "images/parvoCalibration/A4_filter.jpg",
+    "images/parvoCalibration/A4_filter_sideview.jpg"
+  )
+)
+```
+    - Put the end of the adapter that has spirals around the inside on the long end of the purple filter sticking out of the pneumotach side of the mixing chamber.
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(
+  c(
+    "images/parvoCalibration/A5_grayrubber.jpg"
+  )
+)
+```
+    - Connect one end of the white connector piece to the end of the gray rubber adapter that is smooth on the inside. 
+```{r, echo = F, out.width = "50%"}
+knitr::include_graphics(
+  c(
+    "images/parvoCalibration/A6_spittube.jpg",
+    "images/parvoCalibration/A6_spittube_sideview.jpg"
+  )
+)
+```
+    - Get a long piece of clear tubing from the back of the black cabinet behind the door of the lab. 
+    - Connect one end of the tubing to the white connector piece with the spit tube. Hang the other end of the tubing from the adjustable arm on the PARVO computer cart. 
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(
+  c(
+    "images/parvoCalibration/A7_tubing.jpg"
+  )
+)
+```
+    
+    
 ### Calibration {#Parvo-Calibration}
 
-In order to conduct calibration, the cart must have been powered on for *at least 30 minutes*.
-Turn on the cart by flipping the switch on the power strip on the back of the cart.
+In order to conduct calibration, the cart must have been powered on for **at least 30 minutes**.
 
-Log in using the password taped to the cart under the keyboard.
-
-The computer on the cart is not connected to the internet. After logging in, you need to manually set the date and time to today's date and time. If you do not manually set the date and time, the data collection software will use the incorrect date and time and will save the data as such, which will make it difficult to locate later.
-
-Open the ParvoMedics software.
-
-Ensure the filter and other pieces are connected to the gas analyzer as shown below:
-
-*TODO* add picture
-
-#### Flowmeter Calibration {#ParvoCalibration-Flowmeter}
-
-Select 'Flowmeter Calibration' from the software home page.
-
-Enter room temperature (Celcius), barometric pressure (mmHg), and room humidity (%) from the Davis Vantage Vue on Sara Biddle's desk. 
-
-Get a piece of long clear tubing from Parvo equipment cabinet behind the door. The calibration syringe and connection piece are located in the third shelf on the Parvo cart. 
-
-Connect one end of the tubing to the clear end of the connection piece. 
-
-```{r, echo = F, out.width = "100%"}
-knitr::include_graphics(
-  c(
-    "images/parvocalibration/connector_piece.jpg"
-  )
-)
-```
-
-
-Connect the other end of the tubing into the gas analyzer module. 
-
-Connect the white end of the connection piece to the mouth of the calibration syringe.
-
-```{r, echo = F, out.width = "100%"}
-knitr::include_graphics(
-  c(
-    "images/parvocalibration/connect_syringe.jpg"
-  )
-)
-```
-
-Get Frankie Benett to help with the actual flowmeter calibration.
+Ensure the filter and other pieces are connected to the gas analyzer as shown above.
 
 #### Gas Calibration {#Parvo-Calibration-Gas}
 
-Select 'Gas Calibration' from the software home screen.
-
-Enter room temperature (Celcius), barometric pressure (mmHg), and room humidity (%) from the Davis Vantage Vue on Sara Biddle's desk. 
-
-Click 'OK'.
-
-When prompted, find the sample gas (gas container on the bottom left of the cart) and rotate the black handle on top of the gas container counter-clockwise until you cannot turn it anymore. Do not turn the black knob that is taped in place.
-
+1. Select `Gas Calibration` from the software home screen.
+2. Enter room temperature (Celcius), barometric pressure (mmHg), and room humidity (%) from the Davis Vantage Vue on Sara Biddle's desk. 
 ```{r, echo = F, out.width = "100%"}
 knitr::include_graphics(
   c(
-    "images/parvocalibration/gas_on.jpg"
+    "images/parvoGasCalibration/1_open_gas_calibration.png",
+    "images/parvoCalibration/vantage_vue.jpg"
   )
 )
 ```
-
-
-Click 'OK' and wait for the next prompt on the screen. 
-
-Rotate the black handle on top of the gas container clockwise as far as you can to the "OFF" position. 
-
+3. Click `OK`.
+4. When prompted, turn on the sample gas. 
 ```{r, echo = F, out.width = "100%"}
 knitr::include_graphics(
   c(
-    "images/parvocalibration/gas_off.jpg"
+    "images/parvoGasCalibration/3_pop_up.png"
   )
 )
 ```
-
-
-Click 'OK' to see calibration results.
+    - find the sample gas (gas container on the bottom left of the cart)
+    - rotate the black handle on top of the gas container counter-clockwise until you cannot turn it anymore. Do not turn the black knob that is taped in place.
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(
+  c(
+    "images/parvoCalibration/gas_on.jpg"
+  )
+)
+```
+    - Click `OK`. 
+5. The computer will go through several countdown screens. Wait until the prompt to turn off the gas comes up. 
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(
+  c(
+    "images/parvoGasCalibration/5_turn_off_gas.png"
+  )
+)
+```
+6. Rotate the black handle on top of the gas container clockwise as far as you can to the "OFF" position. 
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(
+  c(
+    "images/parvoCalibration/gas_off.jpg"
+  )
+)
+```
+7. Click 'OK' to see calibration results.
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(
+  c(
+    "images/parvoGasCalibration/6_gas_cal_high.png"
+  )
+)
+```
 
 DO NOT SAVE results if the percentage is greater than 1%. This means that this calibration differs from the last calibration by more than we want. If you save the results, since it is a percentage change from the last calibration, the next calibration will have to decrease by greater than 1%. 
 
@@ -108,6 +198,104 @@ When the gas calibration results in less than 1% change from the previous calibr
 
 If you have tried all of the steps above and the gas calibration still results in greater than 1% change from the previous calibration and you are out of time, save the gas calibration results. After the participant leaves, you can try to redo the gas calibration to get back under the 1% change from the previous calibration. There are several reasons that the calibration will still result in a difference greater than 1%, such as the weather, issues with the air conditioning, and more. The only things we can do to prevent issues with the calibration is limit the number of people in the lab. Have extra people stand out in the hallway or try to schedule fewer people to come in to the lab. 
 
+#### Flowmeter Calibration {#ParvoCalibration-Flowmeter}
+
+The flowmeter calibration consists of three phases. 
+
+The first phase is the **Detection** phase. This is one flush of the syringe for the software to ensure that the flushes are detected at all. 
+
+The second phase is the **Flushes** phase. This is four flushes of the calibration syringe. These can be practice flushes for the calibration flushes. The speed of the flushes does not matter and these flushes are not saved as part of the calibration.
+
+The third phase is the **Strokes** phase. This is five flushes of the calibration syringe. The flushes must each be a certain speed.
+It is generally easiest to start with the slower speeds and increase with each flush.
+At the end of a flush, a line of white dots will come across the screen at the maximum value of the flush.
+When you successfully match the flush speed, the blue bar corresponding to that flush speed will disappear. 
+
+\\TODO finish flowmeter calibration description of steps and flushes. 
+
+
+
+
+
+1. Connect tubing to the calibration syringe.
+    - The purple filter and the spit tube should already be placed on the end of the gas mixing chamber on the second shelf of the PARVO computer cart. 
+    - Connect one end of the tubing on the end of the spit tube adapter piece. 
+    - Get the calibration syringe from the third shelf of the PARVO computer cart and put it on the top of the desk for easier use. 
+    - Get the syringe adapter from the third shelf of the PARVO computer cart. This piece will resemble parts of the mask that we prepare for participant's to wear. It is slightly different, as instead of the semi-transparent circle piece that the blue rubber mask is connected to, there is a white circle piece. 
+    - Connect the clear end of the syringe mask adapter to the other end of the tubing. 
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(
+  c(
+    "images/parvoCalibration/connector_piece.jpg"
+  )
+)
+```
+    - Connect the white end of the syringe mask adapter to the rubber on the end of the syringe. 
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(
+  c(
+    "images/parvoCalibration/connect_syringe.jpg"
+  )
+)
+```
+2. Select 'Flowmeter Calibration' from the software home page.
+3. Check the atmospheric variables. 
+    - If the gas calibration was completed prior to the flowmeter calibration, the atmospheric variables should be the same as what you entered for the gas calibration. If the gas calibration was not completed prior to the flowmeter calibration, go back and do the gas calibration first. 
+    - Check the room temperature (Celcius),room humidity (%), and barometric pressure (mmHg) inputs match the Davis Vantage Vue on Sara Biddle's desk. 
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(
+  c(
+    "images/parvoFlowCalibration/1_flow_cal_variables.png",
+    "images/parvoCalibration/vantage_vue.jpg"
+  )
+)
+```
+    - If the atmospheric variables match the vantage vue, click `Sample Baseline`. 
+4. The Flowmeter Calibration will start. 
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(
+  c(
+    "images/parvoFlowCalibration/2_flow_cal_screen.png"
+  )
+)
+```
+    - Detection Phase
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(
+  c(
+    "images/parvoFlowCalibration/3_flow_cal_detection.png"
+  )
+)
+```    
+    - Flushes Phase
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(
+  c(
+    "images/parvoFlowCalibration/4_flow_cal_flushes.png"
+  )
+)
+```
+    - Strokes Phase  
+```{r, echo = F, out.width = "25%"}
+knitr::include_graphics(
+  c(
+    "images/parvoFlowCalibration/5_flow_cal_1.png",
+    "images/parvoFlowCalibration/5_flow_cal_2.png",
+    "images/parvoFlowCalibration/5_flow_cal_3.png",
+    "images/parvoFlowCalibration/5_flow_cal_4.png"
+  )
+)
+```    
+    - After the fifth successful stroke, the software will immediately display the calibration results.
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(
+  c(
+    "images/parvoFlowCalibration/6_flow_cal_results.png"
+  )
+)
+```
+    - Check that the percent difference is less than 1%. If the absolute value of the percent difference is less than 1, click `Save`. If the absolute value of the percent difference is greater than one, click `Cancel` and try the flowmeter calibration again a few minutes later.  
+   
 ### Mask Sizing {#Parvo-MaskSizing}
 
 - Find the mask size guide in the caddy that sits on the wheeled cart that sits next to the ultrasound. 
@@ -129,8 +317,8 @@ Pink buckets and mask parts are sterile and should NOT be touched without gloves
 ```{r, echo = FALSE, out.width = "50%"}
 knitr::include_graphics(
   c(
-    "images/maskassembly/01_all_mask_parts.jpg",
-    "images/maskassembly/01_all_mask_parts_view2.jpg"
+    "images/parvoMaskAssembly/01_all_mask_parts.jpg",
+    "images/parvoMaskAssembly/01_all_mask_parts_view2.jpg"
   )
 )
 ```
@@ -144,10 +332,10 @@ knitr::include_graphics(
 ```{r, echo = F, out.width = "25%"}
 knitr::include_graphics(
   c(
-    "images/maskassembly/02_show_direction.jpg",
-    "images/maskassembly/02_show_pull_over_lip.jpg",
-    "images/maskassembly/02_show_pulled_over_lip.jpg",
-    "images/maskassembly/02_show_air_flow_direction.jpg"
+    "images/parvoMaskAssembly/02_show_direction.jpg",
+    "images/parvoMaskAssembly/02_show_pull_over_lip.jpg",
+    "images/parvoMaskAssembly/02_show_pulled_over_lip.jpg",
+    "images/parvoMaskAssembly/02_show_air_flow_direction.jpg"
   )
 )
 ```
@@ -158,8 +346,8 @@ knitr::include_graphics(
 
 ```{r, echo = F, out.width = "50%"}
 knitr::include_graphics(c(
-  "images/maskassembly/04_show_direction.jpg",
-  "images/maskassembly/04_show_placement.jpg"
+  "images/parvoMaskAssembly/04_show_direction.jpg",
+  "images/parvoMaskAssembly/04_show_placement.jpg"
 ))
 ```
 
@@ -170,8 +358,8 @@ knitr::include_graphics(c(
 
 ```{r, echo = F, out.width = "50%"}
 knitr::include_graphics(c(
-  "images/maskassembly/05_show_direction.jpg",
-  "images/maskassembly/05_show_together.jpg"
+  "images/parvoMaskAssembly/05_show_direction.jpg",
+  "images/parvoMaskAssembly/05_show_together.jpg"
 ))
 ```
 
@@ -180,8 +368,8 @@ knitr::include_graphics(c(
 
 ```{r, echo = F, out.width = "50%"}
 knitr::include_graphics(c(
-  "images/maskassembly/06_show_direction.jpg",
-  "images/maskassembly/06_show_together.jpg"
+  "images/parvoMaskAssembly/06_show_direction.jpg",
+  "images/parvoMaskAssembly/06_show_together.jpg"
 ))
 ```
 
@@ -189,7 +377,7 @@ knitr::include_graphics(c(
 
 ```{r, echo = F, out.width = "100%"}
 knitr::include_graphics(c(
-  "images/maskassembly/07_show_together.jpg"
+  "images/parvoMaskAssembly/07_show_together.jpg"
 ))
 ```
 
@@ -197,9 +385,9 @@ knitr::include_graphics(c(
 
 ```{r, echo = F, out.width = "33%"}
 knitr::include_graphics(c(
-  "images/maskassembly/09_show_direction.jpg",
-  'images/maskassembly/09_show_together.jpg',
-  'images/maskassembly/09_show_together_view_2.jpg'
+  "images/parvoMaskAssembly/09_show_direction.jpg",
+  'images/parvoMaskAssembly/09_show_together.jpg',
+  'images/parvoMaskAssembly/09_show_together_view_2.jpg'
 ))
 ```
 
@@ -209,7 +397,7 @@ knitr::include_graphics(c(
 
 ```{r, echo = F, out.width = "100%"}
 knitr::include_graphics(c(
-  "images/maskassembly/10_show_mask_size.jpg"
+  "images/parvoMaskAssembly/10_show_mask_size.jpg"
 ))
 ```
 
@@ -224,7 +412,7 @@ knitr::include_graphics(c(
 ## is actually facing the left
 
 knitr::include_graphics(c(
-  "images/maskassembly/11_show_direction.jpg"
+  "images/parvoMaskAssembly/11_show_direction.jpg"
 ))
 ```
 
@@ -234,8 +422,8 @@ knitr::include_graphics(c(
     
 ```{r, echo = F, out.width = "50%"}
 knitr::include_graphics(c(
-  "images/maskassembly/11_show_bad_seal.jpg",
-  "images/maskassembly/11_show_good_seal.jpg"
+  "images/parvoMaskAssembly/11_show_bad_seal.jpg",
+  "images/parvoMaskAssembly/11_show_good_seal.jpg"
 ))
 ```
     
@@ -249,22 +437,38 @@ If the watch is having issues connecting with the heart rate monitor, you can ch
 
 ## Data Collection {#Parvo-DataCollection}
 
-Select 'Metabolic Testing'.
-
+1. Select `VO2/Metabolic Testing`.
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(c(
+  "images/parvoTesting/1_vo2mettest.png"
+))
+```
+    - Enter the patient's study ID number as the last name.
+    - Enter the testing ID as the first name. The testing ID for lactate thresholds is "LT". The testing ID for On/Off Kinetics is "FP_CYCLE#".
 Enter the following as BOTH the first and last name:
+    - Enter the participant's height, weight, and age.
+    - Check that the atmospheric variables match the Vantage Vue on the desk. 
+    - Check that the selected value under *Test Degree* is **Submaximal**, that *Excercise Device* is **Bike**, and *Heart Rate/ECG* is **Active**.
+    - Click `OK`.
+2. Select the testing protocol. 
+    - Lactate Threshold Test
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(c(
+  "images/parvoTesting/3_lactatethreshold.png"
+))
+```
+        - Under *Protocol Selection*, make sure **NIRS Lactate Protocol** is selected.
+        - Input appropriate wattage jumps as decided by the study staff.
+    - On/Off Kinetics Test
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(c(
+  "images/parvoTesting/2_onoffkinetics.png"
+))
+```
+        - Under *Protocol Selection*, make sure that **NIRS Exercise Protocol** is selected. 
+        - Input the appropriate wattage for work stages, as determined after lactate threshold testing. 
+        - Click `OK` and wait for the software to start the test. 
 
-"NIRS_patientidnumber_protocoltypeprotocolnumber_protocoldate"
-
-For example, patient ID 003 participating in the second on/off kinetics on 11/12/2023 would look like:
-"NIRS_003_FP2_11_15_2023"
-
-Enter the participant's height, weight, and age.
-
-Select the testing protocol: NIRS Lactate Theshold or NIRS Full Protocol.
-
-Enter appropriate testing wattage.
-
-Click 'OK' and wait for the software to start the test.
 
 When testing is complete, click 'end test'.
 
@@ -276,7 +480,75 @@ Check that the report will be printed with 10-second averages. Click 'config' in
 
 ### Data Export {#Parvo-DataExport}
 
-The ParvoMedics software only exports metabolic cart data as Excel files. Select the data collection instance you wish to export and save it as an Excel file on the cart. Use a USB drive to transfer the Excel file from the Parvo cart to another caomputer. Since the Parvo cart is not connected to the internet and never gets Windows or any other software updates, the Excel format is a legacy format. You will have to manually open the Excel file and save it as a modern Excel format. 
+The ParvoMedics software can export the data as Excel files or XML. The Excel files it creates use an old version of Excel, the 97-2003 version. If you try to open this file on an up to date computer, your computer will think you are trying to kill it with a virus. To open the Excel files, you will need to re-save it as an updated Excel file.  
+
+The XML files do not need to be opened and re-saved as up-to-date files, however they are more difficult to work with than Excel files. 
+
+Export each dataset as both XML and Excel. That way, the person doing data analysis can choose the file format they prefer without having to go back and export all the files again. 
+
+Save exported files to a USB drive. The PARVO computer is not connected to the internet so the files cannot be directly uploaded to RedCap and must first be transferred to a computer with an internet connection.
+
+Make sure to use the Windows prompt to safely eject the USB drive. Many newer computers have some sort of auto setting to safely eject hardware, but this computer is old and has not been updated in some time. Always eject safely to protect the computer and the data on the hard drive. 
+
+
+1. From the home screen, select `Reports`.
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(c(
+  "images/parvoExportFiles/1_open_reports.png"
+))
+```
+2. Select the measurement you want to export. 
+3. Click `Text Report`.
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(c(
+  "images/parvoExportFiles/2_open_text_report.png"
+))
+```
+4. Check that the text report header has the correct information for the patient. 
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(c(
+  "images/parvoExportFiles/3_check_text_report.png"
+))
+```
+    - If the information is correct, proceed to step 5. 
+    - If the information is incorrect, proceed through the next steps. 
+    - Close the text report.
+    - Click `Edit Info`.
+    - Change the information that needs to be corrected. 
+    - Save the changes. 
+5. Click `Config`.
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(c(
+  "images/parvoExportFiles/4_config_breath_by_breath.png"
+))
+```
+6. By *Data Averaging*, select **Single Breath** from the drop down.
+7. Click `OK`.
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(c(
+  "images/parvoExportFiles/5_export_text_report.png"
+))
+```
+    - If the single breath averaging was applied correctly, the `TIME` column in the data will show one row for each breath. The time between breaths will vary, but will generally be less than five seconds. 
+8. Click `XML Export`. 
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(c(
+  "images/parvoExportFiles/6_rename_export_file.png"
+))
+```
+9. The software automatically chooses a name for the file using the first and last name and the date of the testing. Re-name it to something easier to read using the usual pattern. 
+10. Select an appropriate location to save the file. Normally in a USB drive.
+```{r, echo = F, out.width = "100%"}
+knitr::include_graphics(c(
+  "images/parvoExportFiles/7_renamed_export_file.png"
+))
+```
+11. Click `Save`. 
+12. Close open panels. 
+13. Safely eject the USB drive. 
+    - Click on the icon in the bottom right of the screen. 
+    - Click `safely eject hardware`. 
+    - When it is safe, pull out the USB drive. 
 
 ### Cleaning Equipment {#Parvo-CleanEquipment}
 

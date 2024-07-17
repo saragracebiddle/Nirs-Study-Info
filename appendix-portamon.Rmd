@@ -67,9 +67,13 @@ Oxysoft has been approved to be on Sara Biddle's PrismaHealth desktop computer b
 
 If you wish to install Oxysoft on a personal computer or have been approved to install Oxysoft on an organization's computer, plug the yellow Artinis Oxysoft USB into the computer and run the installer. 
 
-- Oxysoft uses a legacy Bluetooth dongle to connect to the PortaMon. This makes using Oxysoft on a computer with the most up to date Windows difficult. It is easier to collect data on the ASUS laptops, which are default configured to use the Bluetooth dongle, and then export the data for analysis. 
+Oxysoft uses a legacy Bluetooth dongle to connect to the PortaMon. This makes using Oxysoft on a computer with the most up to date Windows difficult. It is easier to collect data on the ASUS laptops, which are default configured to use the Bluetooth dongle, and then export the data for analysis. 
 
-- Oxysoft creates files with the extension `.oxy4` for every new measurement. 
+When you open Oxysoft, the software will default open the most recently open project. The project is kind of like a folder that contains individual measurements. When you create a new measurement, the project will save the name of the measurement and the file path to where the `.oxy4` file of the measurement was saved. If you do not save the project before closing Oxysoft, the project will forget that you added a new measurement. The `.oxy4` file will still exist, but you will not be able to find the measurement in the project. 
+
+Oxysoft creates files with the extension `.oxy4` for every new measurement. 
+
+
 
 ## Batteries {#PortaMon-Batteries}
 
@@ -339,6 +343,23 @@ knitr::include_graphics(c(
 ```
 
 ## After Data Collection {#PortaMon-AfterDataCollection}
+
+- Save the project file.
+    - Click `File` and `Save Project File`
+    - The project file must be saved with the new measurements before closing Oxysoft or turning off the computer. Otherwise, the project file will not have the new measurement when Oxysoft is reopened. 
+- Save a copy of the `.oxy4` file in the patient's folder on the desktop.
+    - Open the Windows file manager.
+    - Open the `NIRS Data` folder.
+    - Find the new `.oxy4` file created for this measurement.
+    - Copy the file.
+    - Open the patient's data folder. 
+    - Put the copied file in the patient's data folder. 
+    - If necessary, rename the file to match the rest of the files in the folder. 
+- Save a copy of the `.oxy4` file in the patient's folder in RedCap.
+    - Open RedCap.
+    - Go to the File Repository. 
+    - In the OXYSOFT folder, open the OXY4 Files folder.
+    - In the appropriate patient's folder, upload the file that was just saved in the patient's folder on the desktop. 
 
 ### Change Measurement Properties {#PortaMon-ChangeProperties}
 
