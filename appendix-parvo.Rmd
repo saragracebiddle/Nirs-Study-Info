@@ -100,7 +100,7 @@ knitr::include_graphics(
   )
 )
 ```
-    - Connect one end of the white connector piece to the end of the gray rubber adapter that is smooth on the inside. 
+    - Connect one end of the white connector piece to the end of the gray rubber adapter that is smooth on the inside.  
 ```{r, echo = F, out.width = "50%"}
 knitr::include_graphics(
   c(
@@ -110,7 +110,7 @@ knitr::include_graphics(
 )
 ```
     - Get a long piece of clear tubing from the back of the black cabinet behind the door of the lab. 
-    - Connect one end of the tubing to the white connector piece with the spit tube. Hang the other end of the tubing from the adjustable arm on the PARVO computer cart. 
+    - Connect one end of the tubing to the white connector piece with the spit tube. Hang the other end of the tubing from the adjustable arm on the PARVO computer cart.  
 ```{r, echo = F, out.width = "100%"}
 knitr::include_graphics(
   c(

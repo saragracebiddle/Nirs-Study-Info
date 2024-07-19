@@ -23,7 +23,7 @@
 <meta name="author" content="Sara Grace Biddle" />
 
 
-<meta name="date" content="2024-07-15" />
+<meta name="date" content="2024-07-18" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -52,8 +52,77 @@
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<link href="libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
+<script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="libs/viz-1.8.2/viz.js"></script>
+<link href="libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
+<script src="libs/grViz-binding-1.0.11/grViz.js"></script>
 
 
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 <style type="text/css">
   
@@ -155,38 +224,36 @@ div.csl-indent {
 <li class="chapter" data-level="A" data-path="PortaMon.html"><a href="PortaMon.html"><i class="fa fa-check"></i><b>A</b> PortaMon</a>
 <ul>
 <li class="chapter" data-level="A.1" data-path="PortaMon.html"><a href="PortaMon.html#PortaMon-Specs"><i class="fa fa-check"></i><b>A.1</b> Specifications</a></li>
-<li class="chapter" data-level="A.2" data-path="PortaMon.html"><a href="PortaMon.html#Oxysoft"><i class="fa fa-check"></i><b>A.2</b> Oysoft</a></li>
+<li class="chapter" data-level="A.2" data-path="PortaMon.html"><a href="PortaMon.html#Oxysoft"><i class="fa fa-check"></i><b>A.2</b> Oxysoft</a></li>
 <li class="chapter" data-level="A.3" data-path="PortaMon.html"><a href="PortaMon.html#PortaMon-Batteries"><i class="fa fa-check"></i><b>A.3</b> Batteries</a></li>
-<li class="chapter" data-level="A.4" data-path="PortaMon.html"><a href="PortaMon.html#PortaMon-BeforeDataCollection"><i class="fa fa-check"></i><b>A.4</b> Before Data Collection</a>
+<li class="chapter" data-level="A.4" data-path="PortaMon.html"><a href="PortaMon.html#PortaMon-Bluetooth"><i class="fa fa-check"></i><b>A.4</b> Bluetooth</a></li>
+<li class="chapter" data-level="A.5" data-path="PortaMon.html"><a href="PortaMon.html#PortaMon-Prep"><i class="fa fa-check"></i><b>A.5</b> Instrument Preparation</a></li>
+<li class="chapter" data-level="A.6" data-path="PortaMon.html"><a href="PortaMon.html#PortaMon-StartMeasurement"><i class="fa fa-check"></i><b>A.6</b> Start a Measurement</a></li>
+<li class="chapter" data-level="A.7" data-path="PortaMon.html"><a href="PortaMon.html#PortaMon-Placement"><i class="fa fa-check"></i><b>A.7</b> Placement on Vastus Lateralis</a></li>
+<li class="chapter" data-level="A.8" data-path="PortaMon.html"><a href="PortaMon.html#PortaMon-DataCollection"><i class="fa fa-check"></i><b>A.8</b> During Data Collection</a></li>
+<li class="chapter" data-level="A.9" data-path="PortaMon.html"><a href="PortaMon.html#PortaMon-AfterDataCollection"><i class="fa fa-check"></i><b>A.9</b> Save Measurement</a></li>
+<li class="chapter" data-level="A.10" data-path="PortaMon.html"><a href="PortaMon.html#PortaMon-ChangeProperties"><i class="fa fa-check"></i><b>A.10</b> Change Measurement Properties</a></li>
+<li class="chapter" data-level="A.11" data-path="PortaMon.html"><a href="PortaMon.html#PortaMon-DataExport"><i class="fa fa-check"></i><b>A.11</b> Data Export</a>
 <ul>
-<li class="chapter" data-level="A.4.1" data-path="PortaMon.html"><a href="PortaMon.html#PortaMon-Prep"><i class="fa fa-check"></i><b>A.4.1</b> Instrument Preparation for Data Collection</a></li>
-<li class="chapter" data-level="A.4.2" data-path="PortaMon.html"><a href="PortaMon.html#bluetooth-troubleshooting"><i class="fa fa-check"></i><b>A.4.2</b> Bluetooth Troubleshooting</a></li>
-<li class="chapter" data-level="A.4.3" data-path="PortaMon.html"><a href="PortaMon.html#PortaMon-StartMeasurement"><i class="fa fa-check"></i><b>A.4.3</b> Start a Measurement</a></li>
-<li class="chapter" data-level="A.4.4" data-path="PortaMon.html"><a href="PortaMon.html#PortaMon-Placement"><i class="fa fa-check"></i><b>A.4.4</b> Instrument Placement on Vastus Lateralis</a></li>
-</ul></li>
-<li class="chapter" data-level="A.5" data-path="PortaMon.html"><a href="PortaMon.html#PortaMon-DataCollection"><i class="fa fa-check"></i><b>A.5</b> During Data Collection</a></li>
-<li class="chapter" data-level="A.6" data-path="PortaMon.html"><a href="PortaMon.html#PortaMon-AfterDataCollection"><i class="fa fa-check"></i><b>A.6</b> After Data Collection</a>
-<ul>
-<li class="chapter" data-level="A.6.1" data-path="PortaMon.html"><a href="PortaMon.html#PortaMon-ChangeProperties"><i class="fa fa-check"></i><b>A.6.1</b> Change Measurement Properties</a></li>
-<li class="chapter" data-level="A.6.2" data-path="PortaMon.html"><a href="PortaMon.html#PortaMon-DataExport"><i class="fa fa-check"></i><b>A.6.2</b> Data Export</a></li>
+<li class="chapter" data-level="A.11.1" data-path="PortaMon.html"><a href="PortaMon.html#PortaMon-Export-Options"><i class="fa fa-check"></i><b>A.11.1</b> Options</a></li>
+<li class="chapter" data-level="A.11.2" data-path="PortaMon.html"><a href="PortaMon.html#PortaMon-Export-Steps"><i class="fa fa-check"></i><b>A.11.2</b> Steps</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="B" data-path="Parvo.html"><a href="Parvo.html"><i class="fa fa-check"></i><b>B</b> ParvoMedics TrueOne 2400</a>
 <ul>
 <li class="chapter" data-level="B.1" data-path="Parvo.html"><a href="Parvo.html#Parvo-Specs"><i class="fa fa-check"></i><b>B.1</b> Specifications</a></li>
-<li class="chapter" data-level="B.2" data-path="Parvo.html"><a href="Parvo.html#Parvo-Software"><i class="fa fa-check"></i><b>B.2</b> Software</a></li>
-<li class="chapter" data-level="B.3" data-path="Parvo.html"><a href="Parvo.html#Parvo-BeforeDataCollection"><i class="fa fa-check"></i><b>B.3</b> Before Data Collection</a>
+<li class="chapter" data-level="B.2" data-path="Parvo.html"><a href="Parvo.html#Parvo-BeforeDataCollection"><i class="fa fa-check"></i><b>B.2</b> Before Data Collection</a>
 <ul>
-<li class="chapter" data-level="B.3.1" data-path="Parvo.html"><a href="Parvo.html#Parvo-Calibration"><i class="fa fa-check"></i><b>B.3.1</b> Calibration</a></li>
-<li class="chapter" data-level="B.3.2" data-path="Parvo.html"><a href="Parvo.html#Parvo-MaskSizing"><i class="fa fa-check"></i><b>B.3.2</b> Mask Sizing</a></li>
-<li class="chapter" data-level="B.3.3" data-path="Parvo.html"><a href="Parvo.html#Parvo-MaskAssembly"><i class="fa fa-check"></i><b>B.3.3</b> Mask Assembly</a></li>
-<li class="chapter" data-level="B.3.4" data-path="Parvo.html"><a href="Parvo.html#Parvo-HeartRateMonitor"><i class="fa fa-check"></i><b>B.3.4</b> Heart Rate Monitor</a></li>
+<li class="chapter" data-level="B.2.1" data-path="Parvo.html"><a href="Parvo.html#Parvo-Calibration"><i class="fa fa-check"></i><b>B.2.1</b> Calibration</a></li>
+<li class="chapter" data-level="B.2.2" data-path="Parvo.html"><a href="Parvo.html#Parvo-MaskSizing"><i class="fa fa-check"></i><b>B.2.2</b> Mask Sizing</a></li>
+<li class="chapter" data-level="B.2.3" data-path="Parvo.html"><a href="Parvo.html#Parvo-MaskAssembly"><i class="fa fa-check"></i><b>B.2.3</b> Mask Assembly</a></li>
+<li class="chapter" data-level="B.2.4" data-path="Parvo.html"><a href="Parvo.html#Parvo-HeartRateMonitor"><i class="fa fa-check"></i><b>B.2.4</b> Heart Rate Monitor</a></li>
 </ul></li>
-<li class="chapter" data-level="B.4" data-path="Parvo.html"><a href="Parvo.html#Parvo-DataCollection"><i class="fa fa-check"></i><b>B.4</b> Data Collection</a></li>
-<li class="chapter" data-level="B.5" data-path="Parvo.html"><a href="Parvo.html#Parvo-AfterDataCollection"><i class="fa fa-check"></i><b>B.5</b> After Data Collection</a>
+<li class="chapter" data-level="B.3" data-path="Parvo.html"><a href="Parvo.html#Parvo-DataCollection"><i class="fa fa-check"></i><b>B.3</b> Data Collection</a></li>
+<li class="chapter" data-level="B.4" data-path="Parvo.html"><a href="Parvo.html#Parvo-AfterDataCollection"><i class="fa fa-check"></i><b>B.4</b> After Data Collection</a>
 <ul>
-<li class="chapter" data-level="B.5.1" data-path="Parvo.html"><a href="Parvo.html#Parvo-DataExport"><i class="fa fa-check"></i><b>B.5.1</b> Data Export</a></li>
-<li class="chapter" data-level="B.5.2" data-path="Parvo.html"><a href="Parvo.html#Parvo-CleanEquipment"><i class="fa fa-check"></i><b>B.5.2</b> Cleaning Equipment</a></li>
+<li class="chapter" data-level="B.4.1" data-path="Parvo.html"><a href="Parvo.html#Parvo-DataExport"><i class="fa fa-check"></i><b>B.4.1</b> Data Export</a></li>
+<li class="chapter" data-level="B.4.2" data-path="Parvo.html"><a href="Parvo.html#Parvo-CleanEquipment"><i class="fa fa-check"></i><b>B.4.2</b> Cleaning Equipment</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="C" data-path="Appendix-Surveys.html"><a href="Appendix-Surveys.html"><i class="fa fa-check"></i><b>C</b> Surveys</a>
@@ -334,11 +401,11 @@ div.csl-indent {
 <li>Place the MMSE, GLTEQ, Lactate Threshold Data Collection Sheet, and an extra sheet of blank printer paper on one clipboard. These will be filled out by laboratory staff.</li>
 <li>Place the BFI, PROMIS Global Health, Contact Information Form, and Physical Activity History (Intake) forms on a different clipboard. These will be filled out by the participant. Put a pen with the clipboard for the patient to use when filling out the forms.</li>
 </ul></li>
-<li>Assemble the VO<sub>2</sub> mask except for the blue rubber part as described in <a href="Parvo.html#Parvo-MaskAssembly">B.3.3</a>. Place the assembled pieces in a sterile pink bucket.</li>
+<li>Assemble the VO<sub>2</sub> mask except for the blue rubber part as described in <a href="Parvo.html#Parvo-MaskAssembly">B.2.3</a>. Place the assembled pieces in a sterile pink bucket.</li>
 <li>Prepare the PortaMon.
 <ul>
-<li>Prepare the device by putting in a charged battery, wrapping the PortaMon in plastic saran wrap, and placing the double sided taupe tape. For more details, see <a href="PortaMon.html#PortaMon-BeforeDataCollection">A.4</a>.</li>
-<li>Connect the PortaMon to the Oxysoft software as described in <a href="PortaMon.html#PortaMon-StartMeasurement">A.4.3</a> but do not begin data collection. Leave the screen on the pop up where you would click <code>Finish</code>.</li>
+<li>Prepare the device by putting in a charged battery, wrapping the PortaMon in plastic saran wrap, and placing the double sided taupe tape. For more details, see <a href="#PortaMon-BeforeDataCollection"><strong>??</strong></a>.</li>
+<li>Connect the PortaMon to the Oxysoft software as described in <a href="PortaMon.html#PortaMon-StartMeasurement">A.6</a> but do not begin data collection. Leave the screen on the pop up where you would click <code>Finish</code>.</li>
 </ul></li>
 <li>Run lactate meter controls as described in <a href="Instruments.html#Appendix-Instruments-LactateMeter-Usage-QualityControl">D.2.1.1</a>.</li>
 <li>Get a washcloth out of the cabinet behind the door and put it by the ultrasound to wipe off ultrasound gel during device placement.</li>
@@ -347,10 +414,10 @@ div.csl-indent {
 <li><strong>CHECK THE TIME. THE PARVO COMPUTER MUST HAVE BEEN ON FOR MORE THAN 30 MINUTES TO PROCEED WITH CALIBRATION.</strong><br />
 </li>
 <li><strong>DOUBLE CHECK THAT THE DATE AND TIME ON THE PARVO HAVE BEEN RE-SET BEFORE DOING THE CALIBRATION.</strong></li>
-<li>Do the gas calibration as described in <a href="Parvo.html#Parvo-Calibration">B.3.1</a>.</li>
+<li>Do the gas calibration as described in <a href="Parvo.html#Parvo-Calibration">B.2.1</a>.</li>
 <li>Only save the calibration results if the percent change in CO<sub>2</sub> is less than 1%. If the percent change is greater than 1% (either positive or negative change), open the door, turn on the fan, wait ten minutes and try again. If the percent change is greater than 1% and there is no more time, save the most recent gas calibration and make sure to tell Frankie Bennet about it.</li>
 <li>Write down the humidity, room temperature, barometric pressure, and percent change in CO<sub>2</sub> from the gas calibration on the data collection sheet.</li>
-<li>Do the flowmeter calibration as described in <a href="Parvo.html#Parvo-Calibration">B.3.1</a>.</li>
+<li>Do the flowmeter calibration as described in <a href="Parvo.html#Parvo-Calibration">B.2.1</a>.</li>
 <li>If you do the gas calibration prior to doing the flowmeter calibration, the PARVO software will automatically fill in the humidity, room temperature, and barometric pressure as saved from the gas calibration.</li>
 <li>The percent change should be less than 1%. If it is greater than 1%, do not save and try again in 10 minutes.</li>
 </ul></li>
@@ -374,7 +441,7 @@ The screen should display <code>TODO</code>.</li>
 </ol>
 <p>In order for the PortaMon to collect useful data, the subcutaneous adipose tissue thickness above the vastus lateralis and directly under the device must be less than 2 centimeters.</p>
 <p>Use the steps described in <a href="Instruments.html#Appendix-Instruments-Ultrasound-Usage">D.1.1</a> to measure the participant’s subcutaneous adipose tissue thickness above their vastus lateralis. If ATT is less than 2 centimeters, the participant continues through the next steps.</p>
-<p>Place the NIRS device over the area measured using ultrasound following the steps described in <a href="PortaMon.html#PortaMon-Placement">A.4.4</a>.</p>
+<p>Place the NIRS device over the area measured using ultrasound following the steps described in <a href="PortaMon.html#PortaMon-Placement">A.7</a>.</p>
 <p>Be sure to take a picture of the device placement on the vastus lateralis. Place the tape measure so that 0 is on the top of the patient’s patella and lay the tape measure to the side of the PortaMon.</p>
 <ol start="2" style="list-style-type: decimal">
 <li>Sufficient Physical Activity</li>
@@ -503,14 +570,14 @@ The screen should display <code>TODO</code>.</li>
 <li>Place the Full Protocol Data Collection Sheet on one clipboard. This will be filled out by laboratory staff.</li>
 <li>Place the BFI, PROMIS Global Health, and Physical Activity History (Follow Up) forms on a different clipboard. These will be filled out by the participant. Put a pen with the clipboard for the patient to use when filling out the forms.</li>
 <li>Assemble the VO<sub>2</sub> mask. Place the assembled pieces in a sterile pink bucket.</li>
-<li>Prepare the PortaMon as described in <a href="PortaMon.html#PortaMon-BeforeDataCollection">A.4</a> by putting in a charged battery, wrapping the PortaMon in plastic saran wrap, and placing the double sided taupe tape.</li>
-<li>If the PARVO has been on for more than 30 minutes, do the gas calibration as described in <a href="Parvo.html#Parvo-Calibration">B.3.1</a>.
+<li>Prepare the PortaMon as described in <a href="#PortaMon-BeforeDataCollection"><strong>??</strong></a> by putting in a charged battery, wrapping the PortaMon in plastic saran wrap, and placing the double sided taupe tape.</li>
+<li>If the PARVO has been on for more than 30 minutes, do the gas calibration as described in <a href="Parvo.html#Parvo-Calibration">B.2.1</a>.
 <ul>
 <li>Make sure the date and time have been changed before doing the calibration.</li>
 <li>Only save the calibration results if the percent change in CO2 is less than 1%. If the percent change is greater than 1% (either positive or negative change), open the door, turn on the fan, wait ten minutes and try again. If the percent change is greater than 1% and there is no more time, save the most recent gas calibration and make sure to tell Frankie Bennet about it.</li>
 <li>Write down the humidity, room temperature, and barometric pressure from the gas calibration on the data collection sheet.</li>
 </ul></li>
-<li>Do the flowmeter calibration as described in <a href="Parvo.html#Parvo-Calibration">B.3.1</a>.
+<li>Do the flowmeter calibration as described in <a href="Parvo.html#Parvo-Calibration">B.2.1</a>.
 _ If you do the gas calibration prior to doing the flowmeter calibration, the PARVO software will automatically fill in the humidity, room temperature, and barometric pressure as saved from the gas calibration.
 <ul>
 <li>The percent change should be less than 1%. If it is greater than 1%, do not save and try again in 10 minutes.</li>
@@ -527,7 +594,7 @@ _ If you do the gas calibration prior to doing the flowmeter calibration, the PA
 <li>Exit the exercise test settings.</li>
 <li>Re-open the exercise test to the pop up with the weight input.</li>
 </ul></li>
-<li>Connect the PortaMon to the Oxysoft software as described in <a href="PortaMon.html#PortaMon-StartMeasurement">A.4.3</a> but do not begin data collection. Leave the screen on the pop up where you would click <code>Finish</code>.</li>
+<li>Connect the PortaMon to the Oxysoft software as described in <a href="PortaMon.html#PortaMon-StartMeasurement">A.6</a> but do not begin data collection. Leave the screen on the pop up where you would click <code>Finish</code>.</li>
 <li>Get a washcloth out of the cabinet behind the door and put it by the ultrasound to wipe off ultrasound gel during device placement.</li>
 <li>On the stationary bike setting screen, it will display <code>TODO</code>. Press the circular button. It should now display <code>TODO</code>. Press the circular button again.
 The screen should display <code>TODO</code>.</li>

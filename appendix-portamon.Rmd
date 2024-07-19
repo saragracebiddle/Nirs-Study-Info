@@ -4,7 +4,7 @@
 
 ## Specifications {#PortaMon-Specs}
 
-The [PortaMon](https://www.artinis.com/portamon) by Artinis Medical Systems is a spatial-resolved near-infrared resonance spectroscopy device. It uses one receiver with three infrared transmitters. Each transmitter is 5 millimeters further from the receiver. This allows the application of mathematical formulas to calculate an absolute tissue hemoglobin saturation, which Artinis Medical Systems refers to as the Tissue Saturation Index, or TSI. In the literature, this is referred to by various acronyms, such as TOI (Tissue Oxygenation Index). A full examination of the mathematics and physics behind the calculation of TSI was published as part of the SPIE Conference on Optical Tomography and Spectroscopy of Tissue III  in 1999 [@suzuki1999].
+The [PortaMon](https://www.artinis.com/portamon) by Artinis Medical Systems is a continuous-wave and spatially-resolved near-infrared spectroscopy device. It uses one receiver with three infrared transmitters. Each transmitter is 5 millimeters further from the receiver. This allows the application of mathematical formulas to calculate an absolute tissue hemoglobin saturation, which Artinis Medical Systems refers to as the Tissue Saturation Index, or TSI. In the literature, this is referred to by various acronyms, such as TOI (Tissue Oxygenation Index). A full examination of the mathematics and physics behind the calculation of TSI was published as part of the SPIE Conference on Optical Tomography and Spectroscopy of Tissue III  in 1999 [@suzuki1999].
 
 The yellow case is one unit. 
 
@@ -57,23 +57,19 @@ knitr::include_graphics(
 ```
 
 
-## Oysoft {#Oxysoft}
+## Oxysoft {#Oxysoft}
 
-Oxysoft is the software created by Artinis Medical Systems to connect with the PortaMon, collect, and analyze data. 
+Oxysoft is the software by Artinis Medical Systems to connect with their devices, collect data, and do some data processing. 
 
 Oxysoft is installed on the ASUS laptops that go with the yellow cases. These laptops do not have any PrismaHealth or USC SoMG software on them. If someone should want to install Oxysoft on a PrismaHealth or USC SoMG computer, Oxysoft will have to be approved by the respective organization's IT team. 
 
-Oxysoft has been approved to be on Sara Biddle's PrismaHealth desktop computer by PrismaHealth's IT. No other PrismaHealth or USC SoMG computers have Oxysoft installed. 
+Oxysoft has been approved to be on Sara Biddle's PrismaHealth desktop computer by PrismaHealth's IT. No other PrismaHealth or USC SoMG computers are currently approved to have Oxysoft installed. 
 
 If you wish to install Oxysoft on a personal computer or have been approved to install Oxysoft on an organization's computer, plug the yellow Artinis Oxysoft USB into the computer and run the installer. 
 
-Oxysoft uses a legacy Bluetooth dongle to connect to the PortaMon. This makes using Oxysoft on a computer with the most up to date Windows difficult. It is easier to collect data on the ASUS laptops, which are default configured to use the Bluetooth dongle, and then export the data for analysis. 
-
 When you open Oxysoft, the software will default open the most recently open project. The project is kind of like a folder that contains individual measurements. When you create a new measurement, the project will save the name of the measurement and the file path to where the `.oxy4` file of the measurement was saved. If you do not save the project before closing Oxysoft, the project will forget that you added a new measurement. The `.oxy4` file will still exist, but you will not be able to find the measurement in the project. 
 
-Oxysoft creates files with the extension `.oxy4` for every new measurement. 
-
-
+Oxysoft creates files with the extension `.oxy4` for every new measurement. These files are automatically stored in a default location on the ASUS laptops. 
 
 ## Batteries {#PortaMon-Batteries}
 
@@ -91,10 +87,11 @@ knitr::include_graphics(
 )
 ```
 
+## Bluetooth {#PortaMon-Bluetooth}
 
-## Before Data Collection {#PortaMon-BeforeDataCollection}
+Oxysoft uses a legacy Bluetooth dongle to connect to the PortaMon. The ASUS laptops are default set to use legacy Bluetooth settings via the Bluetooth dongle. Other computers are not set up to use the legacy Bluetooth dongle and it is very difficult to make it work. It is easier to collect data on the ASUS laptops, which are default configured to use the Bluetooth dongle, and then export the data for analysis. 
 
-### Instrument Preparation for Data Collection {#PortaMon-Prep}
+## Instrument Preparation {#PortaMon-Prep}
 
  - Place a fully charged battery in the PortaMon, with the three connectors on the battery touching the three connectors in the PortaMon.
  - Slide the top of the PortaMon back in until it clicks into place. If the battery is charged and placed correctly, LEDs on the bottom of the PortaMon will light up. 
@@ -140,11 +137,7 @@ knitr::include_graphics(c(
 )
 ```
 
-### Bluetooth Troubleshooting
-
-
-
-### Start a Measurement {#PortaMon-StartMeasurement}
+## Start a Measurement {#PortaMon-StartMeasurement}
 
   - Turn on the ASUS laptop.  
   - Ensure the bluetooth dongle and the Rockey dongle are plugged in to the laptop.  
@@ -160,7 +153,7 @@ knitr::include_graphics(c(
   
 ```{r, echo = F, out.width = "100%"}
 knitr::include_graphics(c(
-  "images/startnewmeasurement/01_open_oxysoft.png"
+  "images/portaMonStartNewMeasurement/01_open_oxysoft.png"
 ))
 ```  
 
@@ -170,8 +163,8 @@ knitr::include_graphics(c(
       
 ```{r, echo = F, out.width = "100%"}
 knitr::include_graphics(c(
-  "images/startnewmeasurement/02_select_close_all_graphs.png",
-  "images/startnewmeasurement/03_closed_all_graphs.png"
+  "images/portaMonStartNewMeasurement/02_select_close_all_graphs.png",
+  "images/portaMonStartNewMeasurement/03_closed_all_graphs.png"
 ))
 ```
 
@@ -180,7 +173,7 @@ knitr::include_graphics(c(
   
 ```{r, echo = F, out.width = "100%"}
 knitr::include_graphics(c(
-  "images/startnewmeasurement/04_select_start_new.png"
+  "images/portaMonStartNewMeasurement/04_select_start_new.png"
 ))
 ```
 
@@ -190,7 +183,7 @@ knitr::include_graphics(c(
   
 ```{r, echo = F, out.width = "100%"}
 knitr::include_graphics(c(
-  "images/startnewmeasurement/05_copy_no_settings.png"
+  "images/portaMonStartNewMeasurement/05_copy_no_settings.png"
 ))
 ```
 
@@ -198,7 +191,7 @@ knitr::include_graphics(c(
   
 ```{r, echo = F, out.width = "100%"}
 knitr::include_graphics(c(
-  "images/startnewmeasurement/06_add_device.png"
+  "images/portaMonStartNewMeasurement/06_add_device.png"
 ))
 ```
 
@@ -207,7 +200,7 @@ knitr::include_graphics(c(
   
 ```{r, echo = F, out.width = "100%"}
 knitr::include_graphics(c(
-  "images/startnewmeasurement/07_type_of_device_to_add.png"
+  "images/portaMonStartNewMeasurement/07_type_of_device_to_add.png"
 ))
 ```
 
@@ -216,7 +209,7 @@ knitr::include_graphics(c(
   
 ```{r, echo = F,out.width = "100%"}
 knitr::include_graphics(c(
-  "images/startnewmeasurement/08_device_number.png"
+  "images/portaMonStartNewMeasurement/08_device_number.png"
 ))
 ```
 
@@ -231,7 +224,7 @@ knitr::include_graphics(c(
   
 ```{r, echo = F, out.width = "100%"}
 knitr::include_graphics(c(
-  "images/startnewmeasurement/09_successful_connection.png"
+  "images/portaMonStartNewMeasurement/09_successful_connection.png"
 ))
 ```
 
@@ -242,7 +235,7 @@ knitr::include_graphics(c(
   
 ```{r, echo = F, out.width = "100%"}
 knitr::include_graphics(c(
-  "images/startnewmeasurement/10_select_tsiff.png"
+  "images/portaMonStartNewMeasurement/10_select_tsiff.png"
 ))
 ```
 
@@ -251,7 +244,7 @@ knitr::include_graphics(c(
   
 ```{r, echo = F, out.width = "100%"}
 knitr::include_graphics(c(
-  "images/startnewmeasurement/11_k_calf.png"
+  "images/portaMonStartNewMeasurement/11_k_calf.png"
 ))
 ```
 
@@ -260,7 +253,7 @@ knitr::include_graphics(c(
   
 ```{r, echo = F, out.width = "100%"}
 knitr::include_graphics(c(
-  "images/startnewmeasurement/12_h_calf.png"
+  "images/portaMonStartNewMeasurement/12_h_calf.png"
 ))
 ```
 
@@ -269,7 +262,7 @@ knitr::include_graphics(c(
   
 ```{r, echo = F, out.width = "100%"}
 knitr::include_graphics(c(
-  "images/startnewmeasurement/13_optodemapping_popup.png"
+  "images/portaMonStartNewMeasurement/13_optodemapping_popup.png"
 ))
 ```
 
@@ -277,7 +270,7 @@ knitr::include_graphics(c(
   
 ```{r, echo = F, out.width = "100%"}
 knitr::include_graphics(c(
-  "images/startnewmeasurement/14_device_settings_popup.png"
+  "images/portaMonStartNewMeasurement/14_device_settings_popup.png"
 ))
 ```
 
@@ -285,7 +278,7 @@ knitr::include_graphics(c(
   
 ```{r, echo = F, out.width = "100%"}
 knitr::include_graphics(c(
-  "images/startnewmeasurement/15_furtheroptions_popup.png"
+  "images/portaMonStartNewMeasurement/15_furtheroptions_popup.png"
 ))
 ```
 
@@ -294,7 +287,7 @@ knitr::include_graphics(c(
   
 ```{r, echo = F, out.width = "100%"}
 knitr::include_graphics(c(
-  "images/startnewmeasurement/16_create_all_graphs_popup.png"
+  "images/portaMonStartNewMeasurement/16_create_all_graphs_popup.png"
 ))
 ```
 
@@ -302,26 +295,42 @@ knitr::include_graphics(c(
   
 ```{r, echo = F, out.width = "100%"}
 knitr::include_graphics(c(
-  "images/startnewmeasurement/17_enable_light_sources_popup.png"
+  "images/portaMonStartNewMeasurement/17_enable_light_sources_popup.png"
 ))
 ```
 
 
-### Instrument Placement on Vastus Lateralis {#PortaMon-Placement}
+## Placement on Vastus Lateralis {#PortaMon-Placement}
 
 The PortaMon can measure up to 2 centimeters depth into tissue. Since we are interested in muscle oxygenation, the muscle belly has to be within 2 centimeters from the surface of the skin. Otherwise, the device is not measuring muscle oxygenation but adipose tissue oxygenation. Therefore, we use an ultrasound to measure the subcutaneous adipose tissue thickness. 
 
-Place the device over the location measured by ultrasound.
-
-Connect the NIRS by following the steps under \@ref(PortaMon-StartMeasurement). 
-
-Click 'yes' to enable light sources and begin data collection. Wait approximately 10 seconds. Check the DAQ (Data Acquisition) values to determine whether the NIRS is receiving good data. If one or more of the DAQ values show as red, then make small adjustments to the placement of the device to attempt to get better DAQ values. If the small adjustments add up to a large difference from the original ultrasound measurement location, re-measure adipose tissue thickness using the ultrasound in the new location. 
-
-When all three DAQ values remain white when the subject moves around their leg, then the device is in the best location. If one of the DAQ values turns red during movement, that can be okay but only ONE. If two of the DAQ values are red, then TSI cannot be calculated so we do our best to have at least two good signals, three if at all possible.
-
-Rock the device laterally and remove the tape cover on the exposed side. Rock the device back into place and stick the tape to the subject's skin. Repeat on the other side. Double check that the DAQ values remain consistent.
-
-Take a picture of the placement. Use a measuring tape to show the distance from the top of the kneecap to the bottom of the device and use a perpendicular measuring tape to show the distance from the center of the thigh to the right edge of the device. Print the picture and place in the participant's physical file. Upload a .png of the picture into the RedCap. 
+1. Place the device over the location measured by ultrasound.
+2.Connect the NIRS by following the steps under \@ref(PortaMon-StartMeasurement). 
+3. Click 'yes' to enable light sources and begin data collection. Wait approximately 10 seconds.
+4. In the DAQ Values panel, click on the `Raw Values` drop down and select **Percentages**. 
+5. Check the DAQ values.
+    - There are 6 boxes for DAQ values; one for each wavelength of light emitted by each transmitter. 
+    - If the DAQ percentage is greater than 92%, the box with the DAQ percentage displayed will turn red. 
+    - Try to make small adjustments to the device placement on the leg to bring the DAQ values down as needed. 
+    - If the L6 (Tx3 856nm) box stays red with a value of 98% the whole time, it is likely you will not be able to make any adjustment to bring the DAQ percentage down. Mark that Tx3 was red the whole time on the data collection sheet. 
+    - Try to bring all percentages below 70% if possible. DAQ percentages will increase during cycling and we want to have enough buffer to allow the percentages to increase without reaching red values. Generally, percentages below 70% at rest will likely be sufficient to allow for the movement increases. 
+    - If the small adjustments add up to a large difference from the original ultrasound measurement location, re-measure adipose tissue thickness using the ultrasound in the new location. 
+    - When all three DAQ values remain white when the subject moves around their leg, then the device is in the best location. If one of the DAQ values turns red during movement, that can be okay but only ONE. If two of the DAQ values are red, then TSI cannot be calculated so we do our best to have at least two good signals, three if at all possible.
+5. Tape the device in place. 
+    - Rock the device laterally and remove the tape cover on the exposed side. Rock the device back into place and stick the tape to the subject's skin. Repeat on the other side. Double check that the DAQ values remain consistent.
+6. Take a picture of the device placement on the leg. 
+    - Use a measuring tape to show the distance from the top of the kneecap to the bottom of the device and use a perpendicular measuring tape to show the distance from the center of the thigh to the right edge of the device.
+    - Print the picture and place in the participant's physical file. 
+    - Upload a .png of the picture into the RedCap.
+7. Tape the device in place. 
+    - Use the non-latex tape to securely tape the device to the skin. 
+    - We do this after the picture so that the extra tape over the top of the device is not shown in the picture. 
+    - Use about 6 inches of tape. 
+    - Place the center of the tape over the top of the device. 
+    - Use your fingers to stick the tape to the sides of the device. 
+    - Once the tape is secured across the top of the device and on the sides, stick the rest of the tape to the participant's skin. 
+    - Repeat across the bottom of the device. 
+  
 
 ## During Data Collection {#PortaMon-DataCollection}
 
@@ -329,7 +338,7 @@ Take a picture of the placement. Use a measuring tape to show the distance from 
 
 ```{r, echo = F, out.width = "100%"}
 knitr::include_graphics(c(
-  "images/startnewmeasurement/new_measurement_begins.png"
+  "images/portaMonStartNewMeasurement/new_measurement_begins.png"
 ))
 ```
 
@@ -337,17 +346,18 @@ knitr::include_graphics(c(
 
 ```{r, echo = F, out.width = "100%"}
 knitr::include_graphics(c(
-  "images/startnewmeasurement/select_end_measurement.png",
-  'images/startnewmeasurement/view_whole_measurement.png'
+  "images/portaMonStartNewMeasurement/select_end_measurement.png",
+  'images/portaMonStartNewMeasurement/view_whole_measurement.png'
 ))
 ```
 
-## After Data Collection {#PortaMon-AfterDataCollection}
+## Save Measurement {#PortaMon-AfterDataCollection}
 
-- Save the project file.
+1. Save the project file.
     - Click `File` and `Save Project File`
     - The project file must be saved with the new measurements before closing Oxysoft or turning off the computer. Otherwise, the project file will not have the new measurement when Oxysoft is reopened. 
-- Save a copy of the `.oxy4` file in the patient's folder on the desktop.
+2. Save a copy of the `.oxy4` file in the patient's folder on the desktop.
+    - Note: this copy of the `.oxy4` file should be the data as it was collected. Even if Tx3 was bad quality and should be removed from TSI calculations, make sure to save this copy with the optode-template TSIFF and without any filters or calculations. If the `oxy4` file is uploaded with the TSI optode-template or filters, there is no way to restore the data to the rawest form or apply a different filter. Filters can always be applied later, and the measurement properties can also always be applied later.
     - Open the Windows file manager.
     - Open the `NIRS Data` folder.
     - Find the new `.oxy4` file created for this measurement.
@@ -355,13 +365,13 @@ knitr::include_graphics(c(
     - Open the patient's data folder. 
     - Put the copied file in the patient's data folder. 
     - If necessary, rename the file to match the rest of the files in the folder. 
-- Save a copy of the `.oxy4` file in the patient's folder in RedCap.
+3. Save a copy of the `.oxy4` file in the patient's folder in RedCap.
     - Open RedCap.
     - Go to the File Repository. 
     - In the OXYSOFT folder, open the OXY4 Files folder.
     - In the appropriate patient's folder, upload the file that was just saved in the patient's folder on the desktop. 
 
-### Change Measurement Properties {#PortaMon-ChangeProperties}
+## Change Measurement Properties {#PortaMon-ChangeProperties}
 
 - Right click on the name of the measurement in the `Project` panel on the left. 
 - Select `Properties...`. This will open up a new panel.
@@ -369,8 +379,8 @@ knitr::include_graphics(c(
 ```{r, echo = F, out.width = "100%"}
 knitr::include_graphics(
   c(
-    "images/changemeasurementproperties/select_measurement_properties.png",
-    "images/changemeasurementproperties/opened_measurement_properties.png"
+    "images/portaMonChangeMeasurementProperties/select_measurement_properties.png",
+    "images/portaMonChangeMeasurementProperties/opened_measurement_properties.png"
   )
 )
 ```
@@ -382,7 +392,7 @@ knitr::include_graphics(
 ```{r, echo = F, out.width = "100%"}
 knitr::include_graphics(
   c(
-    "images/changemeasurementproperties/select_tsi.png"
+    "images/portaMonChangeMeasurementProperties/select_tsi.png"
   )
 )
 ```
@@ -395,7 +405,7 @@ knitr::include_graphics(
 ```{r, echo = F, out.width = "100%"}
 knitr::include_graphics(
   c(
-    "images/changemeasurementproperties/tsi_template_settings.png"
+    "images/portaMonChangeMeasurementProperties/tsi_template_settings.png"
   )
 )
 ```
@@ -406,7 +416,7 @@ knitr::include_graphics(
 ```{r, echo = F, out.width = "100%"}
 knitr::include_graphics(
   c(
-    "images/changemeasurementproperties/view_tsi_graphs.png"
+    "images/portaMonChangeMeasurementProperties/view_tsi_graphs.png"
   )
 )
 ```
@@ -417,75 +427,98 @@ Next to the `Optode-template` settings table, there is a button on the bottom ri
 
 The graphs are now restored to their original state. 
 
-### Data Export {#PortaMon-DataExport}
+## Data Export {#PortaMon-DataExport}
 
-Ensure that only one measurement is open in the Oxysoft graph panels. Do this by closing all graphs, then selecting the name of the measurement you want to open in the file pane on the left. 
+### Options {#PortaMon-Export-Options}
 
-If you are not sure or cannot tell, under the `Graph` drop down of the header bar, select `Close all graphs`. There should be no visible graphs in the main panel. 
+There are many ways to export a measurement from Oxysoft.
 
-Select the name of the measurement you want to export in the `Project` panel on the left. Click `Open all graphs` under the `Measurement` drop down while the name of the file is highlighted. There should be four panels open, one titled `Tx1-Rx1`, `Tx2-Rx1`, `Tx3-Rx1`, and one `TSIFF`. 
+See section 4.4.4 of the Oxysoft manual for full details. I will briefly go over my preferences for export. 
 
-If all three transmitters had good DAQ values during data collection and never dropped into red, skip the next steps. If there were issues with only Tx3, follow the steps described in \@ref(Appendix-Instruments-PortaMon-Usage-ChangeProperties).
+First, I do not work in MatLab. If you are a MatLab user, you can look in the manual for information about preferred export options for MatLab users. 
 
-Select `Export measurement` under the `Measurement` dropdown. 
+Second, I do not like Excel files for these datasets. The number of rows exceeds 9,600 just for the data during the testing, not including the calibration time before testing begins. Excel starts to lag with files that long. The header on Excel files can make them difficult to read into other software later on. 
 
+I have come to prefer exporting our data as text files. I have written file readers in R and in Python for exported text files. 
+
+
+There are three data transform options for exporting data. 
+
+Graph data of open graphs (non-cyclic only) 
+: This exports the data that is currently viewable in the open graph panels. If you have zoomed in, only the data that is visible will be exported. If you have applied filters to the data, the filtered data is what will be exported. This allows you to apply filters in Oxysoft, see the result, then export your filtered data.
+    If you have closed one of the graphs, the data that was in that graph will not be exported. Only the open graph panels will get their data exported. 
+    If you have more than one measurement open, all graphs will be exported. There will be one column in the data for each trace in each measurement, but the file header will only contain the measurement information for the measurement that was selected for export. Multiple open measurements will create a wider data set than expected. 
+    
+Template OD values and ADC voltage
+: This exports the optical densities measured by the device. It only exports data using the template. For example, if the measurement properties have been changed to remove Tx3 from the optode-template and use TSI rather than TSIFF optode-template, the exported data will have columns for Tx1and Tx2. If the optode-template is TSIFF, the exported data will have columns for Tx1, Tx2, and Tx3. 
+
+OD values and ADC voltage
+: This also exports the optical densities measured by the device. It exports all data, regardless of presence in the optode-template. If the TSI optode-template has been used, all three channels wil be exported regardless of use in the optode-template. 
+    
+    
+    
+Optical densities can be useful when examining data quality. I have created a file reader in Python that can work with the optical density files. The file reader works with existing NIRS processing packages which can convert the optical densities to haemoglobin using the modified Beer-Lambert law. 
+    
+
+### Steps {#PortaMon-Export-Steps}
+
+1. Open the appropriate measurement graphs.
+    - Make sure there is only one measurement open when you go to export the measurement. 
+    - Close all open graphs. 
+        - For any open measurements, select the name of the measurement that is open in the `Project` panel on the left. Right click on the name of the measurement and click `Close all graphs`. Repeat as needed for all open measurements. 
+    - When there are no open graphs in the panels, select the name of the measurement. Right click and select `Open all graphs`. 
+    - There should be four panels open, one titled `Tx1-Rx1`, `Tx2-Rx1`, `Tx3-Rx1`, and one `TSIFF`. 
+2. Select optode-template. 
+    - Check notes on the data collection sheet. 
+    - If Tx3 was marked as white for the duration of data collection,
+    proceed to step 3. 
+    - If Tx3 was marked as red for the duration of data collection, follow the steps in \@ref(PortaMon-ChangeProperties) to change the optode-template to TSI. 
+3. Apply filters. 
+4. Export. 
+    - Select `Export measurement` under the `Measurement` dropdown. 
 ```{r, echo = F, out.width = "100%"}
 knitr::include_graphics(c(
-  "images/exportmeasurement/1_selectmeasurementtoexport.png"
+  "images/portaMonExportMeasurement/1_selectmeasurementtoexport.png"
 ))
 ```
-
-A new panel will open. Select the type of file you wish to export as. The automatic selection is text (`.txt`), which is the preferred type of export. 
-
+    - A new panel will open. Select the type of file you wish to export as. The automatic selection is text (`.txt`), which is the preferred type of export. 
 ```{r, echo = F, out.width = "100%"}
 knitr::include_graphics(c(
-  "images/exportmeasurement/2_selecttypeofexport.png"
+  "images/portaMonExportMeasurement/2_selecttypeofexport.png"
 ))
 ```
-
-Click `Next`. 
-
-A new popup will prompt you to choose a location for the exported file. 
-
+    - Click `Next`. 
+    - A new popup will prompt you to choose a location for the exported file. 
 ```{r, echo = F, out.width = "100%"}
 knitr::include_graphics(c(
-  "images/exportmeasurement/3_choosefilelocation.png"
+  "images/portaMonExportMeasurement/3_choosefilelocation.png"
 ))
 ```
-
-Click `Browse`.
-
+    - Click `Browse`.
 ```{r, echo = F, out.width = "100%"}
 knitr::include_graphics(c(
-  "images/exportmeasurement/4_filelocationpopup.png"
+  "images/portaMonExportMeasurement/4_filelocationpopup.png"
 ))
 ```
-
-There is a folder on the desktop for all data for the NIRS study. Select that folder as the destination. In the file name bar, type in the name of the measurement. I prefer for the exported file and the name of the measurement in Oxysoft to match for consistency. When you type in the name of the measurement in oxysoft, it will prompt you to select `nameofthefile.oxy4`. Do not select this. Just type the name of the measurement with no file extension. 
-
+    - There is a folder on the desktop for all data for the NIRS study. Select that folder as the destination. In the file name bar, type in the name of the measurement. I prefer for the exported file and the name of the measurement in Oxysoft to match for consistency. When you type in the name of the measurement in oxysoft, it will prompt you to select `nameofthefile.oxy4`. Do not select this. Just type the name of the measurement with no file extension. 
 ```{r, echo = F, out.width = "100%"}
 knitr::include_graphics(c(
-  "images/exportmeasurement/5_nameexportfile.png"
+  "images/portaMonExportMeasurement/5_nameexportfile.png"
 ))
 ```
-
-Click `Save`. 
-
+    - Click `Save`. 
 ```{r, echo = F, out.width = "100%"}
 knitr::include_graphics(c(
-  "images/exportmeasurement/6_chosenfilelocation.png"
+  "images/portaMonExportMeasurement/6_chosenfilelocation.png"
 ))
 ```
-
-The file path should be to the NIRS data folder and should be named the same as the measurement with a `.txt` extension. 
-
-Click `Next`. 
-
-The `Export Options` popup will have several selections for the type of data to export. Leave the default selection, `Graph data of open graphs`. Click `Next`.
+    - The file path should be to the NIRS data folder and should be named the same as the measurement with a `.txt` extension. 
+    - Click `Next`. 
+    - The `Export Options` popup will have several selections for the type of data to export. Leave the default selection, `Graph data of open graphs`. Click `Next`.
 
 ```{r, echo = F, out.width = "100%"}
 knitr::include_graphics(c(
-  "images/exportmeasurement/7_chooseexportopengraphs.png"
+  "images/portaMonExportMeasurement/7_chooseexportopengraphs.png"
 ))
 ```
 
@@ -493,6 +526,6 @@ The `Export Time Span` pop up will have the option to remove data from the begin
 
 ```{r, echo = F, out.width = "100%"}
 knitr::include_graphics(c(
-  "images/exportmeasurement/8_exportwholemeasurement.png"
+  "images/portaMonExportMeasurement/8_exportwholemeasurement.png"
 ))
 ```
