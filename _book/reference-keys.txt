@@ -31,7 +31,7 @@ DataAnalysis
 DataAnalysis-LT
 DataAnalysis-Onoff
 using-the-app
-by-hand
+in-r
 PortaMon
 PortaMon-Specs
 Oxysoft
@@ -79,6 +79,11 @@ ExerciseTesting-LT-Specs
 ExerciseTesting-LT-Watts
 ExerciseTesting-Onoff
 ExerciseTesting-Onoff-Specs
+Appendix-DataAnalysis
+setting-up
+the-first-time
+onoff-kinetics
+resources
 RedCap
 RedCap-Access
 RedCap-Structure

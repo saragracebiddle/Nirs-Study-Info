@@ -23,7 +23,7 @@
 <meta name="author" content="Sara Grace Biddle" />
 
 
-<meta name="date" content="2024-07-18" />
+<meta name="date" content="2024-07-25" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -59,70 +59,6 @@
 <script src="libs/grViz-binding-1.0.11/grViz.js"></script>
 
 
-<style type="text/css">
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { color: #008000; } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { color: #008000; font-weight: bold; } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-</style>
 
 <style type="text/css">
   
@@ -217,7 +153,7 @@ div.csl-indent {
 <li class="chapter" data-level="6.2" data-path="DataAnalysis.html"><a href="DataAnalysis.html#DataAnalysis-Onoff"><i class="fa fa-check"></i><b>6.2</b> On/Off Kinetics</a>
 <ul>
 <li class="chapter" data-level="6.2.1" data-path="DataAnalysis.html"><a href="DataAnalysis.html#using-the-app"><i class="fa fa-check"></i><b>6.2.1</b> Using the App</a></li>
-<li class="chapter" data-level="6.2.2" data-path="DataAnalysis.html"><a href="DataAnalysis.html#by-hand"><i class="fa fa-check"></i><b>6.2.2</b> By Hand</a></li>
+<li class="chapter" data-level="6.2.2" data-path="DataAnalysis.html"><a href="DataAnalysis.html#in-r"><i class="fa fa-check"></i><b>6.2.2</b> In R</a></li>
 </ul></li>
 </ul></li>
 <li class="appendix"><span><b>Appendix</b></span></li>
@@ -288,52 +224,61 @@ div.csl-indent {
 <li class="chapter" data-level="E.3.1" data-path="ExerciseTesting.html"><a href="ExerciseTesting.html#ExerciseTesting-Onoff-Specs"><i class="fa fa-check"></i><b>E.3.1</b> Specifications</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="F" data-path="RedCap.html"><a href="RedCap.html"><i class="fa fa-check"></i><b>F</b> RedCap</a>
+<li class="chapter" data-level="F" data-path="Appendix-DataAnalysis.html"><a href="Appendix-DataAnalysis.html"><i class="fa fa-check"></i><b>F</b> Data Analysis</a>
 <ul>
-<li class="chapter" data-level="F.1" data-path="RedCap.html"><a href="RedCap.html#RedCap-Access"><i class="fa fa-check"></i><b>F.1</b> Access</a></li>
-<li class="chapter" data-level="F.2" data-path="RedCap.html"><a href="RedCap.html#RedCap-Structure"><i class="fa fa-check"></i><b>F.2</b> Structure</a>
+<li class="chapter" data-level="F.1" data-path="Appendix-DataAnalysis.html"><a href="Appendix-DataAnalysis.html#setting-up"><i class="fa fa-check"></i><b>F.1</b> Setting Up</a>
 <ul>
-<li class="chapter" data-level="F.2.1" data-path="RedCap.html"><a href="RedCap.html#RedCap-Surveys"><i class="fa fa-check"></i><b>F.2.1</b> Surveys</a></li>
-<li class="chapter" data-level="F.2.2" data-path="RedCap.html"><a href="RedCap.html#RedCap-Bookmarks"><i class="fa fa-check"></i><b>F.2.2</b> Project Bookmarks</a></li>
-<li class="chapter" data-level="F.2.3" data-path="RedCap.html"><a href="RedCap.html#RedCap-Record-Status-Dashboard"><i class="fa fa-check"></i><b>F.2.3</b> Record Status Dashboard</a></li>
-<li class="chapter" data-level="F.2.4" data-path="RedCap.html"><a href="RedCap.html#RedCap-Calendar"><i class="fa fa-check"></i><b>F.2.4</b> Calendar</a></li>
-<li class="chapter" data-level="F.2.5" data-path="RedCap.html"><a href="RedCap.html#RedCap-FileRepository"><i class="fa fa-check"></i><b>F.2.5</b> File Repository</a></li>
+<li class="chapter" data-level="F.1.1" data-path="Appendix-DataAnalysis.html"><a href="Appendix-DataAnalysis.html#the-first-time"><i class="fa fa-check"></i><b>F.1.1</b> The First Time</a></li>
+<li class="chapter" data-level="F.1.2" data-path="Appendix-DataAnalysis.html"><a href="Appendix-DataAnalysis.html#onoff-kinetics"><i class="fa fa-check"></i><b>F.1.2</b> On/Off Kinetics</a></li>
+</ul></li>
+<li class="chapter" data-level="F.2" data-path="Appendix-DataAnalysis.html"><a href="Appendix-DataAnalysis.html#resources"><i class="fa fa-check"></i><b>F.2</b> Resources</a></li>
+</ul></li>
+<li class="chapter" data-level="G" data-path="RedCap.html"><a href="RedCap.html"><i class="fa fa-check"></i><b>G</b> RedCap</a>
+<ul>
+<li class="chapter" data-level="G.1" data-path="RedCap.html"><a href="RedCap.html#RedCap-Access"><i class="fa fa-check"></i><b>G.1</b> Access</a></li>
+<li class="chapter" data-level="G.2" data-path="RedCap.html"><a href="RedCap.html#RedCap-Structure"><i class="fa fa-check"></i><b>G.2</b> Structure</a>
+<ul>
+<li class="chapter" data-level="G.2.1" data-path="RedCap.html"><a href="RedCap.html#RedCap-Surveys"><i class="fa fa-check"></i><b>G.2.1</b> Surveys</a></li>
+<li class="chapter" data-level="G.2.2" data-path="RedCap.html"><a href="RedCap.html#RedCap-Bookmarks"><i class="fa fa-check"></i><b>G.2.2</b> Project Bookmarks</a></li>
+<li class="chapter" data-level="G.2.3" data-path="RedCap.html"><a href="RedCap.html#RedCap-Record-Status-Dashboard"><i class="fa fa-check"></i><b>G.2.3</b> Record Status Dashboard</a></li>
+<li class="chapter" data-level="G.2.4" data-path="RedCap.html"><a href="RedCap.html#RedCap-Calendar"><i class="fa fa-check"></i><b>G.2.4</b> Calendar</a></li>
+<li class="chapter" data-level="G.2.5" data-path="RedCap.html"><a href="RedCap.html#RedCap-FileRepository"><i class="fa fa-check"></i><b>G.2.5</b> File Repository</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="G" data-path="EPIC.html"><a href="EPIC.html"><i class="fa fa-check"></i><b>G</b> Electronic Medical Record</a>
+<li class="chapter" data-level="H" data-path="EPIC.html"><a href="EPIC.html"><i class="fa fa-check"></i><b>H</b> Electronic Medical Record</a>
 <ul>
-<li class="chapter" data-level="G.1" data-path="EPIC.html"><a href="EPIC.html#EPIC-Access"><i class="fa fa-check"></i><b>G.1</b> Access</a></li>
-<li class="chapter" data-level="G.2" data-path="EPIC.html"><a href="EPIC.html#EPIC-ResearchStudy"><i class="fa fa-check"></i><b>G.2</b> Research Study</a>
+<li class="chapter" data-level="H.1" data-path="EPIC.html"><a href="EPIC.html#EPIC-Access"><i class="fa fa-check"></i><b>H.1</b> Access</a></li>
+<li class="chapter" data-level="H.2" data-path="EPIC.html"><a href="EPIC.html#EPIC-ResearchStudy"><i class="fa fa-check"></i><b>H.2</b> Research Study</a>
 <ul>
-<li class="chapter" data-level="G.2.1" data-path="EPIC.html"><a href="EPIC.html#EPIC-StudyDetails"><i class="fa fa-check"></i><b>G.2.1</b> Study Details</a></li>
-<li class="chapter" data-level="G.2.2" data-path="EPIC.html"><a href="EPIC.html#EPIC-StudyStatuses"><i class="fa fa-check"></i><b>G.2.2</b> Study Statuses</a></li>
-<li class="chapter" data-level="G.2.3" data-path="EPIC.html"><a href="EPIC.html#EPIC-NewStudyAssociation"><i class="fa fa-check"></i><b>G.2.3</b> Creating a New Association</a></li>
-<li class="chapter" data-level="G.2.4" data-path="EPIC.html"><a href="EPIC.html#EPIC-EditStudyAssociation"><i class="fa fa-check"></i><b>G.2.4</b> Edit an Exisiting Association</a></li>
+<li class="chapter" data-level="H.2.1" data-path="EPIC.html"><a href="EPIC.html#EPIC-StudyDetails"><i class="fa fa-check"></i><b>H.2.1</b> Study Details</a></li>
+<li class="chapter" data-level="H.2.2" data-path="EPIC.html"><a href="EPIC.html#EPIC-StudyStatuses"><i class="fa fa-check"></i><b>H.2.2</b> Study Statuses</a></li>
+<li class="chapter" data-level="H.2.3" data-path="EPIC.html"><a href="EPIC.html#EPIC-NewStudyAssociation"><i class="fa fa-check"></i><b>H.2.3</b> Creating a New Association</a></li>
+<li class="chapter" data-level="H.2.4" data-path="EPIC.html"><a href="EPIC.html#EPIC-EditStudyAssociation"><i class="fa fa-check"></i><b>H.2.4</b> Edit an Exisiting Association</a></li>
 </ul></li>
-<li class="chapter" data-level="G.3" data-path="EPIC.html"><a href="EPIC.html#EPIC-PatientChart"><i class="fa fa-check"></i><b>G.3</b> Patient Charts</a></li>
-<li class="chapter" data-level="G.4" data-path="EPIC.html"><a href="EPIC.html#EPIC-MyStickyNotes"><i class="fa fa-check"></i><b>G.4</b> My Sticky Notes</a>
+<li class="chapter" data-level="H.3" data-path="EPIC.html"><a href="EPIC.html#EPIC-PatientChart"><i class="fa fa-check"></i><b>H.3</b> Patient Charts</a></li>
+<li class="chapter" data-level="H.4" data-path="EPIC.html"><a href="EPIC.html#EPIC-MyStickyNotes"><i class="fa fa-check"></i><b>H.4</b> My Sticky Notes</a>
 <ul>
-<li class="chapter" data-level="G.4.1" data-path="EPIC.html"><a href="EPIC.html#treatment-plans"><i class="fa fa-check"></i><b>G.4.1</b> Treatment Plans</a></li>
+<li class="chapter" data-level="H.4.1" data-path="EPIC.html"><a href="EPIC.html#treatment-plans"><i class="fa fa-check"></i><b>H.4.1</b> Treatment Plans</a></li>
 </ul></li>
-<li class="chapter" data-level="G.5" data-path="EPIC.html"><a href="EPIC.html#EPIC-OncologySchedule"><i class="fa fa-check"></i><b>G.5</b> Oncology Schedule</a></li>
-<li class="chapter" data-level="G.6" data-path="EPIC.html"><a href="EPIC.html#reading-physician-notes"><i class="fa fa-check"></i><b>G.6</b> Reading Physician Notes</a>
+<li class="chapter" data-level="H.5" data-path="EPIC.html"><a href="EPIC.html#EPIC-OncologySchedule"><i class="fa fa-check"></i><b>H.5</b> Oncology Schedule</a></li>
+<li class="chapter" data-level="H.6" data-path="EPIC.html"><a href="EPIC.html#reading-physician-notes"><i class="fa fa-check"></i><b>H.6</b> Reading Physician Notes</a>
 <ul>
-<li class="chapter" data-level="G.6.1" data-path="EPIC.html"><a href="EPIC.html#acronyms-and-abbreviations"><i class="fa fa-check"></i><b>G.6.1</b> Acronyms and Abbreviations</a></li>
-<li class="chapter" data-level="G.6.2" data-path="EPIC.html"><a href="EPIC.html#chemotherapy-information"><i class="fa fa-check"></i><b>G.6.2</b> Chemotherapy Information</a></li>
+<li class="chapter" data-level="H.6.1" data-path="EPIC.html"><a href="EPIC.html#acronyms-and-abbreviations"><i class="fa fa-check"></i><b>H.6.1</b> Acronyms and Abbreviations</a></li>
+<li class="chapter" data-level="H.6.2" data-path="EPIC.html"><a href="EPIC.html#chemotherapy-information"><i class="fa fa-check"></i><b>H.6.2</b> Chemotherapy Information</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="H" data-path="IRB.html"><a href="IRB.html"><i class="fa fa-check"></i><b>H</b> IRB</a>
+<li class="chapter" data-level="I" data-path="IRB.html"><a href="IRB.html"><i class="fa fa-check"></i><b>I</b> IRB</a>
 <ul>
-<li class="chapter" data-level="H.1" data-path="IRB.html"><a href="IRB.html#IRBNet"><i class="fa fa-check"></i><b>H.1</b> IRBNet</a>
+<li class="chapter" data-level="I.1" data-path="IRB.html"><a href="IRB.html#IRBNet"><i class="fa fa-check"></i><b>I.1</b> IRBNet</a>
 <ul>
-<li class="chapter" data-level="H.1.1" data-path="IRB.html"><a href="IRB.html#CreateIRBNetAccount"><i class="fa fa-check"></i><b>H.1.1</b> Create an IRBNet Account</a></li>
+<li class="chapter" data-level="I.1.1" data-path="IRB.html"><a href="IRB.html#CreateIRBNetAccount"><i class="fa fa-check"></i><b>I.1.1</b> Create an IRBNet Account</a></li>
 </ul></li>
-<li class="chapter" data-level="H.2" data-path="IRB.html"><a href="IRB.html#IRB-Protocol"><i class="fa fa-check"></i><b>H.2</b> Protocol</a>
+<li class="chapter" data-level="I.2" data-path="IRB.html"><a href="IRB.html#IRB-Protocol"><i class="fa fa-check"></i><b>I.2</b> Protocol</a>
 <ul>
-<li class="chapter" data-level="H.2.1" data-path="IRB.html"><a href="IRB.html#Appendix-IRB-Protocol-Participants"><i class="fa fa-check"></i><b>H.2.1</b> Participants</a></li>
-<li class="chapter" data-level="H.2.2" data-path="IRB.html"><a href="IRB.html#Appendix-IRB-Protocol-ExperimentalDesign"><i class="fa fa-check"></i><b>H.2.2</b> Experimental Design</a></li>
-<li class="chapter" data-level="H.2.3" data-path="IRB.html"><a href="IRB.html#Appendix-IRB-Protocol-StudyProtocol"><i class="fa fa-check"></i><b>H.2.3</b> Study protocol</a></li>
-<li class="chapter" data-level="H.2.4" data-path="IRB.html"><a href="IRB.html#Appendix-IRB-Protocol-StatisticalAnalyses"><i class="fa fa-check"></i><b>H.2.4</b> Statistical Analyses</a></li>
+<li class="chapter" data-level="I.2.1" data-path="IRB.html"><a href="IRB.html#Appendix-IRB-Protocol-Participants"><i class="fa fa-check"></i><b>I.2.1</b> Participants</a></li>
+<li class="chapter" data-level="I.2.2" data-path="IRB.html"><a href="IRB.html#Appendix-IRB-Protocol-ExperimentalDesign"><i class="fa fa-check"></i><b>I.2.2</b> Experimental Design</a></li>
+<li class="chapter" data-level="I.2.3" data-path="IRB.html"><a href="IRB.html#Appendix-IRB-Protocol-StudyProtocol"><i class="fa fa-check"></i><b>I.2.3</b> Study protocol</a></li>
+<li class="chapter" data-level="I.2.4" data-path="IRB.html"><a href="IRB.html#Appendix-IRB-Protocol-StatisticalAnalyses"><i class="fa fa-check"></i><b>I.2.4</b> Statistical Analyses</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="annotated-bibliography.html"><a href="annotated-bibliography.html"><i class="fa fa-check"></i>Annotated Bibliography</a></li>
@@ -359,8 +304,8 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="PatientRecruitment" class="section level1 hasAnchor" number="3">
 <h1><span class="header-section-number">Chapter 3</span> Patient Recruitment<a href="PatientRecruitment.html#PatientRecruitment" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div class="grViz html-widget html-fill-item" id="htmlwidget-1cb15fdc2aa468f97f7f" style="width:672px;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-1cb15fdc2aa468f97f7f">{"x":{"diagram":"\ndigraph pt_recruitment {\n\n  graph [overlap = true, fontsize = 10]\n\n  node[shape = ellipse,\n       fontname = Helvetica]\n  a [label = \"Ineligible\"]\n  b [label = \"Declined\"]\n  c [label = \"Consented\"]\n\n  node [shape = box]\n  d [label = \"Patient Identified\"]\n  e [label = \"Screen Chart\"]\n  f [label = \"Contact Patient\"]\n  g [label = \"Contact Physician\"]\n\n  d -> e\n  e -> {a g}\n  g -> {b f}\n  f -> {b c}\n  \n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div class="grViz html-widget html-fill-item" id="htmlwidget-8a2e70231cf566784f76" style="width:672px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-8a2e70231cf566784f76">{"x":{"diagram":"\ndigraph pt_recruitment {\n\n  graph [overlap = true, fontsize = 10]\n\n  node[shape = ellipse,\n       fontname = Helvetica]\n  a [label = \"Ineligible\"]\n  b [label = \"Declined\"]\n  c [label = \"Consented\"]\n\n  node [shape = box]\n  d [label = \"Patient Identified\"]\n  e [label = \"Screen Chart\"]\n  f [label = \"Contact Patient\"]\n  g [label = \"Contact Physician\"]\n\n  d -> e\n  e -> {a g}\n  g -> {b f}\n  f -> {b c}\n  \n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 <div id="inclusionexclusion-criteria" class="section level2 hasAnchor" number="3.1">
 <h2><span class="header-section-number">3.1</span> Inclusion/Exclusion Criteria<a href="PatientRecruitment.html#inclusionexclusion-criteria" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>To be eligible for the study, patients must:</p>

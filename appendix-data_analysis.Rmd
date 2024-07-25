@@ -1,27 +1,63 @@
-# Data Analysis
+# Data Analysis {#Appendix-DataAnalysis}
 
-## Software
+## Setting Up
 
-Download and follow installation instructions for the following software:
+### The First Time
 
-- [Git]
-- [R]
-- [RStudio]
-- Python
-- Miniconda
-- VSCode
+1. Download [R].
+    - [R] must be downloaded first. 
+    - Use the appropriate installed for your operating system. 
+    - Use default installation settings unless you have other preferences. 
+2. Download [RStudio]. 
+    - Use the appropriate installer for your operating system. 
+    - Use default installation settings unless you have other preferences. 
+1. Open RStudio.
+2. Create a Project. 
+      - File/New Project.../New Directory/Project/
+      - Name the package. 
+      - Choose where to save the project on the computer. Generally, the project name and the folder you save the project in should match. 
+3. Set up `{devtools}`.
+    - If you have not installed the `{devtools}` package, install it by running the following in the console
+```
+install.packages("devtools")
+```
+     - After successfully installing `{devtools}`, run the following in the console:
+```
+library(devtools)
+```
+4. Install the `{nirsdexata}` package. 
+    - Run the following lines in the console:
+```
+devtools::install_github(repo = "saragracebiddle/nirsdexata", ref = "main")
+```
+4. If you have not previously downloaded some of the packages needed, you may get prompted to download them when you install or attempt to use a function from `{nirsdexata}`. 
 
-[Git]: https://git-scm.com/downloads
-[R]: https://posit.co/download/rstudio-desktop/
-[RStudio]: https://posit.co/download/rstudio-desktop/
+### On/Off Kinetics
 
+1. Make sure the file has been exported from Oxysoft correctly.
+    - The measurement should have been filtered (if applicable) prior to export. 
+    - The file should have been exported as a `.txt` file. 
+    - The graph data should have been exported, not the OD/ADC voltage. 
+2. If the file is not saved locally on the computer, download it from RedCap. 
+    - Save the file in the `data-raw` subdirectory of the folder you created for data analysis. 
+    - Create a `data-raw` subdirectory if needed. 
+3. Follow the steps in the `on-off-kinetics-analysis` vignette in the `{nirsdexata}` package.
+    
+
+## Resources
 
 I have found the following resources helpful. 
 
-- [Advanced R][https://adv-r.hadley.nz/index.html]
-This book is helpful for all things R. I have found chapter 7: Environments, chapter 9: Functionals, and chapter 12: S3 to be extremely useful as I build the `nirsex` package. 
-- [R Packages][https://r-pkgs.org/]
-This book helps you set up and work with developing packages in R. I have taken this framework and begun using a package development style even with data analysis projects due to its documentation and testing features. 
-- [Happy Git and GitHub for the useR][https://happygitwithr.com/]
-This book is helpful for setting up R and Git to work together. If you have never worked with Git, it provides a lot of help through basic set up and basic Git commands that you would be interested in. 
+- [Advanced R]
+This book is helpful for all things R. I have found chapter 7: Environments, chapter 9: Functionals, and chapter 12: S3 to be extremely useful as I build the `nirsdexata` package. 
+- [R Packages]
+This book helps you set up and work with developing packages in R. I have taken this framework and begun using a package development style even with data analysis projects due to its documentation, lazy data loading, and testing features. 
+- [Happy Git and GitHub for the useR]
+This book is helpful for setting up R and Git to work together. If you have never worked with Git, it provides a lot of help through basic set up and Git commands that you would be interested in. It can be difficult to follow the steps to set up Git and RStudio. If you need help with that, you can contact me personally and we can set up a time to go over it together. 
+
+[Happy Git and GitHub for the useR]: https://happygitwithr.com/
+[R Packages]: https://r-pkgs.org/
+[Advanced R]: https://adv-r.hadley.nz/index.html
+[R]: https://posit.co/download/rstudio-desktop/
+[RStudio]: https://posit.co/download/rstudio-desktop/
 

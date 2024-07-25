@@ -43,24 +43,22 @@ Look at the graph of the data. Make sure that the transitions are at the appropr
 
 Once the graph of the raw data looks correct, look at the plotted regressions. The gray is the raw data and the red is the regression line. The red should follow the gray raw data as closely as possible. If the regression does not seem to follow this at all, you can try adjusting the `transition time` variable. This will remove a few seconds from the beginning and end of the stage, where the patient may have been moving around on the bike or adjusting from the previous stage. Check to make sure that removing the time made a beneficial difference. Sometimes removing the transition time is helpful and sometimes it makes things worse so try several values and check the regression lines each time. 
 
-Once you are content with the regressions, check the final table of regression coefficients. 
 
-When you are okay with the results obtained from the app, you can download the report as a `.pdf`. The report shows the parameters used for the analysis, graphs, and results tables from the analysis. Save this `.pdf` with the raw `.txt` file and name is appropriately. 
+### In R
 
-```{r, eval = F}
-knitr::include_app('https://saragracebiddle.shinyapps.io/DataAnalysis/')
-```
-
-
-Upload the report into RedCap. 
-
-### By Hand
-
-Use the exported `.txt` file.
+Make sure you have followed instructions (see \@ref(Appendix-DataAnalysis)) to prepare your RStudio workspace befor beginning. 
 
 Read in the exported PortaMon data.
 
-I have written a custom file reader for exported PortaMon files. Oxysoft allows you to add in 'Events' to the measurements, kind of like time markers. However, when you export the measurements after adding an 'Event', Oxysoft adds an extra column that is mostly empty except for where the 'Event' was added in. Most read functions do not like this and will throw an error when you try to read in the data. The function I wrote will take the file and throw out the extra 'Event' column. Oxysoft also adds metadata to the header of the file. Most read in functions do not like this either, as they will look to the top of the file to figure out what the rest of the file looks like. `read_nirs` will parse the metadata for the information we would like to keep. Then it reads the actual data as a data frame. The useful metadata pieces are passed on to the user as attributes of the raw data frame.   
+Open the R script file for the patient. 
+
+Copy a code chunk for the analysis of one data set. 
+
+Paste it after the most recent data set. 
+
+At the top of the script, add the start time to the start time vector. 
+
+Oxysoft allows you to add in 'Events' to the measurements, kind of like time markers. However, when you export the measurements after adding an 'Event', Oxysoft adds an extra column that is mostly empty except for where the 'Event' was added in. Most read functions do not like this and will throw an error when you try to read in the data. The function I wrote will take the file and throw out the extra 'Event' column. Oxysoft also adds metadata to the header of the file. Most read in functions do not like this either, as they will look to the top of the file to figure out what the rest of the file looks like. `read_nirs` will parse the metadata for the information we would like to keep. Then it reads the actual data as a data frame. The useful metadata pieces are passed on to the user as attributes of the raw data frame.   
 
 The PortaMon does not record in increments of time, it records the sample number. The PortaMon records data at a rate of 10 hz, so it takes 10 samples a second. The time in seconds from the start of the test is the sample number divided by 10. 
 
