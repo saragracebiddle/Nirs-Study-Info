@@ -122,3 +122,11 @@ Appendix-IRB-Protocol-StudyProtocol-Visit1
 Appendix-IRB-Protocol-StudyProtocol-SubsequentVisits
 Appendix-IRB-Protocol-StudyProtocol-Surveys
 Appendix-IRB-Protocol-StatisticalAnalyses
+PortaMon-Filtering
+PortaMon-Filtering-MovingAverage
+PortaMon-Filtering-Undoing
+onoff-kinetics-visit
+change-optode-template-to-tsi
+change-optode-template-to-tsiff
+Methods-LT-geninfo
+if-you-have-experience-in-r

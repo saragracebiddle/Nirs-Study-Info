@@ -351,27 +351,9 @@ knitr::include_graphics(c(
 ))
 ```
 
-## Save Measurement {#PortaMon-AfterDataCollection}
-
-1. Save the project file.
-    - Click `File` and `Save Project File`
-    - The project file must be saved with the new measurements before closing Oxysoft or turning off the computer. Otherwise, the project file will not have the new measurement when Oxysoft is reopened. 
-2. Save a copy of the `.oxy4` file in the patient's folder on the desktop.
-    - Note: this copy of the `.oxy4` file should be the data as it was collected. Even if Tx3 was bad quality and should be removed from TSI calculations, make sure to save this copy with the optode-template TSIFF and without any filters or calculations. If the `oxy4` file is uploaded with the TSI optode-template or filters, there is no way to restore the data to the rawest form or apply a different filter. Filters can always be applied later, and the measurement properties can also always be applied later.
-    - Open the Windows file manager.
-    - Open the `NIRS Data` folder.
-    - Find the new `.oxy4` file created for this measurement.
-    - Copy the file.
-    - Open the patient's data folder. 
-    - Put the copied file in the patient's data folder. 
-    - If necessary, rename the file to match the rest of the files in the folder. 
-3. Save a copy of the `.oxy4` file in the patient's folder in RedCap.
-    - Open RedCap.
-    - Go to the File Repository. 
-    - In the OXYSOFT folder, open the OXY4 Files folder.
-    - In the appropriate patient's folder, upload the file that was just saved in the patient's folder on the desktop. 
-
 ## Change Measurement Properties {#PortaMon-ChangeProperties}
+
+### Change Optode-Template to TSI
 
 - Right click on the name of the measurement in the `Project` panel on the left. 
 - Select `Properties...`. This will open up a new panel.
@@ -421,11 +403,37 @@ knitr::include_graphics(
 )
 ```
 
-To undo these changes and revert to the original measurement with `Tx3` included in the `TSI` calculations, right click on the file name and open up the `Properties` panel again. Click `Next`.
 
-Next to the `Optode-template` settings table, there is a button on the bottom right that says `Restore`. Click `Restore`. Click `Next`. 
+### Change Optode Template to TSIFF
 
-The graphs are now restored to their original state. 
+1. Right click on the name of the measurement in the `Project` panel on the left. 
+2. Click `Properties...`.
+3. Leave the measurement name and data file as is.
+4. Click `Next`.
+5. Next to the `Optode-template` settings table, there is a button on the bottom right that says `Restore`. Click `Restore`.
+6. Click `Next`.
+
+The graphs should now show data in all three transmitter graphs, and there should be both a `TSI` and `TSIFF` (light and dark green respectively) line in the TSI graph.
+
+## Filtering {#PortaMon-Filtering}
+
+### Moving Average {#PortaMon-Filtering-MovingAverage}
+
+1. Right click on one of the open graphs. 
+2. Click `Common Graph Properties`.
+3. Click `Transformation A`.
+4. Under `Filter`, click the drop down and select `Moving Average`. 
+5. By `Filter Width`, type `1.5` in. 
+6. Click `OK`. 
+
+### Take Off Filter{#PortaMon-Filtering-Undoing}
+
+1. Right click on one of the open graphs. 
+2. Click `Common Graph Properties`. 
+3. Click `Transformation A`.
+4. Under `Filter`, the drop down should have `No filter` selected. 
+5. To the right of `Filter`, click the `Modify` checkbox. 
+6. Click `OK`
 
 ## Data Export {#PortaMon-DataExport}
 
@@ -529,3 +537,36 @@ knitr::include_graphics(c(
   "images/portaMonExportMeasurement/8_exportwholemeasurement.png"
 ))
 ```
+
+
+## After Data Collection {#PortaMon-AfterDataCollection}
+
+1. Save the project file.
+    - Click `File` and `Save Project File`
+    - The project file must be saved with the new measurements before closing Oxysoft or turning off the computer. Otherwise, the project file will not have the new measurement when Oxysoft is reopened. 
+2. Save a copy of the `.oxy4` file in the patient's folder on the desktop.
+    - Note: this copy of the `.oxy4` file should be the data as it was collected. Even if Tx3 was bad quality and should be removed from TSI calculations, make sure to save this copy with the optode-template TSIFF and without any filters or calculations. If the `oxy4` file is uploaded with the TSI optode-template or filters, there is no way to restore the data to the rawest form or apply a different filter. Filters can always be applied later, and the measurement properties can also always be applied later.
+    - Open the Windows file manager.
+    - Open the `NIRS Data` folder.
+    - Find the new `.oxy4` file created for this measurement.
+    - Copy the file.
+    - Open the patient's data folder. 
+    - Put the copied file in the patient's data folder. 
+    - If necessary, rename the file to match the rest of the files in the folder. 
+3. Save a copy of the `.oxy4` file in the patient's folder in RedCap.
+    - Open RedCap.
+    - Go to the File Repository. 
+    - In the OXYSOFT folder, open the OXY4 Files folder.
+    - In the appropriate patient's folder, upload the file that was just saved in the patient's folder on the desktop.
+4. Change measurement properties as needed according to \@ref(PortaMon-ChangeProperties).
+5. Apply moving average as described in \@ref(PortaMon-Filtering). 
+6. Export. 
+7. De-identify text file.
+    - Open the text file. 
+    - In the first line, delete the date from the file name, if the measurement was created and names with the date in the file name. 
+    - In the next two lines, which start with `Export Date` and `Measurement Date`,
+    delete both date and times. The lines should now be blank. 
+    - Scroll down to the column names. Make sure there are no dates in the column names.
+    - Save the file with these edits. 
+8. Upload de-identified text file into the OneDrive folder.
+9. Delete the de-identified file from the laptop. 

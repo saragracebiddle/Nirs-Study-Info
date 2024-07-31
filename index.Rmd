@@ -34,12 +34,12 @@ nocite:
 csl: chicago-annotated-bibliography.csl
 link-citations: yes
 github-repo: rstudio/bookdown-demo
-description: "This contains all current information about the NIRS Study being conducted at the PrismaHealth Cancer Institute in collaboration with Furman University and University of South Carolina School of Medicine Greenville."
+description: "This contains all current information about the NIRS Study being conducted at the Prisma Health Cancer Institute in collaboration with Furman University and University of South Carolina School of Medicine Greenville."
 ---
 
 # About
 
-This study is being conducted in collaboration with the PrismaHealth Cancer Institute, Furman University Health Science Department, and University of South Carolina School of Medicine Greenville. 
+This study is being conducted in collaboration with the Prisma Health Cancer Institute, Furman University Health Science Department, and University of South Carolina School of Medicine Greenville. 
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages
@@ -69,6 +69,8 @@ ___
 
 **Dr. Larry Gluck**
 
+> Retired Director of the Cancer Institute\
+> Prisma Health
 > <Larry.Gluck@prismahealth.org>
 
 **Dr. Julie Martin**
@@ -95,11 +97,6 @@ ___
 > Prisma Health Cancer Institute\
 > <sydney.hackwell@prismahealth.org>
 
-**Katie Banenas**
-
-> Research Coordinator\
-> Prisma Health Cancer Institute\
-> <katie.banenas@prismahealth.org>
 
 **Human Performance Lab**
 

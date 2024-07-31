@@ -1,10 +1,10 @@
 # Data Storage {#DataStorage}
 
-Follow all appropriate data export instructions for PARVO and NIRS data.
+All physical copies of data collection sheets and surveys are stored in a locked filing cabinet in the Human Performance Lab.
 
-All physical copies are stored in a locked filing cabinet in the Human Performance Lab.
+The study [RedCap][RedCapURL] stores all identifying patient information and digital copies of the data.
 
-The study [RedCap][RedCapURL] stores all identifying patient information and digital copies of data.
+
 
 After a patient is identified and signs a consent form for the study, the research coordinator will fill out the `New Patient` survey in RedCap. When this survey is completed, it automatically assigns a study ID number to the patient and sends an email to Frankie Bennett and Sara Biddle about the newly consented participant. 
 
@@ -41,6 +41,8 @@ Fill out the following data collection instruments: `HPL Visit`, `One-Time Measu
 The information to fill out `HPL Visit`, `One-Time Measurements`, and `Lactate Parvo` will be found on the `Lactate Threshold Data Collection Sheet` that was filled out during the patient visit. 
 
  
+### On/Off Kinetics Visit
+
 
 
 

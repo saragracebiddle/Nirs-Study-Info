@@ -1,6 +1,6 @@
 # Data Collection {#DataCollection}
 
-Everyone is required to wear a mask while the patient is in the lab. Prisma Health keeps a supply of masks in the hallway that connects to the parking garage. Since our patients are receiving chemotherapy and their immune systems will not be functioning well during chemotherapy treatment, the principal investigators decided masking is required. Patients and any people they bring with them are not required to wear masks. If they wish to, direct them to the supply of masks in the hallway. 
+Everyone is required to wear a mask while the patient is in the lab. Prisma Health keeps a supply of masks in the hallway that connects to the parking garage. Since patients are receiving chemotherapy and their immune systems will not be functioning well during chemotherapy treatment, the principal investigators decided masking is required. Patients and any people they bring with them are not required to wear masks. If they wish to, direct them to the supply of masks in the hallway. 
 
 
 ```{r, echo = F}
@@ -13,7 +13,10 @@ knitr::include_graphics(
 
 ## Lactate Threshold Visit (First Visit) {#Methods-LT}
 
-This protocol is the participant's first visit to the lab. Have any medical students helping out with testing arrive to the lab at least 30 minutes prior to the participant. 
+## General Information {#Methods-LT-geninfo}
+
+This protocol is the participant's first visit to the lab. It takes the longest out of all of the visits. Have any medical students helping out with testing arrive to the lab at least 30 minutes prior to the participant. 
+
 
 ### Preparation {#Methods-LT-prep}
 
@@ -43,7 +46,7 @@ This protocol is the participant's first visit to the lab. Have any medical stud
     - Place the BFI, PROMIS Global Health, Contact Information Form, and Physical Activity History (Intake) forms on a different clipboard. These will be filled out by the participant. Put a pen with the clipboard for the patient to use when filling out the forms.
 8. Assemble the VO~2~ mask except for the blue rubber part as described in \@ref(Parvo-MaskAssembly). Place the assembled pieces in a sterile pink bucket. 
 9. Prepare the PortaMon. 
-    -  Prepare the device by putting in a charged battery, wrapping the PortaMon in plastic saran wrap, and placing the double sided taupe tape. For more details, see \@ref(PortaMon-BeforeDataCollection). 
+    -  Prepare the device by putting in a charged battery, wrapping the PortaMon in plastic saran wrap, and placing the double sided taupe tape. For more details, see \@ref(PortaMon-Prep). 
     - Connect the PortaMon to the Oxysoft software as described in \@ref(PortaMon-StartMeasurement) but do not begin data collection. Leave the screen on the pop up where you would click `Finish`.
 12. Run lactate meter controls as described in \@ref(Appendix-Instruments-LactateMeter-Usage-QualityControl).
 14. Get a washcloth out of the cabinet behind the door and put it by the ultrasound to wipe off ultrasound gel during device placement.
@@ -61,8 +64,9 @@ This protocol is the participant's first visit to the lab. Have any medical stud
     - Input the patient's age in the appropriate input section. 
     - You will get the patient's height and weight after they arrive. 
     - Click `Save` in the upper right corner. 
-15. On the stationary bike setting screen, it will display `TODO`. Press the circular button. It should now display `TODO`. Press the circular button again. 
-The screen should display `TODO`.
+15. On the stationary bike setting screen, it will display `LODE CORIVAL MAIN MENU`.
+    - Press the circular button. It should now display `LODE CORIVAL TERMINAL`.
+    - Press the circular button again. It should now display `0W 0rpm TERMINAL`.
 16. Approximately 10-15 minutes before the patient is supposed to arrive, send someone to the Cancer Institute lobby to meet them. They will walk the patient up to the Human Performance Lab. 
 
 ### Exclusion Criteria {#Methods-LT-ExclusionCriteria}
